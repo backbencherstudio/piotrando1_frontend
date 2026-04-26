@@ -1,0 +1,105 @@
+import Image from 'next/image'
+import React from 'react'
+import { MdArrowOutward, MdKeyboardArrowRight } from 'react-icons/md'
+import Evaluation from './EvoluationPack'
+
+export default function UltraPack() {
+    return (
+        <div className="py-8 container">
+
+
+
+            {/* GRID */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[52px]">
+
+                {/* LEFT CARD */}
+                <div className="relative">
+
+                    {/* BG */}
+                    <Image
+                        src="/images/overlay1.png"
+                        alt="bg"
+                        width={545}
+                        height={301}
+                        className="absolute top-0 z-0 w-[600px] h-[490px] rounded-lg"
+                    />
+
+                    {/* CARD */}
+                    <div className='relative ml-10'>
+                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-6 shadow-lg">
+
+                            {/* TEXT */}
+                            <div className="max-w-[70%]">
+                                <h2 className="text-lg sm:text-xl font-semibold flex items-center gap-2">
+                                    <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+                                    Inside packs
+                                </h2>
+
+                                <ul className="mt-4 space-y-2 text-gray-600 text-sm">
+                                    <li>25 Common / Uncommon</li>
+                                    <li>6 Foil cards</li>
+                                    <li>4 Bonus Cards</li>
+                                    <li>Guaranteed holo cards inside</li>
+
+                                    <li className="mt-3">
+                                        Highest chance of premium <br />
+                                        pulls (V / EX / GX I Special Rare)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {/* IMAGE (ALWAYS SAME POSITION) */}
+                            <div className="absolute right-[-50px] sm:right-[-100px] top-1/2 -translate-y-1/2 z-20">
+                                <Image
+                                    src="/images/pokemon4.jpg"
+                                    alt="pokemon"
+                                    width={220}
+                                    height={320}
+
+                                    className="rounded-xl shadow-xl object-cover"
+                                />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                {/* RIGHT TEXT */}
+                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0">
+                    <div className="max-w-md">
+
+                        <p className="text-2xl sm:text-3xl lg:text-5xl font-medium">
+                            Ultra Pack
+                        </p>
+
+                        <div className="flex flex-col gap-6 text-[#393939] mt-4">
+
+                            <p className="text-sm lg:text-base">
+                                High-value mystery pack designed for enthusiasts and premium retail
+                                positioning.
+                            </p>
+
+                            <ul className="text-sm lg:text-base space-y-2 list-disc ml-5">
+                                <li>Collector-focused product
+                                </li>
+                                <li>Premium unboxing experience</li>
+                                <li>Strong margins</li>
+                                <li> Best perceived value
+                                </li>
+                                <li>Designed for top-tier resale</li>
+                            </ul>
+                        </div>
+
+                        <button className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
+                            Request a Quote
+                            <MdKeyboardArrowRight className="text-xl" />
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    )
+}

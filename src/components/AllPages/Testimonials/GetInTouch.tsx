@@ -1,0 +1,130 @@
+"use client";
+
+import Image from "next/image";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { CgMail } from "react-icons/cg";
+import { CiLocationOn } from "react-icons/ci";
+
+type FormInputs = {
+    companyName: string;
+    contactName: string;
+    businessEmail: string;
+    country: string;
+    estimatedQuantity: string;
+    productType: string;
+    message: string;
+};
+
+export default function GetInTouch() {
+    const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
+
+    const onSubmit: SubmitHandler<FormInputs> = (data) => {
+        console.log(data);
+    };
+
+    return (
+        <div className=" bg-[#F9F7F2] py-10 lg:py-20 flex  container">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+                <div className="flex flex-col justify-start">
+
+                    <div className=" mb-12">
+                        <div className='flex '>
+                            <div className="flex gap-2 border py-2 px-4 rounded-full">
+                                <Image
+                                    src="/images/aboutusLogo.png"
+                                    alt="icon"
+                                    width={24}
+                                    height={24}
+                                    className="object-contain"
+                                />
+                                <p className=" text-[18px] font-medium leading-[140%] tracking-[-0.3px] ">Get in Touch
+                                </p>
+                            </div>
+
+                        </div>
+                        <div className=''>
+                            <p className="text-[#000] text-3xl md:text-4xl lg:text-[64px] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
+                            <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-lg">
+                                Tell us what you need and we will prepare a custom quote, sample option, or wholesale recommendation within 24 hours.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="space-y-6">
+                        <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600"><CgMail /></div>
+                            <div>
+                                <p className="font-bold text-gray-800">Email</p>
+                                <p className="text-gray-500">contact@spawndrop.com</p>
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600"><CiLocationOn /></div>
+                            <div>
+                                <p className="font-bold text-gray-800">Location</p>
+                                <p className="text-gray-500">Europe-based, shipping EU-wide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-sm md:h-[550px] lg:h-full h-full overflow-y-auto">
+                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                            <div className="space-y-2">
+                                <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Company Name</label>
+                                <input {...register("companyName")} placeholder="Your Company Name" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                            </div>
+                            <div className="space-y-2">
+                                <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Contact Name</label>
+                                <input {...register("contactName")} placeholder="Your Name" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                            <div className="space-y-2">
+                                <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Business Email</label>
+                                <input {...register("businessEmail")} placeholder="business@email.com" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                            </div>
+                            <div className="space-y-2">
+                                <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
+                                <select {...register("country")} className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl focus:outline-orange-500 transition-all appearance-none">
+                                    <option value="Bangladesh">🇧🇩 Bangladesh</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                            <div className="space-y-2">
+                                <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Estimated Quantity</label>
+                                <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                            </div>
+                            <div className="space-y-2">
+                                <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Product Type</label>
+                                <select {...register("productType")} className="w-full p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all appearance-none text-gray-400">
+                                    <option value="">e.g. Starter, Pro, Ultra</option>
+                                    <option value="pro">Pro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div className="space-y-2">
+                            <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Messages</label>
+                            <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
+                        </div>
+
+                        <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-5 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
+                            Request Wholesale Pricing
+                        </button>
+
+                        <p className="text-[#888D91] text-center text-[16px] italic font-normal leading-[170%] tracking-[-0.3px] pt-2">
+                            We usually reply within 24 hours. Sample packs are available before larger orders.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    );
+}

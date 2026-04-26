@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/AllPages/shared/Navbar";
+import Footer from "@/components/AllPages/shared/Footer";
+import CTASection from "@/components/AllPages/Cta/CTA";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
+  weight: "400",
+  variable: "--font-bebas",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${inter.variable} ${bebasNeue.variable}`}>
+      <body className="min-h-full flex flex-col ">
+        <Navbar />
+        {children}
+        <CTASection />
+        <Footer />
+      </body>
     </html>
   );
 }

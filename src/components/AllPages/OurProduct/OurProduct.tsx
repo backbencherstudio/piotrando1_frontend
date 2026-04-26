@@ -1,0 +1,121 @@
+import Image from 'next/image'
+import React from 'react'
+import { MdArrowOutward, MdKeyboardArrowRight } from 'react-icons/md'
+import Evaluation from './EvoluationPack'
+import UltraPack from './UltraPack'
+
+export default function OurProduct() {
+    return (
+        <div className="py-10 lg:py-20 container">
+
+            {/* HEADER */}
+            <div className="flex flex-col justify-center items-center pb-10 lg:pb-16 text-center px-4">
+
+                <div className="flex items-center gap-2 border bg-white rounded-full px-4 py-2">
+                    <Image src="/images/aboutusLogo.png" alt="icon" width={20} height={20} />
+                    <p className="text-sm lg:text-base font-medium">Our Products</p>
+                </div>
+
+                <h2 className="text-3xl sm:text-4xl lg:text-6xl font-secondary mt-4">
+                    OUR MYSTERY REPACKS
+                </h2>
+
+                <p className="text-[#393939] text-sm lg:text-base max-w-xl mt-3">
+                    Three tiers designed for every type of collector and retailer. Each pack
+                    contains 100% authentic pokemon TCG cards.
+                </p>
+            </div>
+
+            {/* GRID */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[52px]">
+
+                {/* LEFT CARD */}
+                <div className="relative">
+
+                    {/* BG */}
+                    <Image
+                        src="/images/overlay1.png"
+                        alt="bg"
+                        width={545}
+                        height={301}
+                        className="absolute top-0 z-0 w-[600px] h-[490px] rounded-lg"
+                    />
+
+                    {/* CARD */}
+                    <div className='relative ml-10'>
+                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-6 shadow-lg">
+
+                            {/* TEXT */}
+                            <div className="max-w-[70%]">
+                                <h2 className="text-lg sm:text-xl font-semibold flex items-center gap-2">
+                                    <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+                                    Inside packs
+                                </h2>
+
+                                <ul className="mt-4 space-y-2 text-gray-600 text-sm">
+                                    <li>✔ 7 Common / Uncommon</li>
+                                    <li>✔ 2 Foil Cards</li>
+                                    <li>✔ 1 Bonus Card</li>
+                                    <li className="mt-3">
+                                        Bonus Card can be: <br />
+                                        Foil V / EX / GX / Special Rare
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {/* IMAGE (ALWAYS SAME POSITION) */}
+                            <div className="absolute right-[-50px] sm:right-[-100px] top-1/2 -translate-y-1/2 z-20">
+                                <Image
+                                    src="/images/pokemon2.png"
+                                    alt="pokemon"
+                                    width={220}
+                                    height={320}
+                                    className="rounded-xl shadow-xl"
+                                />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                {/* RIGHT TEXT */}
+                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0">
+                    <div className="max-w-md">
+
+                        <p className="text-2xl sm:text-3xl lg:text-5xl font-medium">
+                            Starter Pack
+                        </p>
+
+                        <div className="flex flex-col gap-6 text-[#393939] mt-4">
+
+                            <p className="text-sm lg:text-base">
+                                Perfect entry-level mystery pack designed for impulse purchases,
+                                retail shelves, and new collectors.
+                            </p>
+
+                            <ul className="text-sm lg:text-base space-y-2 list-disc ml-5">
+                                <li>High-turnover product</li>
+                                <li>Retail-ready format</li>
+                                <li>Strong margins</li>
+                                <li>Accessible price point</li>
+                                <li>Perfect for gifts</li>
+                            </ul>
+                        </div>
+
+                        <button className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
+                            Request a Quote
+                            <MdKeyboardArrowRight className="text-xl" />
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <Evaluation />
+                <UltraPack />
+            </div>
+        </div>
+    )
+}
