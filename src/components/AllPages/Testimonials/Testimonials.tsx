@@ -13,22 +13,22 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         name: 'Cyprian', role: 'Player',
-        quote: 'l got this pack as a prize after a tournament and didn t expect much, but it turned out to be really fun to open.The bonus card made it exciting, and Id definitely get another one. —Tournament Player', avatar: '/images/sourch.png'
+        quote: 'l got this pack as a prize after a tournament and didn t expect much, but it turned out to be really fun to open.The bonus card made it exciting, and Id definitely get another one. —Tournament Player', avatar: '/images/Cyprian.png'
     },
     {
         name: 'James', role: 'Buyer', quote:
 
-            'Premium quality', avatar: '/images/sourch.png'
+            'Premium quality', avatar: '/images/man.png'
     },
     {
-        name: 'Oliver', role: 'Operator', quote: 'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/sourch.png'
+        name: 'Oliver', role: 'Operator', quote: 'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/Cyprian.png'
     },
     {
-        name: 'Marek', role: 'Shop Owner', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases.', avatar: '/images/sourch.png'
+        name: 'Marek', role: 'Shop Owner', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases.', avatar: '/images/man.png'
     },
-    { name: 'Thomas', role: 'Seller', quote: 'These packs sell really fast in our store. The margins are solid, and customers often come back for more after their first purchase.', avatar: '/images/sourch.png' },
+    { name: 'Thomas', role: 'Seller', quote: 'These packs sell really fast in our store. The margins are solid, and customers often come back for more after their first purchase.', avatar: '/images/Cyprian.png' },
     {
-        name: 'Sophie', role: 'Manager', quote: 'Very consistent quality and reliable supply. Its an easy product to manage and works well for scaling online sales.', avatar: '/images/sourch.png'
+        name: 'Sophie', role: 'Manager', quote: 'Very consistent quality and reliable supply. Its an easy product to manage and works well for scaling online sales.', avatar: '/images/Cyprian.png'
     },
     { name: 'Kacper', role: 'Collector', quote: 'l opened my first pack and pulled an ultra rare card straight away. That moment was amazing and made me want to get more.', avatar: '/images/sourch.png' },
     { name: 'Emily', role: 'Buyer', quote: 'Great impulse product. Customers are naturally curious and often pick one up without hesitation, especially as a gift item.', avatar: '/images/sourch.png' },

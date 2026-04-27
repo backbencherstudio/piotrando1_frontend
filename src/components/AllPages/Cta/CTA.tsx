@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { MdArrowOutward } from 'react-icons/md';
 
 const CTASection = () => {
     return (
@@ -33,10 +34,10 @@ const CTASection = () => {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4">
                 {/* Primary Button */}
-                <button className="group flex items-center gap-3 bg-[#FE6B02] text-white px-8 py-4 rounded-full  text-[16px] font-medium leading-[115%] tracking-[-0.048px]  hover:bg-orange-600 transition-all shadow-lg shadow-orange-100 cursor-pointer">
+                <button className="group flex items-center gap-3 bg-[#FE6B02] text-white px-8 py-3 rounded-full  text-[16px] font-medium leading-[115%] tracking-[-0.048px]  hover:bg-orange-600 transition-all shadow-lg shadow-orange-100 cursor-pointer">
                     Get Wholesale Pricing
                     <span className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center transition-transform ">
-                        ↗
+                        <MdArrowOutward />
                     </span>
                 </button>
 

@@ -82,7 +82,7 @@ export default function Navbar() {
                     ))}
                     <div className={` flex   gap-3 cursor-pointer transition-colors duration-200  ${scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
                         }`}>
-                        <p className="lg:mt-3 xl:mt-3 text-xs xl:text-base"> Strona glowna (EN) </p>   <Image src="/images/flag.png" alt="flag" width={30} height={20} className="py-3" />
+                        <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base"> Strona glowna (EN) </p>   <Image src="/images/flag.png" alt="flag" width={30} height={20} className="py-3" />
                     </div>
 
                     {/* <div>
