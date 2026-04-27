@@ -139,7 +139,7 @@ const OurPackas = () => {
                                     group cursor-pointer rounded-2xl overflow-hidden
                                 "
                         >
-                            <div className="relative h-97 ">
+                            <div className="relative h-70 md:h-97 ">
                                 <Image
                                     src={item.image}
                                     alt={item.title}
@@ -155,19 +155,19 @@ const OurPackas = () => {
                 </div>
 
                 {/* Navigation Arrows */}
-                <div className="flex justify-between items-center mt-6">
+                <div className="flex justify-between items-center  md:mt-2">
                     <div className="flex-1" />
                     <div className="flex gap-3">
                         <button
                             onClick={handlePrev}
-                            className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors text-gray-800 hover:text-gray-900"
+                            className="p-2 rounded-full bg-white cursor-pointer hover:bg-gray-300 transition-colors text-gray-800 hover:text-gray-900"
                             aria-label="Previous"
                         >
                             <ChevronLeft className="w-6 h-6" />
                         </button>
                         <button
                             onClick={handleNext}
-                            className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors text-gray-800 hover:text-gray-900"
+                            className="p-2 rounded-full bg-white cursor-pointer hover:bg-gray-300 transition-colors text-gray-800 hover:text-gray-900"
                             aria-label="Next"
                         >
                             <ChevronRight className="w-6 h-6" />

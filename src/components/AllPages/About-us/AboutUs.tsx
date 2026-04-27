@@ -6,7 +6,7 @@ export default function AboutUs() {
     return (
         <div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2  container py-20 gap-[52px] '>
+            <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[52px] '>
                 <div>
                     <div>
                         <div className='flex'>

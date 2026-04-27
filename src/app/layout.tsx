@@ -30,7 +30,9 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${bebasNeue.variable}`}>
       <body className="min-h-full flex flex-col ">
         <Navbar />
+
         {children}
+
         <CTASection />
         <Footer />
       </body>

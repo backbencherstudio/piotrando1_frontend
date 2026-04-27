@@ -46,8 +46,8 @@ testimonials.forEach((item, i) => {
 
 function Card({ name, role, quote, avatar }: Testimonial) {
     return (
-        <div className="bg-slate-50 p-5 rounded-xl border">
-            <div className="flex items-center gap-3 mb-3">
+        <div className="bg-slate-50 p-5 rounded-xl border h-[600px] ">
+            <div className="flex items-center gap-3  h-[100px] ">
                 <Image src={avatar} alt={name} width={40} height={40} className="rounded-full" />
                 <div>
                     <h4 className="font-semibold">{name}</h4>
@@ -89,21 +89,21 @@ export default function TestimonialsSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6  h-[500px] overflow-hidden">
 
                 {/* 1st COLUMN → DOWN */}
-                <div className="hidden md:flex flex-col gap-6 animate-scrollDown">
+                <div className="hidden md:flex flex-col gap-6 animate-scrollDown h-[400px]">
                     {[...columns[0], ...columns[0]].map((item, i) => (
                         <Card key={i} {...item} />
                     ))}
                 </div>
 
                 {/* 2nd COLUMN → UP */}
-                <div className="flex flex-col gap-6 animate-scrollUp">
+                <div className="flex flex-col gap-6 animate-scrollUp h-[600px]">
                     {[...columns[1], ...columns[1]].map((item, i) => (
                         <Card key={i} {...item} />
                     ))}
                 </div>
 
                 {/* 3rd COLUMN → DOWN */}
-                <div className="hidden md:flex flex-col gap-6 animate-scrollDown">
+                <div className="hidden md:flex flex-col gap-6 animate-scrollDown h-[400px]">
                     {[...columns[2], ...columns[2]].map((item, i) => (
                         <Card key={i} {...item} />
                     ))}

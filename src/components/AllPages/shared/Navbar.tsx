@@ -1,39 +1,99 @@
 "use client";
 
+import CountrySelect from "@/app/flag/page";
 import LineIcon from "@/components/icon/LineIcon";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { CountryDropdown } from "react-country-region-selector";
 import { IoArrowForwardOutline, IoMenu, IoClose } from "react-icons/io5";
+import { MdOutlineShoppingBag } from "react-icons/md";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+    const [country, setCountry] = useState("");
+
+
+    const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const isHomePage = pathname === "/" || pathname === "/faq";
+
+    const navItems = [
+        { name: "About us", path: "aboutUs" },
+        { name: "Products", path: "/products" },
+        { name: "Cards", path: "/cards" },
+        { name: "Shipping", path: "#" },
+        { name: "FAQ's", path: "/faq" },
+        { name: "Contact", path: "/getInTouch" },
+    ];
+
+    const mobileNavItems = [
+        { name: "About us", path: "/aboutUs" },
+        { name: "Products", path: "/products" },
+        { name: "Cards", path: "/cards" },
+        { name: "Shipping", path: "#" },
+        { name: "Contact", path: "/getInTouch" },
+
+    ];
 
     return (
-        <div className="bg-black text-white sticky top-0 z-50 ">
-            <div className="container bg-black text-white py-4 flex gap-25 justify-between items-center">
-
-                {/* LOGO */}
-                <Image src="/images/LOGO.png" alt="logo" height={44} width={160} />
-
-                {/* DESKTOP MENU */}
-                <ul className="hidden lg:flex gap-4 items-center">
-                    <li>About us</li>
-                    <Link href="/products" ><li>Products</li></Link>
-                    <li> Cards</li>
-                    <Link href="/shipping" ><li>Shipping</li></Link>
-                    <li>FAQ’s</li>
-                    <Link href="/getInTouch" ><li>Contact</li></Link>
+        <div className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/80 backdrop-blur-md text-black" : "bg-transparent text-black"
+            }`}>
+            <div className="container  text-white py-4 flex justify-between  items-center gap-6 lg:gap-10  ">
 
 
-                    <Image
-                        src="/images/shopping-basket-01.png"
-                        alt="cart"
-                        width={24}
-                        height={24}
+                <Link href="/">
+                    <div style={{ position: "relative", width: "160px", height: "44px" }}>
+                        <Image
+                            src={scrolled || !isHomePage ? "/images/logocolor.png" : "/images/LOGO.png"}
+                            alt="logo"
+                            fill
+                            sizes="(max-width: 768px) 160px, 160px"
+                            style={{ objectFit: "contain" }}
+                        />
+                    </div>
+                </Link>
+
+
+                <ul className="hidden lg:flex justify-between w-full   items-center ">
+                    {navItems.map((item) => (
+                        <Link href={item.path} key={item.name} className="flex justify-between text-xs xl:text-base ">
+                            <li className={`cursor-pointer transition-colors duration-200 ${pathname === item.path
+                                ? "text-[#FE6B02]  border-[#FE6B02] "
+                                : scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
+                                }`}>
+                                {item.name}
+                            </li>
+                        </Link>
+                    ))}
+                    <div className={` flex   gap-3 cursor-pointer transition-colors duration-200  ${scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
+                        }`}>
+                        <p className="lg:mt-3 xl:mt-3 text-xs xl:text-base"> Strona glowna (EN) </p>   <Image src="/images/flag.png" alt="flag" width={30} height={20} className="py-3" />
+                    </div>
+
+                    {/* <div>
+                        <CountrySelect defaultValue="EG" />
+                    </div> */}
+                    <MdOutlineShoppingBag
+                        className={`text-2xl cursor-pointer transition-colors duration-200 ${scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
+                            }`}
                     />
 
-                    <button className="bg-[#FE6B02] flex items-center gap-2 py-2 pl-6 pr-2 rounded-3xl">
+                    <button className="bg-[#FE6B02] flex items-center gap-2 py-2 pl-6 pr-2 rounded-3xl hover:bg-[#e05a00] transition-colors">
                         Get Quotes
                         <div className="rounded-full p-2 bg-white">
                             <IoArrowForwardOutline className="text-black" />
@@ -42,50 +102,81 @@ export default function Navbar() {
 
                 </ul>
 
-                {/* MOBILE MENU BUTTON */}
+
                 <button
-                    className="lg:hidden text-3xl bg-[#343434] rounded-full p-3"
+                    className="lg:hidden text-3xl bg-[#343434] rounded-full p-3 "
                     onClick={() => setOpen(true)}
                 >
                     <LineIcon />
                 </button>
-            </div >
+            </div>
 
             {/* MOBILE DRAWER */}
-            < div
-                className={`fixed top-0 left-0 w-full h-screen bg-[#F5F5F5] text-black z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "-translate-x-full"
+            <div
+                className={`fixed top-0 left-0 w-full h-screen bg-[#F5F5F5] text-black z-50 transform transition-transform duration-300  ${open ? "translate-x-0" : "-translate-x-full"
                     }`
                 }
             >
                 {/* HEADER */}
-                < div className="flex justify-between items-center p-4" >
-                    <Image src="/images/logocolor.png" alt="logo" width={140} height={40} />
+                <div className="flex justify-between items-center p-4 ">
+                    <Link href="/" onClick={() => setOpen(false)}>
+                        <div style={{ position: "relative", width: "140px", height: "40px" }}>
+                            <Image
+                                src="/images/logocolor.png"
+                                alt="logo"
+                                fill
+                                sizes="140px"
+                                style={{ objectFit: "contain" }}
+                            />
+                        </div>
+                    </Link>
 
                     <button onClick={() => setOpen(false)} className="text-2xl">
                         <IoClose />
                     </button>
-                </div >
+                </div>
 
                 {/* MENU ITEMS */}
-                < ul className="flex flex-col gap-6 px-6 mt-6 text-lg" >
-                    <li>About us</li>
-                    <li>Products</li>
-                    <li>Cards</li>
-                    <li>Shipping</li>
-                    <li>Contact</li>
-                    <li>View Cart</li>
-                </ul >
+                <ul className="flex flex-col gap-6 px-6 mt-6 text-lg ">
+                    {mobileNavItems.map((item) => (
+                        <Link href={item.path} key={item.name} onClick={() => setOpen(false)}>
+                            <li className={`cursor-pointer transition-colors duration-200 ${pathname === item.path
+                                ? "text-[#FE6B02] font-semibold"
+                                : "hover:text-[#FE6B02]"
+                                }`}>
+                                {item.name}
+                            </li>
+                        </Link>
+                    ))}
+
+                    <div className="flex gap-2">
+                        <p className="mt-3"> Strona glowna (EN) </p>   <Image src="/images/flag.png" alt="flag" width={40} height={20} className="py-3" />
+                    </div>
+
+                    {/* <div>
+                        <CountrySelect defaultValue="EG" />
+                    </div> */}
+                    <MdOutlineShoppingBag
+
+                    />
+                </ul>
+
+
+
+                {/* <div>
+                        <CountrySelect defaultValue="EG" />
+                    </div> */}
 
                 {/* BUTTON */}
-                < div className="absolute bottom-10 w-full px-6" >
-                    <button className="w-full bg-[#FE6B02] flex items-center justify-between py-3 pl-6 pr-2 rounded-3xl text-white">
+                <div className="absolute bottom-10 w-full px-6">
+                    <button className="w-full bg-[#FE6B02] flex items-center justify-between py-3 pl-6 pr-2 rounded-3xl text-white hover:bg-[#e05a00] transition-colors">
                         Get Quotes
                         <div className="bg-white rounded-full p-2">
                             <IoArrowForwardOutline className="text-black" />
                         </div>
                     </button>
-                </div >
-            </div >
-        </div >
+                </div>
+            </div>
+        </div>
     );
 }

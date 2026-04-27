@@ -12,6 +12,7 @@ import Sourch from '@/components/AllPages/Sourch/Sourch'
 import GetInTouch from '@/components/AllPages/Testimonials/GetInTouch'
 import TestimonialsSection, { } from '@/components/AllPages/Testimonials/Testimonials'
 import React from 'react'
+import CountrySelect from './flag/page'
 
 export default function page() {
   return (
@@ -33,6 +34,8 @@ export default function page() {
 
       <FAQ />
       <GetInTouch />
+
+
 
     </div >
   )

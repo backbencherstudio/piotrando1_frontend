@@ -8,6 +8,7 @@ import { ChevronDownIcon, ChevronUpIcon } from "lucide-react"
 import HighMergin from "../icon/HighMergin"
 import { TiArrowUp } from "react-icons/ti"
 import { IoMdArrowRoundDown } from "react-icons/io"
+import { IoArrowDown } from "react-icons/io5"
 
 function Accordion({
   className,
@@ -29,7 +30,7 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn("not-last:border-b", className)}
+      className={cn("", className)}
       {...props}
     />
   )
@@ -53,10 +54,10 @@ function AccordionTrigger({
         {children}
 
 
-        <IoMdArrowRoundDown data-slot="accordion-trigger-icon"
-          className="text-white bg-black w-8 h-8 rounded-full flex items-center justify-center p-1 shrink-0 pointer-events-none"
-        />
-        <TiArrowUp data-slot="accordion-trigger-icon" className="pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline" />
+
+        <div className=" group-aria-expanded/accordion-trigger:bg-[#FF6900]  bg-[#060606]  rounded-full py-1 px-2.5 text-white">
+          <IoArrowDown className="pointer-events-none hidden shrink-0 inline transition text-white   group-aria-expanded/accordion-trigger:rotate-180 " />
+        </div>
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )
@@ -70,12 +71,12 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="overflow-hidden text-sm data-open:animate-accordion-down data-closed:animate-accordion-up"
+      className="overflow-hidden bg-none text-sm data-open:animate-accordion-down data-closed:animate-accordion-up"
       {...props}
     >
       <div
         className={cn(
-          "h-(--radix-accordion-content-height) pt-0 pb-2.5 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground [&_p:not(:last-child)]:mb-4",
+          "h-(--radix-accordion-content-height) bg-black pt-0 pb-2.5 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground [&_p:not(:last-child)]:mb-4",
           className
         )}
       >

@@ -6,13 +6,13 @@ export default function BannerSection() {
     return (
         <div
             style={{ backgroundImage: "url('/images/bannerBg.png')" }}
-            className="bg-cover bg-center lg:h-screen h-full flex justify-center  items-center py-10">
+            className="bg-cover bg-center lg:h-screen h-full flex justify-center  items-center py-30 lg:py-10">
 
             <div className='grid grid-cols-1 md:grid-cols-2 text-white container  gap-8 '>
                 <div>
                     <div>
                         <div className='flex'>
-                            <div className="flex items-center gap-2 border p-2 rounded-md">
+                            <div className="flex items-center gap-2 border p-2 rounded-3xl">
                                 <Image
                                     src="/images/wid.png"
                                     alt="icon"
@@ -27,11 +27,11 @@ export default function BannerSection() {
                         <p className='text-white font-[Inter] text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>Fair-value mystery packs with authentic Pokémon cards, transparent pull rates, and
                             reliable supply  ready for retail, e-commerce, and collectors.</p>
 
-                        <div className='flex gap-4 pt-12'>
-                            <button className='bg-[#FE6B02] flex items-center gap-2 py-2 pl-6 pr-2 rounded-3xl'>
+                        <div className='flex lg:flex-row flex-col gap-4 pt-12'>
+                            <button className='bg-[#FE6B02] flex justify-center items-center gap-2 py-2 pl-6 pr-2 rounded-3xl'>
                                 Get Wholesale Pricing <div className='bg-white rounded-full p-2'>
                                     <MdArrowOutward className='  text-black' /></div></button>
-                            <button className='bg-[#454849] flex items-center gap-2 py-2 px-4 rounded-2xl'>
+                            <button className='bg-[#454849] flex justify-center items-center gap-2 py-2 px-4 rounded-3xl'>
                                 Request Sample Pack</button>
                         </div>
                     </div>

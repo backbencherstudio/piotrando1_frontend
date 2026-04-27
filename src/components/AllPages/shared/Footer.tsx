@@ -16,7 +16,7 @@ export default function Footer() {
                     {/* Brand Column - Left */}
                     <div className="md:col-span-5 space-y-6">
                         <Image src="/images/LOGO.png" height={50} width={216} alt='logo' />
-                        <p className=" text-sm leading-relaxed max-w-md">
+                        <p className=" text-base leading-relaxed font-normal  text-[#F6F5F1] max-w-md">
                             Spawn Drop creates premium mystery repacks with authentic cards, fair value,
                             and reliable supply for retailers across Europe.
                         </p>
@@ -36,25 +36,25 @@ export default function Footer() {
 
                     {/* Company Column */}
                     <div className="md:col-span-2">
-                        <h3 className="font-semibold  mb-4">Company</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">Company</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/about" className=" hover:text-purple-600 text-sm transition-colors">
+                                <Link href="/aboutUs" className="  text-sm transition-colors">
                                     About Us
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/why-spawndrop" className=" hover:text-purple-600 text-sm transition-colors">
+                                <Link href="#" className="text-sm transition-colors">
                                     Why Spawndrop
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" className=" hover:text-purple-600 text-sm transition-colors">
+                                <Link href="/getInTouch" className="  text-sm transition-colors">
                                     Contact Us
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/privacy" className=" hover:text-purple-600 text-sm transition-colors">
+                                <Link href="#" className="  text-sm transition-colors">
                                     Privacy Policy
                                 </Link>
                             </li>
@@ -63,25 +63,25 @@ export default function Footer() {
 
                     {/* Support Column */}
                     <div className="md:col-span-2">
-                        <h3 className="font-semibold  mb-4">Support</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">Support</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/contact" className=" text-sm transition-colors">
+                                <Link href="/getInTouch" className=" text-sm transition-colors">
                                     Contact Us
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/faqs" className=" text-sm transition-colors">
+                                <Link href="/faq" className=" text-sm transition-colors">
                                     FAQs
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/customer-support" className=" text-sm transition-colors">
+                                <Link href="#" className=" text-sm transition-colors">
                                     Customer Support
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/blogs" className=" text-sm transition-colors">
+                                <Link href="#" className=" text-sm transition-colors">
                                     Blogs
                                 </Link>
                             </li>
@@ -90,20 +90,20 @@ export default function Footer() {
 
                     {/* Resources Column */}
                     <div className="md:col-span-3">
-                        <h3 className="font-semibold  mb-4">Resources</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">Resources</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/authentic-cards" className=" text-sm transition-colors">
+                                <Link href="#" className=" text-sm transition-colors">
                                     100% Authentic Cards
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/shipping" className=" text-sm transition-colors">
+                                <Link href="#" className=" text-sm transition-colors">
                                     EU & UK Shipping
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/custom-branding" className=" text-sm transition-colors">
+                                <Link href="#" className=" text-sm transition-colors">
                                     Custom Branding Available
                                 </Link>
                             </li>
@@ -117,7 +117,7 @@ export default function Footer() {
                         <p className="text-gray-400 text-xs">
                             © Spawndrop 2026 | All Rights Reserved
                         </p>
-                        <Link href="/privacy-policy" className="text-gray-400 hover:text-purple-600 text-xs transition-colors">
+                        <Link href="#" className="text-gray-400 hover:text-white text-xs transition-colors">
                             Privacy Policy
                         </Link>
                     </div>

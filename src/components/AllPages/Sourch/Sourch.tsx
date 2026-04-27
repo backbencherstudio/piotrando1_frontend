@@ -79,7 +79,7 @@ export default function Sourch() {
                 </div >
 
                 <div className='  '>
-                    <Image src="/images/sourch.png" alt='image' height={501} width={545} className='z-10 h-[501px] w-full rounded-xl' />
+                    <Image src="/images/sourch.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
 
                 </div>
 
@@ -87,15 +87,15 @@ export default function Sourch() {
             </div >
 
             <div className=' container '>
-                <div className=' outline rounded-lg py-15'>
+                <div className=' outline rounded-lg py-0 lg:py-15'>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-">
                         {stats.map((item, index) => (
                             <div
                                 key={index}
                                 className="text-center p-6 rounded-2xl  "
                             >
-                                <div className='space-y-4 flex flex-col'>
-                                    <h2 className=" text-3xl md:text-4xl lg:text-[56px] font-normal font-secondary text-[#101828]">
+                                <div className=' md:space-y-0 lg:space-y-4 flex flex-col'>
+                                    <h2 className=" text-xl md:text-3xl lg:text-[56px] font-normal font-secondary text-[#101828]">
                                         {item.total}
                                     </h2>
                                     <p className="text-[#101828] text-xl font-normal tracking-normal">{item.title}</p>

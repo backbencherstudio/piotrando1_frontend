@@ -7,19 +7,19 @@ export default function OurMission() {
         <div>
 
             <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[52px] '>
-                <div className='  '>
+                <div className=' order-2 md:order-2 '>
                     <Image src="/images/ourmission.jpg" alt='image' height={501} width={545} className='z-10 h-[501px] w-full rounded-xl' />
 
                 </div>
-                <div>
+                <div className='order-1 md:order-2'>
                     <div>
-                        <div className='flex'>
-                            <p className='text-[#000] text-xl md:text-4xl lg:text-[48px] font-normal leading-120% font-secondary '>Our Mission</p>
+                        <div className=' '>
+                            <p className='text-[#000] text-3xl md:text-4xl lg:text-[48px] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6'>Our Mission</p>
 
                         </div>
 
 
-                        <div className='flex flex-col gap-8 text-[#393939]'>
+                        <div className='flex flex-col gap-3 lg:gap-8 text-[#393939]'>
                             <p className='  text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>To bridge the gap between limited supply and growing demand — ensunng the most
                                 valuable and exciting products reach the people who truly want them.</p>
 

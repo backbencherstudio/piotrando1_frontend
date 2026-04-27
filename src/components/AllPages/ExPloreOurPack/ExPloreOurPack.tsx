@@ -1,5 +1,9 @@
 "use client";
 
+import CommonIcon from "@/components/icon/Common";
+import FoilIcon from "@/components/icon/FoilIcon";
+import RearIcon from "@/components/icon/RearIcon";
+import ShareIcon from "@/components/icon/ShareIcon";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -12,10 +16,11 @@ const products = [
         desc: "Compact mystery pack perfect for checkout counter sales and impulse purchases.",
         img: "/images/Product 1.png",
         bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
+
         stats: [
-            { label: "Common / Uncommon", value: 8 },
-            { label: "Foil Cards", value: 1 },
-            { label: "Rare Special", value: 1 },
+            { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
+            { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
+            { label: "Rare Special", value: 1, icon: <RearIcon />, }
         ],
     },
     {
@@ -24,22 +29,24 @@ const products = [
         desc: "Entry-level pack great for new collectors and gift purchases",
         img: "/images/Product 2.png",
         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
+
         stats: [
-            { label: "Common / Uncommon", value: 18 },
-            { label: "Foil Cards", value: 1 },
-            { label: "Rare Special", value: 1 },
+            { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
+            { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
+            { label: "Rare Special", value: 1, icon: <RearIcon />, }
         ],
     },
     {
         id: 3,
         title: "SPAN DROP 35",
-        desc: "Mid-tier mystery pack with extra foil cards for added value.",
+        desc: "Mid-tier mystery pack with extra foil cards for added value. ",
         img: "/images/Product 3.png",
         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
+
         stats: [
-            { label: "Common / Uncommon", value: 32 },
-            { label: "Foil Cards", value: 2 },
-            { label: "Rare Special", value: 1 },
+            { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
+            { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
+            { label: "Rare Special", value: 1, icon: <RearIcon />, },
         ],
     },
 ];
@@ -48,15 +55,15 @@ export default function MysteryPacks() {
     const [activeTab, setActiveTab] = useState("All Packs");
 
     return (
-        <div className="bg-[#F5F5F5] py-16 px-4">
-            <div className="max-w-7xl mx-auto">
+        <div className="bg-[#F5F5F5] pt-30 container">
+            <div className="">
 
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+                    <h2 className="text-3xl md:text-5xl lg:text-[64px] font-secondary tracking-tight">
                         EXPLORE OUR MYSTERY PACKS
                     </h2>
-                    <p className="text-gray-500 mt-3 max-w-xl mx-auto">
+                    <p className="text-[#393939] mt-4 max-w-xl mx-auto">
                         Authentic Pokémon repacks designed for collectors, retailers,
                         and wholesale partners.
                     </p>
@@ -71,7 +78,7 @@ export default function MysteryPacks() {
                             className={`px-5 py-2 rounded-full text-sm transition
                 ${activeTab === tab
                                     ? "bg-black text-white"
-                                    : "bg-gray-200 text-gray-700"
+                                    : "bg-[#FFFFFF] text-[#161616]"
                                 }`}
                         >
                             {tab}
@@ -84,11 +91,11 @@ export default function MysteryPacks() {
                     {products.map((item) => (
                         <div
                             key={item.id}
-                            className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition"
+                            className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2"
                         >
                             {/* Image section */}
                             <div
-                                className={`rounded-t-2xl p-6 flex justify-center bg-gradient-to-b ${item.bg}`}
+                                className={`rounded-2xl p-6 flex justify-center bg-gradient-to-b ${item.bg}`}
                             >
                                 <Image
                                     src={item.img}
@@ -100,49 +107,53 @@ export default function MysteryPacks() {
                             </div>
 
                             {/* Content */}
-                            <div className="p-5">
-                                <h3 className="text-lg font-semibold text-center">
+                            <div className=" py-2">
+                                <h3 className="text-3xl font-normal text-center text-[#171B1C] font-secondary">
                                     {item.title}
                                 </h3>
-                                <p className="text-sm text-gray-500 text-center mt-2">
-                                    {item.desc}
-                                </p>
+                                <div className="flex justify-center mx-auto items-center text-center">
+                                    <p className="text-sm text-[#393939] text-center mt-2 ">
+                                        {item.desc}
+                                    </p>
+                                </div>
 
                                 {/* Stats */}
                                 <div className="mt-4 space-y-2">
                                     {item.stats.map((stat, i) => (
                                         <div
                                             key={i}
-                                            className="flex justify-between bg-gray-100 rounded-full px-4 py-2 text-sm"
+                                            className="flex justify-between bg-[#F6F5F1] rounded-full px-4 py-2 text-sm"
                                         >
-                                            <span>{stat.label}</span>
+                                            <div className="flex gap-1">
+                                                <p>{stat.icon}</p>  <span>{stat.label}</span>
+                                            </div>
                                             <span>{stat.value}</span>
                                         </div>
                                     ))}
                                 </div>
 
                                 {/* Tags */}
-                                <div className="flex flex-wrap gap-2 mt-4 text-xs text-gray-500">
-                                    <span className="bg-gray-100 px-3 py-1 rounded-full">
+                                <div className="flex flex-wrap gap-2 mt-4 text-xs text-[#4A5565]">
+                                    <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
                                         Premium Packaging
                                     </span>
-                                    <span className="bg-gray-100 px-3 py-1 rounded-full">
+                                    <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
                                         Great Gift Option
                                     </span>
-                                    <span className="bg-gray-100 px-3 py-1 rounded-full">
+                                    <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
                                         2 Foil Card Included
                                     </span>
                                 </div>
 
                                 {/* Button */}
-                                <button className="w-full mt-5 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl transition">
-                                    Request a Quote
+                                <button className="w-full flex justify-center gap-3 mt-5 bg-[#FF8904] hover:bg-orange-500 cursor-pointer  text-white py-3 rounded-xl transition">
+                                    <ShareIcon /> Request a Quote
                                 </button>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

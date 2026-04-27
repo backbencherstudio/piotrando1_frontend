@@ -3,7 +3,7 @@ import React from 'react';
 
 const CTASection = () => {
     return (
-        <section className="bg-[#F9F7F2] py-20 px-4 flex flex-col items-center text-center font-sans">
+        <section className="py-10 lg:py-20 px-4 flex flex-col items-center text-center font-sans">
             {/* Badge */}
             <div className='flex '>
                 <div className="flex gap-2 border py-2 px-4 rounded-full">

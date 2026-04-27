@@ -43,16 +43,16 @@ export default function OurProduct() {
 
                     {/* CARD */}
                     <div className='relative ml-10'>
-                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-6 shadow-lg">
+                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-6 shadow-lg flex justify-start items-center">
 
                             {/* TEXT */}
                             <div className="max-w-[70%]">
-                                <h2 className="text-lg sm:text-xl font-semibold flex items-center gap-2">
+                                <h2 className="text-xl md:text-3xl font-semibold flex items-center gap-2">
                                     <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                                     Inside packs
                                 </h2>
 
-                                <ul className="mt-4 space-y-2 text-gray-600 text-sm">
+                                <ul className="mt-4 space-y-2 text-[#4A5565] text-base">
                                     <li>✔ 7 Common / Uncommon</li>
                                     <li>✔ 2 Foil Cards</li>
                                     <li>✔ 1 Bonus Card</li>
@@ -64,13 +64,13 @@ export default function OurProduct() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="absolute right-[-50px] sm:right-[-100px] top-1/2 -translate-y-1/2 z-20">
+                            <div className="absolute right-[-38px] sm:right-[-70px] md:right-[-100px] top-1/2 -translate-y-1/2 z-20">
                                 <Image
                                     src="/images/pokemon2.png"
                                     alt="pokemon"
                                     width={220}
                                     height={320}
-                                    className="rounded-xl shadow-xl"
+                                    className="rounded-xl shadow-xl w-[147px] sm:w-[250px] md:w-[220px] h-[320px]"
                                 />
                             </div>
 
@@ -82,13 +82,13 @@ export default function OurProduct() {
                 <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0">
                     <div className="max-w-md">
 
-                        <p className="text-2xl sm:text-3xl lg:text-5xl font-medium">
+                        <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">
                             Starter Pack
                         </p>
 
                         <div className="flex flex-col gap-6 text-[#393939] mt-4">
 
-                            <p className="text-sm lg:text-base">
+                            <p className="text-base lg:text-lg">
                                 Perfect entry-level mystery pack designed for impulse purchases,
                                 retail shelves, and new collectors.
                             </p>
