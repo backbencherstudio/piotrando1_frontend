@@ -6,7 +6,7 @@ export default function BannerSection() {
     return (
         <div
             style={{ backgroundImage: "url('/images/bannerBg.png')" }}
-            className="bg-cover bg-center lg:h-screen h-full flex justify-center  items-center py-30 lg:py-10">
+            className="bg-cover bg-center lg:h-screen h-full flex justify-center  items-center py-30 md:py-30 lg:py-70">
 
             <div className='grid grid-cols-1 md:grid-cols-2 text-white container  gap-8 '>
                 <div>
