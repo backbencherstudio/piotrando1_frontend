@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Inter } from "next/font/google";
+import { Bebas_Neue, Crimson_Pro, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/AllPages/shared/Navbar";
 import Footer from "@/components/AllPages/shared/Footer";
 import CTASection from "@/components/AllPages/Cta/CTA";
+import Script from "next/script";
+import { LanguageProvider } from "@/components/LanguegeProvider/LanguegeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,15 +29,41 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${bebasNeue.variable}`}>
-      <body className="min-h-full flex flex-col ">
-        <Navbar />
+    <html lang="en">
+      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px]`}>
+        <div id="google_translate_element" className="google-hide"></div>
 
-        {children}
 
-        <CTASection />
-        <Footer />
+        <div id="google_translate_element" className="google-hide"></div>
+
+        <Script id="google-translate-init" strategy="afterInteractive">
+          {`
+    function googleTranslateElementInit() {
+     
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "en,es"
+        },
+        "google_translate_element"
+      );
+    }
+  `}
+        </Script>
+        <Script
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          strategy="afterInteractive"
+        />
+        <LanguageProvider>
+          <Navbar />
+
+          {children}
+
+          <CTASection />
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
 }
+

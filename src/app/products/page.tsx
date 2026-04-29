@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 
 export default function page() {
+
     return (
         <div className='py-30 '>
             <div className="flex flex-col justify-center items-center pb-10 lg:pb-16 text-center px-4">

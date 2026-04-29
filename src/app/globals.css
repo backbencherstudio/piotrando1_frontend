@@ -169,3 +169,42 @@
 .animate-scrollDown {
   animation: scrollDown 20s linear infinite;
 }
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #9ca3af; /* gray-400 */
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+
+
+
+.notranslate {
+  translate: no !important;
+}
+
+
+body > .skiptranslate {
+  display: none !important;
+}
+body.translating {
+  opacity: 0.5;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+.google-hide {
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+/* Hide the Google Translate button */
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+  display: none !important;
+}
