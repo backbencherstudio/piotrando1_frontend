@@ -17,12 +17,12 @@ import CountrySelect from './flag/page'
 export default function page() {
   return (
     <div className=''>
-      {/* <BannerSection />
+      <BannerSection />
       <AboutUs />
       <OurMission />
       <OurProduct />
       <Process />
-      <B2BDistribution /> */}
+      <B2BDistribution />
 
       <DeliveryLogistics />
       <CustomBranding />

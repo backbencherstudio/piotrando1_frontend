@@ -9,7 +9,7 @@ export default function OurProduct() {
         <div className="py-10 lg:py-20 container">
 
             {/* HEADER */}
-            <div className="flex flex-col justify-center items-center pb-10 lg:pb-16 text-center px-4">
+            <div className="flex flex-col justify-center items-center pb-10 lg:pb-16 text-center px-4" data-aos="zoom-out-down" data-aos-duration="1500" >
 
                 <div className="flex items-center gap-2 border bg-white rounded-full px-4 py-2">
                     <Image src="/images/aboutusLogo.png" alt="icon" width={20} height={20} />
@@ -30,7 +30,7 @@ export default function OurProduct() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[52px]">
 
                 {/* LEFT CARD */}
-                <div className="relative">
+                <div className="relative" data-aos="zoom-out-up">
 
                     {/* BG */}
                     <Image
@@ -42,7 +42,7 @@ export default function OurProduct() {
                     />
 
                     {/* CARD */}
-                    <div className='relative ml-10'>
+                    <div className='relative ml-10' data-aos="zoom-out-down" data-aos-duration="2000">
                         <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-6 shadow-lg flex justify-start items-center">
 
                             {/* TEXT */}
@@ -64,7 +64,7 @@ export default function OurProduct() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="absolute right-[-38px] sm:right-[-70px] md:right-[-100px] top-1/2 -translate-y-1/2 z-20">
+                            <div className="absolute right-[-38px] sm:right-[-70px] md:right-[-100px]   top-1/2 -translate-y-1/2 z-20">
                                 <Image
                                     src="/images/pokemon2.png"
                                     alt="pokemon"
@@ -79,7 +79,7 @@ export default function OurProduct() {
                 </div>
 
                 {/* RIGHT TEXT */}
-                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0">
+                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0" data-aos="zoom-out-down" data-aos-duration="2000">
                     <div className="max-w-md">
 
                         <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">
@@ -116,6 +116,6 @@ export default function OurProduct() {
                 <Evaluation />
                 <UltraPack />
             </div>
-        </div>
+        </div >
     )
 }

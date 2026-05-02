@@ -27,7 +27,8 @@ export default function Sourch() {
     return (
         <div className='py-10 lg:py-20 container'>
 
-            <div className="text-center">
+            <div className="text-center" data-aos="fade-up"
+                data-aos-duration="2000">
                 <div className='flex justify-center'>
                     <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                         <Image
@@ -51,7 +52,8 @@ export default function Sourch() {
 
             <div className='grid grid-cols-1 md:grid-cols-2   py-20 gap-[52px] '>
 
-                <div>
+                <div data-aos="fade-right"
+                    data-aos-duration="2000">
                     <div>
 
                         <div className='flex flex-col gap-8  '>
@@ -78,7 +80,8 @@ export default function Sourch() {
                     </div >
                 </div >
 
-                <div className='  '>
+                <div className='  ' data-aos="fade-left"
+                    data-aos-duration="2000">
                     <Image src="/images/sourch.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
 
                 </div>
@@ -86,7 +89,9 @@ export default function Sourch() {
 
             </div >
 
-            <div className=' container '>
+            <div className=' container ' data-aos="fade-up"
+
+                data-aos-duration="800">
                 <div className=' outline rounded-lg py-0 lg:py-15'>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-">
                         {stats.map((item, index) => (

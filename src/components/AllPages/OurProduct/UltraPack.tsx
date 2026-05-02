@@ -10,10 +10,10 @@ export default function UltraPack() {
 
 
             {/* GRID */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[52px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[70px] xl:gap-[52px]">
 
                 {/* LEFT CARD */}
-                <div className="relative">
+                <div className="relative" data-aos="zoom-out-down" data-aos-duration="2000">
 
                     {/* BG */}
                     <Image
@@ -65,7 +65,7 @@ export default function UltraPack() {
                 </div>
 
                 {/* RIGHT TEXT */}
-                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0">
+                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0" data-aos="zoom-out-up" data-aos-duration="2000">
                     <div className="max-w-md">
 
                         <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">

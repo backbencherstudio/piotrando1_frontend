@@ -6,6 +6,8 @@ import Footer from "@/components/AllPages/shared/Footer";
 import CTASection from "@/components/AllPages/Cta/CTA";
 import Script from "next/script";
 import { LanguageProvider } from "@/components/LanguegeProvider/LanguegeProvider";
+import AosInit from "@/components/AosInit/AosInit";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,6 +30,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: true
+  //   });
+  // }, []);
   return (
     <html lang="en">
       <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px]`}>
@@ -54,6 +63,7 @@ export default function RootLayout({
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
         />
+        <AosInit />
         <LanguageProvider>
           <Navbar />
 

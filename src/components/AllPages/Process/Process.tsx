@@ -56,7 +56,7 @@ export default function Process() {
         <main className=" bg-[#0E1115] py-10 lg:py-20 px-4">
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-16" data-aos="zoom-out-up" data-aos-duration="1500">
                     <div className='flex justify-center'>
                         <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                             <Image
@@ -86,7 +86,9 @@ export default function Process() {
                         <div
                             key={index}
                             className="bg-[#171A21] rounded-2xl border border-transparent hover:border-orange-500 transition-all duration-300 overflow-hidden"
-                        >
+                            data-aos="fade-up"
+                            data-aos-delay={index * 120}
+                            data-aos-duration="1500">
                             <div className="bg-[#171A21] rounded-2xl p-6">
                                 {/* Step Number Badge */}
                                 <div className="flex items-center gap-2  mb-4">

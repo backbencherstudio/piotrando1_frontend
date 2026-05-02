@@ -28,10 +28,11 @@ export default function CustomBranding() {
     return (
         <div className='bg-[#0E1115]'>
 
-            <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[52px] '>
+            <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[40px] '>
 
-                <div>
-                    <div>
+                <div data-aos="fade-down"
+                    data-aos-anchor-placement="bottom-bottom" >
+                    <div >
                         <div className='flex'>
                             <p className='text-white text-3xl md:text-4xl lg:text-[48px] font-normal leading-120% font-secondary text-center md:text-start '>Custom Brandin & Full-Service <br /> Production</p>
 
@@ -59,7 +60,10 @@ export default function CustomBranding() {
                     </div>
                 </div>
 
-                <div
+                <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+
                     style={{ backgroundImage: "url('/images/contactusbg.png')" }}
                     className="relative bg-cover  flex justify-center items-center   overflow-hidden rounded-2xl border border-[#854520] border-dashed  "
                 >
@@ -67,10 +71,10 @@ export default function CustomBranding() {
                     <div className="absolute inset-0 bg-black/70"></div>
 
                     {/* content */}
-                    <div className="relative text-black">
+                    <div className="relative text-black px-" >
 
                         <Image src="/images/document.png" height={30} width={40} alt='document' className='flex justify-center items-center mx-auto mb-2' />
-                        <p className="text-white font-semibold text-2xl text-center">
+                        <p className="text-white font-semibold text-2xl text-center ">
                             “ Custom design details will be discussed after initial contact ”
                         </p>
 

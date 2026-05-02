@@ -49,7 +49,8 @@ export default function GetInTouch() {
         <div className=" py-10 lg:py-20 flex  container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
-                <div className="flex flex-col justify-start">
+                <div className="flex flex-col justify-start" data-aos="fade-right"
+                    data-aos-duration="2000">
 
                     <div className=" mb-12">
                         <div className='flex '>
@@ -92,7 +93,8 @@ export default function GetInTouch() {
                     </div>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-sm  lg:h-full h-full ">
+                <div className="bg-white p-6 rounded-lg shadow-sm  lg:h-full h-full " data-aos="fade-left"
+                    data-aos-duration="2000">
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                             <div className="space-y-2">
@@ -132,10 +134,10 @@ export default function GetInTouch() {
                                 <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                             </div>
                             <div className="space-y-2">
-                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Product Type</label>
-                                <select {...register("productType")} className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all appearance-none text-gray-400">
-                                    <option value="">e.g. Starter, Pro, Ultra</option>
-                                    <option value="pro">Pro</option>
+                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Product Type</label>
+                                <select {...register("productType")} className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all appearance-none ">
+                                    <option value="" className="text-black">e.g. Starter, Pro, Ultra</option>
+                                    <option value="pro" className="text-black">Pro</option>
                                 </select>
                             </div>
                         </div>
@@ -145,7 +147,7 @@ export default function GetInTouch() {
                             <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full md:p-1 p-4 bg-gray-50 border h-12 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
                         </div>
 
-                        <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] md:py-2 lg:py-3 xl:py-5 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
+                        <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-3 xl:py-5 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
                             Request Wholesale Pricing
                         </button>
 

@@ -60,7 +60,8 @@ export function FAQ() {
         <section className=" w-full py-24 bg-background bg-black text-white">
             <div className=" container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
                 {/* Header */}
-                <div className=" mb-12 space-y-4">
+                <div className=" mb-12 space-y-4" data-aos="zoom-in"
+                    data-aos-duration="2000">
                     <div className='flex'>
                         <div className="flex items-center gap-2 border p-2 rounded-full px-4 py-2">
                             <Image
@@ -86,7 +87,8 @@ export function FAQ() {
                 </div>
 
                 {/* Accordion FAQ Grid */}
-                <div className=" bg-black">
+                <div className=" bg-black" data-aos="fade-right"
+                    data-aos-duration="2000">
                     <Card className=" bg-black text-white">
                         <CardContent className=" ">
                             <Accordion type="single" collapsible className="w-full gap-6 ">

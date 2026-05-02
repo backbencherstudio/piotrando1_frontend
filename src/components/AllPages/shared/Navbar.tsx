@@ -34,18 +34,22 @@ export default function Navbar() {
     const isHomePage = pathname === "/" || pathname === "/faq";
 
     const navItems = [
-        { name: "About us", path: "aboutUs" },
+        { name: "Home", path: "/" },
+
+        { name: "About us", path: "/aboutUs" },
         { name: "Products", path: "/products" },
-        { name: "Cards", path: "/cards" },
+        // { name: "Cards", path: "/cards" },
         { name: "Shipping", path: "#" },
         { name: "FAQ's", path: "/faq" },
         { name: "Contact", path: "/getInTouch" },
     ];
 
     const mobileNavItems = [
+        { name: "Home", path: "/" },
+
         { name: "About us", path: "/aboutUs" },
         { name: "Products", path: "/products" },
-        { name: "Cards", path: "/cards" },
+        // { name: "Cards", path: "/cards" },
         { name: "Shipping", path: "#" },
         { name: "Contact", path: "/getInTouch" },
 

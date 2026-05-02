@@ -8,7 +8,7 @@ export default function page() {
 
     return (
         <div className='py-30 '>
-            <div className="flex flex-col justify-center items-center pb-10 lg:pb-16 text-center px-4">
+            <div className="flex flex-col justify-center items-center pb-10 lg:pb-16 text-center px-4" data-aos="fade-down">
 
                 <div className="flex items-center gap-2 border bg-white rounded-full px-4 py-2">
                     <Image src="/images/aboutusLogo.png" alt="icon" width={20} height={20} />

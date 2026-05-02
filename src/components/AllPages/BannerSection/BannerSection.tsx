@@ -9,7 +9,11 @@ export default function BannerSection() {
             className="bg-cover bg-center lg:h-screen h-full flex justify-center  items-center py-30 md:py-30 lg:py-70">
 
             <div className='grid grid-cols-1 md:grid-cols-2 text-white container  gap-8 '>
-                <div>
+                <div
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-delay="300"
+                >
                     <div>
                         <div className='flex'>
                             <div className="flex items-center gap-2 border p-2 rounded-3xl">
@@ -37,7 +41,9 @@ export default function BannerSection() {
                     </div>
                 </div>
 
-                <div className='justify-center items-center flex'>
+                <div className='justify-center items-center flex ' data-aos="fade-left"
+                    data-aos-duration="1500"
+                    data-aos-delay="300">
                     <Image src="/images/pokemon.png" alt='image' height={501} width={545} className='z-10 h-[501px] w-[545px]' />
 
                 </div>

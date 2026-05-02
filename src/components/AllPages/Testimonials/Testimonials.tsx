@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
     return (
         <section className="py-10 lg:py-20 container">
 
-            <div className="text-center mb-12">
+            <div className="text-center mb-12" data-aos="zoom-in">
                 <div className='flex justify-center'>
                     <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                         <Image
@@ -86,7 +86,7 @@ export default function TestimonialsSection() {
             </div>
 
             {/* GRID */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6  h-[500px] overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6  h-[600px] overflow-hidden">
 
                 {/* 1st COLUMN → DOWN */}
                 <div className="hidden md:flex flex-col gap-6 animate-scrollDown h-[400px]">

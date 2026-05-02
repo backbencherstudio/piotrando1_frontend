@@ -55,7 +55,8 @@ export default function MysteryPacks() {
     const [activeTab, setActiveTab] = useState("All Packs");
 
     return (
-        <div className="bg-[#F5F5F5] pt-30 container">
+        <div className="bg-[#F5F5F5] pt-30 container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <div className="">
 
                 {/* Heading */}

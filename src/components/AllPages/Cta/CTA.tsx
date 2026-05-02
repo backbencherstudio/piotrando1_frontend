@@ -1,12 +1,17 @@
+"use client"
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 import { MdArrowOutward } from 'react-icons/md';
 
 const CTASection = () => {
+
+    const pathname = usePathname();
     return (
-        <section className="py-10 lg:py-20 px-4 flex flex-col items-center text-center font-sans">
+        <section className={`py-10 lg:py-20 px-4 flex flex-col items-center text-center font-sans transition-all duration-300 ${pathname === "/aboutUs" ? "-mt-20" : "mt-0"
+            }`} data-aos="zoom-in">
             {/* Badge */}
-            <div className='flex '>
+            <div className='flex '  >
                 <div className="flex gap-2 border py-2 px-4 rounded-full">
                     <Image
                         src="/images/aboutusLogo.png"
