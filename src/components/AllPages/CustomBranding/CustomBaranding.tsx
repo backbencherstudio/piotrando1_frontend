@@ -2,6 +2,7 @@
 import CurrectIcon from '@/components/icon/CurrectIcon'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import { IoCallOutline } from 'react-icons/io5'
 import { MdArrowOutward } from 'react-icons/md'
 
 export default function CustomBranding() {
@@ -27,12 +28,13 @@ export default function CustomBranding() {
     return (
         <div className='bg-[#0E1115]'>
 
-            <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[52px] '>
+            <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[40px] '>
 
-                <div>
-                    <div>
+                <div data-aos="fade-down"
+                    data-aos-anchor-placement="bottom-bottom" >
+                    <div >
                         <div className='flex'>
-                            <p className='text-white text-3xl md:text-4xl lg:text-[48px] font-normal leading-120% font-secondary text-center md:text-start '>Custom Brandin & Full-Service Production</p>
+                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  md:text-start '>Custom Brandin & Full-Service <br /> Production</p>
 
                         </div>
 
@@ -58,72 +60,32 @@ export default function CustomBranding() {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center  p-4 rounded-2xl">
-                    <div
-                        className={`w-full  h-full rounded-2xl border-2 border-dashed p-10 text-center transition-all duration-300 
-    ${isDragging ? "border-orange-500 bg-[#1E293B]" : "border-orange-400/40 bg-[#111827]"}`}
-                        onDragOver={(e) => {
-                            e.preventDefault();
-                            setIsDragging(true);
-                        }}
-                        onDragLeave={() => setIsDragging(false)}
-                        onDrop={(e) => {
-                            e.preventDefault();
-                            setIsDragging(false);
-                            const file = e.dataTransfer.files?.[0] || null;
-                            handleFile(file);
-                        }}
-                    >
-                        {/* hidden input */}
-                        <input
-                            id="fileInput"
-                            type="file"
-                            className="hidden"
-                            onChange={(e) => handleFile(e.target.files?.[0] || null)}
-                        />
+                <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
 
-                        {preview ? (
-                            <div className="flex flex-col items-center gap-4">
+                    style={{ backgroundImage: "url('/images/contactusbg.png')" }}
+                    className="relative bg-cover  flex justify-center items-center   overflow-hidden rounded-2xl border border-[#854520] border-dashed  "
+                >
+                    {/* overlay */}
+                    <div className="absolute inset-0 bg-black/70"></div>
 
-                                <Image
-                                    src={preview}
-                                    height={100}
-                                    width={100}
-                                    alt="preview"
-                                    onClick={() => document.getElementById("fileInput")?.click()}
-                                    className="max-h-64 w-full rounded-lg object-contain cursor-pointer hover:opacity-80 transition"
-                                />
-                            </div>
-                        ) : (
-                            <>
-                                {/* default UI */}
-                                <div className="flex justify-center mb-6">
-                                    <div className="bg-gray-200 text-gray-700 rounded-md p-2">
-                                        <Image src="/images/document.png" alt='documnet' height={40} width={40} />
-                                    </div>
-                                </div>
+                    {/* content */}
+                    <div className="relative text-black md:py-0 py-9" >
 
-                                <h2 className="text-white text-lg font-medium mb-2">
-                                    Drag and drop your design or logo
-                                </h2>
+                        <Image src="/images/document.png" height={30} width={40} alt='document' className='flex justify-center items-center mx-auto mb-2' />
+                        <p className="text-white font-semibold text-2xl text-center ">
+                            “ Custom design details will be discussed after initial contact ”
+                        </p>
 
-                                <p className="text-gray-400 text-sm mb-6">
-                                    JPEG, PNG and PDF formats, up to 50MB
-                                </p>
-
-                                <button
-                                    onClick={() => document.getElementById("fileInput")?.click()}
-                                    className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition"
-                                >
-                                    Select File
-                                </button>
-                            </>
-                        )}
+                        <button className="bg-[#FF8904] px-4 py-2 rounded-full gap-2 font-medium text-base text-white flex justify-center items-center mx-auto mt-2">
+                            <IoCallOutline />  Contact Us
+                        </button>
                     </div>
                 </div>
 
 
             </div>
-        </div>
+        </div >
     )
 }

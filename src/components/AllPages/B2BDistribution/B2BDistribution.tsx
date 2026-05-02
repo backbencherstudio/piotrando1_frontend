@@ -54,10 +54,10 @@ export default function B2BDistributionPage() {
     ];
 
     return (
-        <div className=" py-10 lg:py-20 px-4">
+        <div className=" py-10  lg:py-20 px-4">
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="2000">
                     <div className='flex justify-center items-center mb-6'>
                         <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                             <Image
@@ -71,7 +71,7 @@ export default function B2BDistributionPage() {
                         </div>
 
                     </div>
-                    <h1 className="text-3xl md:text-4xl md:text-5xl font-normal font-secondary text-[#000] mb-4">
+                    <h1 className="text-[clamp(2rem,3vw,3rem)] font-normal font-secondary text-[#000] mb-4">
                         PERFECT FOR B2B DISTRIBUTION
                     </h1>
                     <p className="text-lg text-[#393939] max-w-lg mx-auto leading-170%">
@@ -83,6 +83,9 @@ export default function B2BDistributionPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {features.map((feature, index) => (
                         <div
+                            data-aos="fade-up"
+                            // data-aos-delay={index * 120}
+                            data-aos-duration="800"
                             key={index}
                             className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200"
                         >
@@ -103,6 +106,6 @@ export default function B2BDistributionPage() {
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

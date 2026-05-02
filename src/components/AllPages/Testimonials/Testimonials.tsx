@@ -46,7 +46,7 @@ testimonials.forEach((item, i) => {
 
 function Card({ name, role, quote, avatar }: Testimonial) {
     return (
-        <div className="bg-slate-50 p-5 rounded-xl border h-[600px] ">
+        <div className="bg-slate-50 p-5 rounded-xl border h-full lg:h-[250px] ">
             <div className="flex items-center gap-3  h-[100px] ">
                 <Image src={avatar} alt={name} width={40} height={40} className="rounded-full" />
                 <div>
@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
     return (
         <section className="py-10 lg:py-20 container">
 
-            <div className="text-center mb-12">
+            <div className="text-center mb-12" data-aos="zoom-in">
                 <div className='flex justify-center'>
                     <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                         <Image
@@ -78,7 +78,7 @@ export default function TestimonialsSection() {
                     </div>
 
                 </div>
-                <p className="text-[#000] text-3xl md:text-4xl lg:text-[48px] font-normal font-secondary leading-120% pt-6">TRUSTED BY GROWING RETAILERS AND COLLECTORS</p>
+                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">TRUSTED BY GROWING RETAILERS AND COLLECTORS</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
                     From Local card shops to online sellers, businesses choose spawn drop for <br />
                     reliable stock, authentic cards, and strong resale potential
@@ -86,26 +86,70 @@ export default function TestimonialsSection() {
             </div>
 
             {/* GRID */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6  h-[500px] overflow-hidden">
+            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6  h-[600px] overflow-hidden">
 
-                {/* 1st COLUMN → DOWN */}
+
                 <div className="hidden md:flex flex-col gap-6 animate-scrollDown h-[400px]">
                     {[...columns[0], ...columns[0]].map((item, i) => (
                         <Card key={i} {...item} />
                     ))}
                 </div>
 
-                {/* 2nd COLUMN → UP */}
+
                 <div className="flex flex-col gap-6 animate-scrollUp h-[600px]">
                     {[...columns[1], ...columns[1]].map((item, i) => (
                         <Card key={i} {...item} />
                     ))}
                 </div>
 
-                {/* 3rd COLUMN → DOWN */}
+
                 <div className="hidden md:flex flex-col gap-6 animate-scrollDown h-[400px]">
                     {[...columns[2], ...columns[2]].map((item, i) => (
                         <Card key={i} {...item} />
+                    ))}
+                </div>
+
+            </div> */}
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                {/* 1st COLUMN */}
+                <div className="flex flex-col gap-6 ">
+                    {columns[0].slice(0, 3).map((item, i) => (
+                        <div
+                            key={i}
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100}
+
+                        >
+                            <Card {...item} />
+                        </div>
+                    ))}
+                </div>
+
+                {/* 2nd COLUMN */}
+                <div className="flex flex-col gap-6">
+                    {columns[1].slice(0, 3).map((item, i) => (
+                        <div
+                            key={i}
+                            data-aos="fade-down"
+                            data-aos-delay={i * 100}
+                        >
+                            <Card {...item} />
+                        </div>
+                    ))}
+                </div>
+
+                {/* 3rd COLUMN */}
+                <div className="flex flex-col gap-6">
+                    {columns[2].slice(0, 3).map((item, i) => (
+                        <div
+                            key={i}
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100}
+                        >
+                            <Card {...item} />
+                        </div>
                     ))}
                 </div>
 

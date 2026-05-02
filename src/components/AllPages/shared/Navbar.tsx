@@ -2,6 +2,7 @@
 
 import CountrySelect from "@/app/flag/page";
 import LineIcon from "@/components/icon/LineIcon";
+import { SwitchLanguage } from "@/components/LanguegeProvider/SwitchLanguege/SwitchLanguege";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -33,18 +34,22 @@ export default function Navbar() {
     const isHomePage = pathname === "/" || pathname === "/faq";
 
     const navItems = [
-        { name: "About us", path: "aboutUs" },
+        { name: "Home", path: "/" },
+
+        { name: "About us", path: "/aboutUs" },
         { name: "Products", path: "/products" },
-        { name: "Cards", path: "/cards" },
+        // { name: "Cards", path: "/cards" },
         { name: "Shipping", path: "#" },
         { name: "FAQ's", path: "/faq" },
         { name: "Contact", path: "/getInTouch" },
     ];
 
     const mobileNavItems = [
+        { name: "Home", path: "/" },
+
         { name: "About us", path: "/aboutUs" },
         { name: "Products", path: "/products" },
-        { name: "Cards", path: "/cards" },
+        // { name: "Cards", path: "/cards" },
         { name: "Shipping", path: "#" },
         { name: "Contact", path: "/getInTouch" },
 
@@ -84,6 +89,10 @@ export default function Navbar() {
                         }`}>
                         <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base"> Strona glowna (EN) </p>   <Image src="/images/flag.png" alt="flag" width={30} height={20} className="py-3" />
                     </div>
+
+                    {/* <div>
+                        <SwitchLanguage />
+                    </div> */}
 
                     {/* <div>
                         <CountrySelect defaultValue="EG" />

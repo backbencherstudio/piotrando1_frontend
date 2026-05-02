@@ -14,7 +14,7 @@ export default function Evaluation() {
 
 
                 {/* RIGHT TEXT */}
-                <div className="flex px-4 lg:px-0 order-2 lg:order-1 ">
+                <div className="flex px-4 lg:px-0 order-2 lg:order-1 " data-aos="zoom-out-up" data-aos-duration="2000">
                     <div className="max-w-md">
 
                         <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">
@@ -48,7 +48,7 @@ export default function Evaluation() {
                     </div>
                 </div>
                 {/* LEFT CARD */}
-                <div className="relative order-1 lg:order-2">
+                <div className="relative order-1 lg:order-2" data-aos="zoom-out-down" data-aos-duration="2000">
 
                     {/* BG */}
                     <Image
@@ -82,9 +82,9 @@ export default function Evaluation() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="absolute right-[-38px] sm:right-[-70px] md:right-[-100px] lg:right-[-62px] top-1/2 -translate-y-1/2 z-20">
+                            <div className="absolute right-[-38px] sm:right-[-70px] md:right-[-100px] lg:right-[-62px] xl:right-[-100px] top-1/2 -translate-y-1/2 z-20">
                                 <Image
-                                    src="/images/pokemon3.jpg"
+                                    src="/images/Card20.png"
                                     alt="pokemon"
                                     width={220}
                                     height={320}

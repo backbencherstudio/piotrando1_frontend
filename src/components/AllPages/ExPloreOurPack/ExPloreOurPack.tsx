@@ -14,8 +14,9 @@ const products = [
         id: 1,
         title: "SPAN DROP 10",
         desc: "Compact mystery pack perfect for checkout counter sales and impulse purchases.",
-        img: "/images/Product 1.png",
+        img: "/images/Card10.png",
         bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
+        hoverCard: "/images/hoverCard.png",
 
         stats: [
             { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
@@ -27,8 +28,9 @@ const products = [
         id: 2,
         title: "SPAN DROP 20",
         desc: "Entry-level pack great for new collectors and gift purchases",
-        img: "/images/Product 2.png",
+        img: "/images/Card20.png",
         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
+        hoverCard: "/images/hoverCard.png",
 
         stats: [
             { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
@@ -40,8 +42,9 @@ const products = [
         id: 3,
         title: "SPAN DROP 35",
         desc: "Mid-tier mystery pack with extra foil cards for added value. ",
-        img: "/images/Product 3.png",
+        img: "/images/Card35.png",
         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
+        hoverCard: "/images/hoverCard.png",
 
         stats: [
             { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
@@ -55,12 +58,13 @@ export default function MysteryPacks() {
     const [activeTab, setActiveTab] = useState("All Packs");
 
     return (
-        <div className="bg-[#F5F5F5] pt-30 container">
+        <div className="bg-[#F5F5F5] pt-30 container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <div className="">
 
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-5xl lg:text-[64px] font-secondary tracking-tight">
+                    <h2 className="title font-secondary tracking-tight">
                         EXPLORE OUR MYSTERY PACKS
                     </h2>
                     <p className="text-[#393939] mt-4 max-w-xl mx-auto">
@@ -87,23 +91,41 @@ export default function MysteryPacks() {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up"
+                    data-aos-duration="2000">
                     {products.map((item) => (
                         <div
                             key={item.id}
                             className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2"
                         >
                             {/* Image section */}
-                            <div
-                                className={`rounded-2xl p-6 flex justify-center bg-gradient-to-b ${item.bg}`}
-                            >
-                                <Image
-                                    src={item.img}
-                                    alt={item.title}
-                                    width={180}
-                                    height={220}
-                                    className="object-contain"
-                                />
+                            <div className="group perspective flex justify-center">
+
+                                <div className="relative w-[300px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+
+                                    {/* FRONT */}
+                                    <div className="absolute inset-0 backface-hidden rounded-sm overflow-hidden">
+                                        <Image
+                                            src={item.img}
+                                            alt={item.title}
+                                            width={230}
+                                            height={220}
+                                            className="object-contain w-full h-full"
+                                        />
+                                    </div>
+
+                                    {/* BACK */}
+                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
+                                        <Image
+                                            src={item.hoverCard}
+                                            alt={item.title}
+                                            width={230}
+                                            height={220}
+                                            className="object-contain w-full h-full"
+                                        />
+                                    </div>
+
+                                </div>
                             </div>
 
                             {/* Content */}

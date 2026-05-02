@@ -74,7 +74,7 @@ export default function DeliveryLogistics() {
     return (
         <div className=" py-10 lg:py-20 container">
             {/* Header */}
-            <div className="text-center mb-12">
+            <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="1500">
                 <div className='flex justify-center'>
                     <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                         <Image
@@ -89,7 +89,7 @@ export default function DeliveryLogistics() {
                     </div>
 
                 </div>
-                <p className="text-[#000] text-3xl md:text-4xl lg:text-[48px] font-normal font-secondary leading-120% pt-6 mb-2">Fast & Reliable Delivery Across Europe</p>
+                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6 mb-2">Fast & Reliable Delivery Across Europe</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
                     We keep your business stocked with fast shipping, secure packaging, and consistent
                     availability
@@ -101,6 +101,8 @@ export default function DeliveryLogistics() {
                 {deliveryData.map((item, index) => (
                     <div
                         key={index}
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
                         className="rounded-2xl border border-transparent hover:border-orange-500 transition-all duration-300 overflow-hidden"
                     >
                         {/* Top Section */}
@@ -135,7 +137,8 @@ export default function DeliveryLogistics() {
             {/* Bottom Features */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6  mx-auto mt-16">
                 {features.map((f, i) => (
-                    <div key={i} className="flex gap-3 items-start">
+                    <div key={i} className="flex gap-3 items-start" data-aos="fade-up"
+                        data-aos-duration="2000">
                         <div className="bg-[#DCFCE7] p-2.5 rounded-md">{f.icon}</div>
                         <div>
                             <h4 className="font-medium text-lg text-[#101828]">{f.title}</h4>

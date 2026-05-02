@@ -7,14 +7,17 @@ export default function OurMission() {
         <div>
 
             <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[52px] '>
-                <div className=' order-2 md:order-2 '>
+                <div className=' order-2 md:order-2 ' data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" >
                     <Image src="/images/ourmission.jpg" alt='image' height={501} width={545} className='z-10 h-[501px] w-full rounded-xl' />
 
                 </div>
-                <div className='order-1 md:order-2'>
+                <div className='order-1 md:order-2' data-aos="fade-left"
+                    data-aos-offset="300"  >
                     <div>
                         <div className=' '>
-                            <p className='text-[#000] text-3xl md:text-4xl lg:text-[48px] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6'>Our Mission</p>
+                            <p className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6'>Our Mission</p>
 
                         </div>
 
