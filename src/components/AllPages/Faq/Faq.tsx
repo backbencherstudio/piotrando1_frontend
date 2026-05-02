@@ -74,7 +74,7 @@ export function FAQ() {
                             <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">FAQ’s</p>
                         </div>
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-[64px] font-secondary  tracking-tight mt-2">
+                    <h1 className="text-[clamp(2rem,2.5rem,4rem)] font-secondary  tracking-tight mt-2">
                         FREQUENTLY ASKED QUESTIONS
                     </h1>
                     <p className="text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-white font-inter">

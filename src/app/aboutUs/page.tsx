@@ -23,7 +23,7 @@ export default function WhoWeAre() {
                     data-aos-delay="200"
                     data-aos-duration="1200"
                 >
-                    <h2 className="text-3xl md:text-4xl lg:text-[64px]  mb-6 font-secondary">
+                    <h2 className="title font-secondary">
                         WHO WE ARE AT SPAWN DROP
                     </h2>
 

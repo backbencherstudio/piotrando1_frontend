@@ -208,3 +208,28 @@ body.translating {
 .VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
   display: none !important;
 }
+
+/* // image hover effect */
+
+.perspective {
+  perspective: 1200px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* In your global CSS file */
+
+.title {
+  @apply text-[2rem] md:text-[3rem] lg:text-[4rem] mb-6 ;
+}

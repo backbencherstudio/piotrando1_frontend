@@ -69,7 +69,7 @@ export default function Process() {
                             <p className=" text-white text-[16px] font-medium leading-[170%] tracking-[-0.3px]">Process</p>
                         </div>
                     </div>
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl uppercase font-normal pt-6 pb-2 font-secondary text-[#FFF] bg-clip-text  mb-4">
+                    <h1 className="text-[clamp(2rem,3vw,3rem)] uppercase font-normal pt-6 pb-2 font-secondary text-[#FFF] bg-clip-text  mb-4">
                         How Spawn Drop Works
                     </h1>
                     <div className='flex justify-center'>
@@ -100,7 +100,7 @@ export default function Process() {
                                         <span className="text-base font-normal text-[#707D8F] tracking-wide">
                                             {step.number}
                                         </span>
-                                        <h3 className="text-2xl font-normal text-white mb-3 leading-120% font-secondary">
+                                        <h3 className="text-xl lg:text-2xl font-normal text-white mb-3 leading-120% font-secondary">
                                             {step.title}
                                         </h3>
                                     </div>

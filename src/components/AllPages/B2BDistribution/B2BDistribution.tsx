@@ -71,7 +71,7 @@ export default function B2BDistributionPage() {
                         </div>
 
                     </div>
-                    <h1 className="text-3xl md:text-4xl md:text-5xl font-normal font-secondary text-[#000] mb-4">
+                    <h1 className="text-[clamp(2rem,3vw,3rem)] font-normal font-secondary text-[#000] mb-4">
                         PERFECT FOR B2B DISTRIBUTION
                     </h1>
                     <p className="text-lg text-[#393939] max-w-lg mx-auto leading-170%">

@@ -8,7 +8,7 @@ const CTASection = () => {
 
     const pathname = usePathname();
     return (
-        <section className={`py-10 lg:py-20 px-4 flex flex-col items-center text-center font-sans transition-all duration-300 ${pathname === "/aboutUs" ? "-mt-20" : "mt-0"
+        <section className={`py-10 lg:py-20 flex flex-col items-center text-center font-sans transition-all duration-300 ${pathname === "/aboutUs" ? "-mt-20" : "mt-0"
             }`} data-aos="zoom-in">
             {/* Badge */}
             <div className='flex '  >

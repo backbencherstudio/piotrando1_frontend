@@ -51,7 +51,7 @@ export default function UltraPack() {
                             {/* IMAGE (ALWAYS SAME POSITION) */}
                             <div className="absolute right-[-38px] sm:right-[-70px] md:right-[-100px] top-1/2 -translate-y-1/2 z-20">
                                 <Image
-                                    src="/images/pokemon4.jpg"
+                                    src="/images/Card35.png"
                                     alt="pokemon"
                                     width={220}
                                     height={320}

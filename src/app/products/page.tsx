@@ -15,7 +15,7 @@ export default function page() {
                     <p className="text-sm lg:text-base font-medium">Our Products</p>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-6xl font-secondary mt-4">
+                <h2 className="title font-secondary mt-4">
                     OUR MYSTERY REPACKS
                 </h2>
 

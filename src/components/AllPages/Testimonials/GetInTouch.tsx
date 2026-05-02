@@ -68,7 +68,7 @@ export default function GetInTouch() {
 
                         </div>
                         <div className=''>
-                            <p className="text-[#000] text-3xl md:text-4xl lg:text-[64px] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
+                            <p className="text-[#000] text-[clamp(2rem,3rem,4rem)] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
                             <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-lg">
                                 Tell us what you need and we will prepare a custom quote, sample option, or wholesale recommendation within 24 hours.
                             </p>

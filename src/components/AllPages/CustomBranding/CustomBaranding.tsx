@@ -34,7 +34,7 @@ export default function CustomBranding() {
                     data-aos-anchor-placement="bottom-bottom" >
                     <div >
                         <div className='flex'>
-                            <p className='text-white text-3xl md:text-4xl lg:text-[48px] font-normal leading-120% font-secondary text-center md:text-start '>Custom Brandin & Full-Service <br /> Production</p>
+                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  md:text-start '>Custom Brandin & Full-Service <br /> Production</p>
 
                         </div>
 
@@ -71,7 +71,7 @@ export default function CustomBranding() {
                     <div className="absolute inset-0 bg-black/70"></div>
 
                     {/* content */}
-                    <div className="relative text-black px-" >
+                    <div className="relative text-black md:py-0 py-9" >
 
                         <Image src="/images/document.png" height={30} width={40} alt='document' className='flex justify-center items-center mx-auto mb-2' />
                         <p className="text-white font-semibold text-2xl text-center ">

@@ -14,7 +14,7 @@ export default function AboutUs() {
                     data-aos-delay="300"
                 >
                     <div>
-                        <h2 className="text-3xl md:text-4xl lg:text-[64px]  mb-6 font-secondary">
+                        <h2 className="title  mb-6 font-secondary">
                             WHO WE ARE AT SPAWN DROP
                         </h2>
 

@@ -55,7 +55,7 @@ const OurPackas = () => {
     useEffect(() => {
         const updateVisibleItems = () => {
             if (window.innerWidth >= 1024) {
-                setVisibleItems(3);
+                setVisibleItems(4);
             } else if (window.innerWidth >= 768) {
                 setVisibleItems(2);
             } else {
@@ -89,24 +89,26 @@ const OurPackas = () => {
     return (
         <div className="container">
 
-            <div className=" mb-12">
-                <div className='flex '>
-                    <div className="flex gap-2 border py-2 px-4 rounded-full">
-                        <Image
-                            src="/images/aboutusLogo.png"
-                            alt="icon"
-                            width={24}
-                            height={24}
-                            className="object-contain"
-                        />
-                        <p className=" font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Our Packs
-                        </p>
+            <div className=" mb-12 flex justify-between  flex-col" >
+                <div className='flex flex-col lg:flex-row' data-aos="zoom-in">
+                    <div className='flex justify-center'>
+                        <div className="flex gap-2 border py-2 px-4 rounded-full">
+                            <Image
+                                src="/images/aboutusLogo.png"
+                                alt="icon"
+                                width={24}
+                                height={24}
+                                className="object-contain"
+                            />
+                            <p className=" font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Our Packs
+                            </p>
+                        </div>
                     </div>
 
                 </div>
-                <div className='flex-col flex md:flex-row justify-between'>
-                    <p className="text-[#000] text-2xl md:text-3xl lg:text-[48px] font-normal font-secondary leading-120% pt-6">See Our Packs in Action</p>
-                    <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-xl">
+                <div className='flex-col flex lg::flex-row justify-between' data-aos="zoom-in"   >
+                    <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6 text-center lg:text-start">See Our Packs in Action</p>
+                    <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center text-center lg:text-start items-center lg:w-xl">
                         We maintain a consistent supply pipeline by working only with trusted
                         partners across the global TCG market.
                     </p>
@@ -125,7 +127,7 @@ const OurPackas = () => {
             </div>
 
             {/* Carousel Container */}
-            <div className="relative">
+            <div className="relative" data-aos="zoom-out">
                 {/* Gallery Items */}
                 <div className="flex gap-4 overflow-hidden rounded-lg">
                     {displayItems.map((item) => (
@@ -134,7 +136,7 @@ const OurPackas = () => {
                             className="
                                     w-full
                                     md:w-1/2
-                                    lg:w-1/3
+                                    lg:w-1/4
                                     flex-shrink-0
                                     group cursor-pointer rounded-2xl overflow-hidden
                                 "
@@ -144,7 +146,7 @@ const OurPackas = () => {
                                     src={item.image}
                                     alt={item.title}
                                     fill
-                                    className="object-center rounded-2xl transition-transform duration-300 group-hover:scale-110"
+                                    className="object-center rounded-2xl transition-transform duration-300 group-hover:scale-105"
                                 />
                             </div>
                             <div className="p-4 ">

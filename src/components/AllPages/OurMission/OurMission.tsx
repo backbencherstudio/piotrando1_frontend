@@ -17,7 +17,7 @@ export default function OurMission() {
                     data-aos-offset="300"  >
                     <div>
                         <div className=' '>
-                            <p className='text-[#000] text-3xl md:text-4xl lg:text-[48px] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6'>Our Mission</p>
+                            <p className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6'>Our Mission</p>
 
                         </div>
 

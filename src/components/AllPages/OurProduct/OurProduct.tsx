@@ -16,7 +16,7 @@ export default function OurProduct() {
                     <p className="text-sm lg:text-base font-medium">Our Products</p>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-6xl font-secondary mt-4">
+                <h2 className="text-[clamp(2rem,3vw,5rem)] font-secondary mt-4">
                     OUR MYSTERY REPACKS
                 </h2>
 
@@ -66,7 +66,7 @@ export default function OurProduct() {
                             {/* IMAGE (ALWAYS SAME POSITION) */}
                             <div className="absolute right-[-38px] sm:right-[-70px] md:right-[-100px]   top-1/2 -translate-y-1/2 z-20">
                                 <Image
-                                    src="/images/pokemon2.png"
+                                    src="/images/Card10.png"
                                     alt="pokemon"
                                     width={220}
                                     height={320}

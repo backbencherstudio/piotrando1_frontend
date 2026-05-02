@@ -27,7 +27,7 @@ export default function BannerSection() {
                                 <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">EU-Wide Mystery Pack Distribution</p>
                             </div>
                         </div>
-                        <h2 className=" text-white text-[30px] md:text-[40px] lg:text-[72px] font-normal leading-[100%] py-4 font-secondary">Next-Gen Pokémon Mystery Packs for Retail & Collectors</h2>
+                        <h2 className=" text-white text-[clamp(2rem,4vw,4.5rem)] font-normal leading-[100%] py-4 font-secondary">Next-Gen Pokémon Mystery Packs for Retail & Collectors</h2>
                         <p className='text-white font-[Inter] text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>Fair-value mystery packs with authentic Pokémon cards, transparent pull rates, and
                             reliable supply  ready for retail, e-commerce, and collectors.</p>
 

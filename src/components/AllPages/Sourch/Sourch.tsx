@@ -43,7 +43,7 @@ export default function Sourch() {
                     </div>
 
                 </div>
-                <p className="text-[#000] text-3xl md:text-4xl  lg:text-[48px] font-normal font-secondary leading-120% pt-6">Reliable Supply. Trusted Sources.</p>
+                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">Reliable Supply. Trusted Sources.</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
                     We maintain a consistent supply pipeline by working only with trusted
                     partners across the global TCG market.
