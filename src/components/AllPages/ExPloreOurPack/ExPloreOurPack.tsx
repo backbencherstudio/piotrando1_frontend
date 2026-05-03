@@ -74,7 +74,7 @@ export default function MysteryPacks() {
                 </div>
 
                 {/* Tabs */}
-                <div className="flex flex-wrap justify-center gap-3 mb-10">
+                {/* <div className="flex flex-wrap justify-center gap-3 mb-10">
                     {tabs.map((tab) => (
                         <button
                             key={tab}
@@ -88,7 +88,7 @@ export default function MysteryPacks() {
                             {tab}
                         </button>
                     ))}
-                </div>
+                </div> */}
 
                 {/* Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up"
@@ -99,9 +99,10 @@ export default function MysteryPacks() {
                             className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2"
                         >
                             {/* Image section */}
-                            <div className="group perspective flex justify-center">
+                         <div className="flex">
+                               <div className="group perspective flex justify-center  items-center mx-auto w-[150px]  ">
 
-                                <div className="relative w-[300px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                                <div className="relative w-[320px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
 
                                     {/* FRONT */}
                                     <div className="absolute inset-0 backface-hidden rounded-sm overflow-hidden">
@@ -127,6 +128,7 @@ export default function MysteryPacks() {
 
                                 </div>
                             </div>
+                         </div>
 
                             {/* Content */}
                             <div className=" py-2">

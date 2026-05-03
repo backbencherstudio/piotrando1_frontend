@@ -87,7 +87,7 @@ export default function Process() {
                             key={index}
                             className="bg-[#171A21] rounded-2xl border border-transparent hover:border-orange-500 transition-all duration-300 overflow-hidden"
                             data-aos="fade-up"
-                            data-aos-delay={index * 120}
+                            // data-aos-delay={index * 120}
                             data-aos-duration="1500">
                             <div className="bg-[#171A21] rounded-2xl p-6">
                                 {/* Step Number Badge */}

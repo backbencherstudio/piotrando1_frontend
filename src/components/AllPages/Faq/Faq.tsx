@@ -57,7 +57,7 @@ const faqs = [
 
 export function FAQ() {
     return (
-        <section className=" w-full py-24 bg-background bg-black text-white">
+        <section className=" w-full py-24 bg-background bg-black text-white" id="faq">
             <div className=" container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
                 {/* Header */}
                 <div className=" mb-12 space-y-4" data-aos="zoom-in"

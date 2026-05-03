@@ -31,7 +31,30 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const isHomePage = pathname === "/" || pathname === "/faq";
+    const [activeHash, setActiveHash] = useState("");
+
+useEffect(() => {
+  const updateHash = () => {
+    setActiveHash(window.location.hash);
+  };
+
+  updateHash();
+  window.addEventListener("hashchange", updateHash);
+
+  return () => window.removeEventListener("hashchange", updateHash);
+}, []);
+
+const getNavClass = (path: string) => {
+  const isActive = pathname === path || activeHash === path.replace("/", "");
+
+  if (isActive) return "text-[#FE6B02] font-semibold";
+
+  return scrolled || !isHomePage
+    ? "text-black hover:text-[#FE6B02]"
+    : "text-white hover:text-[#FE6B02]";
+};
+
+    const isHomePage = pathname === "/";
 
     const navItems = [
         { name: "Home", path: "/" },
@@ -39,9 +62,9 @@ export default function Navbar() {
         { name: "About us", path: "/aboutUs" },
         { name: "Products", path: "/products" },
         // { name: "Cards", path: "/cards" },
-        { name: "Shipping", path: "#" },
-        { name: "FAQ's", path: "/faq" },
-        { name: "Contact", path: "/getInTouch" },
+        // { name: "Shipping", path: "#" },
+        // { name: "FAQ's", path: "/faq" },
+        // { name: "Contact", path: "/getInTouch" },
     ];
 
     const mobileNavItems = [
@@ -50,8 +73,8 @@ export default function Navbar() {
         { name: "About us", path: "/aboutUs" },
         { name: "Products", path: "/products" },
         // { name: "Cards", path: "/cards" },
-        { name: "Shipping", path: "#" },
-        { name: "Contact", path: "/getInTouch" },
+        // { name: "Shipping", path: "#" },
+        // { name: "Contact", path: "/getInTouch" },
 
     ];
 
@@ -85,6 +108,38 @@ export default function Navbar() {
                             </li>
                         </Link>
                     ))}
+
+                    <a
+  href="/#shiping"
+  className={`flex justify-between text-xs xl:text-base -mt-2 ${
+    scrolled || !isHomePage
+      ? "text-black hover:text-[#FE6B02]"
+      : "text-white hover:text-[#FE6B02]"
+  }`}
+>
+  <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base">Shipping</p>
+</a>
+
+                    <a
+  href="/#contact"
+  className={`flex gap-3 cursor-pointer transition-colors duration-200 -mt-2 ${
+    scrolled || !isHomePage
+      ? "text-black hover:text-[#FE6B02]"
+      : "text-white hover:text-[#FE6B02]"
+  }`}
+>
+  <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base">Contact</p>
+</a>
+<a
+  href="/#faq"
+  className={`flex gap-3 cursor-pointer transition-colors duration-200 -mt-2 ${
+    scrolled || !isHomePage
+      ? "text-black hover:text-[#FE6B02]"
+      : "text-white hover:text-[#FE6B02]"
+  }`}
+>
+  <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base">Faq</p>
+</a>
                     <div className={` flex   gap-3 cursor-pointer transition-colors duration-200  ${scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
                         }`}>
                         <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base"> Strona glowna (EN) </p>   <Image src="/images/flag.png" alt="flag" width={30} height={20} className="py-3" />
@@ -97,10 +152,10 @@ export default function Navbar() {
                     {/* <div>
                         <CountrySelect defaultValue="EG" />
                     </div> */}
-                    <MdOutlineShoppingBag
+                    {/* <MdOutlineShoppingBag
                         className={`text-2xl cursor-pointer transition-colors duration-200 ${scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
                             }`}
-                    />
+                    /> */}
 
                     <button className="bg-[#FE6B02] flex items-center gap-2 py-2 pl-6 pr-2 rounded-3xl hover:bg-[#e05a00] transition-colors">
                         Get Quotes
@@ -165,9 +220,9 @@ export default function Navbar() {
                     {/* <div>
                         <CountrySelect defaultValue="EG" />
                     </div> */}
-                    <MdOutlineShoppingBag
+                    {/* <MdOutlineShoppingBag
 
-                    />
+                    /> */}
                 </ul>
 
 
