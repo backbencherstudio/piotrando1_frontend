@@ -46,7 +46,7 @@ export default function GetInTouch() {
         }
     };
     return (
-        <div className=" py-10 lg:py-20 flex  container">
+        <div className=" py-10 lg:py-20 flex  container" id="contact">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
                 <div className="flex flex-col justify-start" data-aos="fade-right"

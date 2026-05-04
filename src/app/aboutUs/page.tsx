@@ -40,9 +40,9 @@ export default function WhoWeAre() {
                         Whether you’re a retailer, reseller, or dedicated collector, Spawn Drop delivers products designed to earn your trust—again and again.
                     </p>
 
-                    <button className="bg-black text-white px-6 py-3 rounded-full cursor-pointer">
+                    {/* <button className="bg-black text-white px-6 py-3 rounded-full cursor-pointer">
                         Show More
-                    </button>
+                    </button> */}
                 </div>
 
                 {/* RIGHT SIDE DIAGRAM */}
