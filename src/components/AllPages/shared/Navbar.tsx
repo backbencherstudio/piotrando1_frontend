@@ -142,7 +142,7 @@ const getNavClass = (path: string) => {
 </a>
                     <div className={` flex   gap-3 cursor-pointer transition-colors duration-200  ${scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
                         }`}>
-                        <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base"> Strona glowna (EN) </p>   <Image src="/images/flag.png" alt="flag" width={30} height={20} className="py-3" />
+                        <Image src="/images/flag.png" alt="flag" width={30} height={20} className="py-3" /> <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base"> (EN) </p>  
                     </div>
 
                     {/* <div>
@@ -157,12 +157,12 @@ const getNavClass = (path: string) => {
                             }`}
                     /> */}
 
-                    <button className="bg-[#FE6B02] flex items-center gap-2 py-2 pl-6 pr-2 rounded-3xl hover:bg-[#e05a00] transition-colors">
+                    <a href="/#contact" className="bg-[#FE6B02] flex items-center gap-2 py-2 pl-6 pr-2 rounded-3xl hover:bg-[#e05a00] transition-colors">
                         Get Quotes
                         <div className="rounded-full p-2 bg-white">
                             <IoArrowForwardOutline className="text-black" />
                         </div>
-                    </button>
+                    </a>
 
                 </ul>
 

@@ -43,11 +43,11 @@ export default function OurMission() {
 
                         </div>
 
-                        <div className=''>
+                        {/* <div className=''>
 
                             <button className='bg-[#000000] flex items-center gap-2 py-2 px-4 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center '>
                                 Show More</button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
