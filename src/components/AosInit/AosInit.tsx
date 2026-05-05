@@ -1,23 +1,23 @@
-"use client";
 
+"use client";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { usePathname } from "next/navigation";
 
 export default function AosInit() {
-    const pathname = usePathname();
-
     useEffect(() => {
         AOS.init({
-            duration: 1000,
+            duration: 800,
+            easing: "ease-out-cubic",
             once: true,
+            offset: 50,
         });
-    }, []);
 
-    useEffect(() => {
-        AOS.refresh();
-    }, [pathname]);
+        const handleResize = () => AOS.refresh();
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return null;
 }

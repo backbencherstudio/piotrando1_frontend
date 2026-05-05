@@ -31,15 +31,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     once: true
-  //   });
-  // }, []);
+
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px]`}>
+      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px] antialiased overflow-x-hidden`}>
         <div id="google_translate_element" className="google-hide"></div>
 
 
