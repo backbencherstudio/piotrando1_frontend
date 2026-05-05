@@ -87,7 +87,7 @@ export default function B2BDistributionPage() {
                             // data-aos-delay={index * 120}
                             data-aos-duration="800"
                             key={index}
-                            className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200"
+                            className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 "
                         >
                             <div className="flex justify-center mb-10">
                                 <div className="bg-[#FFF4E6] p-4 rounded-2xl ">
