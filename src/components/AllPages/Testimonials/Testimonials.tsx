@@ -18,22 +18,22 @@ const testimonials: Testimonial[] = [
     {
         name: 'James', role: 'Buyer', quote:
 
-            'Premium quality', avatar: '/images/man.png'
+            'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/man.png'
     },
     {
-        name: 'Oliver', role: 'Operator', quote: 'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/Cyprian.png'
+        name: 'Oliver', role: 'Operator', quote: 'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/test1.png'
     },
     {
         name: 'Marek', role: 'Shop Owner', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases.', avatar: '/images/man.png'
     },
-    { name: 'Thomas', role: 'Seller', quote: 'These packs sell really fast in our store. The margins are solid, and customers often come back for more after their first purchase.', avatar: '/images/Cyprian.png' },
+    { name: 'Thomas', role: 'Seller', quote: 'These packs sell really fast in our store. The margins are solid, and customers often come back for more after their first purchase.', avatar: '/images/test4.png' },
     {
         name: 'Sophie', role: 'Manager', quote: 'Very consistent quality and reliable supply. Its an easy product to manage and works well for scaling online sales.', avatar: '/images/Cyprian.png'
     },
-    { name: 'Kacper', role: 'Collector', quote: 'l opened my first pack and pulled an ultra rare card straight away. That moment was amazing and made me want to get more.', avatar: '/images/sourch.png' },
-    { name: 'Emily', role: 'Buyer', quote: 'Great impulse product. Customers are naturally curious and often pick one up without hesitation, especially as a gift item.', avatar: '/images/sourch.png' },
+    { name: 'Kacper', role: 'Collector', quote: 'l opened my first pack and pulled an ultra rare card straight away. That moment was amazing and made me want to get more.', avatar: '/images/item.png' },
+    { name: 'Emily', role: 'Buyer', quote: 'Great impulse product. Customers are naturally curious and often pick one up without hesitation, especially as a gift item.', avatar: '/images/test2.png' },
     {
-        name: 'Alex', role: 'Distributor', quote: 'The bonus card makes it really exciting. You always feel like you have a chance to', avatar: '/images/sourch.png'
+        name: 'Alex', role: 'Distributor', quote: 'The bonus card makes it really exciting. You always feel like you have a chance to', avatar: '/images/test3.png'
     },
 ]
 
