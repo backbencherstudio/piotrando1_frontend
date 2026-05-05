@@ -49,7 +49,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/getInTouch" className="  text-sm transition-colors">
+                                <Link href="/#contact" className="  text-sm transition-colors">
                                     Contact Us
                                 </Link>
                             </li>
@@ -66,12 +66,12 @@ export default function Footer() {
                         <h3 className="font-semibold text-[#F6F5F1]  mb-4">Support</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/getInTouch" className=" text-sm transition-colors">
+                                <Link href="/#contact" className=" text-sm transition-colors">
                                     Contact Us
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/faq" className=" text-sm transition-colors">
+                                <Link href="/#faq" className=" text-sm transition-colors">
                                     FAQs
                                 </Link>
                             </li>

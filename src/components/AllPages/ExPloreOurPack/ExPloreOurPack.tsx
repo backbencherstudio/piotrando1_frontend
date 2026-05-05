@@ -19,7 +19,7 @@ const products = [
         hoverCard: "/images/hoverCard.png",
 
         stats: [
-            { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
+            { label: "Common / Uncommon", value: 7, icon: <CommonIcon /> },
             { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
             { label: "Rare Special", value: 1, icon: <RearIcon />, }
         ],
@@ -33,9 +33,9 @@ const products = [
         hoverCard: "/images/hoverCard.png",
 
         stats: [
-            { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
-            { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 1, icon: <RearIcon />, }
+            { label: "Common / Uncommon", value: 14, icon: <CommonIcon /> },
+            { label: "Foil Cards", value: 4, icon: <FoilIcon />, },
+            { label: "Rare Special", value: 2, icon: <RearIcon />, }
         ],
     },
     {
@@ -47,9 +47,9 @@ const products = [
         hoverCard: "/images/hoverCard.png",
 
         stats: [
-            { label: "Common / Uncommon", value: 32, icon: <CommonIcon /> },
-            { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 1, icon: <RearIcon />, },
+            { label: "Common / Uncommon", value: 25, icon: <CommonIcon /> },
+            { label: "Foil Cards", value: 6, icon: <FoilIcon />, },
+            { label: "Rare Special", value: 4, icon: <RearIcon />, },
         ],
     },
 ];
@@ -99,36 +99,36 @@ export default function MysteryPacks() {
                             className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2"
                         >
                             {/* Image section */}
-                         <div className="flex">
-                               <div className="group perspective flex justify-center  items-center mx-auto w-[150px]  ">
+                            <div className="flex">
+                                <div className="group perspective flex justify-center  items-center mx-auto w-[150px]  ">
 
-                                <div className="relative w-[320px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                                    <div className="relative w-[320px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
 
-                                    {/* FRONT */}
-                                    <div className="absolute inset-0 backface-hidden rounded-sm overflow-hidden">
-                                        <Image
-                                            src={item.img}
-                                            alt={item.title}
-                                            width={230}
-                                            height={220}
-                                            className="object-contain w-full h-full"
-                                        />
+                                        {/* FRONT */}
+                                        <div className="absolute inset-0 backface-hidden rounded-sm overflow-hidden">
+                                            <Image
+                                                src={item.img}
+                                                alt={item.title}
+                                                width={230}
+                                                height={220}
+                                                className="object-contain w-full h-full"
+                                            />
+                                        </div>
+
+                                        {/* BACK */}
+                                        <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
+                                            <Image
+                                                src={item.hoverCard}
+                                                alt={item.title}
+                                                width={230}
+                                                height={220}
+                                                className="object-contain w-full h-full"
+                                            />
+                                        </div>
+
                                     </div>
-
-                                    {/* BACK */}
-                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
-                                        <Image
-                                            src={item.hoverCard}
-                                            alt={item.title}
-                                            width={230}
-                                            height={220}
-                                            className="object-contain w-full h-full"
-                                        />
-                                    </div>
-
                                 </div>
                             </div>
-                         </div>
 
                             {/* Content */}
                             <div className=" py-2">
@@ -136,7 +136,7 @@ export default function MysteryPacks() {
                                     {item.title}
                                 </h3>
                                 <div className="flex justify-center mx-auto items-center text-center">
-                                    <p className="text-sm text-[#393939] text-center mt-2 ">
+                                    <p className="text-sm text-[#393939] text-center mt-2 max-w-[350px] leading-relaxed text-balance">
                                         {item.desc}
                                     </p>
                                 </div>

@@ -64,7 +64,7 @@ export default function CustomBranding() {
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000"
 
-                    style={{ backgroundImage: "url('/images/contactusbg.png')" }}
+                    style={{ backgroundImage: "url('/images/computer.jpg')" }}
                     className="relative bg-cover  flex justify-center items-center   overflow-hidden rounded-2xl border border-[#854520] border-dashed  "
                 >
                     {/* overlay */}
