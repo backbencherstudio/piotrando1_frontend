@@ -9,7 +9,7 @@ export default function BannerSection() {
             className="relative bg-cover bg-center bg-no-repeat lg:h-screen min-h-[600px] flex items-center justify-center py-16 md:py-20 lg:py-0"
         >
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/75"></div>
+            <div className="absolute inset-0 bg-black/80"></div>
             <div className='grid grid-cols-1 md:grid-cols-2 text-white container  gap-8 '>
                 <div
                     data-aos="fade-right"
