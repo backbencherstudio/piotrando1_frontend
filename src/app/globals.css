@@ -134,15 +134,52 @@
     @apply border-border outline-ring/50;
   }
 
-  html {
-    font-family: var(--font-inter);
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-inter);
-  }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+section {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+main {
+    padding-top: 80px;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: auto;
+}}
 
 @keyframes scrollUp {
   0% {
@@ -232,4 +269,22 @@ body.translating {
 
 .title {
   @apply text-[2rem] md:text-[3rem] lg:text-[4rem] mb-6 ;
+}
+
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    [data-aos] {
+        transition-duration: 600ms !important;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
