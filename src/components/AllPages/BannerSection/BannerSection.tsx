@@ -35,7 +35,7 @@ export default function BannerSection() {
 
                         <div className='flex lg:flex-row flex-col gap-4 pt-12'>
                             <button className='bg-[#FE6B02] flex justify-center items-center gap-2 py-2 pl-6 pr-2 rounded-3xl'>
-                                Get Wholesale Pricing <div className='bg-white rounded-full p-2'>
+                                Get Wholesale Pricing <div className='bg-white rounded-full p-1'>
                                     <MdArrowOutward className='  text-black' /></div></button>
                             <button className='bg-[#454849] flex justify-center items-center gap-2 py-2 px-4 rounded-3xl'>
                                 Request Sample Pack</button>
@@ -46,7 +46,7 @@ export default function BannerSection() {
                 <div className='justify-center items-center flex ' data-aos="fade-left"
                     data-aos-duration="1500"
                     data-aos-delay="300">
-                    <Image src="/images/pokemon.png" alt='image' height={501} width={545} className='z-10 h-[350px] lg:h-[400px] xl:h-[501px] w-[545px]' />
+                    <Image src="/images/banner12.png" alt='image' height={501} width={545} className='z-10 h-[350px] lg:h-[400px] xl:h-[501px] w-[545px]' />
 
                 </div>
             </div>
