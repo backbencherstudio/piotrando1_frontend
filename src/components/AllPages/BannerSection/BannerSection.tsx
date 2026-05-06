@@ -46,7 +46,7 @@ export default function BannerSection() {
                 <div className='justify-center items-center flex ' data-aos="fade-left"
                     data-aos-duration="1500"
                     data-aos-delay="300">
-                    <Image src="/images/banner12.png" alt='image' height={501} width={545} className='z-10 h-[350px] lg:h-[400px] xl:h-[501px] w-[545px]' />
+                    <Image src="/images/pokemon14.png" alt='image' height={501} width={545} className='z-10 h-[350px] lg:h-[400px] xl:h-[501px] w-[545px]' />
 
                 </div>
             </div>
