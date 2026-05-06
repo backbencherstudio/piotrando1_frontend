@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { MdArrowOutward, MdKeyboardArrowRight } from 'react-icons/md'
 import UltraPack from './UltraPack'
+import Link from 'next/link'
 
 export default function Evaluation() {
     return (
@@ -40,10 +41,10 @@ export default function Evaluation() {
                             </ul>
                         </div>
 
-                        <a href="/#contact" className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
+                        <Link href="/#contact" className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
                             Request a Quote
                             <MdKeyboardArrowRight className="text-xl" />
-                        </a>
+                        </Link>
 
                     </div>
                 </div>
@@ -87,11 +88,11 @@ export default function Evaluation() {
                                     {/* FRONT */}
                                     <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden ">
                                         <Image
-                                            src="/images/Card20.png"
+                                            src="/images/card120.png"
                                             alt="pokemon front"
                                             width={220}
                                             height={320}
-                                            className="w-full h-full object-contain"
+                                            className="w-full h-full object-cover"
                                         />
                                     </div>
                                     {/* BACK */}

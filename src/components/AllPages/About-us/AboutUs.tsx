@@ -14,7 +14,7 @@ export default function AboutUs() {
                     data-aos-delay="300"
                 >
                     <div>
-                        <h2 className="title  mb-6 font-secondary">
+                        <h2 className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6'>
                             WHO WE ARE AT SPAWN DROP
                         </h2>
 
@@ -40,7 +40,7 @@ export default function AboutUs() {
                 <div className='' data-aos="fade-up-left"
                     data-aos-duration="1500"
                     data-aos-delay="300">
-                    <Image src="/images/aboutUC.png" alt='image' height={501} width={545} className='z-10 h-[501px] w-full rounded-xl' />
+                    <Image src="/images/aboutUC.png" alt='image' height={501} width={545} className='z-10 h-[400px] lg:h-[501px] w-full rounded-xl' />
 
                 </div>
             </div>

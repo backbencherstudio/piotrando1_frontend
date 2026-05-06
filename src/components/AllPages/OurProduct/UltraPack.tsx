@@ -1,7 +1,9 @@
+
 import Image from 'next/image'
 import React from 'react'
 import { MdArrowOutward, MdKeyboardArrowRight } from 'react-icons/md'
-import Evaluation from './EvoluationPack'
+
+import Link from 'next/link'
 
 export default function UltraPack() {
     return (
@@ -54,20 +56,20 @@ export default function UltraPack() {
                                     {/* FRONT */}
                                     <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden ">
                                         <Image
-                                            src="/images/Card35.png"
+                                            src="/images/card135.png"
                                             alt="pokemon front"
                                             width={220}
                                             height={320}
-                                            className="w-full h-full object-contain"
+                                            className="w-full h-full object-cover"
                                         />
                                     </div>
                                     {/* BACK */}
-                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl overflow-hidden ">
+                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl overflow-hidden mt-9">
                                         <Image
                                             src="/images/hoverCard.png"
                                             alt="pokemon back"
                                             width={220}
-                                            height={320}
+                                            height={220}
                                             className="w-full h-full object-contain"
                                         />
                                     </div>
@@ -104,10 +106,10 @@ export default function UltraPack() {
                             </ul>
                         </div>
 
-                        <a href="/#contact" className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
+                        <Link href="/#contact" className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
                             Request a Quote
                             <MdKeyboardArrowRight className="text-xl" />
-                        </a>
+                        </Link>
 
                     </div>
                 </div>
