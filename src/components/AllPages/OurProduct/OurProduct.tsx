@@ -3,6 +3,7 @@ import React from 'react'
 import { MdArrowOutward, MdKeyboardArrowRight } from 'react-icons/md'
 import Evaluation from './EvoluationPack'
 import UltraPack from './UltraPack'
+import Link from 'next/link'
 
 export default function OurProduct() {
     return (
@@ -42,7 +43,7 @@ export default function OurProduct() {
                     />
 
                     {/* CARD */}
-                    <div className='relative ml-10'  data-aos-duration="2000">
+                    <div className='relative ml-10' data-aos-duration="2000">
                         <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-6 shadow-lg flex justify-start items-center">
 
                             {/* TEXT */}
@@ -69,11 +70,11 @@ export default function OurProduct() {
                                     {/* FRONT */}
                                     <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden ">
                                         <Image
-                                            src="/images/Card10.png"
+                                            src="/images/card110.png"
                                             alt="pokemon front"
                                             width={220}
                                             height={320}
-                                            className="w-full h-full object-contain"
+                                            className="w-full h-full object-cover"
                                         />
                                     </div>
                                     {/* BACK */}
@@ -117,10 +118,10 @@ export default function OurProduct() {
                             </ul>
                         </div>
 
-                        <a href="/#contact" className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
+                        <Link href="/#contact" className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
                             Request a Quote
                             <MdKeyboardArrowRight className="text-xl" />
-                        </a>
+                        </Link>
 
                     </div>
                 </div>

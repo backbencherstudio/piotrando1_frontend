@@ -14,7 +14,7 @@ const products = [
         id: 1,
         title: "SPAN DROP 10",
         desc: "Compact mystery pack perfect for checkout counter sales and impulse purchases.",
-        img: "/images/Card10.png",
+        img: "/images/card110.png",
         bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
         hoverCard: "/images/hoverCard.png",
 
@@ -28,7 +28,7 @@ const products = [
         id: 2,
         title: "SPAN DROP 20",
         desc: "Entry-level pack great for new collectors and gift purchases",
-        img: "/images/Card20.png",
+        img: "/images/card120.png",
         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
         hoverCard: "/images/hoverCard.png",
 
@@ -42,7 +42,7 @@ const products = [
         id: 3,
         title: "SPAN DROP 35",
         desc: "Mid-tier mystery pack with extra foil cards for added value. ",
-        img: "/images/Card35.png",
+        img: "/images/card135.png",
         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
         hoverCard: "/images/hoverCard.png",
 
@@ -58,9 +58,9 @@ export default function MysteryPacks() {
     const [activeTab, setActiveTab] = useState("All Packs");
 
     return (
-        <div className="bg-[#F5F5F5] pt-30 container" data-aos="fade-up"
+        <div className=" pt-30 " data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
-            <div className="">
+            <div className="container">
 
                 {/* Heading */}
                 <div className="text-center mb-10">
@@ -99,19 +99,20 @@ export default function MysteryPacks() {
                             className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2"
                         >
                             {/* Image section */}
-                            <div className="flex">
+                            <div className={`flex  justify-center items-center rounded-xl h-[280px] ${item.bg}`}>
                                 <div className="group perspective flex justify-center  items-center mx-auto w-[150px]  ">
 
-                                    <div className="relative w-[320px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                                    <div className="relative w-[390px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 ">
 
                                         {/* FRONT */}
-                                        <div className="absolute inset-0 backface-hidden rounded-sm overflow-hidden">
+                                        <div className="absolute w-[170px] h-[240px] inset-0 backface-hidden rounded-sm overflow-hidden flex justify-center ">
                                             <Image
                                                 src={item.img}
                                                 alt={item.title}
-                                                width={230}
-                                                height={220}
-                                                className="object-contain w-full h-full"
+                                                width={400}
+                                                height={300}
+                                                className="object-contain w-full h-full -mt-3"
+                                            // className={item.id === 3 ? "object-cover" : "object-contain"}
                                             />
                                         </div>
 
@@ -131,7 +132,7 @@ export default function MysteryPacks() {
                             </div>
 
                             {/* Content */}
-                            <div className=" py-2">
+                            < div className=" py-2" >
                                 <h3 className="text-3xl font-normal text-center text-[#171B1C] font-secondary">
                                     {item.title}
                                 </h3>
@@ -142,18 +143,20 @@ export default function MysteryPacks() {
                                 </div>
 
                                 {/* Stats */}
-                                <div className="mt-4 space-y-2">
-                                    {item.stats.map((stat, i) => (
-                                        <div
-                                            key={i}
-                                            className="flex justify-between bg-[#F6F5F1] rounded-full px-4 py-2 text-sm"
-                                        >
-                                            <div className="flex gap-1">
-                                                <p>{stat.icon}</p>  <span>{stat.label}</span>
+                                <div className="mt-4 space-y-2" >
+                                    {
+                                        item.stats.map((stat, i) => (
+                                            <div
+                                                key={i}
+                                                className="flex justify-between bg-[#F6F5F1] rounded-full px-4 py-2 text-sm"
+                                            >
+                                                <div className="flex gap-1">
+                                                    <p>{stat.icon}</p>  <span>{stat.label}</span>
+                                                </div>
+                                                <span>{stat.value}</span>
                                             </div>
-                                            <span>{stat.value}</span>
-                                        </div>
-                                    ))}
+                                        ))
+                                    }
                                 </div>
 
                                 {/* Tags */}
@@ -175,9 +178,12 @@ export default function MysteryPacks() {
                                 </button>
                             </div>
                         </div>
-                    ))}
-                </div>
-            </div>
+                    ))
+                    }
+                </div >
+            </div >
+
+
         </div >
     );
 }
