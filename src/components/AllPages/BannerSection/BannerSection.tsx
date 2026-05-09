@@ -53,6 +53,7 @@ export default function BannerSection() {
                         width={545}
                         height={521}
                         priority
+                        unoptimized
                         className="z-10 object-contain h-auto w-full max-w-[545px]"
                     />
 
