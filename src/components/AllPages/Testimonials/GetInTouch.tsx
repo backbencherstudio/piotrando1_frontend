@@ -124,7 +124,7 @@ export default function GetInTouch() {
 
                             <div className="space-y-2">
                                 <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
-                                <CountrySelect onChange={handleCountryChange} defaultValue="EG" />
+                                <CountrySelect onChange={handleCountryChange} defaultValue="PL" />
                             </div>
                         </div>
 
@@ -133,13 +133,13 @@ export default function GetInTouch() {
                                 <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Estimated Quantity</label>
                                 <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                             </div>
-                            <div className="space-y-2">
+                            {/* <div className="space-y-2">
                                 <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Product Type</label>
                                 <select {...register("productType")} className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all appearance-none ">
                                     <option value="" className="text-black">e.g. Starter, Pro, Ultra</option>
                                     <option value="pro" className="text-black">Pro</option>
                                 </select>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="space-y-2">
@@ -147,7 +147,7 @@ export default function GetInTouch() {
                             <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full md:p-1 p-4 bg-gray-50 border h-12 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
                         </div>
 
-                        <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-3 xl:py-5 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
+                        <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-2 xl:py-4 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
                             Request Wholesale Pricing
                         </button>
 

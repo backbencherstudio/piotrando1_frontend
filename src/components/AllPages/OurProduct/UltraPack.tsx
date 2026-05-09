@@ -1,7 +1,9 @@
+
 import Image from 'next/image'
 import React from 'react'
 import { MdArrowOutward, MdKeyboardArrowRight } from 'react-icons/md'
-import Evaluation from './EvoluationPack'
+
+import Link from 'next/link'
 
 export default function UltraPack() {
     return (
@@ -49,15 +51,29 @@ export default function UltraPack() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="absolute right-[-38px] sm:right-[-70px] md:right-[-100px] top-1/2 -translate-y-1/2 z-20">
-                                <Image
-                                    src="/images/Card35.png"
-                                    alt="pokemon"
-                                    width={220}
-                                    height={320}
-
-                                    className="rounded-xl shadow-xl object-cover w-[147px] sm:w-[250px] md:w-[220px] h-[320px]"
-                                />
+                            <div className="group perspective absolute right-[-38px] sm:right-[-70px] md:right-[-100px] top-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-xl">
+                                <div className="relative w-[160px] sm:w-[250px] md:w-[200px] h-[300px] md:h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
+                                    {/* FRONT */}
+                                    <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden">
+                                        <Image
+                                            src="/images/card135.png"
+                                            alt="pokemon front"
+                                            width={220}
+                                            height={320}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                    {/* BACK */}
+                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+                                        <Image
+                                            src="/images/Hover.png"
+                                            alt="pokemon back"
+                                            width={220}
+                                            height={220}
+                                            className="w-full h-full object-contain"
+                                        />
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -90,10 +106,10 @@ export default function UltraPack() {
                             </ul>
                         </div>
 
-                        <button className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
+                        <Link href="/#contact" className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
                             Request a Quote
                             <MdKeyboardArrowRight className="text-xl" />
-                        </button>
+                        </Link>
 
                     </div>
                 </div>

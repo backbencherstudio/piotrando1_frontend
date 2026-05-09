@@ -4,24 +4,24 @@ import Image from 'next/image'
 import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
 
-const stats = [
-    {
-        total: "10,000+",
-        title: "Packs Sold"
-    },
-    {
-        total: "100+",
-        title: "Business Customers"
-    },
-    {
-        total: "99%",
-        title: "Customer Satisfaction"
-    },
-    {
-        total: "4.9/5",
-        title: "Rating"
-    },
-]
+// const stats = [
+//     {
+//         total: "10,000+",
+//         title: "Packs Sold"
+//     },
+//     {
+//         total: "100+",
+//         title: "Business Customers"
+//     },
+//     {
+//         total: "99%",
+//         title: "Customer Satisfaction"
+//     },
+//     {
+//         total: "4.9/5",
+//         title: "Rating"
+//     },
+// ]
 
 export default function Sourch() {
     return (
@@ -45,8 +45,8 @@ export default function Sourch() {
                 </div>
                 <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">Reliable Supply. Trusted Sources.</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
-                    We maintain a consistent supply pipeline by working only with trusted
-                    partners across the global TCG market.
+                    we maintain a consistent supply pipeline by working With trusted partners across the global TCG
+                    market.
                 </p>
             </div>
 
@@ -60,16 +60,23 @@ export default function Sourch() {
 
 
                             <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px] ml-4  space-y-4'>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Custom blister packaging with your logo</div>
-                                <p className="ml-9">We work directly with retail stores and card businesses to purchase excess inventory, collections, and returned stock. This helps us maintain a stable flow of authentic cards throughout the year.</p>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Full packaging design (blister + box)
+                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Direct Retail & Store Partnerships</div>
+                                <p className="ml-9">We work directly with retail stores and card businesses to acquire excess inventory, collections, and
+                                    returned stock. This helps us maintain a stable flow of authentic trading cards throughout the year.</p>
+                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Event & Community Sourcing
                                 </div>
-                                <p className="ml-9">We source cards through Pokémon tournaments and local events, giving us access to popular, competitive, and hard-to-find cards directly from the community.</p>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Card sourcing (Pokémon and more)
+                                <p className="ml-9">We source cards through Pokémon tournaments, local events, and collector communities, giving us
+                                    access to popular, competitive, and hard-to-find cards directly from active players and collectors.</p>
+                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> rusted Reseller Network
                                 </div>
-                                <p className="ml-9">We have long-term relationships with trusted individual resellers who regularly provide high-quality cards, sealed products, and rare collectibles.</p>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Quality control & assembly</div>
-                                <p className="ml-9">We actively monitor the trading card market and source inventory through verified platforms, distributors, and international suppliers to keep stock available at all times.</p>
+                                <p className="ml-9">We maintain long-term relationships with reliable independent resellers who consistently provide
+                                    high-quality singles, sealed products, and collectible inventory.</p>
+                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Quality Control & Assembly</div>
+                                <p className="ml-9">Every product is carefully reviewed and prepared through internal quality control processes to
+                                    ensure authenticity, consistency, and presentation standards before shipment.</p>
+                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Verified Global Supply Channels</div>
+                                <p className="ml-9">We actively monitor the trading card market and source inventory through verified distributors,
+                                    marketplaces, and international partners to maintain dependable stock availability year-round.</p>
 
 
                             </div>
@@ -82,14 +89,14 @@ export default function Sourch() {
 
                 <div className='  ' data-aos="fade-left"
                     data-aos-duration="2000">
-                    <Image src="/images/sourch.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
+                    <Image src="/images/image33.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
 
                 </div>
 
 
             </div >
 
-            <div className=' container ' data-aos="fade-up"
+            {/* <div className=' container ' data-aos="fade-up"
 
                 data-aos-duration="800">
                 <div className=' outline rounded-lg py-0 lg:py-15'>
@@ -109,7 +116,7 @@ export default function Sourch() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div >
     )
 }

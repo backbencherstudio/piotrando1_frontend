@@ -31,21 +31,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     once: true
-  //   });
-  // }, []);
+
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px]`}>
+      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px] antialiased overflow-x-hidden`}>
         <div id="google_translate_element" className="google-hide"></div>
 
 
         <div id="google_translate_element" className="google-hide"></div>
 
-        <Script id="google-translate-init" strategy="afterInteractive">
+        {/* <Script id="google-translate-init" strategy="afterInteractive">
           {`
     function googleTranslateElementInit() {
      
@@ -62,7 +57,7 @@ export default function RootLayout({
         <Script
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
-        />
+        /> */}
         <AosInit />
         <LanguageProvider>
           <Navbar />
