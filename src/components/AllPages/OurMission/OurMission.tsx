@@ -10,7 +10,7 @@ export default function OurMission() {
                 <div className=' order-2 md:order-2 ' data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" >
-                    <Image src="/images/ourmission.jpg" alt='image' height={501} width={545} className='z-10 h-[501px] w-full rounded-xl' />
+                    <Image src="/images/ourmission2.png" alt='image' height={501} width={545} className='z-10 h-[501px] w-full rounded-xl' />
 
                 </div>
                 <div className='order-1 md:order-2' data-aos="fade-left"

@@ -5,6 +5,7 @@ import FoilIcon from "@/components/icon/FoilIcon";
 import RearIcon from "@/components/icon/RearIcon";
 import ShareIcon from "@/components/icon/ShareIcon";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const tabs = ["All Packs", "Retail Packs", "Premium Packs", "Vintage Packs", "Wholesale"];
@@ -12,11 +13,11 @@ const tabs = ["All Packs", "Retail Packs", "Premium Packs", "Vintage Packs", "Wh
 const products = [
     {
         id: 1,
-        title: "SPAN DROP 10",
+        title: "SPAWN DROP 10",
         desc: "Compact mystery pack perfect for checkout counter sales and impulse purchases.",
         img: "/images/card110.png",
         bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
-        hoverCard: "/images/hoverCard.png",
+        hoverCard: "/images/Hover.png",
 
         stats: [
             { label: "Common / Uncommon", value: 7, icon: <CommonIcon /> },
@@ -26,11 +27,11 @@ const products = [
     },
     {
         id: 2,
-        title: "SPAN DROP 20",
+        title: "SPAWN DROP 20",
         desc: "Entry-level pack great for new collectors and gift purchases",
         img: "/images/card120.png",
         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
-        hoverCard: "/images/hoverCard.png",
+        hoverCard: "/images/Hover.png",
 
         stats: [
             { label: "Common / Uncommon", value: 14, icon: <CommonIcon /> },
@@ -40,11 +41,11 @@ const products = [
     },
     {
         id: 3,
-        title: "SPAN DROP 35",
+        title: "SPAWN DROP 35",
         desc: "Mid-tier mystery pack with extra foil cards for added value. ",
         img: "/images/card135.png",
         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
-        hoverCard: "/images/hoverCard.png",
+        hoverCard: "/images/Hover.png",
 
         stats: [
             { label: "Common / Uncommon", value: 25, icon: <CommonIcon /> },
@@ -173,9 +174,9 @@ export default function MysteryPacks() {
                                 </div>
 
                                 {/* Button */}
-                                <button className="w-full flex justify-center gap-3 mt-5 bg-[#FF8904] hover:bg-orange-500 cursor-pointer  text-white py-3 rounded-xl transition">
+                                <Link href="/#contact" className="w-full flex justify-center gap-3 mt-5 bg-[#FF8904] hover:bg-orange-500 cursor-pointer  text-white py-3 rounded-xl transition">
                                     <ShareIcon /> Request a Quote
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     ))

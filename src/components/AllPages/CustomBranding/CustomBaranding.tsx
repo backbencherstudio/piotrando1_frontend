@@ -65,22 +65,22 @@ export default function CustomBranding() {
                     data-aos-duration="2000"
 
                     style={{ backgroundImage: "url('/images/computer.jpg')" }}
-                    className="relative bg-cover  flex justify-center items-center   overflow-hidden rounded-2xl border border-[#854520] border-dashed  "
+                    className="relative bg-cover  flex justify-center items-center   overflow-hidden rounded-2xl  "
                 >
                     {/* overlay */}
-                    <div className="absolute inset-0 bg-black/70"></div>
+                    {/* <div className="absolute inset-0 bg-black/70"></div> */}
 
                     {/* content */}
                     <div className="relative text-black md:py-0 py-9" >
 
-                        <Image src="/images/document.png" height={30} width={40} alt='document' className='flex justify-center items-center mx-auto mb-2' />
-                        <p className="text-white font-semibold text-2xl text-center ">
+                        {/* <Image src="/images/document.png" height={30} width={40} alt='document' className='flex justify-center items-center mx-auto mb-2' /> */}
+                        {/* <p className="text-white font-semibold text-2xl text-center ">
                             “ Custom design details will be discussed after initial contact ”
-                        </p>
+                        </p> */}
 
-                        <button className="bg-[#FF8904] px-4 py-2 rounded-full gap-2 font-medium text-base text-white flex justify-center items-center mx-auto mt-2">
+                        {/* <button className="bg-[#FF8904] px-4 py-2 rounded-full gap-2 font-medium text-base text-white flex justify-center items-center mx-auto mt-2">
                             <IoCallOutline />  Contact Us
-                        </button>
+                        </button> */}
                     </div>
                 </div>
 

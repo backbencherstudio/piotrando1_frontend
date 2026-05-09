@@ -7,8 +7,8 @@ import React from 'react'
 export default function page() {
 
     return (
-        <div className='py-30 '>
-            <div className="flex flex-col justify-center items-center pb-10 lg:pb-10 text-center px-4" data-aos="fade-down">
+        <div className='pt-20 '>
+            {/* <div className="flex flex-col justify-center items-center pb-10 lg:pb-5 text-center px-4" data-aos="fade-down">
 
                 <div className="flex items-center gap-2 border bg-white rounded-full px-4 py-2">
                     <Image src="/images/aboutusLogo.png" alt="icon" width={20} height={20} />
@@ -23,10 +23,10 @@ export default function page() {
                     Three tiers designed for every type of collector and retailer. Each pack
                     contains 100% authentic pokemon TCG cards.
                 </p>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
                 <UltraPack />
-            </div>
+            </div> */}
             <div>
                 <MysteryPacks />
             </div>

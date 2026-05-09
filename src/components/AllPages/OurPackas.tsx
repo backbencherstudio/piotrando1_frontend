@@ -106,12 +106,14 @@ const OurPackas = () => {
                     </div>
 
                 </div>
-                <div className='flex-col flex lg::flex-row justify-between' data-aos="zoom-in"   >
+                <div className='flex-col flex lg:flex-row justify-between' data-aos="zoom-in"   >
                     <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6 text-center lg:text-start">See Our Packs in Action</p>
-                    <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center text-center lg:text-start items-center lg:w-xl">
-                        We maintain a consistent supply pipeline by working only with trusted
-                        partners across the global TCG market.
-                    </p>
+                    <div className='flex justify-center lg:justify-start items-center gap-4 mt-4 lg:mt-0 '>
+                        <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center text-center lg:text-start items-center lg:w-lg w-sm ">
+                            Explore how Spawn Drop products perform in real environments from retail
+                            shelves to customer hands.
+                        </p>
+                    </div>
                 </div>
             </div>
             {/* Gallery Title and Show More */}
