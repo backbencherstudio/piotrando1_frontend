@@ -89,7 +89,7 @@ export default function Sourch() {
 
                 <div className='  ' data-aos="fade-left"
                     data-aos-duration="2000">
-                    <Image src="/images/sourch2.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
+                    <Image src="/images/image33.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
 
                 </div>
 
