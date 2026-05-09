@@ -48,7 +48,7 @@ export default function BannerSection() {
                     data-aos-duration="1500"
                     data-aos-delay="300">
                     <Image
-                        src="/images/bannerBg.png"
+                        src="/images/pokemon55.png"
                         alt="imagebanner"
                         width={545}
                         height={521}
