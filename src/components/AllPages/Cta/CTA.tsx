@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 import { MdArrowOutward } from 'react-icons/md';
@@ -39,17 +40,17 @@ const CTASection = () => {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4">
                 {/* Primary Button */}
-                <button className="group flex items-center gap-3 bg-[#FE6B02] text-white px-8 py-3 rounded-full  text-[16px] font-medium leading-[115%] tracking-[-0.048px]  hover:bg-orange-600 transition-all shadow-lg shadow-orange-100 cursor-pointer">
+                <Link href="/#contact" className="group flex items-center gap-3 bg-[#FE6B02] text-white px-8 py-3 rounded-full  text-[16px] font-medium leading-[115%] tracking-[-0.048px]  hover:bg-orange-600 transition-all shadow-lg shadow-orange-100 cursor-pointer">
                     Get Wholesale Pricing
                     <span className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center transition-transform ">
                         <MdArrowOutward />
                     </span>
-                </button>
+                </Link>
 
                 {/* Secondary Button */}
-                <button className="px-8 py-4 border border-gray-300 rounded-full  text-[16px] font-medium leading-[115%] tracking-[-0.048px]  hover:bg-gray-50 transition-all text-[#181818] cursor-pointer">
+                <Link href="/products" className="px-8 py-4 border border-gray-300 rounded-full  text-[16px] font-medium leading-[115%] tracking-[-0.048px]  hover:bg-gray-50 transition-all text-[#181818] cursor-pointer">
                     Request Sample Pack
-                </button>
+                </Link>
             </div>
         </section>
     );

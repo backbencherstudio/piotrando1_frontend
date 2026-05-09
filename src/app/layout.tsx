@@ -40,7 +40,7 @@ export default function RootLayout({
 
         <div id="google_translate_element" className="google-hide"></div>
 
-        <Script id="google-translate-init" strategy="afterInteractive">
+        {/* <Script id="google-translate-init" strategy="afterInteractive">
           {`
     function googleTranslateElementInit() {
      
@@ -57,7 +57,7 @@ export default function RootLayout({
         <Script
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
-        />
+        /> */}
         <AosInit />
         <LanguageProvider>
           <Navbar />
