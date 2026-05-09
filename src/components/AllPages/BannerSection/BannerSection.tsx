@@ -47,7 +47,14 @@ export default function BannerSection() {
                 <div className='justify-center items-center flex ' data-aos="fade-left"
                     data-aos-duration="1500"
                     data-aos-delay="300">
-                    <Image src="/images/bannerBg.png" alt='imagebanner' height={501} width={545} className='z-10 h-[430px] md:h-[400px] xl:h-[521px] w-[545px]' />
+                    <Image
+                        src="/images/bannerBg.png"
+                        alt="imagebanner"
+                        width={545}
+                        height={521}
+                        priority
+                        className="z-10 object-contain h-auto w-full max-w-[545px]"
+                    />
 
                 </div>
             </div>
