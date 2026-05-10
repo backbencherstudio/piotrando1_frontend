@@ -65,7 +65,7 @@ export default function OurProduct() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="group perspective absolute right-[-40px] sm:right-[-100px] md:right-[-100px] top-1/2 -translate-y-1/2  flex justify-center items-center  rounded-xl ">
+                            <div className="group perspective absolute right-[-40px] sm:right-[-100px] md:right-[-114px] top-1/2 -translate-y-1/2  flex justify-center items-center  rounded-xl ">
                                 <div className="relative w-[180px] sm:w-[250px] md:w-[200px] h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
                                     {/* FRONT */}
                                     <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden ">
@@ -78,9 +78,9 @@ export default function OurProduct() {
                                         />
                                     </div>
                                     {/* BACK */}
-                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl  overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl  overflow-hidden ">
                                         <Image
-                                            src="/images/Hover.png"
+                                            src="/images/orange back.png"
                                             alt="pokemon back"
                                             width={220}
                                             height={320}

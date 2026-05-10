@@ -18,23 +18,19 @@ const testimonials: Testimonial[] = [
     {
         name: 'James', role: 'Buyer', quote:
 
-            'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/man.png'
+            'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/james.png'
     },
     {
-        name: 'Oliver', role: 'Operator', quote: 'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/test1.png'
+        name: 'Oliver', role: 'Operator', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases', avatar: '/images/test3.png'
     },
     {
-        name: 'Marek', role: 'Shop Owner', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases.', avatar: '/images/man.png'
+        name: 'Marek', role: 'Shop Owner', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases.', avatar: '/images/test2.png'
     },
-    { name: 'Thomas', role: 'Seller', quote: 'These packs sell really fast in our store. The margins are solid, and customers often come back for more after their first purchase.', avatar: '/images/test4.png' },
+    { name: 'Thomas', role: 'Seller', quote: 'These packs sell really fast in our store. The margins are solid, and customers often come back for more after their first purchase.', avatar: '/images/test1.png' },
     {
-        name: 'Sophie', role: 'Manager', quote: 'Very consistent quality and reliable supply. Its an easy product to manage and works well for scaling online sales.', avatar: '/images/Cyprian.png'
+        name: 'Kacper', role: 'Manager', quote: 'Very consistent quality and reliable supply. Its an easy product to manage and works well for scaling online sales.', avatar: '/images/item.png'
     },
-    { name: 'Kacper', role: 'Collector', quote: 'l opened my first pack and pulled an ultra rare card straight away. That moment was amazing and made me want to get more.', avatar: '/images/item.png' },
-    { name: 'Emily', role: 'Buyer', quote: 'Great impulse product. Customers are naturally curious and often pick one up without hesitation, especially as a gift item.', avatar: '/images/test2.png' },
-    {
-        name: 'Alex', role: 'Distributor', quote: 'The bonus card makes it really exciting. You always feel like you have a chance to', avatar: '/images/test3.png'
-    },
+
 ]
 
 // split into 3 columns
@@ -50,7 +46,7 @@ function Card({ name, role, quote, avatar }: Testimonial) {
             <div className="flex items-center gap-3  h-[100px] ">
                 <Image src={avatar} alt={name} width={40} height={40} className="rounded-full" />
                 <div>
-                    <h4 className="font-semibold">{name}</h4>
+                    <h4 className="font-semibold text-lg">{name}</h4>
                     <p className="text-sm text-gray-500">{role}</p>
                 </div>
             </div>
@@ -111,14 +107,16 @@ export default function TestimonialsSection() {
 
             </div> */}
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 "
+                data-aos="fade-up"
+                data-aos-delay={100}>
 
                 {/* 1st COLUMN */}
                 <div className="flex flex-col gap-6 ">
                     {columns[0].slice(0, 3).map((item, i) => (
                         <div
                             key={i}
-                            data-aos="fade-up"
+                            data-aos=""
                             data-aos-delay={i * 100}
 
                         >
@@ -132,7 +130,7 @@ export default function TestimonialsSection() {
                     {columns[1].slice(0, 3).map((item, i) => (
                         <div
                             key={i}
-                            data-aos="fade-down"
+                            data-aos=""
                             data-aos-delay={i * 100}
                         >
                             <Card {...item} />
@@ -145,7 +143,7 @@ export default function TestimonialsSection() {
                     {columns[2].slice(0, 3).map((item, i) => (
                         <div
                             key={i}
-                            data-aos="fade-up"
+                            data-aos=""
                             data-aos-delay={i * 100}
                         >
                             <Card {...item} />
