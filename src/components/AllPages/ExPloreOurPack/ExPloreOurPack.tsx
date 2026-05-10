@@ -13,7 +13,8 @@ const tabs = ["All Packs", "Retail Packs", "Premium Packs", "Vintage Packs", "Wh
 const products = [
     {
         id: 1,
-        title: "SPAWN DROP 10",
+        name:"Starter Pack ",
+        title: "10 CARDS",
         desc: "Compact mystery pack perfect for checkout counter sales and impulse purchases.",
         img: "/images/card110.png",
         bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
@@ -27,7 +28,8 @@ const products = [
     },
     {
         id: 2,
-        title: "SPAWN DROP 20",
+        name:"Evolution Pack ",
+        title: "20 CARDS",
         desc: "Entry-level pack great for new collectors and gift purchases",
         img: "/images/card120.png",
         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
@@ -41,7 +43,8 @@ const products = [
     },
     {
         id: 3,
-        title: "SPAWN DROP 35",
+        name:"Ultra Pack ",
+        title: " 35 CARDS",
         desc: "Mid-tier mystery pack with extra foil cards for added value. ",
         img: "/images/card135.png",
         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
@@ -95,11 +98,16 @@ export default function MysteryPacks() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up"
                     data-aos-duration="2000">
                     {products.map((item) => (
+
                         <div
                             key={item.id}
-                            className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2"
+                            className=""
                         >
-                            {/* Image section */}
+
+                            <div className="text-center flex items-center justify-center pb-4 text-xl font-medium">{item.name}</div>
+                          <div className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2">
+
+                              {/* Image section */}
                             <div className={`flex  justify-center items-center rounded-xl h-[280px] ${item.bg}`}>
                                 <div className="group perspective flex justify-center  items-center mx-auto w-[150px]  ">
 
@@ -178,6 +186,8 @@ export default function MysteryPacks() {
                                     <ShareIcon /> Request a Quote
                                 </Link>
                             </div>
+
+                          </div>
                         </div>
                     ))
                     }
