@@ -89,7 +89,7 @@ const OurPackas = () => {
     return (
         <div className="container">
 
-            <div className=" mb-12 flex justify-between  flex-col" >
+            <div className=" py-10 lg:py-20 flex justify-between  flex-col" >
                 <div className='flex flex-col lg:flex-row' data-aos="zoom-in">
                     <div className='flex justify-center'>
                         <div className="flex gap-2 border py-2 px-4 rounded-full">
