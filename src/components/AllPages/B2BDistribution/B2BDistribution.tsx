@@ -55,7 +55,7 @@ export default function B2BDistributionPage() {
 
     return (
         <div className=" py-10  lg:py-20 px-4">
-            <div className="max-w-7xl mx-auto">
+            <div className="container">
                 {/* Header Section */}
                 <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="2000">
                     <div className='flex justify-center items-center mb-6'>
@@ -87,7 +87,7 @@ export default function B2BDistributionPage() {
                             // data-aos-delay={index * 120}
                             data-aos-duration="800"
                             key={index}
-                            className="group bg-white rounded-2xl p-6 transition-all duration-300  "
+                            className="group border bg-[#FFFFFF] rounded-2xl p-6 transition-all duration-300  "
                         >
                             <div className="flex justify-center mb-10">
                                 <div className="bg-[#FFF4E6] p-4 rounded-2xl ">

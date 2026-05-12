@@ -19,7 +19,7 @@ export default function UltraPack() {
 
                     {/* BG */}
                     <Image
-                        src="/images/overlay1.png"
+                        src="/images/pink.png"
                         alt="bg"
                         width={545}
                         height={301}
@@ -51,7 +51,7 @@ export default function UltraPack() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="group perspective absolute right-[-38px] sm:right-[-70px] md:right-[-100px] top-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-xl">
+                            <div className="group perspective absolute right-[-38px] sm:right-[-70px] md:right-[-117px] top-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-xl">
                                 <div className="relative w-[160px] sm:w-[250px] md:w-[200px] h-[300px] md:h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
                                     {/* FRONT */}
                                     <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden">
@@ -64,9 +64,9 @@ export default function UltraPack() {
                                         />
                                     </div>
                                     {/* BACK */}
-                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl overflow-hidden ">
                                         <Image
-                                            src="/images/Hover.png"
+                                            src="/images/pink back.png"
                                             alt="pokemon back"
                                             width={220}
                                             height={220}

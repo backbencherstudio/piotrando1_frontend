@@ -13,12 +13,12 @@ const tabs = ["All Packs", "Retail Packs", "Premium Packs", "Vintage Packs", "Wh
 const products = [
     {
         id: 1,
-        name:"Starter Pack ",
+        name: "Starter Pack ",
         title: "10 CARDS",
         desc: "Compact mystery pack perfect for checkout counter sales and impulse purchases.",
         img: "/images/card110.png",
         bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
-        hoverCard: "/images/Hover.png",
+        hoverCard: "/images/orange back.png",
 
         stats: [
             { label: "Common / Uncommon", value: 7, icon: <CommonIcon /> },
@@ -28,12 +28,12 @@ const products = [
     },
     {
         id: 2,
-        name:"Evolution Pack ",
+        name: "Evolution Pack ",
         title: "20 CARDS",
         desc: "Entry-level pack great for new collectors and gift purchases",
         img: "/images/card120.png",
         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
-        hoverCard: "/images/Hover.png",
+        hoverCard: "/images/green back.png",
 
         stats: [
             { label: "Common / Uncommon", value: 14, icon: <CommonIcon /> },
@@ -43,12 +43,12 @@ const products = [
     },
     {
         id: 3,
-        name:"Ultra Pack ",
+        name: "Ultra Pack ",
         title: " 35 CARDS",
         desc: "Mid-tier mystery pack with extra foil cards for added value. ",
         img: "/images/card135.png",
         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
-        hoverCard: "/images/Hover.png",
+        hoverCard: "/images/pink back.png",
 
         stats: [
             { label: "Common / Uncommon", value: 25, icon: <CommonIcon /> },
@@ -105,89 +105,89 @@ export default function MysteryPacks() {
                         >
 
                             <div className="text-center flex items-center justify-center pb-4 text-xl font-medium">{item.name}</div>
-                          <div className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2">
+                            <div className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2">
 
-                              {/* Image section */}
-                            <div className={`flex  justify-center items-center rounded-xl h-[280px] ${item.bg}`}>
-                                <div className="group perspective flex justify-center  items-center mx-auto w-[150px]  ">
+                                {/* Image section */}
+                                <div className={`flex  justify-center items-center rounded-xl h-[280px] ${item.bg}`}>
+                                    <div className="group perspective flex justify-center  items-center mx-auto w-[150px]  ">
 
-                                    <div className="relative w-[390px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 ">
+                                        <div className="relative w-[390px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 ">
 
-                                        {/* FRONT */}
-                                        <div className="absolute w-[170px] h-[240px] inset-0 backface-hidden rounded-sm overflow-hidden flex justify-center ">
-                                            <Image
-                                                src={item.img}
-                                                alt={item.title}
-                                                width={400}
-                                                height={300}
-                                                className="object-contain w-full h-full -mt-3"
-                                            // className={item.id === 3 ? "object-cover" : "object-contain"}
-                                            />
+                                            {/* FRONT */}
+                                            <div className="absolute w-[170px] h-[240px] inset-0 backface-hidden rounded-sm overflow-hidden flex justify-center ">
+                                                <Image
+                                                    src={item.img}
+                                                    alt={item.title}
+                                                    width={400}
+                                                    height={300}
+                                                    className="object-contain w-full h-full -mt-3"
+                                                // className={item.id === 3 ? "object-cover" : "object-contain"}
+                                                />
+                                            </div>
+
+                                            {/* BACK */}
+                                            <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
+                                                <Image
+                                                    src={item.hoverCard}
+                                                    alt={item.title}
+                                                    width={230}
+                                                    height={220}
+                                                    className="object-contain w-full h-full"
+                                                />
+                                            </div>
+
                                         </div>
-
-                                        {/* BACK */}
-                                        <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
-                                            <Image
-                                                src={item.hoverCard}
-                                                alt={item.title}
-                                                width={230}
-                                                height={220}
-                                                className="object-contain w-full h-full"
-                                            />
-                                        </div>
-
                                     </div>
                                 </div>
-                            </div>
 
-                            {/* Content */}
-                            < div className=" py-2" >
-                                <h3 className="text-3xl font-normal text-center text-[#171B1C] font-secondary">
-                                    {item.title}
-                                </h3>
-                                <div className="flex justify-center mx-auto items-center text-center">
-                                    <p className="text-sm text-[#393939] text-center mt-2 max-w-[350px] leading-relaxed text-balance">
-                                        {item.desc}
-                                    </p>
-                                </div>
+                                {/* Content */}
+                                < div className=" py-2" >
+                                    <h3 className="text-3xl font-normal text-center text-[#171B1C] font-secondary">
+                                        {item.title}
+                                    </h3>
+                                    <div className="flex justify-center mx-auto items-center text-center">
+                                        <p className="text-sm text-[#393939] text-center mt-2 max-w-[350px] leading-relaxed text-balance">
+                                            {item.desc}
+                                        </p>
+                                    </div>
 
-                                {/* Stats */}
-                                <div className="mt-4 space-y-2" >
-                                    {
-                                        item.stats.map((stat, i) => (
-                                            <div
-                                                key={i}
-                                                className="flex justify-between bg-[#F6F5F1] rounded-full px-4 py-2 text-sm"
-                                            >
-                                                <div className="flex gap-1">
-                                                    <p>{stat.icon}</p>  <span>{stat.label}</span>
+                                    {/* Stats */}
+                                    <div className="mt-4 space-y-2" >
+                                        {
+                                            item.stats.map((stat, i) => (
+                                                <div
+                                                    key={i}
+                                                    className="flex justify-between bg-[#F6F5F1] rounded-full px-4 py-2 text-sm"
+                                                >
+                                                    <div className="flex gap-1">
+                                                        <p>{stat.icon}</p>  <span>{stat.label}</span>
+                                                    </div>
+                                                    <span>{stat.value}</span>
                                                 </div>
-                                                <span>{stat.value}</span>
-                                            </div>
-                                        ))
-                                    }
+                                            ))
+                                        }
+                                    </div>
+
+                                    {/* Tags */}
+                                    <div className="flex flex-wrap gap-2 mt-4 text-xs text-[#4A5565]">
+                                        <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
+                                            Premium Packaging
+                                        </span>
+                                        <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
+                                            Great Gift Option
+                                        </span>
+                                        <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
+                                            2 Foil Card Included
+                                        </span>
+                                    </div>
+
+                                    {/* Button */}
+                                    <Link href="/#contact" className="w-full flex justify-center gap-3 mt-5 bg-[#FF8904] hover:bg-orange-500 cursor-pointer  text-white py-3 rounded-xl transition">
+                                        <ShareIcon /> Request a Quote
+                                    </Link>
                                 </div>
 
-                                {/* Tags */}
-                                <div className="flex flex-wrap gap-2 mt-4 text-xs text-[#4A5565]">
-                                    <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
-                                        Premium Packaging
-                                    </span>
-                                    <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
-                                        Great Gift Option
-                                    </span>
-                                    <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
-                                        2 Foil Card Included
-                                    </span>
-                                </div>
-
-                                {/* Button */}
-                                <Link href="/#contact" className="w-full flex justify-center gap-3 mt-5 bg-[#FF8904] hover:bg-orange-500 cursor-pointer  text-white py-3 rounded-xl transition">
-                                    <ShareIcon /> Request a Quote
-                                </Link>
                             </div>
-
-                          </div>
                         </div>
                     ))
                     }

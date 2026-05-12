@@ -54,7 +54,7 @@ export default function Process() {
 
     return (
         <main className=" bg-[#0E1115] py-10 lg:py-20 px-4">
-            <div className="max-w-7xl mx-auto">
+            <div className="container ">
                 {/* Header Section */}
                 <div className="text-center mb-16" data-aos="zoom-out-up" data-aos-duration="1500">
                     <div className='flex justify-center'>

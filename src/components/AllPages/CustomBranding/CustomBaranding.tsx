@@ -6,24 +6,9 @@ import { IoCallOutline } from 'react-icons/io5'
 import { MdArrowOutward } from 'react-icons/md'
 
 export default function CustomBranding() {
-    const [isDragging, setIsDragging] = useState(false);
-    const [preview, setPreview] = useState<string | null>(null);
-
-    const handleFile = (file: File | null) => {
-        if (!file) return;
-
-        if (file.type.startsWith("image/")) {
-            const url = URL.createObjectURL(file);
-            setPreview(url);
-        }
-    };
 
     // cleanup (important)
-    useEffect(() => {
-        return () => {
-            if (preview) URL.revokeObjectURL(preview);
-        };
-    }, [preview]);
+
 
     return (
         <div className='bg-[#0E1115]'>
@@ -64,23 +49,15 @@ export default function CustomBranding() {
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000"
 
-                    style={{ backgroundImage: "url('/images/computer.jpg')" }}
-                    className="relative bg-cover  flex justify-center items-center   overflow-hidden rounded-2xl  "
+
+
                 >
-                    {/* overlay */}
-                    {/* <div className="absolute inset-0 bg-black/70"></div> */}
+                    <Image src="/images/computer.jpg" alt='customBranding' height={500} width={500} className='h-[300px] lg:h-[500px] w-full object-cover rounded-xl' />
 
                     {/* content */}
                     <div className="relative text-black md:py-0 py-9" >
 
-                        {/* <Image src="/images/document.png" height={30} width={40} alt='document' className='flex justify-center items-center mx-auto mb-2' /> */}
-                        {/* <p className="text-white font-semibold text-2xl text-center ">
-                            “ Custom design details will be discussed after initial contact ”
-                        </p> */}
 
-                        {/* <button className="bg-[#FF8904] px-4 py-2 rounded-full gap-2 font-medium text-base text-white flex justify-center items-center mx-auto mt-2">
-                            <IoCallOutline />  Contact Us
-                        </button> */}
                     </div>
                 </div>
 

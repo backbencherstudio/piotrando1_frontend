@@ -15,7 +15,7 @@ export default function Evaluation() {
 
 
                 {/* RIGHT TEXT */}
-                <div className="flex px-4 lg:px-0 order-2 lg:order-1 " data-aos="zoom-out-up" data-aos-duration="2000">
+                <div className="flex justify-center flex-col px-4 lg:px-0 order-2 lg:order-1 " data-aos="zoom-out-up" data-aos-duration="2000">
                     <div className="max-w-md">
 
                         <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">
@@ -83,7 +83,7 @@ export default function Evaluation() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="group perspective absolute right-[-38px] sm:right-[-70px] md:right-[-100px] lg:right-[-62px] xl:right-[-100px] top-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-xl">
+                            <div className="group perspective absolute right-[-38px] sm:right-[-70px] md:right-[-123px] lg:right-[-62px] xl:right-[-119px] top-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-xl">
                                 <div className="relative w-[160px] sm:w-[250px] md:w-[200px] h-[300px] md:h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
                                     {/* FRONT */}
                                     <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden ">
@@ -96,12 +96,12 @@ export default function Evaluation() {
                                         />
                                     </div>
                                     {/* BACK */}
-                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.3)] ">
+                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl overflow-hidden  ">
                                         <Image
-                                            src="/images/Hover.png"
+                                            src="/images/green back.png"
                                             alt="pokemon back"
-                                            width={220}
-                                            height={320}
+                                            width={200}
+                                            height={300}
                                             className="w-full h-full object-contain"
                                         />
                                     </div>

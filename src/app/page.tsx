@@ -13,6 +13,7 @@ import GetInTouch from '@/components/AllPages/Testimonials/GetInTouch'
 import TestimonialsSection, { } from '@/components/AllPages/Testimonials/Testimonials'
 import React from 'react'
 import CountrySelect from './flag/page'
+import MysteryNotice from '@/components/AllPages/MysteryNotice/MysteryNotice'
 
 export default function page() {
   return (
@@ -27,6 +28,7 @@ export default function page() {
       <DeliveryLogistics />
       <CustomBranding />
       <Sourch />
+      <MysteryNotice />
       <OurPackas />
 
       <TestimonialsSection />

@@ -140,12 +140,13 @@ export default function GetInTouch() {
                                     <option value="pro" className="text-black">Pro</option>
                                 </select>
                             </div> */}
+                            <div className="space-y-2">
+                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Messages</label>
+                                <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full md:p-1 p-4 bg-gray-50 border h-9 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
+                            </div>
                         </div>
 
-                        <div className="space-y-2">
-                            <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Messages</label>
-                            <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full md:p-1 p-4 bg-gray-50 border h-12 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
-                        </div>
+
 
                         <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-2 xl:py-4 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
                             Request Wholesale Pricing
