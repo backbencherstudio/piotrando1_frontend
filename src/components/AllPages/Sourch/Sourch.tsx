@@ -25,7 +25,7 @@ import { MdArrowOutward } from 'react-icons/md'
 
 export default function Sourch() {
     return (
-        <div className='py-10 lg:py-20 container'>
+        <div className='py-10 lg:py-15 container'>
 
             <div className="text-center" data-aos="fade-up"
                 data-aos-duration="2000">
@@ -60,23 +60,20 @@ export default function Sourch() {
 
 
                             <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px] ml-4  space-y-4'>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Direct Retail & Store Partnerships</div>
-                                <p className="ml-9">We work directly with retail stores and card businesses to acquire excess inventory, collections, and
+                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Cards sourced from verified sellers retailers. and events</div>
+                                <p className="ml-9 text-[#4A5565] text-base font-normal">We work directly with retail stores and card businesses to acquire excess inventory, collections, and
                                     returned stock. This helps us maintain a stable flow of authentic trading cards throughout the year.</p>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Event & Community Sourcing
+                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Only authentic products  no exceptions
                                 </div>
-                                <p className="ml-9">We source cards through Pokémon tournaments, local events, and collector communities, giving us
+                                <p className="ml-9 text-[#4A5565] text-base font-normal">We source cards through Pokémon tournaments, local events, and collector communities, giving us
                                     access to popular, competitive, and hard-to-find cards directly from active players and collectors.</p>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> rusted Reseller Network
+                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Double-layer quality control process
                                 </div>
-                                <p className="ml-9">We maintain long-term relationships with reliable independent resellers who consistently provide
+                                <p className="ml-9 text-[#4A5565] text-base font-normal">We maintain long-term relationships with reliable independent resellers who consistently provide
                                     high-quality singles, sealed products, and collectible inventory.</p>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Quality Control & Assembly</div>
-                                <p className="ml-9">Every product is carefully reviewed and prepared through internal quality control processes to
+                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Continuous sourcing to ensure stable stock</div>
+                                <p className="ml-9 text-[#4A5565] text-base font-normal">Every product is carefully reviewed and prepared through internal quality control processes to
                                     ensure authenticity, consistency, and presentation standards before shipment.</p>
-                                <div className='flex gap-2'> <div className=''><CurrectGreenIcon /> </div> Verified Global Supply Channels</div>
-                                <p className="ml-9">We actively monitor the trading card market and source inventory through verified distributors,
-                                    marketplaces, and international partners to maintain dependable stock availability year-round.</p>
 
 
                             </div>

@@ -125,7 +125,7 @@ export default function Navbar() {
 
                     <div className="flex gap-5 -mt-2">
                         <div className={`flex items-center gap-2 cursor-pointer ${textColor}`}>
-                            <p className="text-xs xl:text-base hover:text-[#FE6B02]">Strona główna (EN)</p>
+                            <p className="text-xs xl:text-base hover:text-[#FE6B02]">Strona glowna (EN)</p>
                             <Image src="/images/flag.png" alt="flag" width={30} height={20} />
                         </div>
 
