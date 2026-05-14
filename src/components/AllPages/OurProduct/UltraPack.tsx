@@ -81,7 +81,7 @@ export default function UltraPack() {
                 </div>
 
                 {/* RIGHT TEXT */}
-                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div className="flex  justify-start flex-col lg:justify-center px-4 lg:px-0" data-aos="zoom-out-up" data-aos-duration="1500">
                     <div className="max-w-md">
 
                         <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">

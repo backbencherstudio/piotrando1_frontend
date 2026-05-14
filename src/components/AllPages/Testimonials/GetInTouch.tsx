@@ -93,7 +93,7 @@ export default function GetInTouch() {
                     </div>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-sm  lg:h-full h-full " data-aos="fade-left"
+                <div className="bg-[#FFFFFF] p-6 rounded-lg shadow-sm  lg:h-full h-full " data-aos="fade-left"
                     data-aos-duration="1500">
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
