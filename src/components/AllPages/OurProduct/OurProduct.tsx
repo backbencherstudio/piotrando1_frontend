@@ -28,7 +28,7 @@ export default function OurProduct() {
             </div>
 
             {/* GRID */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[52px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[100px]">
 
                 {/* LEFT CARD */}
                 <div className="relative" data-aos="zoom-out-up">
@@ -43,11 +43,11 @@ export default function OurProduct() {
                     />
 
                     {/* CARD */}
-                    <div className='relative ml-10' data-aos-duration="2000">
-                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-6 shadow-lg flex justify-start items-center">
+                    <div className='relative ml-10' data-aos-duration="1500">
+                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-2 md:px-6 shadow-lg flex justify-start items-center">
 
                             {/* TEXT */}
-                            <div className="max-w-[70%]">
+                            <div className=" max-w-[55%]">
                                 <h2 className="text-xl md:text-3xl font-semibold flex items-center gap-2">
                                     <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                                     Inside packs
@@ -65,8 +65,8 @@ export default function OurProduct() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="group perspective absolute right-[-40px] sm:right-[-100px] md:right-[-114px] top-1/2 -translate-y-1/2  flex justify-center items-center  rounded-xl ">
-                                <div className="relative w-[180px] sm:w-[250px] md:w-[200px] h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
+                            <div className="group perspective absolute right-[-20px] sm:right-[10px]  md:right-[40px] lg:right-[-50px] xl:right-[30px] top-1/2 -translate-y-1/2  flex justify-center items-center  rounded-xl ">
+                                <div className="relative w-[180px] sm:w-[250px] md:w-[200px] h-[250px] sm:h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
                                     {/* FRONT */}
                                     <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden ">
                                         <Image
@@ -95,7 +95,7 @@ export default function OurProduct() {
                 </div>
 
                 {/* RIGHT TEXT */}
-                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0" data-aos="zoom-out-down" data-aos-duration="2000">
+                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0" data-aos="zoom-out-down" data-aos-duration="1500">
                     <div className="max-w-md">
 
                         <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">

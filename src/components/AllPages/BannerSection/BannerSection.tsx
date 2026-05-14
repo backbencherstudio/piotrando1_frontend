@@ -16,7 +16,7 @@ export default function BannerSection() {
                     data-aos="fade-right"
                     data-aos-duration="1500"
                     data-aos-delay="300"
-                    className='flex justify-center items-center'>
+                    className='flex justify-center items-center mt-10 md:mt-0'>
                     <div>
                         <div className='flex'>
                             <div className="flex items-center gap-2 border p-2 rounded-3xl">

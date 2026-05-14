@@ -47,18 +47,15 @@ export default function CustomBranding() {
 
                 <div data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000"
+                    data-aos-duration="1500"
 
 
 
                 >
-                    <Image src="/images/computer.jpg" alt='customBranding' height={500} width={500} className='h-[300px] lg:h-[500px] w-full object-cover rounded-xl' />
+                    <Image src="/images/computer.jpg" alt='customBranding' height={500} width={500} className='h-[300px] lg:h-[500px]  w-full object-center rounded-xl' />
 
                     {/* content */}
-                    <div className="relative text-black md:py-0 py-9" >
 
-
-                    </div>
                 </div>
 
 

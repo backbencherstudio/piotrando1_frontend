@@ -153,9 +153,9 @@ export default function TestimonialsSection() {
 
             </div>
 
-            <div className='flex justify-center'>
+            {/* <div className='flex justify-center'>
                 <button className='bg-[#FF6900] text-white px-5 py-2 rounded-full mt-7 flex gap-3 cursor-pointer'>  Show More <FiArrowRight className='mt-1' /></button>
-            </div>
+            </div> */}
 
         </section>
     )

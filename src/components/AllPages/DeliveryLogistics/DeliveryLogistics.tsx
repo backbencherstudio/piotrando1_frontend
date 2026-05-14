@@ -102,7 +102,7 @@ export default function DeliveryLogistics() {
                     <div
                         key={index}
                         data-aos="fade-up"
-                        data-aos-duration="2000"
+                        data-aos-duration="1500"
                         className="rounded-2xl border border-transparent hover:border-orange-500 transition-all duration-300 overflow-hidden"
                     >
                         {/* Top Section */}
@@ -138,7 +138,7 @@ export default function DeliveryLogistics() {
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6  mx-auto mt-16">
                 {features.map((f, i) => (
                     <div key={i} className="flex gap-3 items-start" data-aos="fade-up"
-                        data-aos-duration="2000">
+                        data-aos-duration="1500">
                         <div className="bg-[#DCFCE7] p-2.5 rounded-md">{f.icon}</div>
                         <div>
                             <h4 className="font-medium text-lg text-[#101828]">{f.title}</h4>

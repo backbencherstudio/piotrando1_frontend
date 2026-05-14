@@ -9,13 +9,13 @@ export default function MysteryNotice() {
                 <div className='flex justify-center pb-[64px]'> <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% ">The Mystery Everyone Notices</p></div>
                 <div className='grid grid-cols-1 md:grid-cols-2   gap-[52px] '>
                     <div className='  ' data-aos="fade-right"
-                        data-aos-duration="2000">
+                        data-aos-duration="1500">
                         <Image src="/images/mystery.jpg" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
 
                     </div>
 
                     <div data-aos="fade-left"
-                        data-aos-duration="2000">
+                        data-aos-duration="1500">
                         <div>
 
                             <div className='flex flex-col gap-8  '>

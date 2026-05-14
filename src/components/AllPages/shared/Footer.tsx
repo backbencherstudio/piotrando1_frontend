@@ -39,7 +39,7 @@ export default function Footer() {
                         <h3 className="font-semibold text-[#F6F5F1]  mb-4">Company</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/aboutUs" className="  text-sm transition-colors">
+                                <Link href="/#aboutUs" className="  text-sm transition-colors">
                                     About Us
                                 </Link>
                             </li>

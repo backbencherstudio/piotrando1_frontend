@@ -50,7 +50,7 @@ export default function GetInTouch() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
                 <div className="flex flex-col justify-start" data-aos="fade-right"
-                    data-aos-duration="2000">
+                    data-aos-duration="1500">
 
                     <div className=" mb-12">
                         <div className='flex '>
@@ -94,7 +94,7 @@ export default function GetInTouch() {
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-sm  lg:h-full h-full " data-aos="fade-left"
-                    data-aos-duration="2000">
+                    data-aos-duration="1500">
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                             <div className="space-y-2">

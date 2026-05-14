@@ -29,7 +29,7 @@ export default function page() {
       <CustomBranding />
       <Sourch />
       <MysteryNotice />
-      <OurPackas />
+      {/* <OurPackas /> */}
 
       <TestimonialsSection />
 
