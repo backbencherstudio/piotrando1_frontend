@@ -96,7 +96,7 @@ export default function MysteryPacks() {
 
                 {/* Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up"
-                    data-aos-duration="2000">
+                    data-aos-duration="1500">
                     {products.map((item) => (
 
                         <div

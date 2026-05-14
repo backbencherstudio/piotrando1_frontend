@@ -47,7 +47,7 @@ export default function WhoWeAre() {
 
                 {/* RIGHT SIDE DIAGRAM */}
                 <div data-aos="fade-left"
-                    data-aos-duration="2000">
+                    data-aos-duration="1500">
                     <div className="bg-[#F6F5F1] rounded-xl">
                         <Image src="/images/circel.png" alt="about us" height={400} width={400} className="w-full h-full p-7" />
                     </div>

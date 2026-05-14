@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { IoArrowForwardOutline, IoClose } from "react-icons/io5";
 import LineIcon from "@/components/icon/LineIcon";
+import { SwitchLanguage } from "@/components/LanguegeProvider/SwitchLanguege/SwitchLanguege";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -124,6 +125,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="flex gap-5 -mt-2">
+                        {/* <SwitchLanguage /> */}
                         <div className={`flex items-center gap-2 cursor-pointer ${textColor}`}>
                             <p className="text-xs xl:text-base hover:text-[#FE6B02]">Strona glowna (EN)</p>
                             <Image src="/images/flag.png" alt="flag" width={30} height={20} />

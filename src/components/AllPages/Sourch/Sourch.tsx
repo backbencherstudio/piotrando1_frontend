@@ -25,10 +25,10 @@ import { MdArrowOutward } from 'react-icons/md'
 
 export default function Sourch() {
     return (
-        <div className='py-10 lg:py-15 container'>
+        <div className='py-10 lg:py-20 container'>
 
             <div className="text-center" data-aos="fade-up"
-                data-aos-duration="2000">
+                data-aos-duration="1500">
                 <div className='flex justify-center'>
                     <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                         <Image
@@ -53,13 +53,13 @@ export default function Sourch() {
             <div className='grid grid-cols-1 md:grid-cols-2   py-20 gap-[52px] '>
 
                 <div data-aos="fade-right"
-                    data-aos-duration="2000">
+                    data-aos-duration="1500">
                     <div>
 
                         <div className='flex flex-col gap-8  '>
 
 
-                            <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px] ml-4  space-y-4'>
+                            <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px]   space-y-4'>
                                 <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Cards sourced from verified sellers retailers. and events</div>
                                 <p className="ml-9 text-[#4A5565] text-base font-normal">We work directly with retail stores and card businesses to acquire excess inventory, collections, and
                                     returned stock. This helps us maintain a stable flow of authentic trading cards throughout the year.</p>
@@ -85,7 +85,7 @@ export default function Sourch() {
                 </div >
 
                 <div className='  ' data-aos="fade-left"
-                    data-aos-duration="2000">
+                    data-aos-duration="1500">
                     <Image src="/images/image33.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
 
                 </div>

@@ -57,7 +57,7 @@ export default function B2BDistributionPage() {
         <div className=" py-10  lg:py-20 px-4">
             <div className="container">
                 {/* Header Section */}
-                <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="2000">
+                <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="1500">
                     <div className='flex justify-center items-center mb-6'>
                         <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                             <Image

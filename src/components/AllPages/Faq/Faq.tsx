@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import React from "react";
 
 const faqs = [
     {
@@ -56,12 +57,19 @@ const faqs = [
 ];
 
 export function FAQ() {
+    const [open, setOpen] = React.useState(false);
+
+    const handelClick = () => {
+        setOpen(!open);
+    };
+
+    const visibleFaqs = open ? faqs : faqs.slice(0, 6);
     return (
         <section className=" w-full py-24 bg-background bg-black text-white" id="faq">
             <div className=" container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
                 {/* Header */}
                 <div className=" mb-12 space-y-4" data-aos="zoom-in"
-                    data-aos-duration="2000">
+                    data-aos-duration="1500">
                     <div className='flex'>
                         <div className="flex items-center gap-2 border p-2 rounded-full px-4 py-2">
                             <Image
@@ -81,18 +89,20 @@ export function FAQ() {
                         Everything you need to know about our mystery repacks, wholesale <br />
                         process and delivery
                     </p>
-                    <Button className="mt-2 text-primary bg-[#FF8904] text-white rounded-full px-8 py-2 cursor-pointer">
-                        See All FAQs
-                    </Button>
+                    <div className="flex">
+                        <Button onClick={handelClick} className="mt-2 text-primary bg-[#FF8904] text-white rounded-full px-8 py-5 cursor-pointer text-base font-medium hover:bg-[#FE6B02]">
+                            See All FAQs
+                        </Button>
+                    </div>
                 </div>
 
                 {/* Accordion FAQ Grid */}
                 <div className=" bg-black" data-aos="fade-right"
-                    data-aos-duration="2000">
+                    data-aos-duration="1500">
                     <Card className=" bg-black text-white">
                         <CardContent className=" ">
                             <Accordion type="single" collapsible className="w-full gap-6 ">
-                                {faqs.map((faq, index) => (
+                                {visibleFaqs.map((faq, index) => (
                                     <AccordionItem
                                         key={index}
                                         value={`item-${index}`}

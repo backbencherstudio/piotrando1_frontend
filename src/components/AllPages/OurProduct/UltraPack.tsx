@@ -7,15 +7,15 @@ import Link from 'next/link'
 
 export default function UltraPack() {
     return (
-        <div className="py-8 container">
+        <div className="py-8 ">
 
 
 
             {/* GRID */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[70px] xl:gap-[52px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[100px] xl:gap-[52px]">
 
                 {/* LEFT CARD */}
-                <div className="relative" data-aos="zoom-out-down" data-aos-duration="2000">
+                <div className="relative" data-aos="zoom-out-down" data-aos-duration="1500">
 
                     {/* BG */}
                     <Image
@@ -28,10 +28,10 @@ export default function UltraPack() {
 
                     {/* CARD */}
                     <div className='relative ml-10'>
-                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-6 shadow-lg flex justify-start items-center">
+                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-2 md:px-6 shadow-lg flex justify-start items-center">
 
                             {/* TEXT */}
-                            <div className="max-w-[70%]">
+                            <div className="max-w-[55%]">
                                 <h2 className="text-xl md:text-3xl font-semibold flex items-center gap-2">
                                     <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                                     Inside packs
@@ -51,16 +51,16 @@ export default function UltraPack() {
                             </div>
 
                             {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="group perspective absolute right-[-38px] sm:right-[-70px] md:right-[-117px] top-1/2 -translate-y-1/2 z-20 flex justify-center items-center rounded-xl">
-                                <div className="relative w-[160px] sm:w-[250px] md:w-[200px] h-[300px] md:h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
+                            <div className="group perspective absolute right-[-4px] sm:right-[-20px] md:right-[30px] lg:right-[-117px]  top-1/2 xl:right-[30px] -translate-y-1/2 z-20 flex justify-center items-center rounded-xl">
+                                <div className="relative w-[135px] sm:w-[210px] md:w-[200px] h-[240px] sm:h-[320px] md:h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
                                     {/* FRONT */}
-                                    <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden">
+                                    <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden ">
                                         <Image
                                             src="/images/card135.png"
                                             alt="pokemon front"
                                             width={220}
-                                            height={320}
-                                            className="w-full h-full object-cover"
+                                            height={220}
+                                            className="w-full h-full object-cover "
                                         />
                                     </div>
                                     {/* BACK */}
@@ -81,7 +81,7 @@ export default function UltraPack() {
                 </div>
 
                 {/* RIGHT TEXT */}
-                <div className="flex  justify-start items-center lg:justify-center px-4 lg:px-0" data-aos="zoom-out-up" data-aos-duration="2000">
+                <div className="flex  justify-start flex-col lg:justify-center px-4 lg:px-0" data-aos="zoom-out-up" data-aos-duration="1500">
                     <div className="max-w-md">
 
                         <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">
