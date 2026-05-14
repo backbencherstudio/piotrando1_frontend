@@ -57,7 +57,7 @@ function Card({ name, role, quote, avatar }: Testimonial) {
 
 export default function TestimonialsSection() {
     return (
-        <section className="py-10 lg:py-20 container">
+        <section className="py-10 lg:py-20 container overflow-y-hidden">
 
             <div className="text-center mb-12" data-aos="zoom-in">
                 <div className='flex justify-center'>

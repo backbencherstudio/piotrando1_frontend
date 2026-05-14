@@ -10,7 +10,7 @@ export default function MysteryNotice() {
                 <div className='grid grid-cols-1 md:grid-cols-2   gap-[52px] '>
                     <div className='  ' data-aos="fade-right"
                         data-aos-duration="1500">
-                        <Image src="/images/mystery.jpg" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
+                        <Image src="/images/noticeSectiob.jpg" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl object-center' />
 
                     </div>
 
