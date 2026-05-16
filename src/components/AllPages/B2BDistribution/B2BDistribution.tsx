@@ -54,7 +54,7 @@ export default function B2BDistributionPage() {
     ];
 
     return (
-        <div className=" py-10  lg:py-20 px-4">
+        <div className=" py-10  lg:py-20 ">
             <div className="container">
                 {/* Header Section */}
                 <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="1500">

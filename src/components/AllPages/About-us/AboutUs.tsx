@@ -7,7 +7,7 @@ export default function AboutUs() {
     return (
         <div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[52px] ' id='aboutUs'>
+            <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-10 lg:gap-[52px] ' id='aboutUs'>
                 <div
                     data-aos="fade-up"
                     data-aos-duration="1500"
@@ -40,7 +40,7 @@ export default function AboutUs() {
                 <div className='' data-aos="fade-up-left"
                     data-aos-duration="1500"
                     data-aos-delay="300">
-                    <Image src="/images/whoWe.png" alt='image' height={501} width={545} className='z-10 h-[400px] lg:h-[501px] w-full rounded-xl' />
+                    <Image src="/images/whoWe.png" alt='image' height={501} width={545} className='z-10 h-[320px] lg:h-[501px] w-full rounded-xl' />
 
                 </div>
             </div>

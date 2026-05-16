@@ -108,31 +108,31 @@ export default function MysteryPacks() {
                             <div className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2">
 
                                 {/* Image section */}
-                                <div className={`flex  justify-center items-center rounded-xl h-[280px] ${item.bg}`}>
-                                    <div className="group perspective flex justify-center  items-center mx-auto w-[150px]  ">
+                                <div className={`flex  justify-center items-center rounded-xl h-[340px] ${item.bg}`}>
+                                    <div className="group perspective flex  mx-auto w-[150px]  ">
 
-                                        <div className="relative w-[390px] h-[220px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 ">
+                                        <div className="relative w-[390px] h-[280px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 ">
 
                                             {/* FRONT */}
-                                            <div className="absolute w-[170px] h-[240px] inset-0 backface-hidden rounded-sm overflow-hidden flex justify-center ">
+                                            <div className="absolute w-[200px] h-[280px] inset-0 backface-hidden rounded-sm overflow-hidden flex justify-center ">
                                                 <Image
                                                     src={item.img}
                                                     alt={item.title}
                                                     width={400}
                                                     height={300}
-                                                    className="object-contain w-full h-full -mt-3"
+                                                    className="object-contain w-full h-full  mr-13"
                                                 // className={item.id === 3 ? "object-cover" : "object-contain"}
                                                 />
                                             </div>
 
                                             {/* BACK */}
-                                            <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
+                                            <div className="absolute w-[250px] h-[260px] inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
                                                 <Image
                                                     src={item.hoverCard}
                                                     alt={item.title}
-                                                    width={230}
+                                                    width={250}
                                                     height={220}
-                                                    className="object-contain w-full h-full"
+                                                    className="object-contain w-full h-full ml-12"
                                                 />
                                             </div>
 

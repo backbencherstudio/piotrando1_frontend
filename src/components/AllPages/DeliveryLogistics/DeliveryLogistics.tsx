@@ -89,7 +89,7 @@ export default function DeliveryLogistics() {
                     </div>
 
                 </div>
-                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6 mb-2">Fast & Reliable Delivery Across Europe</p>
+                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6 ">Fast & Reliable Delivery Across Europe</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
                     We keep your business stocked with fast shipping, secure packaging, and consistent
                     availability
@@ -97,7 +97,7 @@ export default function DeliveryLogistics() {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6  mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6  mx-auto">
                 {deliveryData.map((item, index) => (
                     <div
                         key={index}

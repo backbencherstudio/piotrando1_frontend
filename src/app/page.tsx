@@ -14,6 +14,8 @@ import TestimonialsSection, { } from '@/components/AllPages/Testimonials/Testimo
 import React from 'react'
 import CountrySelect from './flag/page'
 import MysteryNotice from '@/components/AllPages/MysteryNotice/MysteryNotice'
+import Evaluation from '@/components/AllPages/OurProduct/EvoluationPack'
+import UltraPack from '@/components/AllPages/OurProduct/UltraPack'
 
 export default function page() {
   return (
@@ -22,6 +24,10 @@ export default function page() {
       <AboutUs />
       <OurMission />
       <OurProduct />
+      <div>
+        <Evaluation />
+        <UltraPack />
+      </div>
       <Process />
       <B2BDistribution />
 

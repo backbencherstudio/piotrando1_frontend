@@ -65,7 +65,7 @@ export function FAQ() {
 
     const visibleFaqs = open ? faqs : faqs.slice(0, 6);
     return (
-        <section className=" w-full py-24 bg-background bg-black text-white" id="faq">
+        <section className=" w-full py-10 md:py-12 lg:py-20 bg-background bg-black text-white" id="faq">
             <div className=" container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
                 {/* Header */}
                 <div className=" mb-12 space-y-4" data-aos="zoom-in"
@@ -108,7 +108,7 @@ export function FAQ() {
                                         value={`item-${index}`}
                                         className=" bg-[#202020] rounded-lg  "
                                     >
-                                        <AccordionTrigger className="text-left font-medium text-base md:text-lg py-4 hover:no-underline rounded-lg px-2 ">
+                                        <AccordionTrigger className="text-left flex items-center font-medium text-base md:text-lg py-4 hover:no-underline rounded-lg px-2 ">
                                             {faq.question}
                                         </AccordionTrigger>
                                         <AccordionContent className="text-muted-foreground pb-4 text-white px-2  pt-2">
