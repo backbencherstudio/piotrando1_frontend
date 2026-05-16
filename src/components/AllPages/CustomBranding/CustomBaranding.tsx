@@ -11,9 +11,9 @@ export default function CustomBranding() {
 
 
     return (
-        <div className='bg-[#0E1115]'>
+        <div className='bg-[#0E1115]' id="customBranding">
 
-            <div className='grid grid-cols-1 md:grid-cols-2  container py-10 lg:py-20 gap-[40px] '>
+            <div className='grid grid-cols-1 md:grid-cols-2  Allcontainer py-10 lg:py-20 gap-[40px] '>
 
                 <div data-aos="fade-down"
                     data-aos-anchor-placement="bottom-bottom" >

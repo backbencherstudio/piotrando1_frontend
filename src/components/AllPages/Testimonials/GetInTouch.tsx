@@ -46,10 +46,10 @@ export default function GetInTouch() {
         }
     };
     return (
-        <div className=" py-10 lg:py-20 flex  container" id="contact">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className=" py-10 lg:py-20 flex  Allcontainer" id="contact">
+            <div className="flex flex-col md:flex-row md:gap-10 gap-[70px]  w-full justify-between ">
 
-                <div className="flex flex-col justify-start" data-aos="fade-right"
+                <div className="flex flex-col justify-start w-full" data-aos="fade-right"
                     data-aos-duration="1500">
 
                     <div className=" mb-12">
@@ -68,7 +68,7 @@ export default function GetInTouch() {
 
                         </div>
                         <div className=''>
-                            <p className="text-[#000] text-[clamp(2rem,3rem,4rem)] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
+                            <p className="text-[#000] text-[clamp(2rem,2.5rem,4rem)] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
                             <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-lg">
                                 Tell us what you need and we will prepare a custom quote, sample option, or wholesale recommendation within 24 hours.
                             </p>
@@ -93,26 +93,27 @@ export default function GetInTouch() {
                     </div>
                 </div>
 
-                <div className="bg-[#FFFFFF] p-6 rounded-lg shadow-sm  lg:h-full h-full " data-aos="fade-left"
-                    data-aos-duration="1500">
-                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
-                            <div className="space-y-2">
-                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Company Name</label>
-                                <input {...register("companyName")} placeholder="Your Company Name" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                <div className=" w-full ">
+                    <div className="bg-[#FFFFFF] p-6 rounded-lg shadow-sm  lg:h-full h-full " data-aos="fade-left"
+                        data-aos-duration="1500">
+                        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                                <div className="space-y-2">
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Company Name</label>
+                                    <input {...register("companyName")} placeholder="Your Company Name" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Contact Name</label>
+                                    <input {...register("contactName")} placeholder="Your Name" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                </div>
                             </div>
-                            <div className="space-y-2">
-                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Contact Name</label>
-                                <input {...register("contactName")} placeholder="Your Name" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
-                            </div>
-                        </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
-                            <div className="space-y-2">
-                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Business Email</label>
-                                <input {...register("businessEmail")} placeholder="business@email.com" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
-                            </div>
-                            {/* <div className="space-y-2">
+                            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                                <div className="space-y-2">
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Business Email</label>
+                                    <input {...register("businessEmail")} placeholder="business@email.com" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                </div>
+                                {/* <div className="space-y-2">
                                 <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
                                 <select {...register("country")} className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl focus:outline-orange-500 transition-all appearance-none">
                                     <option value="Bangladesh">🇧🇩 Bangladesh</option>
@@ -122,43 +123,44 @@ export default function GetInTouch() {
 
                             </div> */}
 
-                            <div className="space-y-2">
-                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
-                                <CountrySelect onChange={handleCountryChange} defaultValue="PL" />
+                                <div className="space-y-2">
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
+                                    <CountrySelect onChange={handleCountryChange} defaultValue="PL" />
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
-                            <div className="space-y-2">
-                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Estimated Quantity</label>
-                                <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
-                            </div>
-                            {/* <div className="space-y-2">
+                            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                                <div className="space-y-2">
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Estimated Quantity</label>
+                                    <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                </div>
+                                {/* <div className="space-y-2">
                                 <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Product Type</label>
                                 <select {...register("productType")} className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all appearance-none ">
                                     <option value="" className="text-black">e.g. Starter, Pro, Ultra</option>
                                     <option value="pro" className="text-black">Pro</option>
                                 </select>
                             </div> */}
-                            <div className="space-y-2">
-                                <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Messages</label>
-                                <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full md:p-1 p-4 bg-gray-50 border h-9 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
+                                <div className="space-y-2">
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Messages</label>
+                                    <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full md:p-1 p-4 bg-gray-50 border h-9 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
+                                </div>
                             </div>
-                        </div>
 
 
 
-                        <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-2 xl:py-4 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
-                            Request Wholesale Pricing
-                        </button>
+                            <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-2 xl:py-4 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
+                                Request Wholesale Pricing
+                            </button>
 
-                        <p className="text-[#888D91] text-center md:text-sm xl:text-[16px] italic font-normal leading-[170%] tracking-[-0.3px] pt-2">
-                            We usually reply within 24 hours. Sample packs are available before larger orders.
-                        </p>
-                    </form>
+                            <p className="text-[#888D91] text-center md:text-sm xl:text-[16px] italic font-normal leading-[170%] tracking-[-0.3px] pt-2">
+                                We usually reply within 24 hours. Sample packs are available before larger orders.
+                            </p>
+                        </form>
+                    </div>
                 </div>
 
             </div>
-        </div>
+        </div >
     );
 }

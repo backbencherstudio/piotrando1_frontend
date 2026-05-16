@@ -25,7 +25,7 @@ import { MdArrowOutward } from 'react-icons/md'
 
 export default function Sourch() {
     return (
-        <div className='py-10 lg:py-20 container'>
+        <div className='py-10 lg:py-20 Allcontainer'>
 
             <div className="text-center" data-aos="fade-up"
                 data-aos-duration="1500">
@@ -46,7 +46,7 @@ export default function Sourch() {
                 <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">Reliable Supply. Trusted Sources.</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
                     We maintain a consistent supply pipeline by working only with trusted
-                    partners across the global TCG market.
+                    <br />  partners across the global TCG market.
                 </p>
             </div>
 
@@ -93,7 +93,7 @@ export default function Sourch() {
 
             </div >
 
-            {/* <div className=' container ' data-aos="fade-up"
+            {/* <div className=' Allcontainer ' data-aos="fade-up"
 
                 data-aos-duration="800">
                 <div className=' outline rounded-lg py-0 lg:py-15'>

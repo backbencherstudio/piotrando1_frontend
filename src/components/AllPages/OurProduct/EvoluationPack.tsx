@@ -8,7 +8,7 @@ import CorrectIcon from "@/components/icon/CorrectIcon";
 export default function Evaluation() {
     const [isFlipped, setIsFlipped] = useState(false);
     return (
-        <div className="container pb-4 overflow-hidden">
+        <div className="Allcontainer pb-4 overflow-hidden">
 
             {/* GRID */}
             <div className="grid grid-cols-1 gap-8  md:gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">

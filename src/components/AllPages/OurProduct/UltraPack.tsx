@@ -9,7 +9,7 @@ export default function UltraPack() {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
-        <div className="container py-10 lg:py-20 overflow-hidden">
+        <div className="Allcontainer py-10 lg:py-20 overflow-hidden">
             {/* GRID */}
             <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">
 
@@ -70,10 +70,10 @@ export default function UltraPack() {
                             {/* IMAGE */}
                             <div
                                 onClick={() => setIsFlipped(!isFlipped)}
-                                className="perspective absolute top-1/2 right-[0px] sm:right-[30px] md:right-[20px] lg:right-[-50px] xl:right-[20px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
+                                className="group perspective absolute top-1/2 right-[0px] sm:right-[30px] md:right-[20px] lg:right-[-50px] xl:right-[20px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
                             >
                                 <div
-                                    className={`relative h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : ""
+                                    className={`relative h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : "group-hover:rotate-y-180"
                                         }`}
                                 >
 

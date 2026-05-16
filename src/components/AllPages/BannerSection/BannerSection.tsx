@@ -11,7 +11,7 @@ export default function BannerSection() {
         >
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/25"></div>
-            <div className='grid grid-cols-1 md:grid-cols-2 text-white container  gap-8 '>
+            <div className='grid grid-cols-1 md:grid-cols-2 text-white Allcontainer  gap-8 '>
                 <div
                     data-aos="fade-right"
                     data-aos-duration="1500"
