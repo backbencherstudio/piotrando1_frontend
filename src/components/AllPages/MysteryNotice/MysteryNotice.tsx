@@ -39,15 +39,15 @@ export default function MysteryNotice() {
                                     </div>
 
                                     <div className='flex gap-3'> <div className=''><CurrectGreenIcon /> </div>
-                                        <ul className="list-disc pl-5 -mt-1">
-                                            <li>perfect for display shelves
-                                            </li>
-                                            <li>Eye-catching during events & tournaments
-                                            </li>
-                                            <li>Creates a mystery-box feeling
-                                            </li><li>Designed to attract attention naturally
-                                            </li><li>Built for collectors who value presentation and atmosphere
-                                            </li>
+                                        <ul className=" -mt-1">
+                                            perfect for display shelves
+
+                                            Eye-catching during events & tournaments
+
+                                            Creates a mystery-box feeling
+                                            Designed to attract attention naturally
+                                            Built for collectors who value presentation and atmosphere.
+
                                         </ul>
                                     </div>
 
@@ -67,6 +67,6 @@ export default function MysteryNotice() {
 
                 </div >
             </div>
-        </div>
+        </div >
     )
 }

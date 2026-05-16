@@ -60,6 +60,7 @@ const products = [
 
 export default function MysteryPacks() {
     const [activeTab, setActiveTab] = useState("All Packs");
+    const [isFlipped, setIsFlipped] = useState<number | null>(null);
 
     return (
         <div className=" pt-30 " data-aos="fade-up"
@@ -109,9 +110,9 @@ export default function MysteryPacks() {
 
                                 {/* Image section */}
                                 <div className={`flex  justify-center items-center rounded-xl h-[340px] ${item.bg}`}>
-                                    <div className="group perspective flex  mx-auto w-[150px]  ">
+                                    <div onClick={() => setIsFlipped(isFlipped === item.id ? null : item.id)} className="group perspective flex  mx-auto w-[150px]  ">
 
-                                        <div className="relative w-[390px] h-[280px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 ">
+                                        <div className={`relative w-[390px] h-[280px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl ${isFlipped === item.id ? "rotate-y-180" : "group-hover:rotate-y-180"}`}>
 
                                             {/* FRONT */}
                                             <div className="absolute w-[200px] h-[280px] inset-0 backface-hidden rounded-sm overflow-hidden flex justify-center ">

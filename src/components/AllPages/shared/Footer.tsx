@@ -103,7 +103,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className=" text-sm transition-colors">
+                                <Link href="#customBranding" className=" text-sm transition-colors">
                                     CUSTOM BRANDING AVAILABLE
                                 </Link>
                             </li>
