@@ -53,7 +53,7 @@ export default function Process() {
     ];
 
     return (
-        <main className=" bg-[#0E1115] py-10 lg:py-20 px-4">
+        <main className=" bg-[#0E1115] py-10 lg:py-20 ">
             <div className="container ">
                 {/* Header Section */}
                 <div className="text-center mb-16" data-aos="zoom-out-up" data-aos-duration="1500">

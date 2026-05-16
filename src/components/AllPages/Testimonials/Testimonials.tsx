@@ -107,12 +107,12 @@ export default function TestimonialsSection() {
 
             </div> */}
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 "
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 "
                 data-aos="fade-up"
                 data-aos-delay={100}>
 
                 {/* 1st COLUMN */}
-                <div className="flex flex-col gap-6 ">
+                <div className="flex flex-col gap-3 md:gap-6 ">
                     {columns[0].slice(0, 3).map((item, i) => (
                         <div
                             key={i}
@@ -126,7 +126,7 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* 2nd COLUMN */}
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-3 md:gap-6">
                     {columns[1].slice(0, 3).map((item, i) => (
                         <div
                             key={i}
@@ -139,7 +139,7 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* 3rd COLUMN */}
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-3 md:gap-6">
                     {columns[2].slice(0, 3).map((item, i) => (
                         <div
                             key={i}

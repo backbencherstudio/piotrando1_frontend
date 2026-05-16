@@ -36,26 +36,26 @@ export default function Footer() {
 
                     {/* Company Column */}
                     <div className="md:col-span-2">
-                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">Company</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">COMPANY</h3>
                         <ul className="space-y-2">
                             <li>
                                 <Link href="/#aboutUs" className="  text-sm transition-colors">
-                                    About Us
+                                    ABOUT US
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="text-sm transition-colors">
-                                    Why Spawndrop
+                                    WHY SPAWNDROP
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/#contact" className="  text-sm transition-colors">
-                                    Contact Us
+                                    CONTACT US
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="  text-sm transition-colors">
-                                    Privacy Policy
+                                    PRIVACY POLICY
                                 </Link>
                             </li>
                         </ul>
@@ -63,26 +63,26 @@ export default function Footer() {
 
                     {/* Support Column */}
                     <div className="md:col-span-2">
-                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">Support</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">SUPPORT</h3>
                         <ul className="space-y-2">
-                            <li>
+                            {/* <li>
                                 <Link href="/#contact" className=" text-sm transition-colors">
                                     Contact Us
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link href="/#faq" className=" text-sm transition-colors">
-                                    FAQs
+                                    FAQS
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className=" text-sm transition-colors">
-                                    Customer Support
+                                    CUSTOMER SUPPORT
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className=" text-sm transition-colors">
-                                    Blogs
+                                    BLOGS
                                 </Link>
                             </li>
                         </ul>
@@ -90,21 +90,21 @@ export default function Footer() {
 
                     {/* Resources Column */}
                     <div className="md:col-span-3">
-                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">Resources</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">RESOURCES</h3>
                         <ul className="space-y-2">
                             <li>
                                 <Link href="#" className=" text-sm transition-colors">
-                                    100% Authentic Cards
+                                    100% AUTHENTIC CARDS
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className=" text-sm transition-colors">
-                                    EU & UK Shipping
+                                    EU & UK SHIPPING
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className=" text-sm transition-colors">
-                                    Custom Branding Available
+                                    CUSTOM BRANDING AVAILABLE
                                 </Link>
                             </li>
                         </ul>

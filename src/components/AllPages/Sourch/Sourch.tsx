@@ -45,12 +45,12 @@ export default function Sourch() {
                 </div>
                 <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">Reliable Supply. Trusted Sources.</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
-                    we maintain a consistent supply pipeline by working With trusted partners across the global TCG
-                    market.
+                    We maintain a consistent supply pipeline by working only with trusted
+                    partners across the global TCG market.
                 </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2   py-20 gap-[52px] '>
+            <div className='grid grid-cols-1 md:grid-cols-2 py-5 md:py-10  lg:py-20 gap-[52px] '>
 
                 <div data-aos="fade-right"
                     data-aos-duration="1500">

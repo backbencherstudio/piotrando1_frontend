@@ -1,21 +1,20 @@
-
-import Image from 'next/image'
-import React from 'react'
-import { MdArrowOutward, MdKeyboardArrowRight } from 'react-icons/md'
-
-import Link from 'next/link'
+"use client"
+import Image from "next/image";
+import React, { useState } from "react";
+import Link from "next/link";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import CorrectIcon from "@/components/icon/CorrectIcon";
 
 export default function UltraPack() {
+    const [isFlipped, setIsFlipped] = useState(false);
+
     return (
-        <div className="py-8 ">
-
-
-
+        <div className="container py-10 lg:py-20 overflow-hidden">
             {/* GRID */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[100px] xl:gap-[52px]">
+            <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">
 
                 {/* LEFT CARD */}
-                <div className="relative" data-aos="zoom-out-down" data-aos-duration="1500">
+                <div className="relative mx-auto w-full max-w-[770px]" data-aos="zoom-out-down">
 
                     {/* BG */}
                     <Image
@@ -23,56 +22,83 @@ export default function UltraPack() {
                         alt="bg"
                         width={545}
                         height={301}
-                        className="absolute top-0 z-0 w-[600px] h-[490px] rounded-lg"
+                        className="absolute top-0 z-0 h-[430px] w-full rounded-2xl object-cover sm:h-[470px] md:h-[500px]"
                     />
 
                     {/* CARD */}
-                    <div className='relative ml-10'>
-                        <div className="relative z-10 bg-white rounded-2xl mt-6 h-[500px] w-[90%] max-w-[500px] sm:max-w-[510px]  py-10 px-2 md:px-6 shadow-lg flex justify-start items-center">
+                    <div className="relative px-2 sm:px-4 md:px-6">
+                        <div className="relative z-10 mt-2 md:mt-6 flex min-h-[430px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
 
                             {/* TEXT */}
-                            <div className="max-w-[55%]">
-                                <h2 className="text-xl md:text-3xl font-semibold flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+                            <div className="max-w-[58%] sm:max-w-[55%]">
+                                <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                                    <span className="h-2 w-2 rounded-full bg-[#FF5286]"></span>
                                     Inside packs
                                 </h2>
 
-                                <ul className="mt-4 space-y-2 text-[#4A5565] text-base">
-                                    <li>25 Common / Uncommon</li>
-                                    <li>6 Foil cards</li>
-                                    <li>4 Bonus Cards</li>
-                                    <li>Guaranteed holo cards inside</li>
+                                <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                    <li className="flex gap-2">
+                                        <CorrectIcon className="mt-1 text-green-500" />
+                                        25 Common / Uncommon
+                                    </li>
 
-                                    <li className="mt-3">
-                                        Highest chance of premium <br />
-                                        pulls (V / EX / GX I Special Rare)
+                                    <li className="flex gap-2">
+                                        <CorrectIcon className="mt-1 text-green-500" />
+                                        6 Foil cards
+                                    </li>
+
+                                    <li className="flex gap-2">
+                                        <CorrectIcon className="mt-1 text-green-500" />
+                                        4 Bonus Cards
+                                    </li>
+
+                                    <li className="flex gap-2">
+                                        <CorrectIcon className="mt-1 text-green-500" />
+                                        Guaranteed holo cards inside
+                                    </li>
+
+                                    <li className="flex gap-2">
+                                        <CorrectIcon className="mt-1 text-green-500" />
+                                        <span>
+                                            Highest chance of premium <br />
+                                            pulls (V / EX / GX / Special Rare)
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* IMAGE (ALWAYS SAME POSITION) */}
-                            <div className="group perspective absolute right-[-4px] sm:right-[-20px] md:right-[30px] lg:right-[-117px]  top-1/2 xl:right-[30px] -translate-y-1/2 z-20 flex justify-center items-center rounded-xl">
-                                <div className="relative w-[135px] sm:w-[210px] md:w-[200px] h-[240px] sm:h-[320px] md:h-[320px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl">
+                            {/* IMAGE */}
+                            <div
+                                onClick={() => setIsFlipped(!isFlipped)}
+                                className="perspective absolute top-1/2 right-[0px] sm:right-[30px] md:right-[20px] lg:right-[-50px] xl:right-[20px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
+                            >
+                                <div
+                                    className={`relative h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : ""
+                                        }`}
+                                >
+
                                     {/* FRONT */}
-                                    <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden ">
+                                    <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
                                         <Image
                                             src="/images/card135.png"
-                                            alt="pokemon front"
+                                            alt="front"
                                             width={220}
-                                            height={220}
-                                            className="w-full h-full object-cover "
+                                            height={320}
+                                            className="h-full w-full object-cover"
                                         />
                                     </div>
+
                                     {/* BACK */}
-                                    <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-xl overflow-hidden ">
+                                    <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
                                         <Image
                                             src="/images/pink back.png"
-                                            alt="pokemon back"
+                                            alt="back"
                                             width={220}
-                                            height={220}
-                                            className="w-full h-full object-contain"
+                                            height={320}
+                                            className="h-full w-full object-contain"
                                         />
                                     </div>
+
                                 </div>
                             </div>
 
@@ -81,32 +107,36 @@ export default function UltraPack() {
                 </div>
 
                 {/* RIGHT TEXT */}
-                <div className="flex  justify-start flex-col lg:justify-center px-4 lg:px-0" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div className="order-[-1] lg:order-none flex flex-col justify-start lg:justify-center  lg:px-0"
+                    data-aos="zoom-out-up"
+                >
                     <div className="max-w-md">
 
-                        <p className="text-2xl sm:text-3xl lg:text-[40px] font-medium">
+                        <p className="text-2xl font-medium sm:text-3xl lg:text-[40px]">
                             Ultra Pack
                         </p>
 
-                        <div className="flex flex-col gap-6 text-[#393939] mt-4">
+                        <div className="mt-4 flex flex-col gap-6 text-[#393939]">
 
                             <p className="text-base lg:text-lg">
                                 High-value mystery pack designed for enthusiasts and premium retail
                                 positioning.
                             </p>
 
-                            <ul className="text-sm lg:text-base space-y-2 list-disc ml-5">
-                                <li>Collector-focused product
-                                </li>
+                            <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base">
+                                <li>Collector-focused product</li>
                                 <li>Premium unboxing experience</li>
                                 <li>Strong margins</li>
-                                <li> Best perceived value
-                                </li>
+                                <li>Best perceived value</li>
                                 <li>Designed for top-tier resale</li>
                             </ul>
+
                         </div>
 
-                        <Link href="/#contact" className="bg-black flex items-center gap-2 py-2 px-6 rounded-2xl text-white mt-6 cursor-pointer md:w-[230px] w-full text-center lg:text-start justify-center">
+                        <Link
+                            href="/#contact"
+                            className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-white transition hover:scale-[1.02] sm:w-[230px]"
+                        >
                             Request a Quote
                             <MdKeyboardArrowRight className="text-xl" />
                         </Link>
@@ -115,7 +145,6 @@ export default function UltraPack() {
                 </div>
 
             </div>
-
         </div>
-    )
+    );
 }
