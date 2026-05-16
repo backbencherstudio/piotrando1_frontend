@@ -25,7 +25,7 @@ import { MdArrowOutward } from 'react-icons/md'
 
 export default function Sourch() {
     return (
-        <div className='py-10 lg:py-20 container'>
+        <div className='py-10 lg:py-20 Allcontainer'>
 
             <div className="text-center" data-aos="fade-up"
                 data-aos-duration="1500">
@@ -93,7 +93,7 @@ export default function Sourch() {
 
             </div >
 
-            {/* <div className=' container ' data-aos="fade-up"
+            {/* <div className=' Allcontainer ' data-aos="fade-up"
 
                 data-aos-duration="800">
                 <div className=' outline rounded-lg py-0 lg:py-15'>

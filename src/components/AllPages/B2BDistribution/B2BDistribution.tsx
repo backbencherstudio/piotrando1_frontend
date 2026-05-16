@@ -55,7 +55,7 @@ export default function B2BDistributionPage() {
 
     return (
         <div className=" py-10  lg:py-20 ">
-            <div className="container">
+            <div className="Allcontainer">
                 {/* Header Section */}
                 <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="1500">
                     <div className='flex justify-center items-center mb-6'>
@@ -75,7 +75,7 @@ export default function B2BDistributionPage() {
                         PERFECT FOR B2B DISTRIBUTION
                     </h1>
                     <p className="text-lg text-[#393939] max-w-lg mx-auto leading-170%">
-                        Built for resellers and distribution partners looking for ready-to-sell products.
+                        Built for resellers and distribution partners looking <br /> ready-to-sell products.
                     </p>
                 </div>
 

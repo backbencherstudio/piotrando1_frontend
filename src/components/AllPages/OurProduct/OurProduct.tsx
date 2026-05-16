@@ -12,7 +12,7 @@ export default function OurProduct() {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
-        <div className="container py-10 lg:py-20 overflow-hidden">
+        <div className="Allcontainer py-10 lg:py-20 overflow-hidden">
             {/* HEADER */}
             <div
                 className="flex flex-col items-center justify-center px-4 pb-10 text-center lg:pb-16"

@@ -65,7 +65,7 @@ export default function MysteryPacks() {
     return (
         <div className=" pt-30 " data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
-            <div className="container">
+            <div className="Allcontainer">
 
                 {/* Heading */}
                 <div className="text-center mb-10">

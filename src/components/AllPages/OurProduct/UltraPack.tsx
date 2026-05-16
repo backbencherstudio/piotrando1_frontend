@@ -9,7 +9,7 @@ export default function UltraPack() {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
-        <div className="container py-10 lg:py-20 overflow-hidden">
+        <div className="Allcontainer py-10 lg:py-20 overflow-hidden">
             {/* GRID */}
             <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">
 

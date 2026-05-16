@@ -6,7 +6,7 @@ export default function OurMission() {
     return (
         <div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2  container md:py-10 lg:py-20 gap-8 md:gap-10 lg:gap-[52px] '>
+            <div className='grid grid-cols-1 md:grid-cols-2  Allcontainer md:py-10 lg:py-20 gap-8 md:gap-10 lg:gap-[52px] '>
                 <div className=' order-2 md:order-2  rounded-xl' data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" >
