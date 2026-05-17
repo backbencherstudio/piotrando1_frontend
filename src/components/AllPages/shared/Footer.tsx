@@ -9,7 +9,7 @@ import { TbBrandTwitterFilled } from 'react-icons/tb';
 export default function Footer() {
     return (
         <footer className="bg-black text-white">
-            <div className="Allcontainer lg:px-8 py-12">
+            <div className="containers lg:px-8 py-12">
                 {/* Main Footer Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 

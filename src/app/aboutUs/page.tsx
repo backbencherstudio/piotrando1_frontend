@@ -15,7 +15,7 @@ export default function WhoWeAre() {
 
     return (
         <section className="py-30 bg-[#F5F5F5]">
-            <div className="Allcontainer mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+            <div className="containers mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
 
                 {/* LEFT SIDE */}
                 <div

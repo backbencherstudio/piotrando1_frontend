@@ -46,7 +46,7 @@ export default function GetInTouch() {
         }
     };
     return (
-        <div className=" py-10 lg:py-20 flex  Allcontainer" id="contact">
+        <div className=" py-10 lg:py-20 flex  containers" id="contact">
             <div className="flex flex-col md:flex-row md:gap-10 gap-[70px]  w-full justify-between ">
 
                 <div className="flex flex-col justify-start w-full" data-aos="fade-right"

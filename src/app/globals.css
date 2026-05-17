@@ -48,11 +48,17 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 @layer utilities {
-  .Allcontainer {
-    @apply mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-20 2xl:px-25;
+  .containers {
+    @apply mx-auto px-4 md:px-9 lg:px-10 xl:px-0 2xl:px-0;
   }
-}
 
+  /* @media (min-width: 1900px) {
+    .containers {
+      padding-left: 9rem;
+      padding-right: 2rem;
+    }
+  } */
+}
 :root {
   --background: #F6F5F1;
   --foreground: oklch(0.145 0 0);
@@ -148,7 +154,7 @@ body {
     width: 100%;
 }
 
-.container {
+.containers {
     width: 100%;
     max-width: 1280px;
     margin-left: auto;
@@ -167,7 +173,7 @@ section {
         -webkit-overflow-scrolling: touch;
     }
     
-    .container {
+    .containers {
         padding-left: 12px;
         padding-right: 12px;
     }

@@ -72,7 +72,7 @@ const features = [
 
 export default function DeliveryLogistics() {
     return (
-        <div className=" py-10 lg:py-20 Allcontainer" id="shiping">
+        <div className=" py-10 lg:py-20 containers" id="shiping">
             {/* Header */}
             <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="1500">
                 <div className='flex justify-center'>
