@@ -87,7 +87,7 @@ const OurPackas = () => {
     });
 
     return (
-        <div className="Allcontainer">
+        <div className="containers">
 
             <div className=" py-10 lg:py-20 flex justify-between  flex-col" >
                 <div className='flex flex-col lg:flex-row' data-aos="zoom-in">
@@ -128,7 +128,7 @@ const OurPackas = () => {
                 </a>
             </div>
 
-            {/* Carousel Allcontainer */}
+            {/* Carousel containers */}
             <div className="relative" data-aos="zoom-out">
                 {/* Gallery Items */}
                 <div className="flex gap-4 overflow-hidden rounded-lg">

@@ -88,7 +88,7 @@ export default function Navbar() {
 
     return (
         <div className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${navBg}`}>
-            <div className="Allcontainer py-4 flex justify-between items-center gap-6 lg:gap-10">
+            <div className="containers py-4 flex justify-between items-center gap-6 lg:gap-10">
                 <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}>
                     <div className="relative w-[160px] h-[44px]">
                         <Image
@@ -283,7 +283,7 @@ export default function Navbar() {
 //     return (
 //         <div className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/80 backdrop-blur-md text-black" : "bg-transparent text-black"
 //             }`}>
-//             <div className="Allcontainer  text-white py-4 flex justify-between  items-center gap-6 lg:gap-10  ">
+//             <div className="containers  text-white py-4 flex justify-between  items-center gap-6 lg:gap-10  ">
 
 
 //                 <Link href="/">

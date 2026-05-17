@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function MysteryNotice() {
     return (
-        <div className="Allcontainer ">
+        <div className="containers ">
             <div>
                 <div className='flex justify-center pb-10 md:pb-12 lg:pb-[64px]'> <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% ">The Mystery Everyone Notices.</p></div>
                 <div className='grid grid-cols-1 md:grid-cols-2   gap-[52px] '>

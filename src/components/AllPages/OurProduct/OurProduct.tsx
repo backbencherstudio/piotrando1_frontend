@@ -12,7 +12,7 @@ export default function OurProduct() {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
-        <div className="Allcontainer py-10 lg:py-20 overflow-hidden">
+        <div className="containers py-10 lg:py-20 overflow-hidden">
             {/* HEADER */}
             <div
                 className="flex flex-col items-center justify-center px-4 pb-10 text-center lg:pb-16"
@@ -43,136 +43,138 @@ export default function OurProduct() {
             </div>
 
             {/* GRID */}
-            <div className="grid grid-cols-1 gap-8 md:gap-13 lg:grid-cols-2 lg:gap-[100px]">
-                {/* LEFT CARD */}
-                <div
-                    className="relative mx-auto w-full max-w-[770px]"
-                    data-aos="zoom-out-up"
-                >
-                    {/* BG */}
-                    <Image
-                        src="/images/overlay1.png"
-                        alt="bg"
-                        width={545}
-                        height={301}
-                        className="absolute top-0 z-0 h-[430px] w-full rounded-2xl object-cover sm:h-[470px] md:h-[500px]"
-                    />
-
-                    {/* CARD */}
+            <div className=" ">
+                <div className="grid grid-cols-1 gap-8 md:gap-13 lg:grid-cols-2 lg:gap-[100px]">
+                    {/* LEFT CARD */}
                     <div
-                        className="relative px-2 sm:px-4 md:px-6"
-                        data-aos-duration="1500"
+                        className="relative mx-auto w-full max-w-[770px]"
+                        data-aos="zoom-out-up"
                     >
-                        <div className="relative z-10 mt-2 md:mt-6 flex min-h-[430px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
+                        {/* BG */}
+                        <Image
+                            src="/images/overlay1.png"
+                            alt="bg"
+                            width={545}
+                            height={301}
+                            className="absolute top-0 z-0 h-[430px] w-full rounded-2xl object-cover sm:h-[470px] md:h-[500px]"
+                        />
 
-                            {/* TEXT */}
-                            <div className="max-w-[58%] sm:max-w-[55%]">
-                                <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                                    <span className="h-2 w-2 rounded-full bg-orange-500"></span>
-                                    Inside packs
-                                </h2>
+                        {/* CARD */}
+                        <div
+                            className="relative px-2 sm:px-4 md:px-6"
+                            data-aos-duration="1500"
+                        >
+                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[430px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
 
-                                <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                    <li className="flex gap-2">
-                                        <CorrectIcon className="mt-1 text-green-500" />
-                                        7 Common / Uncommon
-                                    </li>
+                                {/* TEXT */}
+                                <div className="max-w-[58%] sm:max-w-[55%]">
+                                    <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                                        <span className="h-2 w-2 rounded-full bg-orange-500"></span>
+                                        Inside packs
+                                    </h2>
 
-                                    <li className="flex gap-2">
-                                        <CorrectIcon className="mt-1 text-green-500" />
-                                        2 Foil Cards
-                                    </li>
+                                    <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                        <li className="flex gap-2">
+                                            <CorrectIcon className="mt-1 text-green-500" />
+                                            7 Common / Uncommon
+                                        </li>
 
-                                    <li className="flex gap-2">
-                                        <CorrectIcon className="mt-1 text-green-500" />
-                                        1 Bonus Card
-                                    </li>
+                                        <li className="flex gap-2">
+                                            <CorrectIcon className="mt-1 text-green-500" />
+                                            2 Foil Cards
+                                        </li>
 
-                                    <li className="flex gap-2">
-                                        <CorrectIcon className="mt-1 text-green-500" />
+                                        <li className="flex gap-2">
+                                            <CorrectIcon className="mt-1 text-green-500" />
+                                            1 Bonus Card
+                                        </li>
 
-                                        <span>
-                                            Bonus Card can be:
-                                            <br />
-                                            Foil V / EX / GX / Special Rare
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <li className="flex gap-2">
+                                            <CorrectIcon className="mt-1 text-green-500" />
+
+                                            <span>
+                                                Bonus Card can be:
+                                                <br />
+                                                Foil V / EX / GX / Special Rare
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
 
 
-                            {/* IMAGE */}
-                            <div
-                                onClick={() => setIsFlipped(!isFlipped)}
-                                className="group perspective absolute top-1/2 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[30px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
-                            >
+                                {/* IMAGE */}
                                 <div
-                                    className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px]
-    ${isFlipped
-                                            ? "rotate-y-180"
-                                            : "group-hover:rotate-y-180"
-                                        }`}
+                                    onClick={() => setIsFlipped(!isFlipped)}
+                                    className="group perspective absolute top-1/2 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[30px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
                                 >
-                                    {/* FRONT */}
-                                    <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
-                                        <Image
-                                            src="/images/card110.png"
-                                            alt="pokemon front"
-                                            width={220}
-                                            height={320}
-                                            className="h-full w-full object-cover"
-                                        />
-                                    </div>
+                                    <div
+                                        className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px]
+    ${isFlipped
+                                                ? "rotate-y-180"
+                                                : "group-hover:rotate-y-180"
+                                            }`}
+                                    >
+                                        {/* FRONT */}
+                                        <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
+                                            <Image
+                                                src="/images/card110.png"
+                                                alt="pokemon front"
+                                                width={220}
+                                                height={320}
+                                                className="h-full w-full object-cover"
+                                            />
+                                        </div>
 
-                                    {/* BACK */}
-                                    <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
-                                        <Image
-                                            src="/images/orange back.png"
-                                            alt="pokemon back"
-                                            width={220}
-                                            height={320}
-                                            className="h-full w-full object-contain"
-                                        />
+                                        {/* BACK */}
+                                        <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
+                                            <Image
+                                                src="/images/orange back.png"
+                                                alt="pokemon back"
+                                                width={220}
+                                                height={320}
+                                                className="h-full w-full object-contain"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                {/* RIGHT TEXT */}
-                <div
-                    className="order-[-1] lg:order-none flex flex-col justify-start lg:justify-center -mt-3 md:mt-0  lg:px-0"
-                    data-aos="zoom-out-down"
-                    data-aos-duration="1500"
-                >
-                    <div className="max-w-md">
-                        <p className="text-2xl font-medium sm:text-3xl lg:text-[40px]">
-                            Starter Pack
-                        </p>
-
-                        <div className="mt-4 flex flex-col gap-6 text-[#393939]">
-                            <p className="text-base lg:text-lg">
-                                Perfect entry-level mystery pack designed for impulse
-                                purchases, retail shelves, and new collectors.
+                    {/* RIGHT TEXT */}
+                    <div
+                        className="order-[-1] lg:order-none flex flex-col justify-start lg:justify-center -mt-3 md:mt-0  lg:px-0"
+                        data-aos="zoom-out-down"
+                        data-aos-duration="1500"
+                    >
+                        <div className="max-w-md">
+                            <p className="text-2xl font-medium sm:text-3xl lg:text-[40px]">
+                                Starter Pack
                             </p>
 
-                            <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base">
-                                <li>High-turnover product</li>
-                                <li>Retail-ready format</li>
-                                <li>Strong margins</li>
-                                <li>Accessible price point</li>
-                                <li>Perfect for gifts</li>
-                            </ul>
-                        </div>
+                            <div className="mt-4 flex flex-col gap-6 text-[#393939]">
+                                <p className="text-base lg:text-lg">
+                                    Perfect entry-level mystery pack designed for impulse
+                                    purchases, retail shelves, and new collectors.
+                                </p>
 
-                        <Link
-                            href="/#contact"
-                            className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px]"
-                        >
-                            Request a Quote
-                            <MdKeyboardArrowRight className="text-xl" />
-                        </Link>
+                                <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base">
+                                    <li>High-turnover product</li>
+                                    <li>Retail-ready format</li>
+                                    <li>Strong margins</li>
+                                    <li>Accessible price point</li>
+                                    <li>Perfect for gifts</li>
+                                </ul>
+                            </div>
+
+                            <Link
+                                href="/#contact"
+                                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px]"
+                            >
+                                Request a Quote
+                                <MdKeyboardArrowRight className="text-xl" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

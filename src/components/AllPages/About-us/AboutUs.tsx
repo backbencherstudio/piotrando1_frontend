@@ -7,7 +7,7 @@ export default function AboutUs() {
     return (
         <div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 Allcontainer   py-10 lg:py-20 gap-10 lg:gap-[52px] ' id='aboutUs'>
+            <div className='grid grid-cols-1 md:grid-cols-2 containers   py-10 lg:py-20 gap-10 lg:gap-[52px] ' id='aboutUs'>
                 <div
                     data-aos="fade-up"
                     data-aos-duration="1500"

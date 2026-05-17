@@ -66,7 +66,7 @@ export function FAQ() {
     const visibleFaqs = open ? faqs : faqs.slice(0, 6);
     return (
         <section className=" w-full py-10 md:py-12 lg:py-20 bg-background bg-black text-white" id="faq">
-            <div className=" Allcontainer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+            <div className=" containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
                 {/* Header */}
                 <div className=" mb-12 space-y-4" data-aos="zoom-in"
                     data-aos-duration="1500">
