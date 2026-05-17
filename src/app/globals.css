@@ -48,9 +48,7 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 @layer utilities {
-  .containers {
-    @apply mx-auto px-4 md:px-9 lg:px-10 xl:px-0 2xl:px-0;
-  }
+
 
   /* @media (min-width: 1900px) {
     .containers {
@@ -156,11 +154,12 @@ body {
 
 .containers {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+    /* outline: solid 1px red; */
 }
 
 section {
@@ -168,14 +167,40 @@ section {
     overflow-x: hidden;
 }
 
+/* md */
+@media (min-width: 768px) {
+    .containers {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .containers {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .containers {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+/* mobile smooth scroll fix */
 @media (max-width: 768px) {
-    html, body {
+    html,
+    body {
         -webkit-overflow-scrolling: touch;
     }
-    
+
     .containers {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 }
 
