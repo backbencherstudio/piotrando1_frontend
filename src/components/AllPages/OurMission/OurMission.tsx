@@ -7,7 +7,7 @@ export default function OurMission() {
         <div>
 
             <div className='grid grid-cols-1 md:grid-cols-2  containers md:py-10 lg:py-20 gap-8 md:gap-10 lg:gap-[52px] '>
-                <div className=' order-2 md:order-2  rounded-xl' data-aos="fade-right"
+                <div className=' order-2 md:order-2  rounded-xl ' data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" >
                     <div className="relative w-full h-[300px] sm:h-[320px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden">
@@ -20,15 +20,15 @@ export default function OurMission() {
                     </div>
 
                 </div>
-                <div className="order-1 md:order-2 flex flex-col justify-center" data-aos="fade-left"
+                <div className="order-1 md:order-2 flex flex-col " data-aos="fade-left"
                     data-aos-offset="300"  >
                     <div>
                         <div className=' '>
-                            <p className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-2 md:mb-6'>Our Mission</p>
+                            <p className='text-black text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-2 md:mb-6 leading-6'>Our Mission</p>
 
                         </div>
 
-
+                            {/* <h3 className="text-black text-2xl md:text-3xl lg:text-4xl font-semibold leading-5 pb-5">Our Mission</h3> */}
                         <div className='flex flex-col gap-3 lg:gap-8 text-[#393939]'>
                             <p className='  text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>To bridge the gap between limited supply and growing demand — ensunng the most
                                 valuable and exciting products reach the people who truly want them.</p>

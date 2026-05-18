@@ -40,7 +40,7 @@ export default function Evaluation() {
                                     <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
                                         <li className="flex gap-2">
                                             <CorrectIcon className="mt-1 text-green-500" />
-                                            14 Common / Uncommon
+                                            14 Common / Uncommon Cards
                                         </li>
 
                                         <li className="flex gap-2">
@@ -57,7 +57,7 @@ export default function Evaluation() {
                                             <CorrectIcon className="mt-1 text-green-500" />
                                             <span>
                                                 Bonus Cards can include: <br />
-                                                V / EX / GX / Special Rare
+                                                 Foil / V / EX / GX / Special Rare
                                             </span>
                                         </li>
                                     </ul>
@@ -116,7 +116,7 @@ export default function Evaluation() {
 
                                 <p className="text-base lg:text-lg">
                                     Balanced mystery pack for collectors and resellers looking for better pull rates
-                                    and higher perceived value,
+                                    and higher perceived value.
                                 </p>
 
                                 <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base">
