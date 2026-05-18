@@ -47,7 +47,7 @@ export default function GetInTouch() {
     };
     return (
         <div className=" py-10 lg:py-20 flex  containers" id="contact">
-            <div className="flex flex-col md:flex-row md:gap-10 gap-[70px]  w-full justify-between ">
+            <div className="flex flex-col md:flex-row gap-10 md:gap-1 lg:gap-3 xl:gap-[70px]  w-full justify-between ">
 
                 <div className="flex flex-col justify-start w-full" data-aos="fade-right"
                     data-aos-duration="1500">
@@ -93,25 +93,25 @@ export default function GetInTouch() {
                     </div>
                 </div>
 
-                <div className=" w-full ">
-                    <div className="bg-[#FFFFFF] p-6 rounded-lg shadow-sm  lg:h-full h-full " data-aos="fade-left"
+                <div className=" w-full border border-gray-80 rounded-xl">
+                    <div className="bg-[#FFFFFF] p-6 rounded-xl lg:h-full h-full " data-aos="fade-left"
                         data-aos-duration="1500">
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Company Name</label>
-                                    <input {...register("companyName")} placeholder="Your Company Name" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                    <input {...register("companyName")} placeholder="Your Company Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Contact Name</label>
-                                    <input {...register("contactName")} placeholder="Your Name" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                    <input {...register("contactName")} placeholder="Your Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Business Email</label>
-                                    <input {...register("businessEmail")} placeholder="business@email.com" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                    <input {...register("businessEmail")} placeholder="business@email.com" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                                 {/* <div className="space-y-2">
                                 <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
@@ -132,7 +132,7 @@ export default function GetInTouch() {
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Estimated Quantity</label>
-                                    <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                    <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                                 {/* <div className="space-y-2">
                                 <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Product Type</label>
@@ -143,7 +143,7 @@ export default function GetInTouch() {
                             </div> */}
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Messages</label>
-                                    <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full md:p-1 p-4 bg-gray-50 border h-9 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
+                                    <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full p-1 md:p-2 bg-gray-50 border h-12 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
                                 </div>
                             </div>
 

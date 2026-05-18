@@ -50,7 +50,7 @@ export default function Sourch() {
                 </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 py-5 md:py-10  lg:py-20 gap-[52px] '>
+            <div className='grid grid-cols-1 md:grid-cols-2 pt-5 md:pt-10  lg:pt-20 gap-[52px] '>
 
                 <div data-aos="fade-right"
                     data-aos-duration="1500">

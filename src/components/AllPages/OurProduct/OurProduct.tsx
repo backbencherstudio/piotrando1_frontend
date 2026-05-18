@@ -12,7 +12,7 @@ export default function OurProduct() {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
-        <div className="containers py-10 lg:py-20 overflow-hidden">
+        <div className="containers pt-10 pb-8 lg:pt-20 overflow-hidden">
             {/* HEADER */}
             <div
                 className="flex flex-col items-center justify-center px-4 pb-10 text-center lg:pb-16"
@@ -44,10 +44,10 @@ export default function OurProduct() {
 
             {/* GRID */}
             <div className=" ">
-                <div className="grid grid-cols-1 gap-8 md:gap-13 lg:grid-cols-2 lg:gap-[100px]">
+                <div className="grid grid-cols-1 gap-8 md:gap-13 lg:grid-cols-2 lg:gap-[100px] ">
                     {/* LEFT CARD */}
                     <div
-                        className="relative mx-auto w-full max-w-[770px]"
+                        className="relative mx-auto w-full max-w-full"
                         data-aos="zoom-out-up"
                     >
                         {/* BG */}
@@ -61,7 +61,7 @@ export default function OurProduct() {
 
                         {/* CARD */}
                         <div
-                            className="relative px-2 sm:px-4 md:px-6"
+                            className="relative px-2 sm:px-4 md:px-6 "
                             data-aos-duration="1500"
                         >
                             <div className="relative z-10 mt-2 md:mt-6 flex min-h-[430px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
