@@ -9,12 +9,12 @@ export default function UltraPack() {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
-        <div className="containers py-10 lg:py-20 overflow-hidden">
+        <div className="containers mt-6 md:mt-8  lg:pb-20 pb-8 md:pb-10 overflow-hidden">
             {/* GRID */}
             <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">
 
                 {/* LEFT CARD */}
-                <div className="relative mx-auto w-full max-w-[770px]" data-aos="zoom-out-down">
+                <div className="relative mx-auto w-full max-w-full" data-aos="zoom-out-down">
 
                     {/* BG */}
                     <Image

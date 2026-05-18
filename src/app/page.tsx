@@ -34,7 +34,7 @@ export default function page() {
       <DeliveryLogistics />
       <CustomBranding />
       <Sourch />
-      <MysteryNotice />
+      {/* <MysteryNotice /> */}
       {/* <OurPackas /> */}
 
       <TestimonialsSection />

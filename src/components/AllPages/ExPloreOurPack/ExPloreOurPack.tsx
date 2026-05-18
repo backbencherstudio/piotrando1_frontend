@@ -127,7 +127,7 @@ export default function MysteryPacks() {
                                             </div>
 
                                             {/* BACK */}
-                                            <div className="absolute w-[250px] h-[260px] inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
+                                            <div className="absolute w-[250px] h-[255px] mt-3 inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
                                                 <Image
                                                     src={item.hoverCard}
                                                     alt={item.title}

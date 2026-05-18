@@ -57,13 +57,8 @@ const faqs = [
 ];
 
 export function FAQ() {
-    const [open, setOpen] = React.useState(false);
 
-    const handelClick = () => {
-        setOpen(!open);
-    };
 
-    const visibleFaqs = open ? faqs : faqs.slice(0, 6);
     return (
         <section className=" w-full py-10 md:py-12 lg:py-20 bg-background bg-black text-white" id="faq">
             <div className=" containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
@@ -89,11 +84,7 @@ export function FAQ() {
                         Everything you need to know about our mystery repacks, wholesale <br />
                         process and delivery
                     </p>
-                    <div className="flex">
-                        <Button onClick={handelClick} className="mt-2 text-primary bg-[#FF8904] text-white rounded-full px-8 py-5 cursor-pointer text-base font-medium hover:bg-[#FE6B02]">
-                            See All FAQs
-                        </Button>
-                    </div>
+
                 </div>
 
                 {/* Accordion FAQ Grid */}
@@ -102,7 +93,7 @@ export function FAQ() {
                     <Card className=" bg-black text-white">
                         <CardContent className=" ">
                             <Accordion type="single" collapsible className="w-full gap-6 ">
-                                {visibleFaqs.map((faq, index) => (
+                                {faqs.map((faq, index) => (
                                     <AccordionItem
                                         key={index}
                                         value={`item-${index}`}

@@ -48,14 +48,14 @@ export default function CountrySelect({ onChange, defaultValue }: CountrySelectP
             <button
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}
-                className={`h-full w-full flex items-center justify-between p-3 md:p-1 lg:py-1 xl:py-1 border-2 transition-all duration-200 rounded-2xl bg-gray-50 text-white
+                className={`h-full w-full flex items-center justify-between py-2.5   border-2 transition-all duration-200 rounded-3xl bg-gray-50 text-white
   ${isOpen ? "" : ""}`}
             >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 px-2">
                     <img
                         src={selectedCountry.flagSvg}
                         alt=""
-                        className="w-8 h-5 object-cover rounded-sm shadow-sm"
+                        className="w-8 h-6 object-cover rounded-sm shadow-sm"
                     />
                     <span className="text-gray-800 font-bold">
                         {getCountryName(selectedCountry)}
