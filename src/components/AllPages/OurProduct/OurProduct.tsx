@@ -57,7 +57,7 @@ export default function OurProduct() {
                             alt="bg"
                             width={545}
                             height={301}
-                            className="absolute top-0 z-0 h-[430px] w-full rounded-2xl object-cover sm:h-[470px] md:h-[500px]"
+                            className="absolute top-0 z-0 h-[400px] w-full rounded-2xl object-cover sm:h-[470px] md:h-[500px]"
                         />
 
                         {/* CARD */}
@@ -65,7 +65,7 @@ export default function OurProduct() {
                             className="relative px-2 sm:px-4 md:px-6 "
                             data-aos-duration="1500"
                         >
-                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[430px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
+                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
 
                                 {/* TEXT */}
                                 <div>
