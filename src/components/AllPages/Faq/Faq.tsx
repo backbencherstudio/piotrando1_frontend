@@ -94,12 +94,12 @@ export function FAQ() {
     const visibleFaqs = showAll ? faqs : faqs.slice(0, 7);
     return (
         <section className=" w-full py-10 md:py-12 lg:py-20 bg-background bg-black text-white" id="faq">
-            <div className=" containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+            <div className=" containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  ">
                 {/* Header */}
                 <div className=" mb-12 space-y-4" data-aos="zoom-in"
                     data-aos-duration="1500">
-                    <div className='flex'>
-                        <div className="flex items-center gap-2 border p-2 rounded-full px-4 py-2">
+                    <div className='flex items-center md:items-start justify-center md:justify-start mx-auto'>
+                        <div className="flex  gap-2 border p-2 rounded-full px-4 py-2">
                             <Image
                                 src="/images/wid.png"
                                 alt="icon"
@@ -123,9 +123,9 @@ export function FAQ() {
                 {/* Accordion FAQ Grid */}
                 <div className=" bg-black" data-aos="fade-right"
                     data-aos-duration="1500">
-                    <Card className=" bg-black text-white">
+                    <Card className=" bg-black text-white ">
                         <CardContent className=" ">
-                            <Accordion type="single" collapsible className="w-full gap-6 ">
+                            <Accordion type="single" collapsible className="w-full gap-6 -mt-4">
                                 {visibleFaqs.map((faq, index) => (
                                     <AccordionItem
                                         key={index}
