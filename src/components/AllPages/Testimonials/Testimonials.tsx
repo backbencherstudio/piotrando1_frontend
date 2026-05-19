@@ -13,7 +13,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         name: 'Cyprian', role: 'Player',
-        quote: 'l got this pack as a prize after a tournament and didn t expect much, but it turned out to be really fun to open.The bonus card made it exciting, and Id definitely get another one. —Tournament Player', avatar: '/images/Cyprian.png'
+        quote: 'l got this pack as a prize after a tournament and didn t expect much, but it turned out to be really fun to open.The bonus card made it exciting, and Id definitely get another one.', avatar: '/images/Cyprian.png'
     },
     {
         name: 'James', role: 'Buyer', quote:
@@ -77,7 +77,7 @@ export default function TestimonialsSection() {
                 <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">TRUSTED BY GROWING RETAILERS AND COLLECTORS</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
                     From Local card shops to online sellers, businesses choose spawn drop for <br />
-                    reliable stock, authentic cards, and strong resale potential
+                    reliable stock, authentic cards, and strong resale potential .
                 </p>
             </div>
 

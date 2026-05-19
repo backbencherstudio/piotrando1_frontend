@@ -39,7 +39,7 @@ export default function UltraPack() {
                                 <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
                                     <li className="flex gap-2">
                                         <CorrectIcon className="mt-1 text-green-500" />
-                                        25 Common / Uncommon
+                                        25 Common / Uncommon Cards
                                     </li>
 
                                     <li className="flex gap-2">
@@ -52,16 +52,14 @@ export default function UltraPack() {
                                         4 Bonus Cards
                                     </li>
 
-                                    <li className="flex gap-2">
-                                        <CorrectIcon className="mt-1 text-green-500" />
-                                        Guaranteed holo cards inside
-                                    </li>
+                                   
 
                                     <li className="flex gap-2">
                                         <CorrectIcon className="mt-1 text-green-500" />
                                         <span>
-                                            Highest chance of premium <br />
-                                            pulls (V / EX / GX / Special Rare)
+                                            Bonus Cards may include: <br />
+ Foil / V / EX / GX / Special Rare
+
                                         </span>
                                     </li>
                                 </ul>

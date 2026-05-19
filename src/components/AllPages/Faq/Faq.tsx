@@ -15,45 +15,78 @@ import React from "react";
 
 const faqs = [
     {
-        question: "What is the minimum order quantity?",
+        question: "What are Pokémon mystery repacks?",
         answer:
-            "Starter orders begin from 25 packs. Wholesale typically starts from 50+ packs.",
-    },
-    {
-        question: "Do you offer sample packs?",
-        answer:
-            "Yes, we offer limited sample packs for qualified buyers. Contact our support team for details.",
+            "Pokémon mystery repacks are curated bundles of authentic Pokémon cards containing a randomized mix of commons, holos, rares and potential chase cards designed to create an exciting opening experience.",
     },
     {
         question: "Are the cards authentic?",
         answer:
-            "Absolutely. All cards are 100% authentic, sourced directly from licensed distributors.",
+            "Yes, all cards included in our mystery repacks are 100% authentic Pokémon cards sourced from trusted suppliers, collections and verified channels.",
     },
     {
-        question: "What can be inside the bonus card?",
+        question: "What can be inside a repack?",
         answer:
-            "Bonus cards may contain rare foils, limited editions, or exclusive promo cards. Contents vary by batch.",
+            "Each repack may include a mix of common cards, holos, rare cards, ultra rares, full arts, vintage cards or special bonus pulls depending on the product tier.",
     },
     {
-        question: "How fast is delivery?",
+        question: "Are the packs random?",
         answer:
-            "Standard delivery takes 5-7 business days. Express shipping (2-3 days) is available at checkout.",
+            "Yes, all mystery repacks are packed and shipped using a randomized process to ensure a fair and exciting experience for every customer.",
     },
     {
-        question: "Do you guarantee supply?",
+        question: "Can I pull valuable cards?",
         answer:
-            "We maintain large stock levels and guarantee supply for confirmed wholesale orders.",
+            "Yes, some repacks contain premium chase cards with significantly higher value, but because products are randomized, specific pulls are never guaranteed.",
     },
     {
-        question: "Can I resell these products?",
+        question: "Do you guarantee value?",
         answer:
-            "Yes, you are free to resell. Wholesale buyers receive a resell license certificate with their first order.",
+            "Our mystery repacks are designed to provide fair value and an enjoyable opening experience, but individual pack value may vary due to randomness.",
     },
     {
-        question: "How are pull rates structured?",
+        question: "What condition are the cards in?",
         answer:
-            "Pull rates are clearly disclosed per repack type — you can find full odds tables on each product page.",
+            "Most cards are in Near Mint to Lightly Played condition, although occasional vintage or special cards may show minor wear.",
     },
+    {
+        question: "Do you ship internationally?",
+        answer:
+            "Yes, we ship across Europe and selected international countries, with shipping options available at checkout.",
+    },
+     {
+        question: "How fast is shipping?",
+        answer:
+            "Orders are typically processed within 1–3 business days, while delivery times depend on destination and shipping method.",
+    }, {
+        question: "How are the cards protected during shipping?",
+        answer:
+            "All orders are securely packed using protective materials to help ensure your cards arrive safely and in excellent condition.",
+    }, {
+        question: "Do you offer wholesale pricing?",
+        answer:
+            "Yes, we work with resellers, online stores and vending businesses, and offer bulk pricing for larger orders.",
+    }, {
+        question: "Can I customize my repack order?",
+        answer:
+            "Custom repack options may be available for wholesale or larger orders depending on quantity and availability.",
+    }, {
+        question: "Do you offer sample packs for evaluation?",
+        answer:
+            "Yes. We understand the importance of testing product quality before ordering in bulk, which is why we offer sample packs for eligible retailers and resellers upon request.",
+    }, {
+        question: "What is your return policy?",
+        answer:
+            "Customer satisfaction matters to us. If there is an issue with your order, such as damage or an incorrect item, contact our support team and we will make it right as quickly as possible.",
+    }, {
+        question: "Are pull rates fair?",
+        answer:
+            "Yes, our repacks are built with randomized distribution to provide a fair and balanced opening experience.",
+    }, {
+        question: "Do you include vintage or high-value cards?",
+        answer:
+            "Selected repacks may include vintage, premium or high-value chase cards, which will always be clearly mentioned in the product description.",
+    }, 
 ];
 
 export function FAQ() {

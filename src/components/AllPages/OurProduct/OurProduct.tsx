@@ -93,9 +93,9 @@ export default function OurProduct() {
                                             <CorrectIcon className="mt-1 text-green-500" />
 
                                             <span>
-                                                Bonus Card can be:
-                                                <br />
-                                                Foil V / EX / GX / Special Rare
+                                                Bonus Card may include: <br />
+ Foil / V / EX / GX / Special Rare
+
                                             </span>
                                         </li>
                                     </ul>

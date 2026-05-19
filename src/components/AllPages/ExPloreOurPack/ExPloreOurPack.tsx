@@ -30,7 +30,7 @@ const products = [
         id: 2,
         name: "Evolution Pack ",
         title: "20 CARDS",
-        desc: "Entry-level pack great for new collectors and gift purchases",
+        desc: "Entry-level pack great for new collectors and gift purchases.",
         img: "/images/card120.png",
         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
         hoverCard: "/images/green back.png",

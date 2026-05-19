@@ -48,31 +48,82 @@ export default function Navbar() {
         { name: "Contact", path: "/#contact" },
     ];
 
-    const handleNavigation = (path: string, e?: React.MouseEvent) => {
-        if (path.includes("#")) {
-            const sectionId = path.split("#")[1];
-            e?.preventDefault();
+    // const handleNavigation = (path: string, e?: React.MouseEvent) => {
+    //     if (path.includes("#")) {
+    //         const sectionId = path.split("#")[1];
+    //         e?.preventDefault();
 
-            if (isHomePage) {
-                const section = document.getElementById(sectionId);
-                if (section) {
-                    const navbarHeight = 85;
-                    const offset = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
-                    window.scrollTo({ top: offset, behavior: "smooth" });
-                }
-            } else {
-                router.push(`/#${sectionId}`);
+    //         if (isHomePage) {
+    //             const section = document.getElementById(sectionId);
+    //             if (section) {
+    //                 const navbarHeight = 85;
+    //                 const offset = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
+    //                 window.scrollTo({ top: offset, behavior: "smooth" });
+    //             }
+    //         } else {
+    //             router.push(`/#${sectionId}`);
+    //         }
+    //     } else {
+    //         if (pathname !== path) {
+    //             router.push(path);
+    //             setTimeout(() => {
+    //                 window.scrollTo({ top: 0, behavior: "instant" });
+    //             }, 50);
+    //         }
+    //     }
+    // };
+
+
+    const handleNavigation = (path: string, e?: React.MouseEvent) => {
+
+    // ✅ Home button click করলে top এ যাবে
+    if (path === "/" && isHomePage) {
+        e?.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+
+        return;
+    }
+
+    if (path.includes("#")) {
+        const sectionId = path.split("#")[1];
+        e?.preventDefault();
+
+        if (isHomePage) {
+            const section = document.getElementById(sectionId);
+
+            if (section) {
+                const navbarHeight = 85;
+
+                const offset =
+                    section.getBoundingClientRect().top +
+                    window.scrollY -
+                    navbarHeight;
+
+                window.scrollTo({
+                    top: offset,
+                    behavior: "smooth",
+                });
             }
         } else {
-            if (pathname !== path) {
-                router.push(path);
-                setTimeout(() => {
-                    window.scrollTo({ top: 0, behavior: "instant" });
-                }, 50);
-            }
+            router.push(`/#${sectionId}`);
         }
-    };
+    } else {
+        if (pathname !== path) {
+            router.push(path);
 
+            setTimeout(() => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "instant",
+                });
+            }, 50);
+        }
+    }
+};
     const isActive = (path: string) => {
         if (pathname === path && !path.includes("#")) return true;
         if (path.includes("#") && isHomePage) {
@@ -104,12 +155,12 @@ export default function Navbar() {
 
                 <ul className="hidden lg:flex justify-between w-full items-center">
                     <div className="flex mx-auto gap-9">
-                        {navItems.map((item) => (
+                        {navItems?.map((item) => (
                             <Link
-                                href={item.path}
-                                key={item.name}
+                                href={item?.path}
+                                key={item?.name}
                                 scroll={false}
-                                onClick={(e) => handleNavigation(item.path, e)}
+                                onClick={(e) => handleNavigation(item?.path, e)}
                                 className="text-xs xl:text-base"
                             >
                                 <li
