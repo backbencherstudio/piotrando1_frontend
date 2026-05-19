@@ -103,7 +103,7 @@ export default function DeliveryLogistics() {
                         key={index}
                         data-aos="fade-up"
                         data-aos-duration="1500"
-                        className="rounded-2xl border border-transparent hover:border-orange-500 transition-all duration-300 overflow-hidden"
+                        className="rounded-2xl border  hover:border-orange-500 transition-all duration-300 overflow-hidden "
                     >
                         {/* Top Section */}
                         <div className="bg-white p-6">
@@ -118,7 +118,7 @@ export default function DeliveryLogistics() {
                         </div>
 
                         {/* Bottom Section */}
-                        <div className="bg-[#F8F8F8] p-6">
+                        <div className="bg-[#F8F8F8] p-6  h-full">
                             <p className="mb-2 text-base leading-170% font-medium text-[#000]">Details:</p>
 
                             <ul className="space-y-2 text-sm text-gray-700">
