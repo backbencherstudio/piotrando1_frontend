@@ -78,7 +78,7 @@ export default function MysteryPacks() {
     const [isFlipped, setIsFlipped] = useState<number | null>(null);
 
     return (
-        <div className=" pt-30 " data-aos="fade-up"
+        <div className="py-10 lg:py-20  " data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
             <div className="containers">
 
@@ -120,7 +120,7 @@ export default function MysteryPacks() {
                             className=""
                         >
 
-                            <div className="text-center flex items-center justify-center pb-4  text-3xl font-secondary">{item.name}</div>
+                            <div className="text-center flex items-center justify-center pb-4 text-2xl md:text-3xl font-secondary">{item.name}</div>
                             <div className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2">
 
                                 {/* Image section */}
