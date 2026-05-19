@@ -80,38 +80,43 @@ export default function GetInTouch() {
                             <div className="w-14 h-14 bg-[#F7E7D9] rounded-full flex items-center justify-center text-orange-600"><GoMail className="w-5 h-6" /></div>
                             <div>
                                 <p className="font-bold text-gray-800">Email</p>
-                                <p className="text-gray-500">contact@spawndrop.com</p>
+                                <p className="text-gray-500">sales@spawndrop.com</p>
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
                             <div className="w-14 h-14 bg-[#F7E7D9] rounded-full flex items-center justify-center text-orange-600"><CiLocationOn className="w-9 h-6" /></div>
                             <div>
                                 <p className="font-bold text-gray-800">Location</p>
-                                <p className="text-gray-500">Europe-based, shipping EU-wide</p>
+                                <p className="text-gray-500">European Union</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className=" w-full shadow rounded-xl">
-                    <div className="bg-[#FFFFFF] p-6 rounded-xl lg:h-full h-full " data-aos="fade-left"
-                        data-aos-duration="1500">
+                <div className=" w-full shadow rounded-xl" data-aos="fade-left"
+                    data-aos-duration="1500">
+                    <div className="bg-[#FFFFFF] p-6 rounded-xl lg:h-full h-full ">
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Company Name</label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Company Name *</label>
                                     <input {...register("companyName")} placeholder="Your Company Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Contact Name</label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Contact Name *</label>
                                     <input {...register("contactName")} placeholder="Your Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Business Email</label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Business Email *</label>
                                     <input {...register("businessEmail")} placeholder="business@email.com" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                </div>
+
+                                <div className="space-y-2">
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Estimated Quantity </label>
+                                    <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                                 {/* <div className="space-y-2">
                                 <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
@@ -123,17 +128,15 @@ export default function GetInTouch() {
 
                             </div> */}
 
-                                <div className="space-y-2">
+
+                                {/* <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
                                     <CountrySelect onChange={handleCountryChange} defaultValue="PL" />
-                                </div>
+                                </div> */}
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
-                                <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Estimated Quantity</label>
-                                    <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
-                                </div>
+
                                 {/* <div className="space-y-2">
                                 <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Product Type</label>
                                 <select {...register("productType")} className="w-full md:p-1 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all appearance-none ">
@@ -142,7 +145,7 @@ export default function GetInTouch() {
                                 </select>
                             </div> */}
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Messages</label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Messages *</label>
                                     <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full p-1 md:p-2 bg-gray-50 border h-12 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
                                 </div>
                             </div>
@@ -153,9 +156,9 @@ export default function GetInTouch() {
                                 Request Wholesale Pricing
                             </button>
 
-                            <p className="text-[#888D91] text-center md:text-sm xl:text-[16px] italic font-normal leading-[170%] tracking-[-0.3px] pt-2">
+                            {/* <p className="text-[#888D91] text-center md:text-sm xl:text-[16px] italic font-normal leading-[170%] tracking-[-0.3px] pt-2">
                                 We usually reply within 24 hours. Sample packs are available before larger orders.
-                            </p>
+                            </p> */}
                         </form>
                     </div>
                 </div>

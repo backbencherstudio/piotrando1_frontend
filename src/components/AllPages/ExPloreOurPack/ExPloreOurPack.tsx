@@ -23,8 +23,13 @@ const products = [
         stats: [
             { label: "Common / Uncommon", value: 7, icon: <CommonIcon /> },
             { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 1, icon: <RearIcon />, }
+            { label: "Rare Special", value: 1, icon: <RearIcon />, textColor: "text-[#FFBF00]" }
         ],
+        tags: [
+            "Premium Packaging",
+            "Great Gift Option",
+            "2 Foil Card Included"
+        ]
     },
     {
         id: 2,
@@ -38,8 +43,13 @@ const products = [
         stats: [
             { label: "Common / Uncommon", value: 14, icon: <CommonIcon /> },
             { label: "Foil Cards", value: 4, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 2, icon: <RearIcon />, }
+            { label: "Rare Special", value: 2, icon: <RearIcon />, textColor: "text-[#FFBF00]" }
         ],
+        tags: [
+            "Premium Packaging",
+            "Great Gift Option",
+            "4 Foil Card Included"
+        ]
     },
     {
         id: 3,
@@ -53,8 +63,13 @@ const products = [
         stats: [
             { label: "Common / Uncommon", value: 25, icon: <CommonIcon /> },
             { label: "Foil Cards", value: 6, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 4, icon: <RearIcon />, },
+            { label: "Rare Special", value: 4, icon: <RearIcon />, textColor: "text-[#FFBF00]" },
         ],
+        tags: [
+            "Premium Packaging",
+            "Great Gift Option",
+            "6 Foil Card Included"
+        ]
     },
 ];
 
@@ -105,7 +120,7 @@ export default function MysteryPacks() {
                             className=""
                         >
 
-                            <div className="text-center flex items-center justify-center pb-4 text-xl font-medium">{item.name}</div>
+                            <div className="text-center flex items-center justify-center pb-4  text-3xl font-secondary">{item.name}</div>
                             <div className="bg-white rounded-2xl shadow-sm border hover:shadow-md transition p-2">
 
                                 {/* Image section */}
@@ -161,7 +176,7 @@ export default function MysteryPacks() {
                                                     className="flex justify-between bg-[#F6F5F1] rounded-full px-4 py-2 text-sm"
                                                 >
                                                     <div className="flex gap-1">
-                                                        <p>{stat.icon}</p>  <span>{stat.label}</span>
+                                                        <p>{stat.icon}</p>  <span className={stat.textColor}>{stat.label}</span>
                                                     </div>
                                                     <span>{stat.value}</span>
                                                 </div>
@@ -171,15 +186,14 @@ export default function MysteryPacks() {
 
                                     {/* Tags */}
                                     <div className="flex flex-wrap gap-2 mt-4 text-xs text-[#4A5565]">
-                                        <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
-                                            Premium Packaging
-                                        </span>
-                                        <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
-                                            Great Gift Option
-                                        </span>
-                                        <span className="bg-[#F6F5F1] px-2 py-1 rounded-full">
-                                            2 Foil Card Included
-                                        </span>
+                                        {item.tags.map((tag, index) => (
+                                            <span
+                                                key={index}
+                                                className="bg-[#F6F5F1] px-2 py-1 rounded-full"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
                                     </div>
 
                                     {/* Button */}
