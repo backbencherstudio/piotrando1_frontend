@@ -135,7 +135,7 @@ export default function GetInTouch() {
                                 </div> */}
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                            <div className="">
 
                                 {/* <div className="space-y-2">
                                 <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Product Type</label>
@@ -146,7 +146,7 @@ export default function GetInTouch() {
                             </div> */}
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Messages *</label>
-                                    <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full p-1 md:p-2 bg-gray-50 border h-12 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
+                                    <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full p-1 md:p-2 bg-gray-50 border h-30 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
                                 </div>
                             </div>
 
