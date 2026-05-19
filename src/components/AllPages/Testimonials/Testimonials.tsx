@@ -13,12 +13,12 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         name: 'Cyprian', role: 'Player',
-        quote: 'l got this pack as a prize after a tournament and didn t expect much, but it turned out to be really fun to open.The bonus card made it exciting, and Id definitely get another one.', avatar: '/images/Cyprian.png'
+        quote: 'I got this pack as a prize after a tournament and didnt expect much, but it turned out to be really fun to open. The bonus card made it exciting, and Id definitely get another one.', avatar: '/images/Cyprian.png'
     },
     {
         name: 'James', role: 'Buyer', quote:
 
-            'I really like how professionally the product is packaged, It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/james.png'
+            'I really like how professionally the product is packaged. It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/james.png'
     },
     {
         name: 'Oliver', role: 'Operator', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases', avatar: '/images/test3.png'
@@ -76,8 +76,8 @@ export default function TestimonialsSection() {
                 </div>
                 <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">TRUSTED BY GROWING RETAILERS AND COLLECTORS</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
-                    From Local card shops to online sellers, businesses choose spawn drop for <br />
-                    reliable stock, authentic cards, and strong resale potential .
+                    From local card shops to online sellers, businesses choose spawn Drop for <br />
+                    reliable stock, authentic cards, and strong resale potential.
                 </p>
             </div>
 

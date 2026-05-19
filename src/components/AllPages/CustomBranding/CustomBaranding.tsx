@@ -19,7 +19,7 @@ export default function CustomBranding() {
                     data-aos-anchor-placement="bottom-bottom" >
                     <div >
                         <div className='flex'>
-                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  md:text-start '>Custom Brandin & Full-Service <br /> Production</p>
+                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  md:text-start '>Custom Branding & Full-Service <br /> Production</p>
 
                         </div>
 

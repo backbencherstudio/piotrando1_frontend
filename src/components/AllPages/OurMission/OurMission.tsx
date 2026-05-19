@@ -30,21 +30,19 @@ export default function OurMission() {
 
                         {/* <h3 className="text-black text-2xl md:text-3xl lg:text-4xl font-semibold leading-5 pb-5">Our Mission</h3> */}
                         <div className='flex flex-col gap-3 lg:gap-8 text-[#393939]'>
-                            <p className='  text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>To bridge the gap between limited supply and growing demand — ensunng the most
-                                valuable and exciting products reach the people who truly want them.</p>
+                            <p className='  text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>To bridge the gap between limited supply and growing demand, ensuring the most valuable and exciting products reach the people who truly appreciate them. </p>
 
-                            <p className=' text-base font-medium leading-170% text-[#393939]'>Market Insight Section:</p>
-                            <p className=' font-[Inter] text-[16px] font-normal leading-[170%] tracking-[-0.3px]'>The global TCG market is rapidly expanding driven by a new generation of
-                                collectors who value rarity, identity, and long-term value.</p>
+                            <p className=' text-base font-medium leading-170% text-[#393939]'>The Future of Collectibles :</p>
+                            <p className=' font-[Inter] text-[16px] font-normal leading-[170%] tracking-[-0.3px]'>The global TCG market is expanding rapidly, driven by a new generation of collectors who value rarity, identity, and long-term value.</p>
 
                             <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px] ml-4'>
-                                <li>Rare collectibles are replacing traditional savings</li>
-                                <li>Inflation reduces cash collectibles gain attention
+                                <li>Rare collectibles are increasingly viewed as alternative assets</li>
+                                <li>Inflation reduces cash purchasing power, collectibles gain attention
                                 </li>
-                                <li>Pokémon dominates over 50% of the market
+                                <li>Pokémon represents over 50% of the global TCG market
                                 </li>
                                 <li>94% of affluent young collectors invest in premium collectibles</li>
-                                <p className='mt-2'>Cash loses value. Rare cards gain attention.</p>
+                                <p className='mt-2'>Cash loses value. Rare collectibles gain attention.</p>
 
                             </div>
 

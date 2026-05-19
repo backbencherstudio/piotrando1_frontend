@@ -46,7 +46,7 @@ export default function UltraPack() {
 
                                         <li className="flex gap-2">
                                             <CorrectIcon className="mt-1 text-green-500" />
-                                            6 Foil cards
+                                            6 Foil Cards
                                         </li>
 
                                         <li className="flex gap-2">
@@ -66,7 +66,7 @@ export default function UltraPack() {
                                         </li>
                                         <li className="hidden md:block">
                                             <p className="flex gap-2">
-                                                <BsStars className="h-6 w-9" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon card pulls.
+                                                <BsStars className="h-6 w-9" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon cards .
                                             </p>
                                         </li>
                                     </ul>
@@ -74,7 +74,7 @@ export default function UltraPack() {
 
                                 <li className=" block md:hidden">
                                     <p className="flex gap-2 flex gap-2 text-sm text-[#4A5565] sm:text-base mt-6">
-                                        <BsStars className="h-6 w-9 flex gap-2 text-sm text-[#4A5565] sm:text-base" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon card pulls
+                                        <BsStars className="h-6 w-9 flex gap-2 text-sm text-[#4A5565] sm:text-base" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon cards .
                                     </p>
                                 </li>
                             </div>

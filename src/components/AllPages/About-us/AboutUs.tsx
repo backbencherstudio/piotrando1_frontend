@@ -19,16 +19,14 @@ export default function AboutUs() {
                         </h2>
 
                         <p className="text-gray-600 mb-4 text-base">
-                            <span className="font-semibold">@Spawn drop</span> is built for collectors who value quality over quantity. We carefully source high-condition trading cards from across the market, inspect each one, and repurpose them into premium packs designed to deliver consistent value and a refined opening experience.
+                            <span className="font-semibold">Spawn Drop </span> is built for collectors who value quality over quantity. We carefully source high-condition trading cards from across the market, inspect each one, and repurpose them into premium packs designed to deliver consistent value and a refined opening experience.
                         </p>
 
                         <p className="text-gray-600 mb-6 text-base">
-                            In a space often defined by randomness and inconsistency, we focus on structure, balance, and trust. Every pack is assembled with purpose—combining reliable base value with the excitement of meaningful rare pulls.
+                            In a space often defined by randomness and inconsistency, we focus on structure, balance, and trust. Every pack is assembled with purpose, combining reliable base value with the excitement of meaningful rare pulls.
                         </p>
                         <p className="text-gray-600 mb-6 text-base">
-                            We don’t simply resell cards. We curate products that reflect what collectors truly want.
-
-                            Whether you’re a retailer, reseller, or dedicated collector, Spawn Drop delivers products designed to earn your trust—again and again.
+                            We don’t simply resell cards. We curate products that We don’t simply resell cards. We curate products that reflect what collectors truly want. Whether you’re a retailer, reseller, or dedicated collector, Spawn Drop delivers products designed to earn your trust, again and again.
                         </p>
 
                         {/* <button className="bg-black text-white px-6 py-3 rounded-full cursor-pointer">
