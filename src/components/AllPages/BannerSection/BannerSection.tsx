@@ -7,10 +7,10 @@ export default function BannerSection() {
     return (
         <div
             style={{ backgroundImage: "url('/images/banner3.png')" }}
-            className="relative bg-cover bg-center bg-no-repeat lg:h-screen min-h-[600px] flex items-center justify-center  py-16 md:py-20 lg:py-0"
+            className="relative bg-cover bg-center bg-no-repeat lg:h-screen opacity- min-h-[600px] flex items-center justify-center  py-16 md:py-20 lg:py-0"
         >
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/25"></div>
+            <div className="absolute inset-0 bg-black/45"></div>
             <div className='grid grid-cols-1 md:grid-cols-2 text-white containers  gap-8 '>
                 <div
                     data-aos="fade-right"
@@ -48,7 +48,7 @@ export default function BannerSection() {
                     data-aos-duration="1500"
                     data-aos-delay="300">
                     <Image
-                        src="/images/pokemon55.png"
+                        src="/images/banerPokemon.png"
                         alt="imagebanner"
                         width={545}
                         height={521}

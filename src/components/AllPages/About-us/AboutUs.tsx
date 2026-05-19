@@ -12,9 +12,9 @@ export default function AboutUs() {
                     data-aos="fade-up"
                     data-aos-duration="1500"
                     data-aos-delay="300"
-                className='outline outline-red-600 '>
+                    className=' '>
                     <div className=''>
-                        <h2 className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6 leading-6 '>
+                        <h2 className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6 md:leading-6 lg:leading-9 '>
                             WHO WE ARE AT SPAWN DROP
                         </h2>
 

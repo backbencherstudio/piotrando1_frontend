@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import CorrectIcon from "@/components/icon/CorrectIcon";
+import { BsStars } from "react-icons/bs";
 
 export default function Evaluation() {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -31,42 +32,59 @@ export default function Evaluation() {
                             <div className="relative z-10 mt-2 md:mt-6 flex min-h-[430px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
 
                                 {/* TEXT */}
-                                <div className="max-w-[58%] sm:max-w-[55%]">
-                                    <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                                        <span className="h-2 w-2 rounded-full bg-[#D5EB2A]"></span>
-                                        Inside packs
-                                    </h2>
+                                <div>
+                                    <div className="max-w-[58%] sm:max-w-[55%]">
+                                        <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                                            <span className="h-2 w-2 rounded-full bg-[#D5EB2A]"></span>
+                                            Inside packs
+                                        </h2>
 
-                                    <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            14 Common / Uncommon Cards
-                                        </li>
+                                        <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                            <li className="flex gap-2">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+                                                14 Common / Uncommon Cards
+                                            </li>
 
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            4 Foil cards
-                                        </li>
+                                            <li className="flex gap-2">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+                                                4 Foil cards
+                                            </li>
 
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            2 Bonus Cards
-                                        </li>
+                                            <li className="flex gap-2">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+                                                2 Bonus Cards
+                                            </li>
 
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            <span>
-                                                Bonus Cards can include: <br />
-                                                 Foil / V / EX / GX / Special Rare
-                                            </span>
-                                        </li>
-                                    </ul>
+                                            <li className="flex gap-2">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+                                                <span>
+                                                    Bonus Cards can include: <br />
+                                                    Foil / V / EX / GX / Special Rare
+                                                </span>
+                                            </li>
+                                            <li className=" gap-2 hidden md:block">
+                                                <p className="flex gap-2 text-sm text-[#4A5565] sm:text-base">
+                                                    <BsStars className="h-6 w-9" /> Enhanced pull potential with increased chances of premium Full Art and high-rarity Pokémon cards.
+                                                </p>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+
+                                    <div className="mt-6">
+                                        <p className="flex gap-2 block md:hidden text-sm text-[#4A5565] sm:text-base ">
+                                            <BsStars className="h-6 w-9" /> Enhanced pull potential with increased chances of premium Full Art and high-rarity Pokémon cards.
+                                        </p>
+                                    </div>
                                 </div>
+
+
 
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/2 right-[0px] sm:right-[25px] md:right-[20px] lg:right-[-50px] xl:right-[20px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-6 md:mt-0 right-[0px] sm:right-[25px] md:right-[20px] lg:right-[-50px] xl:right-[10px] 2xl:right-[10px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : "group-hover:rotate-y-180"
@@ -90,8 +108,8 @@ export default function Evaluation() {
                                                 src="/images/green back.png"
                                                 alt="back"
                                                 width={220}
-                                                height={320}
-                                                className="h-full w-full object-contain"
+                                                height={220}
+                                                className="h-[315px] w-[212px] object-contain"
                                             />
                                         </div>
 
@@ -108,13 +126,13 @@ export default function Evaluation() {
                     >
                         <div className="w-full max-w-[540px]">
 
-                            <p className="text-2xl font-medium sm:text-3xl lg:text-[40px]">
+                            <p className="text-2xl font-medium sm:text-3xl lg:text-[40px] text-center md:text-start">
                                 Evolution Pack
                             </p>
 
                             <div className="mt-4 flex flex-col gap-6 text-[#393939]">
 
-                                <p className="text-base lg:text-lg">
+                                <p className="text-base lg:text-lg text-center md:text-start">
                                     Balanced mystery pack for collectors and resellers looking for better pull rates
                                     and higher perceived value.
                                 </p>

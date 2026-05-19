@@ -1,5 +1,3 @@
-// app/components/FAQ.tsx
-
 "use client";
 
 import {
@@ -11,7 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const faqs = [
     {
@@ -54,7 +52,7 @@ const faqs = [
         answer:
             "Yes, we ship across Europe and selected international countries, with shipping options available at checkout.",
     },
-     {
+    {
         question: "How fast is shipping?",
         answer:
             "Orders are typically processed within 1–3 business days, while delivery times depend on destination and shipping method.",
@@ -86,12 +84,14 @@ const faqs = [
         question: "Do you include vintage or high-value cards?",
         answer:
             "Selected repacks may include vintage, premium or high-value chase cards, which will always be clearly mentioned in the product description.",
-    }, 
+    },
 ];
 
 export function FAQ() {
 
+    const [showAll, setShowAll] = useState(false);
 
+    const visibleFaqs = showAll ? faqs : faqs.slice(0, 7);
     return (
         <section className=" w-full py-10 md:py-12 lg:py-20 bg-background bg-black text-white" id="faq">
             <div className=" containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
@@ -126,7 +126,7 @@ export function FAQ() {
                     <Card className=" bg-black text-white">
                         <CardContent className=" ">
                             <Accordion type="single" collapsible className="w-full gap-6 ">
-                                {faqs.map((faq, index) => (
+                                {visibleFaqs.map((faq, index) => (
                                     <AccordionItem
                                         key={index}
                                         value={`item-${index}`}
@@ -141,6 +141,16 @@ export function FAQ() {
                                     </AccordionItem>
                                 ))}
                             </Accordion>
+                            {faqs.length > 8 && (
+                                <div className="flex justify-center mt-6">
+                                    <Button
+                                        onClick={() => setShowAll(!showAll)}
+                                        className="bg-[#FE6B02] text-white  cursor-pointer rounded-full px-6 py-5"
+                                    >
+                                        {showAll ? "See Less" : "See More"}
+                                    </Button>
+                                </div>
+                            )}
                         </CardContent>
                     </Card>
                 </div>

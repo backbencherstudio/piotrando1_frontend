@@ -7,6 +7,7 @@ import Evaluation from "./EvoluationPack";
 import UltraPack from "./UltraPack";
 import Link from "next/link";
 import CorrectIcon from "@/components/icon/CorrectIcon";
+import { BsStars } from "react-icons/bs";
 
 export default function OurProduct() {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -67,45 +68,58 @@ export default function OurProduct() {
                             <div className="relative z-10 mt-2 md:mt-6 flex min-h-[430px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
 
                                 {/* TEXT */}
-                                <div className="max-w-[58%] sm:max-w-[55%]">
-                                    <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                                        <span className="h-2 w-2 rounded-full bg-orange-500"></span>
-                                        Inside packs
-                                    </h2>
+                                <div>
+                                    <div className="max-w-[58%] sm:max-w-[55%]">
+                                        <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                                            <span className="h-2 w-2 rounded-full bg-orange-500"></span>
+                                            Inside packs
+                                        </h2>
 
-                                    <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            7 Common / Uncommon
+                                        <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                            <li className="flex gap-2">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+                                                7 Common / Uncommon
+                                            </li>
+
+                                            <li className="flex gap-2">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+                                                2 Foil Cards
+                                            </li>
+
+                                            <li className="flex gap-2">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+                                                1 Bonus Card
+                                            </li>
+
+                                            <li className="flex gap-2">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+
+                                                <span>
+                                                    Bonus Card may include: <br />
+                                                    Foil / V / EX / GX / Special Rare
+
+                                                </span>
+                                            </li>
+
+                                            <li className="hidden md:block">
+                                                <p className="flex gap-2">           <BsStars className="h-6 w-9" /> A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+
+                                        <li className="block md:hidden  pt-7 text-sm text-[#4A5565] sm:text-base">
+                                            <p className="flex gap-2">           <BsStars className="h-6 w-9" /> A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards</p>
                                         </li>
-
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            2 Foil Cards
-                                        </li>
-
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            1 Bonus Card
-                                        </li>
-
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-
-                                            <span>
-                                                Bonus Card may include: <br />
- Foil / V / EX / GX / Special Rare
-
-                                            </span>
-                                        </li>
-                                    </ul>
+                                    </div>
                                 </div>
 
 
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/2 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[30px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-7 md:mt-0 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px]
@@ -148,17 +162,17 @@ export default function OurProduct() {
                         data-aos-duration="1500"
                     >
                         <div className="max-w-md">
-                            <p className="text-2xl font-medium sm:text-3xl lg:text-[40px]">
+                            <p className="text-2xl font-medium sm:text-3xl lg:text-[40px] text-center md:text-start ">
                                 Starter Pack
                             </p>
 
-                            <div className="mt-4 flex flex-col gap-6 text-[#393939]">
-                                <p className="text-base lg:text-lg">
+                            <div className="mt-4 flex flex-col gap-6 text-[#393939] ">
+                                <p className="text-base lg:text-lg text-center md:text-start">
                                     Perfect entry-level mystery pack designed for impulse
                                     purchases, retail shelves, and new collectors.
                                 </p>
 
-                                <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base">
+                                <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base ">
                                     <li>High-turnover product</li>
                                     <li>Retail-ready format</li>
                                     <li>Strong margins</li>
