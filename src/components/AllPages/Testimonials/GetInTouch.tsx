@@ -34,17 +34,17 @@ export default function GetInTouch() {
     };
 
 
-    const handleCountryChange = (country: any) => {
+    // const handleCountryChange = (country: any) => {
 
-        const name = typeof country.name === 'string'
-            ? country.name
-            : country.name?.common || country.label;
+    //     const name = typeof country.name === 'string'
+    //         ? country.name
+    //         : country.name?.common || country.label;
 
-        if (name) {
-            setValue("country", name);
-            console.log("Country Updated to:", name);
-        }
-    };
+    //     if (name) {
+    //         setValue("country", name);
+    //         console.log("Country Updated to:", name);
+    //     }
+    // };
     return (
         <div className=" py-10 lg:py-20 flex  containers" id="contact">
             <div className="flex flex-col md:flex-row gap-10 md:gap-1 lg:gap-3 xl:gap-[70px]  w-full justify-between ">
