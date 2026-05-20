@@ -60,10 +60,10 @@ export default function Sourch() {
 
 
                             <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px]   space-y-4'>
-                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Cards sourced from verified sellers retailers. and events</div>
+                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Cards sourced from verified sellers, retailers, and events</div>
                                 <p className="ml-9 text-[#4A5565] text-base font-normal">We work directly with retail stores and card businesses to acquire excess inventory, collections, and
                                     returned stock. This helps us maintain a stable flow of authentic trading cards throughout the year.</p>
-                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Only authentic products  no exceptions
+                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Only authentic products, no exceptions
                                 </div>
                                 <p className="ml-9 text-[#4A5565] text-base font-normal">We source cards through Pokémon tournaments, local events, and collector communities, giving us
                                     access to popular, competitive, and hard-to-find cards directly from active players and collectors.</p>

@@ -47,7 +47,7 @@ export default function Evaluation() {
 
                                             <li className="flex gap-2">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                4 Foil cards
+                                                4 Foil Cards
                                             </li>
 
                                             <li className="flex gap-2">

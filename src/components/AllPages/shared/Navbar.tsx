@@ -35,7 +35,7 @@ export default function Navbar() {
         { name: "About us", path: "/#aboutUs" },
         { name: "Products", path: "/products" },
         { name: "Shipping", path: "/#shiping" },
-        { name: "FAQ's", path: "/#faq" },
+        { name: "FAQs", path: "/#faq" },
         { name: "Contact", path: "/#contact" },
     ];
 
@@ -44,7 +44,7 @@ export default function Navbar() {
         { name: "About us", path: "/#aboutUs" },
         { name: "Products", path: "/products" },
         { name: "Shipping", path: "/#shiping" },
-        { name: "FAQ's", path: "/#faq" },
+        { name: "FAQs", path: "/#faq" },
         { name: "Contact", path: "/#contact" },
     ];
 
