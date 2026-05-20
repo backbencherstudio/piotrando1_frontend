@@ -72,7 +72,7 @@ export default function Footer() {
                             </li> */}
                             <li>
                                 <Link href="/#faq" className=" text-sm transition-colors">
-                                    FAQS
+                                    FAQs
                                 </Link>
                             </li>
                             <li>
@@ -80,11 +80,7 @@ export default function Footer() {
                                     CUSTOMER SUPPORT
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="#" className=" text-sm transition-colors">
-                                    BLOGS
-                                </Link>
-                            </li>
+                           
                         </ul>
                     </div>
 

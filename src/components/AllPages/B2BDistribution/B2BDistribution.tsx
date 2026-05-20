@@ -38,7 +38,7 @@ export default function B2BDistributionPage() {
         },
         {
             title: "Unique and eye-catching product",
-            description: "A unique and eye catching product for special occasions.",
+            description: "A unique and eye-catching product for special occasions.",
             icon: <AiOutlineGift className="w-7 h-8 text-[#FF8904]" />
         },
         {
@@ -75,7 +75,7 @@ export default function B2BDistributionPage() {
                         PERFECT FOR B2B DISTRIBUTION
                     </h1>
                     <p className="text-lg text-[#393939] max-w-lg mx-auto leading-170%">
-                        Built for resellers and distribution partners looking <br /> ready-to-sell products.
+                        Built for resellers and distribution partners looking for ready-to-sell products.
                     </p>
                 </div>
 

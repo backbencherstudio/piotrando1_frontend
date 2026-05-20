@@ -30,7 +30,7 @@ const deliveryData = [
         details: [
             "EU: 3–5 business days",
             "UK: 5–7 business days",
-            "Bulk orders: 7—10 days",
+            "Bulk orders: 7–10 days",
         ],
         highlight: true,
     },

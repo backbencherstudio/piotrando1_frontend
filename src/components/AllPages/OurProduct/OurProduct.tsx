@@ -39,7 +39,7 @@ export default function OurProduct() {
 
                 <p className="mt-3 max-w-xl text-sm text-[#393939] lg:text-base">
                     Three tiers designed for every type of collector and retailer.
-                    Each pack contains 100% authentic pokemon TCG cards.
+                    Each pack contains 100% authentic Pokémon TCG cards.
                 </p>
             </div>
 
