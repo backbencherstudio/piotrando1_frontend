@@ -1,29 +1,23 @@
 export function smoothTranslate(lang: string) {
+  let attempts = 0;
+
   const tryTranslate = () => {
     const combo = document.querySelector(".goog-te-combo") as HTMLSelectElement;
+
     if (!combo) {
-      setTimeout(tryTranslate, 200);
+      if (attempts++ < 10) setTimeout(tryTranslate, 200);
       return;
     }
 
+    document.body.style.opacity = "0.7";
 
-    document.body.classList.add("translating");
     combo.value = lang;
     combo.dispatchEvent(new Event("change", { bubbles: true }));
 
-
     setTimeout(() => {
-      document.body.classList.remove("translating");
-      // Check if translation applied, if not, retry dispatching the event
-      if (!document.body.classList.toString().includes("translated")) {
-        //     alert("Translation not applied, retrying");
-        setTimeout(() => {
-          combo.dispatchEvent(new Event("change", { bubbles: true }));
-        }, 500);
-      }
-    }, 1000);
+      document.body.style.opacity = "1";
+    }, 300);
   };
-
 
   tryTranslate();
 }

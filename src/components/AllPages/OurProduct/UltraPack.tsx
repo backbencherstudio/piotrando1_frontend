@@ -32,7 +32,7 @@ export default function UltraPack() {
 
                             {/* TEXT */}
                             <div>
-                                <div className="max-w-[58%] sm:max-w-[55%]">
+                                <div className="max-w-[58%] sm:max-w-[56%]">
                                     <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                         <span className="h-2 w-2 rounded-full bg-[#FF5286]"></span>
                                         Inside packs
@@ -44,30 +44,28 @@ export default function UltraPack() {
                                             25 Common / Uncommon Cards
                                         </li>
 
-                                        <li className="flex gap-2">
+                                        <li className="flex gap-2 font-bold text-yellow-400 ">
                                             <CorrectIcon className="mt-1 text-green-500" />
                                             6 Foil Cards
                                         </li>
 
-                                        <li className="flex gap-2">
+                                        <li className="flex gap-2 font-bold text-yellow-400 ">
                                             <CorrectIcon className="mt-1 text-green-500" />
-                                            4 Bonus Cards
+                                            4 Bonus Card
                                         </li>
 
-
-
                                         <li className="flex gap-2">
                                             <CorrectIcon className="mt-1 text-green-500" />
+
                                             <span>
-                                                Bonus Cards may include: <br />
+                                                Bonus Card may include: <br />
                                                 Foil / V / EX / GX / Special Rare
 
                                             </span>
                                         </li>
+
                                         <li className="hidden md:block">
-                                            <p className="flex gap-2">
-                                                <BsStars className="h-6 w-9" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon cards .
-                                            </p>
+                                            <p className="flex gap-2">           <BsStars className="h-6 w-9" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon card pulls.</p>
                                         </li>
                                     </ul>
                                 </div>

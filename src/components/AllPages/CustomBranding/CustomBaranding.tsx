@@ -18,14 +18,14 @@ export default function CustomBranding() {
                 <div data-aos="fade-down"
                     data-aos-anchor-placement="bottom-bottom" >
                     <div >
-                        <div className='flex'>
-                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  md:text-start '>Custom Branding & Full-Service <br /> Production</p>
+                        <div className='flex text-center justify-center md:justify-start items-center  mx-auto'>
+                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  text-center  md:text-start '>Custom Branding & Full-Service <br /> Production</p>
 
                         </div>
 
 
                         <div className='flex flex-col gap-8 text-[#393939] mt-5'>
-                            <p className=' text-[#DBEAFE] text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>Stand out with your own branded mystery pack experience. We handle everything from design to final packaging.
+                            <p className=' text-[#DBEAFE] text-[16px] font-normal leading-[120%] tracking-[-0.3px] flex justify-center items-center mx-auto text-center md:text-start'>Stand out with your own branded mystery pack experience. We handle everything from design to final packaging.
                             </p>
 
                             <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-[#FFF] space-y-2'>

@@ -1,5 +1,5 @@
 export class LanguageDetector {
-    static supported: string[] = ["en", "es", "fr", "de", "hi", "zh", "ja"];
+    static supported: string[] = ["en", "es", "fr", "de", "hi", "pl", "ja"];
 
 
     static detectBrowserLanguage(): string {

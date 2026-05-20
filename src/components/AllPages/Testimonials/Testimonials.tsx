@@ -13,22 +13,22 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         name: 'Cyprian', role: 'Player',
-        quote: 'I got this pack as a prize after a tournament and didnt expect much, but it turned out to be really fun to open. The bonus card made it exciting, and Id definitely get another one.', avatar: '/images/Cyprian.png'
+        quote: "I got this pack as a prize after a tournament and didn't expect much, but it turned out to be really fun to open. The bonus card made it exciting, and I'd definitely get another one.", avatar: '/images/Cyprian.png'
     },
     {
         name: 'James', role: 'Buyer', quote:
 
-            'I really like how professionally the product is packaged. It looks premium on the shelf and doesnt need much explanation to sell.', avatar: '/images/james.png'
+            "I really like how professionally the product is packaged. It looks premium on the shelf and doesn't need much explanation to sell.", avatar: '/images/james.png'
     },
     {
-        name: 'Oliver', role: 'Operator', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases', avatar: '/images/test3.png'
+        name: 'Oliver', role: 'Operator', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases.', avatar: '/images/test3.png'
     },
     {
         name: 'Marek', role: 'Shop Owner', quote: 'Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases.', avatar: '/images/test2.png'
     },
     { name: 'Thomas', role: 'Seller', quote: 'These packs sell really fast in our store. The margins are solid, and customers often come back for more after their first purchase.', avatar: '/images/test1.png' },
     {
-        name: 'Kacper', role: 'Manager', quote: 'Very consistent quality and reliable supply. Its an easy product to manage and works well for scaling online sales.', avatar: '/images/item.png'
+        name: 'Kacper', role: 'Manager', quote: "Very consistent quality and reliable supply. It's an easy product to manage and works well for scaling online sales.", avatar: '/images/item.png'
     },
 
 ]

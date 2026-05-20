@@ -96,28 +96,29 @@ export function FAQ() {
         <section className=" w-full py-10 md:py-12 lg:py-20 bg-background bg-black text-white" id="faq">
             <div className=" containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  ">
                 {/* Header */}
-                <div className=" mb-12 space-y-4" data-aos="zoom-in"
-                    data-aos-duration="1500">
-                    <div className='flex items-center md:items-start justify-center md:justify-start mx-auto'>
-                        <div className="flex  gap-2 border p-2 rounded-full px-4 py-2">
-                            <Image
-                                src="/images/wid.png"
-                                alt="icon"
-                                width={24}
-                                height={24}
-                                className="object-contain"
-                            />
-                            <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">FAQ’s</p>
+                <div className="flex justify-center md:justify-start  text-center md:text-start">
+                    <div className=" mb-12 space-y-4" data-aos="zoom-in"
+                        data-aos-duration="1500">
+                        <div className='flex items-center md:items-start justify-center md:justify-start mx-auto'>
+                            <div className="flex  gap-2 border p-2 rounded-full px-4 py-2">
+                                <Image
+                                    src="/images/wid.png"
+                                    alt="icon"
+                                    width={24}
+                                    height={24}
+                                    className="object-contain"
+                                />
+                                <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">FAQ’s</p>
+                            </div>
                         </div>
-                    </div>
-                    <h1 className="text-[clamp(2rem,2.5rem,4rem)] font-secondary  tracking-tight mt-2">
-                        FREQUENTLY ASKED QUESTIONS
-                    </h1>
-                    <p className="text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-white font-inter">
-                        Everything you need to know about our mystery repacks, wholesale <br />
-                        process and delivery
-                    </p>
+                        <h1 className="text-[clamp(2rem,2.5rem,4rem)] font-secondary  tracking-tight mt-2">
+                            FREQUENTLY ASKED QUESTIONS
+                        </h1>
+                        <p className="text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-white font-inter">
+                            Everything you need to know about our mystery repacks, <br /> wholesale process, and delivery
+                        </p>
 
+                    </div>
                 </div>
 
                 {/* Accordion FAQ Grid */}

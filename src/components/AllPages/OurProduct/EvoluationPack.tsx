@@ -45,27 +45,28 @@ export default function Evaluation() {
                                                 14 Common / Uncommon Cards
                                             </li>
 
-                                            <li className="flex gap-2">
+                                            <li className="flex gap-2 font-bold text-yellow-400 ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                4 Foil Cards
+                                                2 Foil Cards
+                                            </li>
+
+                                            <li className="flex gap-2 font-bold text-yellow-400 ">
+                                                <CorrectIcon className="mt-1 text-green-500" />
+                                                1 Bonus Card
                                             </li>
 
                                             <li className="flex gap-2">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                2 Bonus Cards
-                                            </li>
 
-                                            <li className="flex gap-2">
-                                                <CorrectIcon className="mt-1 text-green-500" />
                                                 <span>
-                                                    Bonus Cards can include: <br />
+                                                    Bonus Card may include: <br />
                                                     Foil / V / EX / GX / Special Rare
+
                                                 </span>
                                             </li>
-                                            <li className=" gap-2 hidden md:block">
-                                                <p className="flex gap-2 text-sm text-[#4A5565] sm:text-base">
-                                                    <BsStars className="h-6 w-9" /> Enhanced pull potential with increased chances of premium Full Art and high-rarity Pokémon cards.
-                                                </p>
+
+                                            <li className="hidden md:block">
+                                                <p className="flex gap-2">           <BsStars className="h-6 w-9" /> A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards</p>
                                             </li>
                                         </ul>
 
@@ -84,7 +85,7 @@ export default function Evaluation() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-6 md:mt-0 right-[0px] sm:right-[25px] md:right-[20px] lg:right-[-50px] xl:right-[10px] 2xl:right-[10px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-6 md:mt-0 right-[0px] sm:right-[25px] md:right-[20px] lg:right-[-50px] xl:right-[10px] 2xl:right-[7px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : "group-hover:rotate-y-180"

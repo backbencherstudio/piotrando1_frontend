@@ -14,6 +14,20 @@ export default function AboutUs() {
                     data-aos-delay="300"
                     className=' '>
                     <div className=''>
+                        {/* <div className="flex mb-6 flex items-center md:items-start justify-center md:justify-start">
+                            <div className="flex items-center md:items-start justify-center md:justify-start  gap-2 rounded-full border bg-white px-4 py-2">
+                                <Image
+                                    src="/images/aboutusLogo.png"
+                                    alt="icon"
+                                    width={20}
+                                    height={20}
+                                />
+
+                                <p className="text-sm font-medium lg:text-base">
+                                    About Us
+                                </p>
+                            </div>
+                        </div> */}
                         <h2 className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6 md:leading-6 lg:leading-9 '>
                             WHO WE ARE AT SPAWN DROP
                         </h2>
