@@ -9,7 +9,7 @@ import { BsStars } from "react-icons/bs";
 export default function Evaluation() {
     const [isFlipped, setIsFlipped] = useState(false);
     return (
-        <div className="containers pb-4 overflow-hidden ">
+        <div className="containers pb-4 md:pb-4 overflow-hidden ">
 
             {/* GRID */}
             <div className="">
@@ -45,12 +45,12 @@ export default function Evaluation() {
                                                 14 Common / Uncommon Cards
                                             </li>
 
-                                            <li className="flex gap-2 font-bold text-yellow-400 ">
+                                            <li className="flex gap-2 font-medium ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
                                                 2 Foil Cards
                                             </li>
 
-                                            <li className="flex gap-2 font-bold text-yellow-400 ">
+                                            <li className="flex gap-2 font-medium text-[#FF6900] ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
                                                 1 Bonus Card
                                             </li>
@@ -85,7 +85,7 @@ export default function Evaluation() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-6 md:mt-0 right-[0px] sm:right-[25px] md:right-[20px] lg:right-[-50px] xl:right-[10px] 2xl:right-[7px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-6 md:mt-0 right-[0px] sm:right-[25px] md:right-[20px] lg:right-[-50px] xl:right-[10px] 2xl:right-[14px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : "group-hover:rotate-y-180"
@@ -95,22 +95,22 @@ export default function Evaluation() {
                                         {/* FRONT */}
                                         <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
                                             <Image
-                                                src="/images/card120.png"
+                                                src="/images/pokemon12.png"
                                                 alt="front"
                                                 width={220}
                                                 height={320}
-                                                className="h-full w-full object-cover"
+                                                className="h-full w-full object-contain"
                                             />
                                         </div>
 
                                         {/* BACK */}
                                         <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
                                             <Image
-                                                src="/images/green back.png"
+                                                src="/images/orange back 2.png"
                                                 alt="back"
                                                 width={220}
                                                 height={220}
-                                                className="h-full w-[212px] object-contain"
+                                                className="h-full full object-contain"
                                             />
                                         </div>
 

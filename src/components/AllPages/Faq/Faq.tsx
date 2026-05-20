@@ -124,7 +124,7 @@ export function FAQ() {
                 {/* Accordion FAQ Grid */}
                 <div className=" bg-black" data-aos="fade-right"
                     data-aos-duration="1500">
-                    <Card className=" bg-black text-white ">
+                    <Card className=" bg-black text-white pt-4 ">
                         <CardContent className=" ">
                             <Accordion type="single" collapsible className="w-full gap-6 -mt-4">
                                 {visibleFaqs.map((faq, index) => (

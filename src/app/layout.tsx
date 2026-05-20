@@ -34,7 +34,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px] antialiased overflow-x-hidden `}>
+      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px] antialiased overflow-x-hidden opacity-100!`}>
         {/* <div id="google_translate_element" className="google-hide"></div>
 
 

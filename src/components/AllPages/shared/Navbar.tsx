@@ -230,6 +230,8 @@ export default function Navbar() {
                             </li>
                         </Link>
                     ))}
+
+                    <SwitchLanguage />
                 </ul>
 
                 <div className="absolute bottom-10 w-full px-6">
