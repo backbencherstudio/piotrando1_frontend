@@ -13,10 +13,10 @@ type LanguageItem = {
 };
 
 const languages: LanguageItem[] = [
-  { code: "en", label: "EN", flag: "/images/flag.png" },
-  { code: "fr", label: "FR", flag: "/images/france.png" },
-  { code: "pl", label: "PL", flag: "/images/poland.png" },
-  { code: "de", label: "DE", flag: "/images/germany (1).png" },
+  { code: "en", label: "English", flag: "/images/flag.png" },
+  { code: "fr", label: "French", flag: "/images/france.png" },
+  { code: "pl", label: "Polish", flag: "/images/poland.png" },
+  { code: "de", label: "Deutsch", flag: "/images/germany (1).png" },
 ];
 
 export const SwitchLanguage = () => {
