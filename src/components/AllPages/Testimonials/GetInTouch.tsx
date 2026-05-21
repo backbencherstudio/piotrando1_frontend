@@ -52,7 +52,7 @@ export default function GetInTouch() {
                 <div className="flex flex-col justify-start w-full" data-aos="fade-right"
                     data-aos-duration="1500">
 
-                    <div className="flex flex-col justify-center items-center mx-auto text-center md:text-start">
+                    <div className="flex flex-col ">
                         <div className=" mb-12 ">
                             <div className='flex justify-center md:justify-start'>
                                 <div className="flex gap-2 border py-2 px-4 rounded-full">
@@ -68,7 +68,7 @@ export default function GetInTouch() {
                                 </div>
 
                             </div>
-                            <div className=''>
+                            <div className=' justify-center md:justify-start items-center md:items-center  text-center md:text-start'>
                                 <p className="text-[#000] text-[clamp(2rem,2.5rem,4rem)] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
                                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-lg">
                                     Tell us what you need and we will prepare a custom quote, sample option, or wholesale recommendation within 24 hours.
