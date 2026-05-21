@@ -34,13 +34,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px] antialiased overflow-x-hidden `}>
-        <div id="google_translate_element" className="google-hide"></div>
+      <body suppressHydrationWarning={true} className={`${inter.variable} ${bebasNeue.variable} antialiased !top-[0px] antialiased overflow-x-hidden opacity-100!`}>
+        {/* <div id="google_translate_element" className="google-hide"></div>
 
 
         <div id="google_translate_element" className="google-hide"></div>
 
-        {/* <Script id="google-translate-init" strategy="afterInteractive">
+        <Script id="google-translate-init" strategy="afterInteractive">
           {`
     function googleTranslateElementInit() {
      
@@ -58,6 +58,29 @@ export default function RootLayout({
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
         /> */}
+
+
+        <div id="google_translate_element" className="google-hide"></div>
+
+        <Script id="google-translate-init" strategy="afterInteractive">
+          {`
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "en,es,fr,de,pl,ja",
+          autoDisplay: false
+        },
+        "google_translate_element"
+      );
+    }
+  `}
+        </Script>
+
+        <Script
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          strategy="afterInteractive"
+        />
         <AosInit />
         <LanguageProvider>
           <Navbar />

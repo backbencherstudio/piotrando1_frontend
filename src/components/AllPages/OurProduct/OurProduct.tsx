@@ -78,17 +78,17 @@ export default function OurProduct() {
                                         <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
                                             <li className="flex gap-2">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                7 Common / Uncommon
+                                                14 Common / Uncommon Cards
                                             </li>
 
-                                            <li className="flex gap-2">
+                                            <li className="flex gap-2 font-medium ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                2 Foil Cards
+                                                4 Foil Cards
                                             </li>
 
-                                            <li className="flex gap-2">
+                                            <li className="flex gap-2 font-medium text-[#FF6900] ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                1 Bonus Card
+                                                2 Bonus Card
                                             </li>
 
                                             <li className="flex gap-2">
@@ -102,7 +102,8 @@ export default function OurProduct() {
                                             </li>
 
                                             <li className="hidden md:block">
-                                                <p className="flex gap-2">           <BsStars className="h-6 w-9" /> A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards</p>
+                                                <p className="flex gap-2">           <BsStars className="h-6 w-9" /> Enhanced pull potential with increased chances of premium Full Art and high-rarity Pokémon cards.
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
@@ -119,10 +120,10 @@ export default function OurProduct() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-7 md:mt-0 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-7 md:mt-0 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                                 >
                                     <div
-                                        className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px]
+                                        className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] 
     ${isFlipped
                                                 ? "rotate-y-180"
                                                 : "group-hover:rotate-y-180"
@@ -131,18 +132,18 @@ export default function OurProduct() {
                                         {/* FRONT */}
                                         <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
                                             <Image
-                                                src="/images/card110.png"
+                                                src="/images/pokemon11.png"
                                                 alt="pokemon front"
                                                 width={220}
                                                 height={320}
-                                                className="h-full w-full object-cover"
+                                                className="h-full w-full object-contain"
                                             />
                                         </div>
 
                                         {/* BACK */}
                                         <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
                                             <Image
-                                                src="/images/orange back.png"
+                                                src="/images/orange back 2.png"
                                                 alt="pokemon back"
                                                 width={220}
                                                 height={320}

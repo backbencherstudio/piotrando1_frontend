@@ -10,9 +10,9 @@ export default function UltraPack() {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
-        <div className="containers mt-6 md:mt-8  lg:pb-20 pb-8 md:pb-10 overflow-hidden">
+        <div className="containers mt-3 md:mt-8  lg:pb-20 pb-8 md:pb-10 overflow-hidden">
             {/* GRID */}
-            <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">
+            <div className="grid grid-cols-1 gap-9 md:gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">
 
                 {/* LEFT CARD */}
                 <div className="relative mx-auto w-full max-w-full" data-aos="zoom-out-down">
@@ -32,7 +32,7 @@ export default function UltraPack() {
 
                             {/* TEXT */}
                             <div>
-                                <div className="max-w-[58%] sm:max-w-[55%]">
+                                <div className="max-w-[58%] sm:max-w-[56%]">
                                     <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                         <span className="h-2 w-2 rounded-full bg-[#FF5286]"></span>
                                         Inside packs
@@ -44,30 +44,28 @@ export default function UltraPack() {
                                             25 Common / Uncommon Cards
                                         </li>
 
-                                        <li className="flex gap-2">
+                                        <li className="flex gap-2 font-medium ">
                                             <CorrectIcon className="mt-1 text-green-500" />
                                             6 Foil Cards
                                         </li>
 
-                                        <li className="flex gap-2">
+                                        <li className="flex gap-2 font-medium text-[#FF6900] ">
                                             <CorrectIcon className="mt-1 text-green-500" />
-                                            4 Bonus Cards
+                                            4 Bonus Card
                                         </li>
 
-
-
                                         <li className="flex gap-2">
                                             <CorrectIcon className="mt-1 text-green-500" />
+
                                             <span>
-                                                Bonus Cards may include: <br />
+                                                Bonus Card may include: <br />
                                                 Foil / V / EX / GX / Special Rare
 
                                             </span>
                                         </li>
+
                                         <li className="hidden md:block">
-                                            <p className="flex gap-2">
-                                                <BsStars className="h-6 w-9" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon cards .
-                                            </p>
+                                            <p className="flex gap-2">           <BsStars className="h-6 w-9" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon card pulls.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -82,7 +80,7 @@ export default function UltraPack() {
                             {/* IMAGE */}
                             <div
                                 onClick={() => setIsFlipped(!isFlipped)}
-                                className="group perspective absolute md:top-1/2 top-1/3 md:mt-0 mt-6 right-[0px] sm:right-[30px] md:right-[20px] lg:right-[-50px] xl:right-[10px] 2xl:right-[10px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl"
+                                className="group perspective absolute top-1/3 md:top-1/2 mt-7 md:mt-0 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                             >
                                 <div
                                     className={`relative h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : "group-hover:rotate-y-180"
@@ -92,22 +90,22 @@ export default function UltraPack() {
                                     {/* FRONT */}
                                     <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
                                         <Image
-                                            src="/images/card135.png"
+                                            src="/images/pokemon13.png"
                                             alt="front"
                                             width={220}
                                             height={320}
-                                            className="h-full w-full object-cover"
+                                            className="h-full w-full object-contain"
                                         />
                                     </div>
 
                                     {/* BACK */}
                                     <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
                                         <Image
-                                            src="/images/pink back.png"
+                                            src="/images/orange back 2.png"
                                             alt="back"
                                             width={220}
                                             height={320}
-                                            className="h-full w-[212px] object-contain"
+                                            className="h-full w-full object-contain"
                                         />
                                     </div>
 

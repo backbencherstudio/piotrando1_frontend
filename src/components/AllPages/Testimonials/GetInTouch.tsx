@@ -34,17 +34,17 @@ export default function GetInTouch() {
     };
 
 
-    const handleCountryChange = (country: any) => {
+    // const handleCountryChange = (country: any) => {
 
-        const name = typeof country.name === 'string'
-            ? country.name
-            : country.name?.common || country.label;
+    //     const name = typeof country.name === 'string'
+    //         ? country.name
+    //         : country.name?.common || country.label;
 
-        if (name) {
-            setValue("country", name);
-            console.log("Country Updated to:", name);
-        }
-    };
+    //     if (name) {
+    //         setValue("country", name);
+    //         console.log("Country Updated to:", name);
+    //     }
+    // };
     return (
         <div className=" py-10 lg:py-20 flex  containers" id="contact">
             <div className="flex flex-col md:flex-row gap-10 md:gap-1 lg:gap-3 xl:gap-[70px]  w-full justify-between ">
@@ -52,26 +52,28 @@ export default function GetInTouch() {
                 <div className="flex flex-col justify-start w-full" data-aos="fade-right"
                     data-aos-duration="1500">
 
-                    <div className=" mb-12">
-                        <div className='flex '>
-                            <div className="flex gap-2 border py-2 px-4 rounded-full">
-                                <Image
-                                    src="/images/aboutusLogo.png"
-                                    alt="icon"
-                                    width={24}
-                                    height={24}
-                                    className="object-contain"
-                                />
-                                <p className=" text-[18px] font-medium leading-[140%] tracking-[-0.3px] ">Get in Touch
+                    <div className="flex flex-col justify-center items-center mx-auto text-center md:text-start">
+                        <div className=" mb-12 ">
+                            <div className='flex justify-center md:justify-start'>
+                                <div className="flex gap-2 border py-2 px-4 rounded-full">
+                                    <Image
+                                        src="/images/aboutusLogo.png"
+                                        alt="icon"
+                                        width={24}
+                                        height={24}
+                                        className="object-contain"
+                                    />
+                                    <p className=" text-[18px] font-medium leading-[140%] tracking-[-0.3px] ">Get in Touch
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div className=''>
+                                <p className="text-[#000] text-[clamp(2rem,2.5rem,4rem)] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
+                                <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-lg">
+                                    Tell us what you need and we will prepare a custom quote, sample option, or wholesale recommendation within 24 hours.
                                 </p>
                             </div>
-
-                        </div>
-                        <div className=''>
-                            <p className="text-[#000] text-[clamp(2rem,2.5rem,4rem)] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
-                            <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-lg">
-                                Tell us what you need and we will prepare a custom quote, sample option, or wholesale recommendation within 24 hours.
-                            </p>
                         </div>
                     </div>
 

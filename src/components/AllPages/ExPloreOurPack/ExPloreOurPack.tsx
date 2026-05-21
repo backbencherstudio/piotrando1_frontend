@@ -16,14 +16,14 @@ const products = [
         name: "Starter Pack ",
         title: "10 CARDS",
         desc: "Compact mystery pack perfect for checkout counter sales and impulse purchases.",
-        img: "/images/card110.png",
+        img: "/images/pokemon11.png",
         bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
-        hoverCard: "/images/orange back.png",
+        hoverCard: "/images/orange back 2.png",
 
         stats: [
             { label: "Common / Uncommon", value: 7, icon: <CommonIcon /> },
             { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 1, icon: <RearIcon />, textColor: "text-[#FFBF00]" }
+            { label: "Rare Special", value: 1, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" }
         ],
         tags: [
             "Premium Packaging",
@@ -36,14 +36,14 @@ const products = [
         name: "Evolution Pack ",
         title: "20 CARDS",
         desc: "Entry-level pack great for new collectors and gift purchases.",
-        img: "/images/card120.png",
+        img: "/images/pokemon12.png",
         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
-        hoverCard: "/images/green back.png",
+        hoverCard: "/images/orange back 2.png",
 
         stats: [
             { label: "Common / Uncommon", value: 14, icon: <CommonIcon /> },
             { label: "Foil Cards", value: 4, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 2, icon: <RearIcon />, textColor: "text-[#FFBF00]" }
+            { label: "Rare Special", value: 2, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" }
         ],
         tags: [
             "Premium Packaging",
@@ -56,14 +56,14 @@ const products = [
         name: "Ultra Pack ",
         title: " 35 CARDS",
         desc: "Mid-tier mystery pack with extra foil cards for added value. ",
-        img: "/images/card135.png",
+        img: "/images/pokemon13.png",
         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
-        hoverCard: "/images/pink back.png",
+        hoverCard: "/images/orange back 2.png",
 
         stats: [
             { label: "Common / Uncommon", value: 25, icon: <CommonIcon /> },
             { label: "Foil Cards", value: 6, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 4, icon: <RearIcon />, textColor: "text-[#FFBF00]" },
+            { label: "Rare Special", value: 4, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" },
         ],
         tags: [
             "Premium Packaging",
@@ -125,30 +125,31 @@ export default function MysteryPacks() {
 
                                 {/* Image section */}
                                 <div className={`flex  justify-center items-center rounded-xl h-[340px] ${item.bg}`}>
-                                    <div onClick={() => setIsFlipped(isFlipped === item.id ? null : item.id)} className="group perspective flex  mx-auto w-[150px]  ">
+                                    <div onClick={() => setIsFlipped(isFlipped === item.id ? null : item.id)} className="group perspective flex  mx-auto w-[150px] justify-center items-center ">
 
-                                        <div className={`relative w-[390px] h-[280px] transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl ${isFlipped === item.id ? "rotate-y-180" : "group-hover:rotate-y-180"}`}>
+                                        <div className={`relative w-[390px] h-[280px]  transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180 rounded-xl ${isFlipped === item.id ? "rotate-y-180" : "group-hover:rotate-y-180"}`}>
 
                                             {/* FRONT */}
-                                            <div className="absolute w-[200px] h-[280px] inset-0 backface-hidden rounded-sm overflow-hidden flex justify-center ">
+                                            <div className="absolute left-1/2 -translate-x-1/2 w-[200px] h-[280px] inset-y-0 backface-hidden rounded-sm overflow-hidden flex justify-center items-center ">
                                                 <Image
                                                     src={item.img}
                                                     alt={item.title}
                                                     width={400}
                                                     height={300}
-                                                    className="object-contain w-full h-full  mr-13"
+                                                    className="object-contain w-full h-full "
                                                 // className={item.id === 3 ? "object-cover" : "object-contain"}
                                                 />
                                             </div>
 
                                             {/* BACK */}
-                                            <div className="absolute w-[250px] h-[255px] mt-3 inset-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden">
+                                            {/* BACK */}
+                                            <div className="absolute left-1/2 -translate-x-1/2 w-[200px] h-[280px] inset-y-0 rotate-y-180 backface-hidden rounded-sm overflow-hidden flex justify-center items-center">
                                                 <Image
                                                     src={item.hoverCard}
                                                     alt={item.title}
                                                     width={250}
                                                     height={220}
-                                                    className="object-contain w-full h-full ml-12"
+                                                    className="object-contain w-full h-full"
                                                 />
                                             </div>
 
@@ -175,7 +176,7 @@ export default function MysteryPacks() {
                                                     key={i}
                                                     className="flex justify-between bg-[#F6F5F1] rounded-full px-4 py-2 text-sm"
                                                 >
-                                                    <div className="flex gap-1">
+                                                    <div className="flex gap-1 ">
                                                         <p>{stat.icon}</p>  <span className={stat.textColor}>{stat.label}</span>
                                                     </div>
                                                     <span>{stat.value}</span>

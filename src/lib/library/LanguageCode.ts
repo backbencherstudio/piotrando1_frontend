@@ -1,4 +1,4 @@
-export type LanguageCode = "en" | "es" | "fr" | "de" | "hi" | "zh" | "ja";
+export type LanguageCode = "en" | "es" | "fr" | "de" | "hi" | "pl" | "ja";
 
 
 export class LanguageService {

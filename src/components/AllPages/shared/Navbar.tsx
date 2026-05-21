@@ -76,54 +76,54 @@ export default function Navbar() {
 
     const handleNavigation = (path: string, e?: React.MouseEvent) => {
 
-    // ✅ Home button click করলে top এ যাবে
-    if (path === "/" && isHomePage) {
-        e?.preventDefault();
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
+        if (path === "/" && isHomePage) {
+            e?.preventDefault();
 
-        return;
-    }
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
 
-    if (path.includes("#")) {
-        const sectionId = path.split("#")[1];
-        e?.preventDefault();
+            return;
+        }
 
-        if (isHomePage) {
-            const section = document.getElementById(sectionId);
+        if (path.includes("#")) {
+            const sectionId = path.split("#")[1];
+            e?.preventDefault();
 
-            if (section) {
-                const navbarHeight = 85;
+            if (isHomePage) {
+                const section = document.getElementById(sectionId);
 
-                const offset =
-                    section.getBoundingClientRect().top +
-                    window.scrollY -
-                    navbarHeight;
+                if (section) {
+                    const navbarHeight = 85;
 
-                window.scrollTo({
-                    top: offset,
-                    behavior: "smooth",
-                });
+                    const offset =
+                        section.getBoundingClientRect().top +
+                        window.scrollY -
+                        navbarHeight;
+
+                    window.scrollTo({
+                        top: offset,
+                        behavior: "smooth",
+                    });
+                }
+            } else {
+                router.push(`/#${sectionId}`);
             }
         } else {
-            router.push(`/#${sectionId}`);
-        }
-    } else {
-        if (pathname !== path) {
-            router.push(path);
+            if (pathname !== path) {
+                router.push(path);
 
-            setTimeout(() => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "instant",
-                });
-            }, 50);
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "instant",
+                    });
+                }, 50);
+            }
         }
-    }
-};
+    };
     const isActive = (path: string) => {
         if (pathname === path && !path.includes("#")) return true;
         if (path.includes("#") && isHomePage) {
@@ -175,11 +175,11 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    <div className="flex gap-5 -mt-2">
-                        {/* <SwitchLanguage /> */}
+                    <div className="flex gap-5 -mt-2 ml-4">
+                        <SwitchLanguage />
                         <div className={`flex items-center gap-2 cursor-pointer ${textColor}`}>
-                            <p className="text-xs xl:text-base hover:text-[#FE6B02]">Strona glowna (EN)</p>
-                            <Image src="/images/flag.png" alt="flag" width={30} height={20} />
+                            {/* <p className="text-xs xl:text-base hover:text-[#FE6B02]">Strona glowna (EN)</p> */}
+                            {/* <Image src="/images/flag.png" alt="flag" width={30} height={20} /> */}
                         </div>
 
                         <Link
@@ -230,6 +230,8 @@ export default function Navbar() {
                             </li>
                         </Link>
                     ))}
+
+                    <SwitchLanguage />
                 </ul>
 
                 <div className="absolute bottom-10 w-full px-6">
