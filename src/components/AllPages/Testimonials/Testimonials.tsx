@@ -76,7 +76,7 @@ export default function TestimonialsSection() {
                 </div>
                 <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">TRUSTED BY GROWING RETAILERS AND COLLECTORS</p>
                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
-                    From local card shops to online sellers, businesses choose spawn Drop for <br />
+                    From local card shops to online sellers, businesses choose Spawn Drop for <br />
                     reliable stock, authentic cards, and strong resale potential.
                 </p>
             </div>

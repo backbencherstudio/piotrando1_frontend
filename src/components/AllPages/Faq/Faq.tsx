@@ -108,7 +108,7 @@ export function FAQ() {
                                     height={24}
                                     className="object-contain"
                                 />
-                                <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">FAQ’s</p>
+                                <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">FAQ</p>
                             </div>
                         </div>
                         <h1 className="text-[clamp(2rem,2.5rem,4rem)] font-secondary  tracking-tight mt-2">

@@ -203,7 +203,7 @@ export default function Navbar() {
                 </button>
             </div>
 
-            <div className={`fixed top-0 left-0 w-full h-screen bg-[#F5F5F5] text-black z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "-translate-x-full"}`}>
+            <div className={`fixed top-0 left-0 w-full h-screen overflow-y-auto bg-[#F5F5F5] text-black z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex justify-between items-center p-4">
                     <Link href="/" onClick={() => setOpen(false)}>
                         <div className="relative w-[140px] h-[40px]">
@@ -215,7 +215,7 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                <ul className="flex flex-col gap-6 px-6 mt-6 text-lg">
+                <ul className="flex flex-col gap-3 md:gap-6 px-6 mt-6 text-lg ">
                     {mobileNavItems.map((item) => (
                         <Link
                             href={item.path}
@@ -231,10 +231,10 @@ export default function Navbar() {
                         </Link>
                     ))}
 
-                    <SwitchLanguage />
+                    <SwitchLanguage onSelect={() => setOpen(false)} />
                 </ul>
 
-                <div className="absolute bottom-10 w-full px-6">
+                <div className="absolute bottom-10 w-full px-6 z-100">
                     <Link
                         href="/#contact"
                         onClick={(e) => {
@@ -253,6 +253,9 @@ export default function Navbar() {
         </div>
     );
 }
+
+
+
 // "use client";
 
 // import CountrySelect from "@/app/flag/page";

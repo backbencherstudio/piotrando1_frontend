@@ -80,7 +80,7 @@ export default function Footer() {
                                     CUSTOMER SUPPORT
                                 </Link>
                             </li>
-                           
+
                         </ul>
                     </div>
 
@@ -111,7 +111,7 @@ export default function Footer() {
                 <div className="mt-10 pt-6 border-t border-gray-200">
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-xs">
-                            © Spawndrop 2026 | All Rights Reserved
+                            © Spawn Drop 2026 | All Rights Reserved
                         </p>
                         <Link href="#" className="text-gray-400 hover:text-white text-xs transition-colors">
                             Privacy Policy
