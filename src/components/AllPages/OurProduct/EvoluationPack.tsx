@@ -95,7 +95,7 @@ export default function Evaluation() {
                                         {/* FRONT */}
                                         <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
                                             <Image
-                                                src="/images/pokemon12.png"
+                                                src="/images/pokemon13.png"
                                                 alt="front"
                                                 width={220}
                                                 height={320}
