@@ -1,3 +1,5 @@
+import CurrectGreenIcon from '@/components/icon/CurrectgreenIcon'
+import OurmisionIcon from '@/components/icon/OurmisionCurrect'
 import Image from 'next/image'
 import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
@@ -23,29 +25,45 @@ export default function OurMission() {
                 <div className="order-1 md:order-2 flex flex-col " data-aos="fade-left"
                     data-aos-offset="300"  >
                     <div>
-                        <div className=' '>
-                            <p className='text-black text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-2 md:mb-6 md:leading-6 lg:leading-9'>Our Mission</p>
+                        <div className='flex justify-center items-center text-center mx-auto  '>
+
+                            <div className='w-full whitespace-normal text-center md:text-start'>
+
+                                <div>
+                                    <p className='text-center text-black text-[clamp(2rem,3vw,3rem)] font-normal leading-[120%] font-secondary mb-2 md:mb-6 md:leading-6 lg:leading-9'>
+                                        Our Mission
+                                    </p>
+                                </div>
+
+                                <div className='flex flex-col gap-3 lg:gap-8 text-[#393939]'>
+
+                                    <p className='text-[16px] font-normal leading-[120%] tracking-[-0.3px] text-justify'>
+                                        To bridge the gap between limited supply and growing demand ensunng the most
+                                        valuable and exciting products reach the people who truly want them.
+                                    </p>
+
+                                    <p className='text-base font-medium leading-[170%] text-[#393939]'>
+                                        Market Insight Section:
+                                    </p>
+
+                                    <p className='text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-justify'>
+                                        The global TCG market is rapidly expanding driven by a new generation of
+                                        collectors who value rarity, identity, and long-term value.
+                                    </p>
+
+                                </div>
+
+                            </div>
 
                         </div>
-
-                        {/* <h3 className="text-black text-2xl md:text-3xl lg:text-4xl font-semibold leading-5 pb-5">Our Mission</h3> */}
-                        <div className='flex flex-col gap-3 lg:gap-8 text-[#393939]  text-center md:text-start  '>
-                            <p className='  text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>To bridge the gap between limited supply and growing demand, ensuring the most valuable and exciting products reach the people who truly appreciate them. </p>
-
-                            <p className=' text-base font-medium leading-170% text-[#393939]'>The Future of Collectibles :</p>
-                            <p className=' font-[Inter] text-[16px] font-normal leading-[170%] tracking-[-0.3px]'>The global TCG market is expanding rapidly, driven by a new generation of collectors who value rarity, identity, and long-term value.</p>
-
-
-
-                        </div>
-                        <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px] ml-4 mt-6'>
-                            <li>Rare collectibles are increasingly viewed as alternative assets</li>
-                            <li>Inflation reduces cash purchasing power, collectibles gain attention
-                            </li>
-                            <li>Pokémon represents over 50% of the global TCG market
-                            </li>
-                            <li>94% of affluent young collectors invest in premium collectibles</li>
-                            <p className='mt-2'>Cash loses value. Rare collectibles gain attention.</p>
+                        <div className=' text-[#393939] text-[16px] font-normal leading-[170%] tracking-[-0.3px]  mt-6 space-y-1.5 flex flex-col'>
+                            <p className='flex gap-3'><span className='mt-2'><OurmisionIcon className='' /></span>Rare collectibles are increasingly viewed as alternative assets</p>
+                            <p className='flex gap-3'><span className='mt-2'><OurmisionIcon className='' /></span>Inflation reduces cash purchasing power, collectibles gain attention
+                            </p>
+                            <p className='flex gap-3'><span className='mt-2'><OurmisionIcon className='' /></span>Pokémon represents over 50% of the global TCG market
+                            </p>
+                            <p className='flex gap-3'><span className='mt-2'><OurmisionIcon className='' /></span> 94% of affluent young collectors invest in premium collectibles</p>
+                            <p className='mt-2'> Cash loses value. Rare collectibles gain attention.</p>
 
                         </div>
 

@@ -11,7 +11,7 @@ export default function Process() {
         {
             number: "Step 1",
             title: "SOURCING",
-            description: "We acquire authentic cards from trusted partners, resellers, tournaments, and global suppliers",
+            description: "We acquire authentic cards from trusted partners, resellers, tournaments, and global suppliers.",
             icon: < LuSearch className="w-8 h-8 text-[#FF8904]" />,
             color: "bg-[#2E251E]",
         },

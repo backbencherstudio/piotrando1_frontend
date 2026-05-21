@@ -88,7 +88,7 @@ export default function OurProduct() {
 
                                             <li className="flex gap-2 font-medium text-[#FF6900] ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                2 Bonus Card
+                                                2 Bonus Cards
                                             </li>
 
                                             <li className="flex gap-2">
@@ -123,7 +123,7 @@ export default function OurProduct() {
                                     className="group perspective absolute top-1/3 md:top-1/2 mt-7 md:mt-0 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                                 >
                                     <div
-                                        className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] 
+                                        className={`relative h-[220px] w-[150px] 2xl:mt-6 rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] 
     ${isFlipped
                                                 ? "rotate-y-180"
                                                 : "group-hover:rotate-y-180"
@@ -182,14 +182,26 @@ export default function OurProduct() {
                                 </ul>
                             </div>
 
-                            <Link
-                                href="/#contact"
-                                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px]"
-                            >
-                                Request a Quote
-                                <MdKeyboardArrowRight className="text-xl" />
-                            </Link>
+                            <div className="flex hidden md:block">
+                                <Link
+                                    href="/#contact"
+                                    className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px] "
+                                >
+                                    Request a Quote
+                                    <MdKeyboardArrowRight className="text-xl" />
+                                </Link>
+                            </div>
                         </div>
+                    </div>
+
+                    <div className="block md:hidden">
+                        <Link
+                            href="/#contact"
+                            className=" flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px]"
+                        >
+                            Request a Quote
+                            <MdKeyboardArrowRight className="text-xl" />
+                        </Link>
                     </div>
                 </div>
             </div>
