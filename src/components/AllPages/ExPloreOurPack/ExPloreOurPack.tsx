@@ -163,7 +163,7 @@ export default function MysteryPacks() {
                                         {item.title}
                                     </h3>
                                     <div className="flex justify-center mx-auto items-center text-center">
-                                        <p className="text-sm text-[#393939] text-center mt-2 max-w-[350px] leading-relaxed text-balance">
+                                        <p className="text-sm text-[#393939] text-center mt-2  leading-relaxed text-balance">
                                             {item.desc}
                                         </p>
                                     </div>
