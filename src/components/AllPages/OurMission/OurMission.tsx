@@ -42,7 +42,7 @@ export default function OurMission() {
                                         valuable and exciting products reach the people who truly want them.
                                     </p>
 
-                                    <p className='text-base font-medium leading-[170%] text-[#393939]'>
+                                    <p className='text-base font-medium leading-[170%] text-[#393939] text-start'>
                                         Market Insight Section:
                                     </p>
 

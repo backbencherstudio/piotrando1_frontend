@@ -176,7 +176,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="flex gap-5 -mt-2 ml-4">
-                        <SwitchLanguage />
+                        {/* <SwitchLanguage /> */}
                         <div className={`flex items-center gap-2 cursor-pointer ${textColor}`}>
                             {/* <p className="text-xs xl:text-base hover:text-[#FE6B02]">Strona glowna (EN)</p> */}
                             {/* <Image src="/images/flag.png" alt="flag" width={30} height={20} /> */}
@@ -231,7 +231,7 @@ export default function Navbar() {
                         </Link>
                     ))}
 
-                    <SwitchLanguage onSelect={() => setOpen(false)} />
+                    {/* <SwitchLanguage onSelect={() => setOpen(false)} /> */}
                 </ul>
 
                 <div className="absolute bottom-10 w-full px-6 z-100">
