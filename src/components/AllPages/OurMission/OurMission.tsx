@@ -30,7 +30,7 @@ export default function OurMission() {
                             <div className='w-full whitespace-normal text-center md:text-start'>
 
                                 <div>
-                                    <p className='text-center text-black text-[clamp(2rem,3vw,3rem)] font-normal leading-[120%] font-secondary mb-2 md:mb-6 md:leading-6 lg:leading-9'>
+                                    <p className=' text-black text-[clamp(2rem,3vw,3rem)] font-normal leading-[120%] font-secondary mb-2 md:mb-6 md:leading-6 lg:leading-9'>
                                         Our Mission
                                     </p>
                                 </div>
