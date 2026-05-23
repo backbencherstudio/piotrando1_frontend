@@ -46,7 +46,7 @@ export default function Process() {
         {
             number: "Step 6",
             title: "CUSTOMER EXPERIENCE",
-            description: "The final step your customer opens the pack and experiences the pull.",
+            description: "The final step: your customer opens the pack and experiences the pull.",
             icon: <LuUserRound className="w-8 h-8 text-[#FF8904]" />,
             color: "bg-[#2E251E]",
         },

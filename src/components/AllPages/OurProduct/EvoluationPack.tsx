@@ -47,12 +47,12 @@ export default function Evaluation() {
 
                                             <li className="flex gap-2 font-medium ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                2 Foil Cards
+                                                4 Foil Cards
                                             </li>
 
                                             <li className="flex gap-2 font-medium text-[#FF6900] ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                1 Bonus Cards
+                                                2 Bonus Cards
                                             </li>
 
                                             <li className="flex gap-2">
@@ -66,7 +66,7 @@ export default function Evaluation() {
                                             </li>
 
                                             <li className="hidden md:block">
-                                                <p className="flex gap-2">           <BsStars className="h-6 w-9" /> A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards</p>
+                                                <p className="flex gap-2">           <BsStars className="h-6 w-9" /> A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards.</p>
                                             </li>
                                         </ul>
 

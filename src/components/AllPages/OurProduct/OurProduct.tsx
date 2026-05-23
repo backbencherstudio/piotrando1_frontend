@@ -78,17 +78,18 @@ export default function OurProduct() {
                                         <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
                                             <li className="flex gap-2">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                14 Common / Uncommon Cards
+                                                7 Common / Uncommon Cards
+
                                             </li>
 
                                             <li className="flex gap-2 font-medium ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                4 Foil Cards
+                                                2 Foil Cards
                                             </li>
 
                                             <li className="flex gap-2 font-medium text-[#FF6900] ">
                                                 <CorrectIcon className="mt-1 text-green-500" />
-                                                2 Bonus Cards
+                                                1 Bonus Card
                                             </li>
 
                                             <li className="flex gap-2">
@@ -111,7 +112,7 @@ export default function OurProduct() {
                                     <div>
 
                                         <li className="block md:hidden  pt-7 text-sm text-[#4A5565] sm:text-base">
-                                            <p className="flex gap-2">           <BsStars className="h-6 w-9" /> A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards</p>
+                                            <p className="flex gap-2">           <BsStars className="h-6 w-9" />A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards.</p>
                                         </li>
                                     </div>
                                 </div>

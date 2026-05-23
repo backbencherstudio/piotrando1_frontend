@@ -56,7 +56,7 @@ const products = [
         name: "Ultra Pack ",
         title: " 35 CARDS",
         desc: "Premium mystery pack built for serious collectors, featuring the strongest pull potential and highest perceived value.",
-        img: "/images/pokemon12.png",
+        img: "/images/pokemon121.png",
         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
         hoverCard: "/images/orange back 2.png",
 
