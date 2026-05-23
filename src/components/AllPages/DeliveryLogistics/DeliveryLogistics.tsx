@@ -50,7 +50,7 @@ const deliveryData = [
 const features = [
     {
         title: "100% Authentic Cards",
-        desc: "All cards are genuine – guaranteed or money back",
+        desc: "All cards are genuine – guaranteed or your money back.",
         icon: <SecureIcon />
     },
     {

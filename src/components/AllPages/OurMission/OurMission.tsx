@@ -37,18 +37,16 @@ export default function OurMission() {
 
                                 <div className='flex flex-col gap-3 lg:gap-8 text-[#393939]'>
 
-                                    <p className='text-[16px] font-normal leading-[120%] tracking-[-0.3px] text-justify'>
-                                        To bridge the gap between limited supply and growing demand ensunng the most
-                                        valuable and exciting products reach the people who truly want them.
+                                    <p className='text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-justify'>
+                                        To bridge the gap between limited supply and growing demand, ensuring the most valuable and exciting products reach the people who truly appreciate them.
                                     </p>
 
                                     <p className='text-base font-medium leading-[170%] text-[#393939] text-start'>
-                                        Market Insight Section:
+                                        The Future of Collectibles
                                     </p>
 
                                     <p className='text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-justify'>
-                                        The global TCG market is rapidly expanding driven by a new generation of
-                                        collectors who value rarity, identity, and long-term value.
+                                        The global TCG market is expanding rapidly, driven by a new generation of collectors who value rarity, identity, and long-term value.
                                     </p>
 
                                 </div>
