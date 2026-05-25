@@ -72,7 +72,7 @@ export default function UltraPack() {
 
                                 <li className=" block md:hidden">
                                     <p className="flex gap-2 flex gap-2 text-sm text-[#4A5565] sm:text-base mt-6">
-                                        <BsStars className="h-6 w-9 flex gap-2 text-sm text-[#4A5565] sm:text-base" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon cards .
+                                        <BsStars className="h-6 w-9 flex gap-2 text-sm text-[#4A5565] sm:text-base" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon card pulls.
                                     </p>
                                 </li>
                             </div>
@@ -122,7 +122,7 @@ export default function UltraPack() {
                 >
                     <div className="max-w-md">
 
-                        <p className="text-2xl font-medium sm:text-3xl lg:text-[40px] text-center md:text-start">
+                        <p className="text-2xl font-bold md:font-medium sm:text-3xl lg:text-[40px] text-center md:text-start">
                             Ultra Pack
                         </p>
 

@@ -74,8 +74,8 @@ export default function B2BDistributionPage() {
                     <h1 className="text-[clamp(2rem,3vw,3rem)] font-normal font-secondary text-[#000] mb-4">
                         PERFECT FOR B2B DISTRIBUTION
                     </h1>
-                    <p className="text-lg text-[#393939] max-w-lg mx-auto leading-170%">
-                        Built for resellers and distribution partners looking for ready-to-sell products.
+                    <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px]">
+                        Built for resellers and distribution partners looking for <br /> ready-to-sell products.
                     </p>
                 </div>
 

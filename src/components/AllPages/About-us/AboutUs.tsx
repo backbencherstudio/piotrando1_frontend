@@ -13,7 +13,7 @@ export default function AboutUs() {
                     data-aos-duration="1500"
                     data-aos-delay="300"
                     className=' '>
-                    <div className='md:text-justify text-center'>
+                    <div className='text-justify '>
                         {/* <div className="flex mb-4 md:mb-6 flex items-center md:items-start justify-center md:justify-start">
                             <div className="flex items-center md:items-start justify-center md:justify-start  gap-2 rounded-full border bg-white px-4 py-2">
                                 <Image
