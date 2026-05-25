@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Bebas_Neue, Crimson_Pro, Inter } from "next/font/google";
 import "./globals.css";
@@ -7,6 +8,7 @@ import CTASection from "@/components/AllPages/Cta/CTA";
 import Script from "next/script";
 import { LanguageProvider } from "@/components/LanguegeProvider/LanguegeProvider";
 import AosInit from "@/components/AosInit/AosInit";
+import ScrollTopButton from "@/components/ScrollBtn/ScrollBtn";
 
 
 const inter = Inter({
@@ -88,6 +90,7 @@ export default function RootLayout({
           {children}
 
           <CTASection />
+          {/* <ScrollTopButton /> */}
           <Footer />
         </LanguageProvider>
       </body>

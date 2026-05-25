@@ -12,7 +12,7 @@ export default function OurMission() {
                 <div className=' order-2 md:order-2  rounded-xl ' data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" >
-                    <div className="relative w-full h-[300px] sm:h-[320px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden">
+                    <div className="relative w-full h-[300px] sm:h-[320px] md:h-[450px] lg:h-[455px] rounded-xl overflow-hidden">
                         <Image
                             src="/images/ourmission2.png"
                             alt="image"
@@ -24,7 +24,7 @@ export default function OurMission() {
                 </div>
                 <div className="order-1 md:order-2 flex flex-col " data-aos="fade-left"
                     data-aos-offset="300"  >
-                    <div>
+                    <div className=' '>
                         <div className='flex justify-center items-center text-center mx-auto  '>
 
                             <div className='w-full whitespace-normal text-center md:text-start'>
@@ -35,7 +35,7 @@ export default function OurMission() {
                                     </p>
                                 </div>
 
-                                <div className='flex flex-col gap-3 lg:gap-8 text-[#393939]'>
+                                <div className='flex flex-col gap-3 lg:gap-8 text-[#393939] text-center'>
 
                                     <p className='text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-justify'>
                                         To bridge the gap between limited supply and growing demand, ensuring the most valuable and exciting products reach the people who truly appreciate them.
