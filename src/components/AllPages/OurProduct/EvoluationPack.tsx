@@ -127,7 +127,7 @@ export default function Evaluation() {
                     >
                         <div className="w-full max-w-[540px]">
 
-                            <p className="text-2xl font-medium sm:text-3xl lg:text-[40px] text-center md:text-start">
+                            <p className="text-2xl font-bold md:font-medium sm:text-3xl lg:text-[40px] text-center md:text-start">
                                 Evolution Pack
                             </p>
 
