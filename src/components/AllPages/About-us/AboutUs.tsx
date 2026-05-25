@@ -13,8 +13,8 @@ export default function AboutUs() {
                     data-aos-duration="1500"
                     data-aos-delay="300"
                     className=' '>
-                    <div className=''>
-                        {/* <div className="flex mb-6 flex items-center md:items-start justify-center md:justify-start">
+                    <div className='md:text-justify text-center'>
+                        {/* <div className="flex mb-4 md:mb-6 flex items-center md:items-start justify-center md:justify-start">
                             <div className="flex items-center md:items-start justify-center md:justify-start  gap-2 rounded-full border bg-white px-4 py-2">
                                 <Image
                                     src="/images/aboutusLogo.png"
@@ -52,7 +52,7 @@ export default function AboutUs() {
                 <div className='' data-aos="fade-up-left"
                     data-aos-duration="1500"
                     data-aos-delay="300">
-                    <Image src="/images/whoWe.png" alt='image' height={501} width={545} className='z-10 h-[320px] lg:h-[501px] w-full rounded-xl' />
+                    <Image src="/images/whoWe.png" alt='image' height={501} width={545} className='z-10 h-[320px] lg:h-[421px] w-full rounded-xl' />
 
                 </div>
             </div>
