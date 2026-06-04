@@ -31,7 +31,7 @@ export default function Sourch() {
 
     const points = t.sources.points;
     return (
-        <div className='py-10 lg:py-20 containers'>
+        <div className='py-10 lg:py-20 containers '>
 
             <div className="text-center" data-aos="fade-up"
                 data-aos-duration="1500">
@@ -55,7 +55,7 @@ export default function Sourch() {
                 </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 pt-5 md:pt-10  lg:pt-20 gap-[52px] '>
+            <div className='grid grid-cols-1 md:grid-cols-2 pt-5 md:pt-10  lg:pt-20 gap-[52px]'>
 
                 <div data-aos="fade-right"
                     data-aos-duration="1500">
@@ -108,7 +108,7 @@ export default function Sourch() {
 
                 <div className='  ' data-aos="fade-left"
                     data-aos-duration="1500">
-                    <Image src="/images/image33.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[501px] w-full rounded-xl' />
+                    <Image src="/images/image33.png" alt='image' height={501} width={545} className='z-10 h-[271px] lg:h-[422px] w-full rounded-xl' />
 
                 </div>
 

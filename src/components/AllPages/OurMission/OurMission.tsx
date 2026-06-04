@@ -32,18 +32,18 @@ export default function OurMission() {
                             <div className='w-full whitespace-normal text-center md:text-start'>
 
                                 <div>
-                                    <p className=' text-black text-[clamp(2rem,3vw,3rem)] font-normal leading-[120%] font-secondary mb-2 md:mb-6 md:leading-6 lg:leading-9'>
+                                    <p className=' text-black text-[clamp(2rem,3vw,3rem)] font-normal leading-[120%] font-secondary mb-2 md:mb-6 md:leading-6 lg:leading-9 mt-1'>
                                         {t.mission.title}
                                     </p>
                                 </div>
 
-                                <div className='flex flex-col gap-3 lg:gap-8 text-[#393939] text-center'>
+                                <div className='flex flex-col gap-3  text-[#393939] text-center'>
 
                                     <p className='text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-justify'>
                                         {t.mission.description}
                                     </p>
 
-                                    <p className='text-base font-medium leading-[170%] text-[#393939] text-start'>
+                                    <p className='text-base font-medium leading-[170%] text-[#393939] text-start lg:mt-3 mb-1'>
                                         {t.mission.futureTitle}
                                     </p>
 

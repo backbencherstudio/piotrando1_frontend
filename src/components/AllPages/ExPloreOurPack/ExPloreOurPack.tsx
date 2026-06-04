@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "@/components/hooks/useTranslation";
 import CommonIcon from "@/components/icon/Common";
 import FoilIcon from "@/components/icon/FoilIcon";
 import RearIcon from "@/components/icon/RearIcon";
@@ -10,72 +11,185 @@ import { useState } from "react";
 
 const tabs = ["All Packs", "Retail Packs", "Premium Packs", "Vintage Packs", "Wholesale"];
 
-const products = [
-    {
-        id: 1,
-        name: "Starter Pack ",
-        title: "10 CARDS",
-        desc: "Compact mystery pack perfect for checkout counter sales, impulse purchases, and entry-level collectors.",
-        img: "/images/pokemon11.png",
-        bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
-        hoverCard: "/images/orange back 2.png",
 
-        stats: [
-            { label: "Common / Uncommon", value: 7, icon: <CommonIcon /> },
-            { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 1, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" }
-        ],
-        tags: [
-            "Premium Packaging",
-            "Great Gift Option",
-            "2 Foil Card Included"
-        ]
-    },
-    {
-        id: 2,
-        name: "Evolution Pack ",
-        title: "20 CARDS",
-        desc: "Balanced mystery pack designed for growing collectors seeking better pull rates and stronger perceived value.",
-        img: "/images/pokemon13.png",
-        bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
-        hoverCard: "/images/orange back 2.png",
 
-        stats: [
-            { label: "Common / Uncommon", value: 14, icon: <CommonIcon /> },
-            { label: "Foil Cards", value: 4, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 2, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" }
-        ],
-        tags: [
-            "Premium Packaging",
-            "Great Gift Option",
-            "4 Foil Card Included"
-        ]
-    },
-    {
-        id: 3,
-        name: "Ultra Pack ",
-        title: " 35 CARDS",
-        desc: "Premium mystery pack built for serious collectors, featuring the strongest pull potential and highest perceived value.",
-        img: "/images/pokemon121.png",
-        bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
-        hoverCard: "/images/orange back 2.png",
+// const products = [
+//     {
+//         id: 1,
+//         name: "Starter Pack ",
+//         title: "10 CARDS",
+//         desc: "Compact mystery pack perfect for checkout counter sales, impulse purchases, and entry-level collectors.",
+//         img: "/images/pokemon11.png",
+//         bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
+//         hoverCard: "/images/orange back 2.png",
 
-        stats: [
-            { label: "Common / Uncommon", value: 25, icon: <CommonIcon /> },
-            { label: "Foil Cards", value: 6, icon: <FoilIcon />, },
-            { label: "Rare Special", value: 4, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" },
-        ],
-        tags: [
-            "Premium Packaging",
-            "Great Gift Option",
-            "6 Foil Card Included"
-        ]
-    },
-];
+//         stats: [
+//             { label: "Common / Uncommon", value: 7, icon: <CommonIcon /> },
+//             { label: "Foil Cards", value: 2, icon: <FoilIcon />, },
+//             { label: "Rare Special", value: 1, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" }
+//         ],
+//         tags: [
+//             "Premium Packaging",
+//             "Great Gift Option",
+//             "2 Foil Card Included"
+//         ]
+//     },
+//     {
+//         id: 2,
+//         name: "Evolution Pack ",
+//         title: "20 CARDS",
+//         desc: "Balanced mystery pack designed for growing collectors seeking better pull rates and stronger perceived value.",
+//         img: "/images/pokemon13.png",
+//         bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
+//         hoverCard: "/images/orange back 2.png",
+
+//         stats: [
+//             { label: "Common / Uncommon", value: 14, icon: <CommonIcon /> },
+//             { label: "Foil Cards", value: 4, icon: <FoilIcon />, },
+//             { label: "Rare Special", value: 2, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" }
+//         ],
+//         tags: [
+//             "Premium Packaging",
+//             "Great Gift Option",
+//             "4 Foil Card Included"
+//         ]
+//     },
+//     {
+//         id: 3,
+//         name: "Ultra Pack ",
+//         title: " 35 CARDS",
+//         desc: "Premium mystery pack built for serious collectors, featuring the strongest pull potential and highest perceived value.",
+//         img: "/images/pokemon121.png",
+//         bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
+//         hoverCard: "/images/orange back 2.png",
+
+//         stats: [
+//             { label: "Common / Uncommon", value: 25, icon: <CommonIcon /> },
+//             { label: "Foil Cards", value: 6, icon: <FoilIcon />, },
+//             { label: "Rare Special", value: 4, icon: <RearIcon />, textColor: "text-[#FF6900] font-medium" },
+//         ],
+//         tags: [
+//             "Premium Packaging",
+//             "Great Gift Option",
+//             "6 Foil Card Included"
+//         ]
+//     },
+// ];
 
 export default function MysteryPacks() {
+
+    const { t } = useTranslation();
+
+
     const [activeTab, setActiveTab] = useState("All Packs");
     const [isFlipped, setIsFlipped] = useState<number | null>(null);
+
+    const products = [
+        {
+            id: 1,
+            name: t.explore.starter.name,
+            title: t.explore.starter.cards,
+            desc: t.explore.starter.description,
+            img: "/images/pokemon11.png",
+            bg: "bg-gradient-to-b from-[#FFA7A7] to-[#FF8904]",
+            hoverCard: "/images/orange back 2.png",
+
+            stats: [
+                {
+                    label: t.explore.starter.commonUncommon,
+                    value: 7,
+                    icon: <CommonIcon />
+                },
+                {
+                    label: t.explore.starter.foilCards,
+                    value: 2,
+                    icon: <FoilIcon />
+                },
+                {
+                    label: t.explore.starter.rareSpecial,
+                    value: 1,
+                    icon: <RearIcon />,
+                    textColor: "text-[#FF6900] font-medium"
+                }
+            ],
+
+            tags: [
+                t.explore.starter.premiumPackaging,
+                t.explore.starter.greatGiftOption,
+                t.explore.starter.foilIncluded
+            ]
+        },
+
+        {
+            id: 2,
+            name: t.explore.evolution.name,
+            title: t.explore.evolution.cards,
+            desc: t.explore.evolution.description,
+            img: "/images/pokemon13.png",
+            bg: "bg-gradient-to-b from-[#B8FFD2] to-[#CCED00]",
+            hoverCard: "/images/orange back 2.png",
+
+            stats: [
+                {
+                    label: t.explore.evolution.commonUncommon,
+                    value: 14,
+                    icon: <CommonIcon />
+                },
+                {
+                    label: t.explore.evolution.foilCards,
+                    value: 4,
+                    icon: <FoilIcon />
+                },
+                {
+                    label: t.explore.evolution.rareSpecial,
+                    value: 2,
+                    icon: <RearIcon />,
+                    textColor: "text-[#FF6900] font-medium"
+                }
+            ],
+
+            tags: [
+                t.explore.evolution.premiumPackaging,
+                t.explore.evolution.greatGiftOption,
+                t.explore.evolution.foilIncluded
+            ]
+        },
+
+        {
+            id: 3,
+            name: t.explore.ultra.name,
+            title: t.explore.ultra.cards,
+            desc: t.explore.ultra.description,
+            img: "/images/pokemon121.png",
+            bg: "bg-gradient-to-b from-[#FFAFAF] to-[#FF2972]",
+            hoverCard: "/images/orange back 2.png",
+
+            stats: [
+                {
+                    label: t.explore.ultra.commonUncommon,
+                    value: 25,
+                    icon: <CommonIcon />
+                },
+                {
+                    label: t.explore.ultra.foilCards,
+                    value: 6,
+                    icon: <FoilIcon />
+                },
+                {
+                    label: t.explore.ultra.rareSpecial,
+                    value: 4,
+                    icon: <RearIcon />,
+                    textColor: "text-[#FF6900] font-medium"
+                }
+            ],
+
+            tags: [
+                t.explore.ultra.premiumPackaging,
+                t.explore.ultra.greatGiftOption,
+                t.explore.ultra.foilIncluded
+            ]
+        }
+    ];
 
     return (
         <div className="py-10 lg:py-20  " data-aos="fade-up"
@@ -199,7 +313,7 @@ export default function MysteryPacks() {
 
                                     {/* Button */}
                                     <Link href="/#contact" className="w-full flex justify-center gap-3 mt-5 bg-[#FF8904] hover:bg-orange-500 cursor-pointer  text-white py-3 rounded-xl transition">
-                                        <ShareIcon /> Request a Quote
+                                        <ShareIcon />  {t.explore.requestQuote}
                                     </Link>
                                 </div>
 

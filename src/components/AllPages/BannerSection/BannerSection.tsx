@@ -38,7 +38,7 @@ export default function BannerSection() {
 
                         <div className='flex lg:flex-row flex-col gap-4 pt-12'>
                             <Link href="/#contact" className='bg-[#FE6B02] flex justify-center items-center gap-2 py-2 pl-6 pr-2 rounded-3xl cursor-pointer'>
-                                {t.hero.wholesaleBtn}<div className='bg-white rounded-full p-1'>
+                                {t.hero.wholesaleBtn}<div className='bg-white rounded-full p-2'>
                                     <MdArrowOutward className='  text-black' /></div></Link>
                             <Link href="/products" className='bg-[#454849] flex justify-center items-center gap-2 py-2 px-4 cursor-pointer rounded-3xl'>
                                 {t.hero.sampleBtn}</Link>
