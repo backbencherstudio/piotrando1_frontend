@@ -231,7 +231,7 @@ export default function Navbar() {
                         </Link>
                     ))}
 
-                    <SwitchLanguage onSelect={() => setOpen(false)} />
+                    {/* <SwitchLanguage onSelect={() => setOpen(false)} /> */}
                 </ul>
 
                 <div className="absolute bottom-10 w-full px-6 z-100">
