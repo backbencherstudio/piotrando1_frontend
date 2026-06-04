@@ -114,7 +114,10 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar - Copyright */}
-                <div className="mt-10 pt-6 border-t border-gray-200">
+                <div className='h-0.5 w-full bg-gray-500 mt-10 mb-10 '>
+
+                </div>
+                <div className="">
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-xs">
                             {t.footer.copyright}

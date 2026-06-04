@@ -103,24 +103,24 @@ export default function GetInTouch() {
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">{t.contact.form.company} *</label>
-                                    <input {...register("companyName")} placeholder="Your Company Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939] ">{t.contact.form.company} *</label>
+                                    <input {...register("companyName")} placeholder="Your Company Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all mt-2" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">{t.contact.form.contactName} *</label>
-                                    <input {...register("contactName")} placeholder="Your Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                    <input {...register("contactName")} placeholder="Your Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all mt-2" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">{t.contact.form.email} *</label>
-                                    <input {...register("businessEmail")} placeholder="business@email.com" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                    <input {...register("businessEmail")} placeholder="business@email.com" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all mt-2" />
                                 </div>
 
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">{t.contact.form.quantity} </label>
-                                    <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
+                                    <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all mt-2" />
                                 </div>
                                 {/* <div className="space-y-2">
                                 <label className="text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Country</label>
@@ -150,7 +150,7 @@ export default function GetInTouch() {
                             </div> */}
                                 <div className="space-y-2">
                                     <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">{t.contact.form.message} *</label>
-                                    <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full p-1 md:p-2 bg-gray-50 border h-30 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
+                                    <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full p-1 md:p-2 bg-gray-50 border h-30 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none mt-2" />
                                 </div>
                             </div>
 

@@ -367,5 +367,48 @@
     "shipping": "WYSYŁKA DO UE I UK",
     "customBranding": "PERSONALIZACJA MARKI DOSTĘPNA",
     "copyright": "© Spawn Drop 2026 | Wszelkie prawa zastrzeżone"
-  }
+  },
+  "explore": {
+  "mainTitle": "Nasze Produkty",
+  "title": "ODKRYJ NASZE MYSTERY PACKI",
+  "subtitle": "Autentyczne repacki Pokémon stworzone dla kolekcjonerów, sprzedawców detalicznych i partnerów hurtowych.",
+
+  "starter": {
+    "name": "Starter Pack",
+    "cards": "10 KART",
+    "description": "Kompaktowy mystery pack idealny do sprzedaży przy kasie, spontanicznych zakupów i początkujących kolekcjonerów.",
+    "commonUncommon": "Common / Uncommon",
+    "foilCards": "Karty Foil",
+    "rareSpecial": "Rare Special",
+    "premiumPackaging": "Premium Opakowanie",
+    "greatGiftOption": "Świetny Prezent",
+    "foilIncluded": "2 Karty Foil w zestawie"
+  },
+
+  "evolution": {
+    "name": "Evolution Pack",
+    "cards": "20 KART",
+    "description": "Zbalansowany mystery pack dla rozwijających się kolekcjonerów poszukujących lepszych szans na rzadkie karty i większej wartości.",
+    "commonUncommon": "Common / Uncommon",
+    "foilCards": "Karty Foil",
+    "rareSpecial": "Rare Special",
+    "premiumPackaging": "Premium Opakowanie",
+    "greatGiftOption": "Świetny Prezent",
+    "foilIncluded": "4 Karty Foil w zestawie"
+  },
+
+  "ultra": {
+    "name": "Ultra Pack",
+    "cards": "35 KART",
+    "description": "Ekskluzywny mystery pack dla zaawansowanych kolekcjonerów – największy potencjał na rzadkie karty i najwyższa postrzegana wartość.",
+    "commonUncommon": "Common / Uncommon",
+    "foilCards": "Karty Foil",
+    "rareSpecial": "Rare Special",
+    "premiumPackaging": "Premium Opakowanie",
+    "greatGiftOption": "Świetny Prezent",
+    "foilIncluded": "6 Kart Foil w zestawie"
+  },
+
+  "requestQuote": "Poproś o Wycenę"
+}
 }

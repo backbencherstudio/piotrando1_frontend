@@ -361,5 +361,48 @@
     "shipping": "EU & UK SHIPPING",
     "customBranding": "CUSTOM BRANDING AVAILABLE",
     "copyright": "© Spawn Drop 2026 | All Rights Reserved"
-  }
+  },
+  "explore": {
+  "mainTitle": "Our Products",
+  "title": "EXPLORE OUR MYSTERY PACKS",
+  "subtitle": "Authentic Pokémon repacks designed for collectors, retailers, and wholesale partners.",
+
+  "starter": {
+    "name": "Starter Pack",
+    "cards": "10 CARDS",
+    "description": "Compact mystery pack perfect for checkout counter sales, impulse purchases, and entry-level collectors.",
+    "commonUncommon": "Common / Uncommon",
+    "foilCards": "Foil Cards",
+    "rareSpecial": "Rare Special",
+    "premiumPackaging": "Premium Packaging",
+    "greatGiftOption": "Great Gift Option",
+    "foilIncluded": "2 Foil Cards Included"
+  },
+
+  "evolution": {
+    "name": "Evolution Pack",
+    "cards": "20 CARDS",
+    "description": "Balanced mystery pack designed for growing collectors seeking better pull rates and stronger perceived value.",
+    "commonUncommon": "Common / Uncommon",
+    "foilCards": "Foil Cards",
+    "rareSpecial": "Rare Special",
+    "premiumPackaging": "Premium Packaging",
+    "greatGiftOption": "Great Gift Option",
+    "foilIncluded": "4 Foil Cards Included"
+  },
+
+  "ultra": {
+    "name": "Ultra Pack",
+    "cards": "35 CARDS",
+    "description": "Premium mystery pack built for serious collectors, featuring the strongest pull potential and highest perceived value.",
+    "commonUncommon": "Common / Uncommon",
+    "foilCards": "Foil Cards",
+    "rareSpecial": "Rare Special",
+    "premiumPackaging": "Premium Packaging",
+    "greatGiftOption": "Great Gift Option",
+    "foilIncluded": "6 Foil Cards Included"
+  },
+
+  "requestQuote": "Request a Quote"
+}
 }

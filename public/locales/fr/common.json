@@ -364,5 +364,49 @@
     "shipping": "LIVRAISON UE & ROYAUME-UNI",
     "customBranding": "PERSONNALISATION DE MARQUE DISPONIBLE",
     "copyright": "© Spawn Drop 2026 | Tous droits réservés"
-  }
+  },
+
+  "explore": {
+  "mainTitle": "Nos Produits",
+  "title": "DÉCOUVREZ NOS MYSTERY PACKS",
+  "subtitle": "Des repacks Pokémon authentiques conçus pour les collectionneurs, les revendeurs et les partenaires grossistes.",
+
+  "starter": {
+    "name": "Starter Pack",
+    "cards": "10 CARTES",
+    "description": "Mystery pack compact, idéal pour les ventes en caisse, les achats impulsifs et les collectionneurs débutants.",
+    "commonUncommon": "Commune / Peu Commune",
+    "foilCards": "Cartes Holographiques",
+    "rareSpecial": "Rare Spéciale",
+    "premiumPackaging": "Emballage Premium",
+    "greatGiftOption": "Idée Cadeau",
+    "foilIncluded": "2 Cartes Holographiques incluses"
+  },
+
+  "evolution": {
+    "name": "Evolution Pack",
+    "cards": "20 CARTES",
+    "description": "Mystery pack équilibré pour les collectionneurs en progression, offrant de meilleures chances de tirage et une valeur perçue plus élevée.",
+    "commonUncommon": "Commune / Peu Commune",
+    "foilCards": "Cartes Holographiques",
+    "rareSpecial": "Rare Spéciale",
+    "premiumPackaging": "Emballage Premium",
+    "greatGiftOption": "Idée Cadeau",
+    "foilIncluded": "4 Cartes Holographiques incluses"
+  },
+
+  "ultra": {
+    "name": "Ultra Pack",
+    "cards": "35 CARTES",
+    "description": "Mystery pack premium pour les collectionneurs sérieux – le meilleur potentiel de tirage et la valeur perçue la plus élevée.",
+    "commonUncommon": "Commune / Peu Commune",
+    "foilCards": "Cartes Holographiques",
+    "rareSpecial": "Rare Spéciale",
+    "premiumPackaging": "Emballage Premium",
+    "greatGiftOption": "Idée Cadeau",
+    "foilIncluded": "6 Cartes Holographiques incluses"
+  },
+
+  "requestQuote": "Demander un devis"
+}
 }
