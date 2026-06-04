@@ -113,10 +113,10 @@ export default function DeliveryLogistics() {
                         </div>
 
                         {/* Bottom */}
-                        <div className="bg-[#F8F8F8] p-6">
+                        <div className="bg-[#F8F8F8] p-6 h-full">
                             <p className="font-medium mb-2">Details:</p>
 
-                            <ul className="space-y-2">
+                            <ul className="space-y-2 ">
                                 {item.details.map((d, i) => (
                                     <li key={i} className="flex gap-2">
                                         <span className="h-3 w-3 rounded-full border border-black mt-1" />
