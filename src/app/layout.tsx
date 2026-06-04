@@ -62,7 +62,7 @@ export default function RootLayout({
         /> */}
 
 
-        <div id="google_translate_element" className="google-hide"></div>
+        {/* <div id="google_translate_element" className="google-hide"></div>
 
         <Script id="google-translate-init" strategy="afterInteractive">
           {`
@@ -70,14 +70,14 @@ export default function RootLayout({
       new google.translate.TranslateElement(
         {
           pageLanguage: "en",
-          includedLanguages: "en,es,fr,de,pl,ja",
+          includedLanguages: "en,es,fr,de,pl,",
           autoDisplay: false
         },
         "google_translate_element"
       );
     }
   `}
-        </Script>
+        </Script> */}
 
         <Script
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"

@@ -1,81 +1,71 @@
 "use client";
 
 import React from "react";
-import { FaRegClock, FaShippingFast } from "react-icons/fa";
+import { useTranslation } from "@/components/hooks/useTranslation";
+import Image from "next/image";
+
+import { FaRegClock } from "react-icons/fa";
 import { MdOutlinePublic } from "react-icons/md";
 import { BsBox } from "react-icons/bs";
-import Image from "next/image";
+
 import SecureIcon from "@/components/icon/SecureIcon";
 import ConsitentIcon from "@/components/icon/ConsistentIcon";
 import StrongIcon from "@/components/icon/StrongIcon";
 import CarIcon from "@/components/icon/CarIcon";
 
-const deliveryData = [
-    {
-        title: "Shipping Regions",
-        icon: <MdOutlinePublic />,
-        description:
-            "We currently deliver across the EU, United Kingdom, and selected international markets.",
-        details: [
-            "EU-wide + UK",
-            "UK delivery available",
-            "International shipping on request",
-        ],
-    },
-    {
-        title: "Delivery Times",
-        icon: <FaRegClock />,
-        description:
-            "Orders are processed quickly so your products arrive ready to sell without long delays.",
-        details: [
-            "EU: 3–5 business days",
-            "UK: 5–7 business days",
-            "Bulk orders: 7–10 days",
-        ],
-        highlight: true,
-    },
-    {
-        title: "Minimum Order Quantity",
-        icon: <BsBox />,
-        description:
-            "Flexible order sizes make it easy to start small or scale as your business grows.",
-        details: [
-            "Starter: from 25 packs",
-            "Wholesale: from 50+",
-            "Reserved inventory available for long-term partners.",
-        ],
-    },
-];
-
-const features = [
-    {
-        title: "100% Authentic Cards",
-        desc: "All cards are genuine – guaranteed or your money back.",
-        icon: <SecureIcon />
-    },
-    {
-        title: "Consistent Supply",
-        desc: "Reliable stock from multiple sourcing channels",
-        icon: <ConsitentIcon />
-    },
-    {
-        title: "Strong Margins",
-        desc: "Competitive wholesale pricing for profitable resale",
-        icon: <StrongIcon />
-    },
-    {
-        title: "Fast Delivery",
-        desc: "Ships across EU & UK with tracked delivery",
-        icon: <CarIcon />
-    },
-];
-
 export default function DeliveryLogistics() {
+    const { t } = useTranslation();
+    const d = t.delivery;
+
+    const deliveryData = [
+        {
+            title: d.regions.title,
+            icon: <MdOutlinePublic />,
+            description: d.regions.description,
+            details: [d.regions.eu, d.regions.uk, d.regions.international],
+        },
+        {
+            title: d.times.title,
+            icon: <FaRegClock />,
+            description: d.times.description,
+            details: [d.times.eu, d.times.uk, d.times.bulk],
+        },
+        {
+            title: d.moq.title,
+            icon: <BsBox />,
+            description: d.moq.description,
+            details: [d.moq.starter, d.moq.wholesale, d.moq.reserved],
+        },
+    ];
+
+    const features = [
+        {
+            title: d.highlights.authentic,
+            desc: d.highlights.authenticDesc,
+            icon: <SecureIcon />,
+        },
+        {
+            title: d.highlights.supply,
+            desc: d.highlights.supplyDesc,
+            icon: <ConsitentIcon />,
+        },
+        {
+            title: d.highlights.margins,
+            desc: d.highlights.marginsDesc,
+            icon: <StrongIcon />,
+        },
+        {
+            title: d.highlights.fastDelivery,
+            desc: d.highlights.fastDeliveryDesc,
+            icon: <CarIcon />,
+        },
+    ];
+
     return (
-        <div className=" py-10 lg:py-20 containers" id="shiping">
+        <div className="py-10 lg:py-20 containers" id="shiping">
             {/* Header */}
-            <div className="text-center mb-12" data-aos="zoom-out-down" data-aos-duration="1500">
-                <div className='flex justify-center'>
+            <div className="text-center mb-12" data-aos="zoom-out-down">
+                <div className="flex justify-center">
                     <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                         <Image
                             src="/images/aboutusLogo.png"
@@ -84,48 +74,53 @@ export default function DeliveryLogistics() {
                             height={24}
                             className="object-contain"
                         />
-                        <p className="  text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Delivery & Logistics
+                        <p className="text-[16px] font-medium">
+                            Delivery & Logistics
                         </p>
                     </div>
-
                 </div>
-                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6 ">Fast & Reliable Delivery Across Europe</p>
-                <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
-                    We keep your business stocked with fast shipping, secure packaging, and <br /> consistent
-                    availability.
+
+                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-secondary pt-6">
+                    {d.title}
+                </p>
+
+                <p className="text-[#393939] text-base text-center">
+                    {d.subtitle}
                 </p>
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6  mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6">
                 {deliveryData.map((item, index) => (
                     <div
                         key={index}
-                        data-aos="fade-up"
-                        data-aos-duration="1500"
-                        className="rounded-2xl border  hover:border-orange-500 transition-all duration-300 overflow-hidden "
+                        className="rounded-2xl border overflow-hidden"
                     >
-                        {/* Top Section */}
+                        {/* Top */}
                         <div className="bg-white p-6">
                             <div className="flex items-center gap-4 mb-4">
-                                <div className="text-xl text-orange-400">{item.icon}</div>
-                                <h3 className="text-xl font-medium leading-170%">{item.title}</h3>
+                                <div className="text-orange-400 text-xl">
+                                    {item.icon}
+                                </div>
+                                <h3 className="text-xl font-medium">
+                                    {item.title}
+                                </h3>
                             </div>
 
-                            <p className="text-base leading-170% text-[#393939]">
+                            <p className="text-[#393939]">
                                 {item.description}
                             </p>
                         </div>
 
-                        {/* Bottom Section */}
-                        <div className="bg-[#F8F8F8] p-6  h-full">
-                            <p className="mb-2 text-base leading-170% font-medium text-[#000]">Details:</p>
+                        {/* Bottom */}
+                        <div className="bg-[#F8F8F8] p-6">
+                            <p className="font-medium mb-2">Details:</p>
 
-                            <ul className="space-y-2 text-sm text-gray-700">
+                            <ul className="space-y-2">
                                 {item.details.map((d, i) => (
-                                    <li key={i} className="flex items-start gap-2">
-                                        <span className="outline h-3 w-3 rounded-full outline-black mt-1"></span>
-                                        <span className="text-[#000] font-normal text-base">{d}</span>
+                                    <li key={i} className="flex gap-2">
+                                        <span className="h-3 w-3 rounded-full border border-black mt-1" />
+                                        <span>{d}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -134,15 +129,16 @@ export default function DeliveryLogistics() {
                 ))}
             </div>
 
-            {/* Bottom Features */}
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6  mx-auto mt-16">
+            {/* Features */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-16">
                 {features.map((f, i) => (
-                    <div key={i} className="flex gap-3 items-start" data-aos="fade-up"
-                        data-aos-duration="1500">
-                        <div className="bg-[#DCFCE7] p-2.5 rounded-md">{f.icon}</div>
+                    <div key={i} className="flex gap-3 items-start">
+                        <div className="bg-[#DCFCE7] p-2.5 rounded-md">
+                            {f.icon}
+                        </div>
                         <div>
-                            <h4 className="font-medium text-lg text-[#101828]">{f.title}</h4>
-                            <p className="text-[#4A5565] text-sm font-normal">{f.desc}</p>
+                            <h4 className="font-medium text-lg">{f.title}</h4>
+                            <p className="text-sm text-[#4A5565]">{f.desc}</p>
                         </div>
                     </div>
                 ))}

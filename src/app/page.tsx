@@ -16,11 +16,13 @@ import CountrySelect from './flag/page'
 import MysteryNotice from '@/components/AllPages/MysteryNotice/MysteryNotice'
 import Evaluation from '@/components/AllPages/OurProduct/EvoluationPack'
 import UltraPack from '@/components/AllPages/OurProduct/UltraPack'
+// import Home from '@/components/AllPages/index/Index'
 
 export default function page() {
   return (
     <div className=''>
       <BannerSection />
+      {/* <Home /> */}
       <AboutUs />
       <OurMission />
       <OurProduct />

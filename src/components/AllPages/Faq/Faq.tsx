@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "@/components/hooks/useTranslation";
 import {
     Accordion,
     AccordionContent,
@@ -88,6 +89,9 @@ const faqs = [
 ];
 
 export function FAQ() {
+    const { t } = useTranslation();
+
+    const faqs = t.faq.items;
 
     const [showAll, setShowAll] = useState(false);
 
@@ -112,10 +116,10 @@ export function FAQ() {
                             </div>
                         </div>
                         <h1 className="text-[clamp(2rem,2.5rem,4rem)] font-secondary  tracking-tight mt-2">
-                            FREQUENTLY ASKED QUESTIONS
+                            {t.faq.title}
                         </h1>
-                        <p className="text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-white font-inter">
-                            Everything you need to know about our mystery repacks, <br /> wholesale process, and delivery
+                        <p className="text-[16px] font-normal leading-[170%] tracking-[-0.3px] xl:w-lg text-white font-inter">
+                            {t.faq.subtitle}
                         </p>
 
                     </div>
@@ -131,13 +135,14 @@ export function FAQ() {
                                     <AccordionItem
                                         key={index}
                                         value={`item-${index}`}
-                                        className=" bg-[#202020] rounded-lg  "
+                                        className="bg-[#202020] rounded-lg"
                                     >
-                                        <AccordionTrigger className="text-left flex items-center font-medium text-base md:text-lg py-4 hover:no-underline rounded-lg px-4 ">
-                                            {faq.question}
+                                        <AccordionTrigger className="text-left flex items-center font-medium text-base md:text-lg py-4 hover:no-underline rounded-lg px-4">
+                                            {faq.q}
                                         </AccordionTrigger>
-                                        <AccordionContent className="text-muted-foreground pb-4 text-white px-2  pt-2">
-                                            {faq.answer}
+
+                                        <AccordionContent className="text-muted-foreground pb-4 text-white px-2 pt-2">
+                                            {faq.a}
                                         </AccordionContent>
                                     </AccordionItem>
                                 ))}

@@ -1,4 +1,6 @@
+"use client";
 // app/components/Footer.tsx
+import { useTranslation } from '@/components/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
@@ -7,6 +9,9 @@ import { LuTwitter } from 'react-icons/lu';
 import { TbBrandTwitterFilled } from 'react-icons/tb';
 
 export default function Footer() {
+
+
+    const { t } = useTranslation();
     return (
         <footer className="bg-black text-white">
             <div className="containers  py-12">
@@ -17,8 +22,9 @@ export default function Footer() {
                     <div className="md:col-span-5 space-y-6">
                         <Image src="/images/LOGO.png" height={50} width={216} alt='logo' />
                         <p className=" text-base leading-relaxed font-normal  text-[#F6F5F1] max-w-md">
-                            Spawn Drop creates premium mystery repacks with authentic cards, fair value,
-                            and reliable supply for retailers across Europe.
+                            {/* Spawn Drop creates premium mystery repacks with authentic cards, fair value,
+                            and reliable supply for retailers across Europe. */}
+                            {t?.footer?.description}
                         </p>
                         <div className='flex gap-4'>
                             <div>
@@ -36,26 +42,26 @@ export default function Footer() {
 
                     {/* Company Column */}
                     <div className="md:col-span-2">
-                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">COMPANY</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">{t.footer.company}</h3>
                         <ul className="space-y-2">
                             <li>
                                 <Link href="/#aboutUs" className="  text-sm transition-colors">
-                                    ABOUT US
+                                    {t.footer.about}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="text-sm transition-colors">
-                                    WHY SPAWNDROP
+                                    {t.footer.why}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/#contact" className="  text-sm transition-colors">
-                                    CONTACT US
+                                    {t.footer.contactUs}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="  text-sm transition-colors">
-                                    PRIVACY POLICY
+                                    {t.footer.privacy}
                                 </Link>
                             </li>
                         </ul>
@@ -63,7 +69,7 @@ export default function Footer() {
 
                     {/* Support Column */}
                     <div className="md:col-span-2">
-                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">SUPPORT</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">{t.footer.support}</h3>
                         <ul className="space-y-2">
                             {/* <li>
                                 <Link href="/#contact" className=" text-sm transition-colors">
@@ -72,12 +78,12 @@ export default function Footer() {
                             </li> */}
                             <li>
                                 <Link href="/#faq" className=" text-sm transition-colors">
-                                    FAQs
+                                    {t.footer.faqs}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className=" text-sm transition-colors">
-                                    CUSTOMER SUPPORT
+                                    {t.footer.customerSupport}
                                 </Link>
                             </li>
 
@@ -86,21 +92,21 @@ export default function Footer() {
 
                     {/* Resources Column */}
                     <div className="md:col-span-3">
-                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">RESOURCES</h3>
+                        <h3 className="font-semibold text-[#F6F5F1]  mb-4">{t.footer.resources}</h3>
                         <ul className="space-y-2">
                             <li>
                                 <Link href="#" className=" text-sm transition-colors">
-                                    100% AUTHENTIC CARDS
+                                    {t.footer.authentic}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className=" text-sm transition-colors">
-                                    EU & UK SHIPPING
+                                    {t.footer.shipping}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#customBranding" className=" text-sm transition-colors">
-                                    CUSTOM BRANDING AVAILABLE
+                                    {t.footer.customBranding}
                                 </Link>
                             </li>
                         </ul>
@@ -111,7 +117,7 @@ export default function Footer() {
                 <div className="mt-10 pt-6 border-t border-gray-200">
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-xs">
-                            © Spawn Drop 2026 | All Rights Reserved
+                            {t.footer.copyright}
                         </p>
                         <Link href="#" className="text-gray-400 hover:text-white text-xs transition-colors">
                             Privacy Policy

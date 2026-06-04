@@ -3,14 +3,15 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import Evaluation from "./EvoluationPack";
-import UltraPack from "./UltraPack";
 import Link from "next/link";
 import CorrectIcon from "@/components/icon/CorrectIcon";
 import { BsStars } from "react-icons/bs";
+import { useTranslation } from "@/components/hooks/useTranslation";
 
 export default function OurProduct() {
     const [isFlipped, setIsFlipped] = useState(false);
+    const { t } = useTranslation();
+
 
     return (
         <div className="containers pt-10 pb-8 lg:pt-20 overflow-hidden">
@@ -29,17 +30,16 @@ export default function OurProduct() {
                     />
 
                     <p className="text-sm font-medium lg:text-base">
-                        Our Products
+                        {t.products.mainTitle}
                     </p>
                 </div>
 
                 <h2 className="mt-4 font-secondary text-[clamp(2rem,3vw,5rem)]">
-                    OUR MYSTERY REPACKS
+                    {t.products.title}
                 </h2>
 
                 <p className="mt-3 max-w-xl text-sm text-[#393939] lg:text-base">
-                    Three tiers designed for every type of collector and retailer.
-                    Each pack contains 100% authentic Pokémon TCG cards.
+                    {t.products.subtitle}
                 </p>
             </div>
 
@@ -69,59 +69,46 @@ export default function OurProduct() {
 
                                 {/* TEXT */}
                                 <div>
-                                    <div className="max-w-[58%] sm:max-w-[55%]">
+                                    <div className="max-w-[58%]  sm:max-w-[56%] mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
                                         <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                                            <span className="h-2 w-2 rounded-full bg-orange-500"></span>
-                                            Inside packs
+                                            <span className="h-2 w-2 rounded-full bg-[#FF8904]"></span>
+                                            <p className=" text-[#101828] ">  {t.products?.starter?.insidePacks?.title}</p>
                                         </h2>
 
                                         <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                            <li className="flex gap-2">
-                                                <CorrectIcon className="mt-1 text-green-500" />
-                                                7 Common / Uncommon Cards
+                                            {t.products?.starter?.insidePacks?.items?.map((item: string, index: number) => (
+                                                <li key={index} className={`flex gap-2 ${index === 2 ? "font-medium text-[#FF6900]" : ""
+                                                    }`}>
+                                                    <CorrectIcon className="mt-1 shrink-0 text-green-500" />
+                                                    <span>{item}</span>
+                                                </li>
+                                            ))}
 
-                                            </li>
 
-                                            <li className="flex gap-2 font-medium ">
-                                                <CorrectIcon className="mt-1 text-green-500" />
-                                                2 Foil Cards
-                                            </li>
-
-                                            <li className="flex gap-2 font-medium text-[#FF6900] ">
-                                                <CorrectIcon className="mt-1 text-green-500" />
-                                                1 Bonus Card
-                                            </li>
-
-                                            <li className="flex gap-2">
-                                                <CorrectIcon className="mt-1 text-green-500" />
-
-                                                <span>
-                                                    Bonus Card may include: <br />
-                                                    Foil / V / EX / GX / Special Rare
-
-                                                </span>
-                                            </li>
-
-                                            <li className="hidden md:block">
-                                                <p className="flex gap-2">           <BsStars className="h-6 w-9" /> Enhanced pull potential with increased chances of premium Full Art and high-rarity Pokémon cards.
+                                            <li className="hidden md:block w-full mt-1">
+                                                <p className="flex gap-2">
+                                                    <BsStars className="h-6 w-9" />
+                                                    {t.products?.starter?.insidePacks?.specialNote}
                                                 </p>
                                             </li>
                                         </ul>
+
+
                                     </div>
-
-                                    <div>
-
-                                        <li className="block md:hidden  pt-7 text-sm text-[#4A5565] sm:text-base">
-                                            <p className="flex gap-2">           <BsStars className="h-6 w-9" />A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards.</p>
-                                        </li>
+                                    <div className="block md:hidden mt-6">
+                                        <p className="flex gap-2 text-sm text-[#4A5565] sm:text-base">
+                                            <BsStars className="h-6 w-9" />
+                                            {t.products?.starter?.insidePacks?.specialNote}
+                                        </p>
                                     </div>
                                 </div>
+
 
 
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-7 md:mt-0 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-12 md:mt-0 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] -mt-4 [@media(min-width:470px)]:mt-5.5 md:mt-0 2xl:mt-6 rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] 
@@ -163,32 +150,31 @@ export default function OurProduct() {
                         data-aos="zoom-out-down"
                         data-aos-duration="1500"
                     >
-                        <div className="max-w-md">
+                        <div className="max-w-lg">
                             <p className="text-2xl font-bold md:font-medium sm:text-3xl lg:text-[40px] text-center md:text-start ">
-                                Starter Pack
+                                {t.products.starter.name}
                             </p>
 
                             <div className="mt-4 flex flex-col gap-6 text-[#393939] ">
                                 <p className="text-base lg:text-lg text-center md:text-start">
-                                    Perfect entry-level mystery pack designed for impulse
-                                    purchases, retail shelves, and new collectors.
+                                    {t.products.starter.description}
                                 </p>
 
-                                <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base ">
-                                    <li>High-turnover product</li>
-                                    <li>Retail-ready format</li>
-                                    <li>Strong margins</li>
-                                    <li>Accessible price point</li>
-                                    <li>Perfect for gifts</li>
+                                <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base">
+                                    {t.products.starter.features.map((feature: string, idx: number) => (
+                                        <li key={idx} className="text-[#171B1C]">
+                                            {feature}
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
 
-                            <div className="flex hidden md:block">
+                            <div className="hidden md:block">
                                 <Link
                                     href="/#contact"
                                     className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px] "
                                 >
-                                    Request a Quote
+                                    {t.products.requestQuote}
                                     <MdKeyboardArrowRight className="text-xl" />
                                 </Link>
                             </div>
@@ -200,7 +186,7 @@ export default function OurProduct() {
                             href="/#contact"
                             className=" flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px]"
                         >
-                            Request a Quote
+                            {t.products.requestQuote}
                             <MdKeyboardArrowRight className="text-xl" />
                         </Link>
                     </div>
@@ -208,6 +194,6 @@ export default function OurProduct() {
             </div>
 
 
-        </div>
+        </div >
     );
 }

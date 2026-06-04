@@ -1,3 +1,5 @@
+"use client";
+import { useTranslation } from '@/components/hooks/useTranslation'
 import CurrectGreenIcon from '@/components/icon/CurrectgreenIcon'
 import CurrectIcon from '@/components/icon/CurrectIcon'
 import Image from 'next/image'
@@ -24,6 +26,10 @@ import { MdArrowOutward } from 'react-icons/md'
 // ]
 
 export default function Sourch() {
+
+    const { t } = useTranslation();
+
+    const points = t.sources.points;
     return (
         <div className='py-10 lg:py-20 containers'>
 
@@ -38,15 +44,14 @@ export default function Sourch() {
                             height={24}
                             className="object-contain"
                         />
-                        <p className=" font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">Sources
+                        <p className=" font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px] ">{t.sources.mainTitle}
                         </p>
                     </div>
 
                 </div>
-                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">Reliable Supply. Trusted Sources.</p>
-                <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center ">
-                    We maintain a consistent supply pipeline by working only with trusted
-                    <br />  partners across the global TCG market.
+                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">{t.sources.title}</p>
+                <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] text-center  xl:w-xl flex justify-center items-center mx-auto">
+                    {t.sources.description}
                 </p>
             </div>
 
@@ -60,7 +65,24 @@ export default function Sourch() {
 
 
                             <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px]   space-y-4'>
-                                <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Cards sourced from verified sellers, retailers, and events</div>
+
+                                {
+                                    points.map((point, index) => {
+                                        return <div key={point.title}>
+                                            <div>
+                                                <div className='flex gap-2 text-[#101828] font-medium text-lg'>
+                                                    <div><CurrectGreenIcon /></div>
+                                                    {point.title}
+                                                </div>
+
+                                                <p className="ml-9 text-[#4A5565] text-base font-normal">{point.description}</p>
+
+
+                                            </div>
+                                        </div>
+                                    })
+                                }
+                                {/* <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Cards sourced from verified sellers, retailers, and events</div>
                                 <p className="ml-9 text-[#4A5565] text-base font-normal">We work directly with retail stores and card businesses to acquire excess inventory, collections, and
                                     returned stock. This helps us maintain a stable flow of authentic trading cards throughout the year.</p>
                                 <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Only authentic products, no exceptions
@@ -73,7 +95,7 @@ export default function Sourch() {
                                     high-quality singles, sealed products, and collectible inventory.</p>
                                 <div className='flex gap-2 text-[#101828] font-medium text-lg'> <div className=''><CurrectGreenIcon /> </div> Continuous sourcing to ensure stable stock</div>
                                 <p className="ml-9 text-[#4A5565] text-base font-normal">Every product is carefully reviewed and prepared through internal quality control processes to
-                                    ensure authenticity, consistency, and presentation standards before shipment.</p>
+                                    ensure authenticity, consistency, and presentation standards before shipment.</p> */}
 
 
                             </div>

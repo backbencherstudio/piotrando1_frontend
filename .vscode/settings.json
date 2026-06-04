@@ -1,0 +1,16 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["public/locales/*/common.json"],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "nav": { "type": "object" },
+          "hero": { "type": "object" },
+          "about": { "type": "object" },
+          "products": { "type": "object" }
+        }
+      }
+    }
+  ]
+}

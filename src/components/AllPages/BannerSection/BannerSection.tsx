@@ -1,9 +1,12 @@
+"use client";
+import { useTranslation } from '@/components/hooks/useTranslation';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
 
 export default function BannerSection() {
+    const { t } = useTranslation();
     return (
         <div
             style={{ backgroundImage: "url('/images/banner3.png')" }}
@@ -27,19 +30,18 @@ export default function BannerSection() {
                                     height={24}
                                     className="object-contain"
                                 />
-                                <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">EU-Wide Mystery Pack Distribution</p>
+                                <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">{t.hero.title}</p>
                             </div>
                         </div>
-                        <h2 className=" text-white text-[clamp(2.5rem,4vw,4rem)] text-center md:text-start font-normal leading-[100%] py-4 font-secondary">Next-Gen Pokémon Mystery Packs for Retail & Collectors</h2>
-                        <p className='text-white font-[Inter] text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>Fair-value mystery packs with authentic Pokémon cards, transparent pull rates, and
-                            reliable supply  ready for retail, e-commerce, and collectors.</p>
+                        <h2 className=" text-white text-[clamp(2.5rem,4vw,4rem)] text-center md:text-start font-normal leading-[100%] py-4 font-secondary">{t.hero.subtitle}</h2>
+                        <p className='text-white font-[Inter] text-[16px] font-normal leading-[120%] tracking-[-0.3px]'>{t.hero.description}</p>
 
                         <div className='flex lg:flex-row flex-col gap-4 pt-12'>
                             <Link href="/#contact" className='bg-[#FE6B02] flex justify-center items-center gap-2 py-2 pl-6 pr-2 rounded-3xl cursor-pointer'>
-                                Get Wholesale Pricing <div className='bg-white rounded-full p-1'>
+                                {t.hero.wholesaleBtn}<div className='bg-white rounded-full p-1'>
                                     <MdArrowOutward className='  text-black' /></div></Link>
                             <Link href="/products" className='bg-[#454849] flex justify-center items-center gap-2 py-2 px-4 cursor-pointer rounded-3xl'>
-                                Request Sample Pack</Link>
+                                {t.hero.sampleBtn}</Link>
                         </div>
                     </div>
                 </div>

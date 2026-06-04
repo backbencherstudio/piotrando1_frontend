@@ -1,0 +1,365 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "products": "Products",
+    "shipping": "Shipping",
+    "faqs": "FAQs",
+    "contact": "Contact",
+    "getQuotes": "Get Quotes"
+  },
+  "hero": {
+    "title": "EU-Wide Mystery Pack Distribution",
+    "subtitle": "Next-Gen Pokémon Mystery Packs for Retail & Collectors",
+    "description": "Fair-value mystery packs with authentic Pokémon cards, transparent pull rates, and reliable supply ready for retail, e-commerce, and collectors.",
+    "wholesaleBtn": "Get Wholesale Pricing",
+    "sampleBtn": "Request Sample Pack"
+  },
+  "about": {
+    "title": "WHO WE ARE AT SPAWN DROP",
+    "description1": "Spawn Drop is built for collectors who value quality over quantity. We carefully source high-condition trading cards from across the market, inspect each one, and repurpose them into premium packs designed to deliver consistent value and a refined opening experience.",
+    "description2": "In a space often defined by randomness and inconsistency, we focus on structure, balance, and trust. Every pack is assembled with purpose, combining reliable base value with the excitement of meaningful rare pulls.",
+    "description3": "We don't simply resell cards. We curate products that reflect what collectors truly want. Whether you're a retailer, reseller, or dedicated collector, Spawn Drop delivers products designed to earn your trust, again and again."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To bridge the gap between limited supply and growing demand, ensuring the most valuable and exciting products reach the people who truly appreciate them.",
+    "futureTitle": "The Future of Collectibles",
+    "futuredescription":"The global TCG market is expanding rapidly, driven by a new generation of collectors who value rarity, identity, and long-term value.",
+    "points": [
+      "Rare collectibles are increasingly viewed as alternative assets",
+      "Inflation reduces cash purchasing power, collectibles gain attention",
+      "Pokémon represents over 50% of the global TCG market",
+      "94% of affluent young collectors invest in premium collectibles",
+      "Cash loses value. Rare collectibles gain attention."
+    ]
+  },
+ 
+  "products": {
+    "mainTitle":"Our Products",
+    "title": "OUR MYSTERY REPACKS",
+    "subtitle": "Three tiers designed for every type of collector and retailer. Each pack contains 100% authentic Pokémon TCG cards.",
+    "starter": {
+      "name": "Starter Pack",
+      "description": "Perfect entry-level mystery pack designed for impulse purchases, retail shelves, and new collectors.",
+      "features": [
+        "High-turnover product",
+        "Retail-ready format",
+        "Strong margins",
+        "Accessible price point",
+        "Perfect for gifts"
+      ],
+     
+      "insidePacks": {
+        "title": "Inside packs",
+        "items": [
+          "7 Common / Uncommon Cards",
+          "2 Foil Cards",
+          "1 Bonus Card",
+          "Bonus Card may include: Foil / V / EX / GX / Special Rare"
+        ],
+        "specialNote": "Enhanced pull potential with increased chances of premium Full Art and high-rarity Pokémon cards."
+      },
+      "cardImage": "/images/pokemon-starter.png",
+      "cardBackImage": "/images/orange-back.png"
+    },
+    "evolution": {
+      "name": "Evolution Pack",
+      "description": "Balanced mystery pack for collectors and resellers looking for better pull rates and higher perceived value.",
+      "features": [
+        "Ideal for repeat buyers",
+        "Strong shelf appeal",
+        "Increased chance for rare pulls",
+        "Optimized for retail and e-commerce"
+      ],
+      "insidePacks": {
+        "title": "Inside packs",
+        "items": [
+          "14 Common / Uncommon Cards",
+          "4 Foil Cards",
+          "2 Bonus Cards",
+          "Bonus Card may include: Foil / V / EX / GX / Special Rare"
+        ],
+        "specialNote": "A chance to discover premium Special Rare cards, including select Full Art and high-rarity Pokémon cards."
+      },
+      "cardImage": "/images/pokemon13.png",
+      "cardBackImage": "/images/orange-back-2.png"
+    },
+    "ultra": {
+      "name": "Ultra Pack",
+      "description": "High-value mystery pack designed for enthusiasts and premium retail positioning.",
+      "features": [
+        "Collector-focused product",
+        "Premium unboxing experience",
+        "Best perceived value",
+        "Designed for top-tier resale"
+      ],
+      "insidePacks": {
+        "title": "Inside packs",
+        "items": [
+          "25 Common / Uncommon Cards",
+          "6 Foil Cards",
+          "4 Bonus Cards",
+          "Bonus Card may include: Foil / V / EX / GX / Special Rare"
+        ],
+        "specialNote": "Highest chance for premium Full Art and high-rarity Pokémon cards. Ultimate collector's experience!"
+      },
+      "cardImage": "/images/pokemon-ultra.png",
+      "cardBackImage": "/images/orange-back-3.png"
+    },
+    "requestQuote": "Request a Quote"
+  },
+
+  "process": {
+    "title": "How Spawn Drop Works",
+    "subtitle": "From sourcing authentic cards to delivering ready-to-sell mystery repacks, we manage every step for your business.",
+    "steps": {
+      "sourcing": {
+        "title": "SOURCING",
+        "description": "We acquire authentic cards from trusted partners, resellers, tournaments, and global suppliers."
+      },
+      "verified": {
+        "title": "VERIFIED SUPPLY",
+        "description": "Every source is vetted. We only work with reliable and proven partners."
+      },
+      "quality": {
+        "title": "DOUBLE QUALITY CHECK",
+        "description": "Each card is inspected twice before acquisition and before packaging."
+      },
+      "assembly": {
+        "title": "PACK ASSEMBLY",
+        "description": "We design and assemble each pack in-house with carefully balanced card ratios."
+      },
+      "shipping": {
+        "title": "FAST EU SHIPPING",
+        "description": "Orders are shipped quickly with tracked delivery across Europe."
+      },
+      "experience": {
+        "title": "CUSTOMER EXPERIENCE",
+        "description": "The final step: your customer opens the pack and experiences the pull."
+      }
+    }
+  },
+  "b2b": {
+    "title": "PERFECT FOR B2B DISTRIBUTION",
+    "subtitle": "Built for resellers and distribution partners looking for ready-to-sell products.",
+    "features": [
+      "High-margin impulse products",
+      "Perfect for card shops, game stores, and hobby retailers.",
+      "Compact & optimized packaging",
+      "Optimized packaging for modern vending solutions.",
+      "Ready-to-ship inventory",
+      "Ready-to-ship products for e-commerce businesses.",
+      "Scalable supply & pricing",
+      "Volume pricing for distribution partners.",
+      "Exciting pull experience",
+      "Perfect for collectors who want exciting pulls.",
+      "Unique and eye-catching product",
+      "A unique and eye-catching product for special occasions.",
+      "Perfect reward items",
+      "Great as rewards, giveaways, and prizes.",
+      "Easy add-on product",
+      "An easy-to-sell product for hobby and stationery stores."
+    ]
+  },
+  "delivery": {
+    "title": "Fast & Reliable Delivery Across Europe",
+    "subtitle": "We keep your business stocked with fast shipping, secure packaging, and consistent availability.",
+    "regions": {
+      "title": "Shipping Regions",
+      "description": "We currently deliver across the EU, United Kingdom, and selected international markets.",
+      "eu": "EU-wide + UK",
+      "uk": "UK delivery available",
+      "international": "International shipping on request"
+    },
+    "times": {
+      "title": "Delivery Times",
+      "description": "Orders are processed quickly so your products arrive ready to sell without long delays.",
+      "eu": "EU: 3–5 business days",
+      "uk": "UK: 5–7 business days",
+      "bulk": "Bulk orders: 7–10 days"
+    },
+    "moq": {
+      "title": "Minimum Order Quantity",
+      "description": "Flexible order sizes make it easy to start small or scale as your business grows.",
+      "starter": "Starter: from 25 packs",
+      "wholesale": "Wholesale: from 50+",
+      "reserved": "Reserved inventory available for long-term partners"
+    },
+    "highlights": {
+      "authentic": "100% Authentic Cards",
+      "authenticDesc": "All cards are genuine – guaranteed or your money back.",
+      "supply": "Consistent Supply",
+      "supplyDesc": "Reliable stock from multiple sourcing channels",
+      "margins": "Strong Margins",
+      "marginsDesc": "Competitive wholesale pricing for profitable resale",
+      "fastDelivery": "Fast Delivery",
+      "fastDeliveryDesc": "Ships across EU & UK with tracked delivery"
+    }
+  },
+  "branding": {
+    "title": "Custom Branding & Full-Service Production",
+    "description": "Stand out with your own branded mystery pack experience. We handle everything from design to final packaging.",
+    "features": [
+      "Custom blister packaging with your logo",
+      "Full packaging design (blister + box)",
+      "Card sourcing (Pokémon and more)",
+      "Quality control & assembly",
+      "Ready-to-sell delivery"
+    ]
+  },
+  "sources": {
+    "mainTitle":"Sources",
+    "title": "Reliable Supply. Trusted Sources.",
+    "description": "We maintain a consistent supply pipeline by working only with trusted partners across the global TCG market.",
+    "points": [
+     {
+      "title": "Cards sourced from verified sellers, retailers, and events",
+      "description": "We work directly with retail stores and card businesses to acquire excess inventory, collections, and returned stock. This helps us maintain a stable flow of authentic trading cards throughout the year."
+    },
+    {
+      "title": "Only authentic products, no exceptions",
+      "description": "We source cards through Pokémon tournaments, local events, and collector communities, giving us access to popular, competitive, and hard-to-find cards directly from active players and collectors."
+    },
+    {
+      "title": "Double-layer quality control process",
+      "description": "We maintain long-term relationships with reliable independent resellers who consistently provide high-quality singles, sealed products, and collectible inventory."
+    },
+    {
+      "title": "Continuous sourcing to ensure stable stock",
+      "description": "Every product is carefully reviewed and prepared through internal quality control processes to ensure authenticity, consistency, and presentation standards before shipment."
+    }
+    ]
+  },
+  "testimonials": {
+    "title": "TRUSTED BY GROWING RETAILERS AND COLLECTORS",
+    "subtitle": "From local card shops to online sellers, businesses choose Spawn Drop for reliable stock, authentic cards, and strong resale potential.",
+    "quotes": [
+      {
+        "text": "I got this pack as a prize after a tournament and didn't expect much, but it turned out to be really fun to open. The bonus card made it exciting, and I'd definitely get another one.",
+        "author": "Collector"
+      },
+      {
+        "text": "Perfect format for vending machines. Compact, visually appealing, and performs well in terms of turnover and repeat purchases.",
+        "author": "Vending Operator"
+      },
+      {
+        "text": "I really like how professionally the product is packaged. It looks premium on the shelf and doesn't need much explanation to sell.",
+        "author": "Retailer"
+      },
+      {
+        "text": "These packs sell really fast in our store. The margins are solid, and customers often come back for more after their first purchase.",
+        "author": "Store Owner"
+      },
+      {
+        "text": "Very consistent quality and reliable supply. It's an easy product to manage and works well for scaling online sales.",
+        "author": "E-commerce Manager"
+      }
+    ]
+  },
+  "faq": {
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "subtitle": "Everything you need to know about our mystery repacks, wholesale process, and delivery.",
+    "items": [
+      {
+        "q": "What are Pokémon mystery repacks?",
+        "a": "Pokémon mystery repacks are curated bundles of authentic Pokémon cards containing a randomized mix of commons, holos, rares and potential chase cards designed to create an exciting opening experience."
+      },
+      {
+        "q": "Are the cards authentic?",
+        "a": "Yes, all cards included in our mystery repacks are 100% authentic Pokémon cards sourced from trusted suppliers, collections and verified channels."
+      },
+      {
+        "q": "What can be inside a repack?",
+        "a": "Each repack may include a mix of common cards, holos, rare cards, ultra rares, full arts, vintage cards or special bonus pulls depending on the product tier."
+      },
+      {
+        "q": "Are the packs random?",
+        "a": "Yes, all mystery repacks are packed and shipped using a randomized process to ensure a fair and exciting experience for every customer."
+      },
+      {
+        "q": "Can I pull valuable cards?",
+        "a": "Yes, some repacks contain premium chase cards with significantly higher value, but because products are randomized, specific pulls are never guaranteed."
+      },
+      {
+        "q": "Do you guarantee value?",
+        "a": "Our mystery repacks are designed to provide fair value and an enjoyable opening experience, but individual pack value may vary due to randomness."
+      },
+      {
+        "q": "What condition are the cards in?",
+        "a": "Most cards are in Near Mint to Lightly Played condition, although occasional vintage or special cards may show minor wear."
+      },
+      {
+        "q": "Do you ship internationally?",
+        "a": "Yes, we ship across Europe and selected international countries, with shipping options available at checkout."
+      },
+      {
+        "q": "How fast is shipping?",
+        "a": "Orders are typically processed within 1–3 business days, while delivery times depend on destination and shipping method."
+      },
+      {
+        "q": "How are the cards protected during shipping?",
+        "a": "All orders are securely packed using protective materials to help ensure your cards arrive safely and in excellent condition."
+      },
+      {
+        "q": "Do you offer wholesale pricing?",
+        "a": "Yes, we work with resellers, online stores and vending businesses, and offer bulk pricing for larger orders."
+      },
+      {
+        "q": "Can I customize my repack order?",
+        "a": "Custom repack options may be available for wholesale or larger orders depending on quantity and availability."
+      },
+      {
+        "q": "Do you offer sample packs for evaluation?",
+        "a": "Yes. We understand the importance of testing product quality before ordering in bulk, which is why we offer sample packs for eligible retailers and resellers upon request."
+      },
+      {
+        "q": "What is your return policy?",
+        "a": "Customer satisfaction matters to us. If there is an issue with your order, such as damage or an incorrect item, contact our support team and we will make it right as quickly as possible."
+      },
+      {
+        "q": "Are pull rates fair?",
+        "a": "Yes, our repacks are built with randomized distribution to provide a fair and balanced opening experience."
+      },
+      {
+        "q": "Do you include vintage or high-value cards?",
+        "a": "Selected repacks may include vintage, premium or high-value chase cards, which will always be clearly mentioned in the product description."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "requestQuote": "Request a Quote",
+    "description": "Tell us what you need and we will prepare a custom quote, sample option, or wholesale recommendation within 24 hours.",
+    "form": {
+      "company": "Company Name",
+      "contactName": "Contact Name",
+      "email": "Business Email",
+      "quantity": "Estimated Quantity",
+      "message": "Message",
+      "submit": "Request Wholesale Pricing"
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "Ready to start selling premium mystery packs?",
+      "description": "Get wholesale pricing, request a sample, or create your own custom branded product today.",
+      "wholesaleBtn": "Get Wholesale Pricing",
+      "sampleBtn": "Request Sample Pack"
+    },
+    "description": "Spawn Drop creates premium mystery repacks with authentic cards, fair value, and reliable supply for retailers across Europe.",
+    "company": "COMPANY",
+    "about": "ABOUT US",
+    "why": "WHY SPAWNDROP",
+    "contactUs": "CONTACT US",
+    "privacy": "PRIVACY POLICY",
+    "support": "SUPPORT",
+    "faqs": "FAQs",
+    "customerSupport": "CUSTOMER SUPPORT",
+    "resources": "RESOURCES",
+    "authentic": "100% AUTHENTIC CARDS",
+    "shipping": "EU & UK SHIPPING",
+    "customBranding": "CUSTOM BRANDING AVAILABLE",
+    "copyright": "© Spawn Drop 2026 | All Rights Reserved"
+  }
+}

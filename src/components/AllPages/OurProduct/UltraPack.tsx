@@ -5,8 +5,10 @@ import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import CorrectIcon from "@/components/icon/CorrectIcon";
 import { BsStars } from "react-icons/bs";
+import { useTranslation } from "@/components/hooks/useTranslation";
 
 export default function UltraPack() {
+    const { t } = useTranslation();
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
@@ -16,6 +18,7 @@ export default function UltraPack() {
 
                 {/* LEFT CARD */}
                 <div className="relative mx-auto w-full max-w-full" data-aos="zoom-out-down">
+
 
                     {/* BG */}
                     <Image
@@ -35,37 +38,24 @@ export default function UltraPack() {
                                 <div className="max-w-[58%] sm:max-w-[56%]">
                                     <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                         <span className="h-2 w-2 rounded-full bg-[#FF5286]"></span>
-                                        Inside packs
+                                        {t.products?.ultra?.insidePacks?.title}
                                     </h2>
 
                                     <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            25 Common / Uncommon Cards
-                                        </li>
+                                        {t.products?.ultra?.insidePacks?.items?.map((item: string, index: number) => (
+                                            <li key={index} className={`flex gap-2 ${index === 2 ? "font-medium text-[#FF6900]" : ""
+                                                }`}>
+                                                <CorrectIcon className="mt-1 shrink-0 text-green-500" />
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
 
-                                        <li className="flex gap-2 font-medium ">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            6 Foil Cards
-                                        </li>
 
-                                        <li className="flex gap-2 font-medium text-[#FF6900] ">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-                                            4 Bonus Cards
-                                        </li>
-
-                                        <li className="flex gap-2">
-                                            <CorrectIcon className="mt-1 text-green-500" />
-
-                                            <span>
-                                                Bonus Card may include: <br />
-                                                Foil / V / EX / GX / Special Rare
-
-                                            </span>
-                                        </li>
-
-                                        <li className="hidden md:block">
-                                            <p className="flex gap-2">           <BsStars className="h-6 w-9" /> Our highest-tier experience with the strongest chance of premium Full Art and high-rarity Pokémon card pulls.</p>
+                                        <li className="hidden md:block w-full mt-1">
+                                            <p className="flex gap-2">
+                                                <BsStars className="h-6 w-9" />
+                                                {t.products?.ultra?.insidePacks?.specialNote}
+                                            </p>
                                         </li>
                                     </ul>
                                 </div>
@@ -120,35 +110,33 @@ export default function UltraPack() {
                 <div className="order-[-1] lg:order-none flex flex-col justify-start lg:justify-center  lg:px-0"
                     data-aos="zoom-out-up"
                 >
-                    <div className="max-w-md">
 
-                        <p className="text-2xl font-bold md:font-medium sm:text-3xl lg:text-[40px] text-center md:text-start">
-                            Ultra Pack
+
+                    <div className="max-w-lg">
+                        <p className="text-2xl font-bold md:font-medium sm:text-3xl lg:text-[40px] text-center md:text-start ">
+                            {t.products.ultra.name}
                         </p>
 
-                        <div className="mt-4 flex flex-col gap-6 text-[#393939]">
-
+                        <div className="mt-4 flex flex-col gap-6 text-[#393939] ">
                             <p className="text-base lg:text-lg text-center md:text-start">
-                                High-value mystery pack designed for enthusiasts and premium retail
-                                positioning.
+                                {t.products.ultra.description}
                             </p>
 
                             <ul className="ml-5 list-disc space-y-2 text-sm lg:text-base">
-                                <li>Collector-focused product</li>
-                                <li>Premium unboxing experience</li>
-                                <li>Strong margins</li>
-                                <li>Best perceived value</li>
-                                <li>Designed for top-tier resale</li>
+                                {t.products.ultra.features.map((feature: string, idx: number) => (
+                                    <li key={idx} className="text-[#171B1C]">
+                                        {feature}
+                                    </li>
+                                ))}
                             </ul>
-
                         </div>
 
-                        <div className="flex hidden md:block">
+                        <div className="hidden md:block">
                             <Link
                                 href="/#contact"
                                 className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px] "
                             >
-                                Request a Quote
+                                {t.products.requestQuote}
                                 <MdKeyboardArrowRight className="text-xl" />
                             </Link>
                         </div>
@@ -160,7 +148,7 @@ export default function UltraPack() {
                         href="/#contact"
                         className=" flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px]"
                     >
-                        Request a Quote
+                        {t.products.requestQuote}
                         <MdKeyboardArrowRight className="text-xl" />
                     </Link>
                 </div>

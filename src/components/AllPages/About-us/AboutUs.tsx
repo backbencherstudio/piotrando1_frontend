@@ -1,7 +1,11 @@
+"use client";
+import { useTranslation } from '@/components/hooks/useTranslation';
 import Image from 'next/image'
 import { MdArrowOutward } from 'react-icons/md'
 
 export default function AboutUs() {
+
+    const { t } = useTranslation();
 
 
     return (
@@ -29,18 +33,18 @@ export default function AboutUs() {
                             </div>
                         </div> */}
                         <h2 className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6 md:leading-6 lg:leading-9 '>
-                            WHO WE ARE AT SPAWN DROP
+                            {t.about.title}
                         </h2>
 
                         <p className="text-[#393939] mb-4 text-base">
-                            <span className="">Spawn Drop </span> is built for collectors who value quality over quantity. We carefully source high-condition trading cards from across the market, inspect each one, and repurpose them into premium packs designed to deliver consistent value and a refined opening experience.
+                            {t.about.description1}
                         </p>
 
                         <p className="text-[#393939] mb-4 text-base">
-                            In a space often defined by randomness and inconsistency, we focus on structure, balance, and trust. Every pack is assembled with purpose, combining reliable base value with the excitement of meaningful rare pulls.
+                            {t.about.description2}
                         </p>
                         <p className="text-[#393939]  text-base">
-                            We don’t simply resell cards. We curate products that reflect what collectors truly want. Whether you’re a retailer, reseller, or dedicated collector, Spawn Drop delivers products designed to earn your trust, again and again.
+                            {t.about.description3}
                         </p>
 
                         {/* <button className="bg-black text-white px-6 py-3 rounded-full cursor-pointer">

@@ -1,0 +1,367 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "products": "Produkte",
+    "shipping": "Versand",
+    "faqs": "Häufige Fragen",
+    "contact": "Kontakt",
+    "getQuotes": "Angebot anfordern"
+  },
+  "hero": {
+    "title": "EU-weite Mystery-Pack-Distribution",
+    "subtitle": "Pokémon Mystery Packs der nächsten Generation für den Einzelhandel und Sammler",
+    "description": "Mystery Packs mit fairem Preis-Leistungs-Verhältnis, authentischen Pokémon-Karten, transparenten Zugwahrscheinlichkeiten und zuverlässiger Verfügbarkeit – ideal für den Einzelhandel, E-Commerce und Sammler.",
+    "wholesaleBtn": "Großhandelspreise anfragen",
+    "sampleBtn": "Musterpaket anfordern"
+  },
+  "about": {
+    "title": "WER WIR BEI SPAWN DROP SIND",
+    "description1": "Spawn Drop wurde für Sammler entwickelt, die Qualität über Quantität stellen. Wir beschaffen sorgfältig hochwertige Sammelkarten aus dem gesamten Markt, prüfen jede einzelne und verarbeiten sie zu Premium-Packs, die beständigen Wert und ein erstklassiges Öffnungserlebnis bieten.",
+    "description2": "In einem Bereich, der oft von Zufall und Unbeständigkeit geprägt ist, setzen wir auf Struktur, Balance und Vertrauen. Jedes Pack wird mit Bedacht zusammengestellt und vereint soliden Grundwert mit der Spannung bedeutsamer Seltenzüge.",
+    "description3": "Wir verkaufen nicht einfach nur Karten weiter. Wir kuratieren Produkte, die widerspiegeln, was Sammler wirklich wollen. Ob Einzelhändler, Wiederverkäufer oder leidenschaftlicher Sammler – Spawn Drop liefert Produkte, die Ihr Vertrauen immer wieder verdienen."
+  },
+  "mission": {
+    "title": "Unsere Mission",
+    "description": "Die Lücke zwischen begrenztem Angebot und wachsender Nachfrage zu schließen und sicherzustellen, dass die wertvollsten und aufregendsten Produkte die Menschen erreichen, die sie wirklich zu schätzen wissen.",
+    "futureTitle": "Die Zukunft des Sammelmarktes",
+     "futuredescription":"Der globale TCG-Markt wächst rasant, angetrieben von einer neuen Sammlergeneration, die Seltenheit, Identität und langfristigen Wert schätzt.",
+    "points": [
+      "Seltene Sammlerstücke werden zunehmend als alternative Anlagen betrachtet",
+      "Inflation mindert die Kaufkraft von Bargeld, Sammlerstücke gewinnen an Bedeutung",
+      "Pokémon repräsentiert über 50 % des globalen TCG-Marktes",
+      "94 % wohlhabender junger Sammler investieren in Premium-Sammlerstücke",
+      "Bargeld verliert an Wert. Seltene Sammlerstücke gewinnen an Aufmerksamkeit."
+    ]
+  },
+"products": {
+  "mainTitle": "Unsere Produkte",
+  "title": "UNSERE MYSTERY REPACKS",
+  "subtitle": "Drei Stufen für jeden Sammler- und Händlertyp. Jedes Pack enthält 100 % authentische Pokémon TCG Karten.",
+
+  "starter": {
+    "name": "Starter Pack",
+    "description": "Das Perfektes Einstiegs-Mystery-Pack für Impulskäufe, Einzelhandel und neue Sammler.",
+    "features": [
+      "Schnelldreher-Produkt",
+      "Einzelhandelsgerechtes Format",
+      "Starke Margen",
+      "Attraktiver Einstiegspreis",
+      "Perfekt als Geschenk"
+    ],
+    "insidePacks": {
+      "title": "Packungsinhalt",
+      "items": [
+        "7 Common / Uncommon Karten",
+        "2 Foil Karten",
+        "1 Bonus Karte",
+        "Die Bonuskarte kann enthalten: Foil / V / EX / GX / Special Rare"
+      ],
+      "specialNote": "Erhöhtes Pull-Potenzial mit gesteigerter Chance auf Premium Full-Art und seltene Pokémon Karten."
+    },
+    "cardImage": "/images/pokemon-starter.png",
+    "cardBackImage": "/images/orange-back.png"
+  },
+
+  "evolution": {
+    "name": "Evolution Pack",
+    "description": "Ausgewogenes Mystery-Pack für Sammler und Reseller mit besseren Pull-Raten und höherem Wertgefühl.",
+    "features": [
+      "Ideal für Stammkunden",
+      "Starke Regalwirkung",
+      "Erhöhte Chance auf seltene Karten",
+      "Optimiert für Retail und E-Commerce"
+    ],
+    "insidePacks": {
+      "title": "Packungsinhalt",
+      "items": [
+        "14 Common / Uncommon Karten",
+        "4 Foil-Karten",
+        "2 Bonus Karten",
+        "Bonuskarte kann enthalten: Foil / V / EX / GX / Special Rare"
+      ],
+      "specialNote": "Eine Chance, Premium Special Rare-Karten zu entdecken, darunter ausgewählte Full-Art- und andere hochseltene Pokémon-Karten."
+    },
+    "cardImage": "/images/pokemon13.png",
+    "cardBackImage": "/images/orange-back-2.png"
+  },
+
+  "ultra": {
+    "name": "Ultra Pack",
+    "description": "Premium Mystery-Pack für Enthusiasten und hochwertige Retail-Positionierung.",
+    "features": [
+      "Sammlerfokussiertes Produkt",
+      "Premium Unboxing Erlebnis",
+      "Höchster wahrgenommener Wert",
+      "Für Premium Wiederverkauf optimiert"
+    ],
+    "insidePacks": {
+      "title": "Packungsinhalt",
+      "items": [
+        "25 Common / Uncommon Karten",
+        "6 Foil Karten",
+        "4 Bonus Karten",
+        "Bonuskarte kann enthalten: Foil / V / EX / GX / Special Rare"
+      ],
+      "specialNote": "Höchste Chance auf Premium Full-Art und seltene Pokémon Karten. Ultimatives Sammler-Erlebnis!"
+    },
+    "cardImage": "/images/pokemon-ultra.png",
+    "cardBackImage": "/images/orange-back-3.png"
+  },
+
+  "requestQuote": "Angebot anfordern"
+},
+  "process": {
+ 
+    "title": "Wie Spawn Drop funktioniert",
+    "subtitle": "Von der Beschaffung authentischer Karten bis zur Lieferung verkaufsfertiger Mystery Repacks – wir übernehmen jeden Schritt für Ihr Unternehmen.",
+    "steps": {
+      "sourcing": {
+        "title": "BESCHAFFUNG",
+        "description": "Wir beschaffen authentische Karten von vertrauenswürdigen Partnern, Wiederverkäufern, Turnieren und globalen Lieferanten."
+      },
+      "verified": {
+        "title": "VERIFIZIERTES ANGEBOT",
+        "description": "Jede Quelle wird geprüft. Wir arbeiten ausschließlich mit zuverlässigen und bewährten Partnern."
+      },
+      "quality": {
+        "title": "DOPPELTE QUALITÄTSKONTROLLE",
+        "description": "Jede Karte wird zweimal geprüft – vor der Beschaffung und vor der Verpackung."
+      },
+      "assembly": {
+        "title": "PACKUNGSZUSAMMENSTELLUNG",
+        "description": "Wir entwickeln und stellen jedes Pack intern mit sorgfältig ausgewogenen Kartenverhältnissen zusammen."
+      },
+      "shipping": {
+        "title": "SCHNELLER EU-VERSAND",
+        "description": "Bestellungen werden schnell mit nachverfolgbarer Lieferung in ganz Europa versandt."
+      },
+      "experience": {
+        "title": "KUNDENERLEBNIS",
+        "description": "Der letzte Schritt: Ihr Kunde öffnet das Pack und entdeckt, was ihn erwartet."
+      }
+    }
+  },
+  "b2b": {
+    "title": "PERFEKT FÜR DEN B2B-VERTRIEB",
+    "subtitle": "Entwickelt für Wiederverkäufer und Vertriebspartner, die verkaufsfertige Produkte suchen.",
+    "features": [
+      "Margenstarke Impulskaufprodukte",
+      "Perfekt für Kartenläden, Spielwarengeschäfte und Hobbyhändler.",
+      "Kompakte und optimierte Verpackung",
+      "Optimierte Verpackung für moderne Verkaufsautomaten.",
+      "Versandfertige Lagerbestände",
+      "Versandfertige Produkte für E-Commerce-Unternehmen.",
+      "Skalierbare Lieferung und Preisgestaltung",
+      "Mengenpreise für Vertriebspartner.",
+      "Aufregende Jagd nach seltenen Karten",
+      "Perfekt für Sammler, die auf wertvolle Karten jagen.",
+      "Einzigartiges und auffälliges Produkt",
+      "Ein einzigartiges und auffälliges Produkt für besondere Anlässe.",
+      "Perfekte Belohnungsartikel",
+      "Ideal als Belohnungen, Giveaways und Preise.",
+      "Einfaches Zusatzprodukt",
+      "Ein leicht zu verkaufendes Produkt für Hobby- und Schreibwarengeschäfte."
+    ]
+  },
+  "delivery": {
+    "title": "Schnelle und zuverlässige Lieferung in ganz Europa",
+    "subtitle": "Wir halten Ihr Unternehmen mit schnellem Versand, sicherer Verpackung und beständiger Verfügbarkeit bestens versorgt.",
+    "regions": {
+      "title": "Lieferregionen",
+      "description": "Wir liefern derzeit in die gesamte EU, das Vereinigte Königreich und ausgewählte internationale Märkte.",
+      "eu": "EU-weit + UK",
+      "uk": "UK-Lieferung verfügbar",
+      "international": "Internationaler Versand auf Anfrage"
+    },
+    "times": {
+      "title": "Lieferzeiten",
+      "description": "Bestellungen werden schnell bearbeitet, damit Ihre Produkte ohne lange Wartezeit verkaufsbereit ankommen.",
+      "eu": "EU: 3–5 Werktage",
+      "uk": "UK: 5–7 Werktage",
+      "bulk": "Großbestellungen: 7–10 Tage"
+    },
+    "moq": {
+      "title": "Mindestbestellmenge",
+      "description": "Flexible Bestellgrößen ermöglichen einen einfachen Einstieg oder eine Skalierung entsprechend Ihrem Geschäftswachstum.",
+      "starter": "Starter: ab 25 Packs",
+      "wholesale": "Großhandel: ab 50+",
+      "reserved": "Reservierter Bestand für langfristige Partner verfügbar"
+    },
+    "highlights": {
+      "authentic": "100 % authentische Karten",
+      "authenticDesc": "Alle Karten sind echt – garantiert oder Geld zurück.",
+      "supply": "Beständige Versorgung",
+      "supplyDesc": "Zuverlässiger Bestand aus mehreren Beschaffungskanälen",
+      "margins": "Starke Margen",
+      "marginsDesc": "Wettbewerbsfähige Großhandelspreise für profitablen Wiederverkauf",
+      "fastDelivery": "Schnelle Lieferung",
+      "fastDeliveryDesc": "Versand in die EU & UK mit Sendungsverfolgung"
+    }
+  },
+  "branding": {
+    "title": "Individuelles Branding & Full-Service-Produktion",
+    "description": "Setzen Sie sich mit Ihrem eigenen gebrandeten Mystery-Pack-Erlebnis ab. Wir übernehmen alles – vom Design bis zur finalen Verpackung.",
+    "features": [
+      "Individuelles Blister-Packaging mit Ihrem Logo",
+      "Vollständiges Verpackungsdesign (Blister + Box)",
+      "Kartenbeschaffung (Pokémon und mehr)",
+      "Qualitätskontrolle & Zusammenstellung",
+      "Versandfertige Lieferung"
+    ]
+  },
+  "sources": {
+       "mainTitle":"Sources",
+    "title": "Zuverlässige Versorgung. Vertrauenswürdige Quellen.",
+    "description": "Wir sichern eine beständige Lieferkette durch die ausschließliche Zusammenarbeit mit vertrauenswürdigen Partnern auf dem globalen TCG-Markt.",
+    "points": [
+        {
+    "title": "Karten von verifizierten Verkäufern, Händlern und Veranstaltungen",
+    "description": "Wir arbeiten direkt mit Einzelhandelsgeschäften und Kartenunternehmen zusammen, um Überschussbestände, Sammlungen und Retouren zu erwerben."
+  },
+  {
+    "title": "Nur authentische Produkte, keine Ausnahmen",
+    "description": "Wir beschaffen Karten über Pokémon-Turniere, lokale Veranstaltungen und Sammlergemeinschaften."
+  },
+  {
+    "title": "Zweistufiger Qualitätskontrollprozess",
+    "description": "Wir pflegen langfristige Beziehungen zu zuverlässigen unabhängigen Wiederverkäufern."
+  },
+  {
+    "title": "Kontinuierliche Beschaffung zur Sicherung stabiler Bestände",
+    "description": "Jedes Produkt wird sorgfältig durch interne Qualitätskontrollprozesse geprüft und vorbereitet."
+  }
+    ]
+  },
+  "testimonials": {
+    "title": "VON WACHSENDEN EINZELHÄNDLERN UND SAMMLERN VERTRAUT",
+    "subtitle": "Von lokalen Kartenläden bis hin zu Online-Verkäufern wählen Unternehmen Spawn Drop für zuverlässige Bestände, authentische Karten und starkes Wiederverkaufspotenzial.",
+    "quotes": [
+      {
+        "text": "Ich habe dieses Pack als Preis nach einem Turnier erhalten und nicht viel erwartet, aber das Öffnen hat wirklich Spaß gemacht. Die Bonuskarte hat es aufregend gemacht, und ich würde definitiv ein weiteres kaufen.",
+        "author": "Sammler"
+      },
+      {
+        "text": "Perfektes Format für Verkaufsautomaten. Kompakt, optisch ansprechend und mit guten Umschlags- und Wiederkaufsraten.",
+        "author": "Automatenbetreiber"
+      },
+      {
+        "text": "Ich schätze sehr, wie professionell das Produkt verpackt ist. Es sieht im Regal hochwertig aus und verkauft sich ohne großen Erklärungsbedarf.",
+        "author": "Einzelhändler"
+      },
+      {
+        "text": "Diese Packs verkaufen sich in unserem Geschäft sehr schnell. Die Margen sind solide und Kunden kommen nach dem ersten Kauf oft wieder.",
+        "author": "Ladenbesitzer"
+      },
+      {
+        "text": "Sehr gleichbleibende Qualität und zuverlässige Lieferung. Ein einfach zu handhabendes Produkt, das sich gut für die Skalierung des Online-Vertriebs eignet.",
+        "author": "E-Commerce Manager"
+      }
+    ]
+  },
+  "faq": {
+    "title": "HÄUFIG GESTELLTE FRAGEN",
+    "subtitle": "Alles, was Sie über unsere Mystery Repacks, den Großhandelsprozess und die Lieferung wissen müssen.",
+    "items": [
+      {
+        "q": "Was sind Pokémon Mystery Repacks?",
+        "a": "Pokémon Mystery Repacks sind kuratierte Pakete mit authentischen Pokémon-Karten, die eine zufällige Mischung aus Commons, Holos, Rares und möglichen Chase-Karten enthalten – entwickelt für ein aufregendes Öffnungserlebnis."
+      },
+      {
+        "q": "Sind die Karten authentisch?",
+        "a": "Ja, alle Karten in unseren Mystery Repacks sind 100 % authentische Pokémon-Karten, die von vertrauenswürdigen Lieferanten, Sammlungen und verifizierten Kanälen stammen."
+      },
+      {
+        "q": "Was kann in einem Repack enthalten sein?",
+        "a": "Jedes Repack kann eine Mischung aus Common-Karten, Holos, Rares, Ultra Rares, Full Arts, Vintage-Karten oder speziellen Bonus-Karten enthalten – je nach Produktstufe."
+      },
+      {
+        "q": "Sind die Packs zufällig zusammengestellt?",
+        "a": "Ja, alle Mystery Repacks werden nach einem Zufallsprinzip zusammengestellt und versandt, um ein faires und aufregendes Erlebnis für jeden Kunden zu gewährleisten."
+      },
+      {
+        "q": "Kann ich wertvolle Karten ziehen?",
+        "a": "Ja, einige Repacks enthalten Premium Chase-Karten mit deutlich höherem Wert. Da die Produkte jedoch zufällig zusammengestellt sind, können bestimmte Karten nie garantiert werden."
+      },
+      {
+        "q": "Garantieren Sie einen bestimmten Wert?",
+        "a": "Unsere Mystery Repacks sind darauf ausgelegt, einen fairen Gegenwert und ein angenehmes Öffnungserlebnis zu bieten. Der Wert einzelner Packs kann jedoch aufgrund der Zufälligkeit variieren."
+      },
+      {
+        "q": "In welchem Zustand befinden sich die Karten?",
+        "a": "Die meisten Karten befinden sich im Zustand Near Mint bis Lightly Played. Gelegentlich können Vintage- oder Sonderkarten leichte Gebrauchsspuren aufweisen."
+      },
+      {
+        "q": "Versenden Sie international?",
+        "a": "Ja, wir versenden in ganz Europa und in ausgewählte internationale Länder. Die verfügbaren Versandoptionen werden beim Checkout angezeigt."
+      },
+      {
+        "q": "Wie schnell ist der Versand?",
+        "a": "Bestellungen werden in der Regel innerhalb von 1–3 Werktagen bearbeitet. Die Lieferzeit hängt vom Zielort und der gewählten Versandmethode ab."
+      },
+      {
+        "q": "Wie werden die Karten beim Versand geschützt?",
+        "a": "Alle Bestellungen werden mit Schutzmaterialien sicher verpackt, damit Ihre Karten sicher und in einwandfreiem Zustand ankommen."
+      },
+      {
+        "q": "Bieten Sie Großhandelspreise an?",
+        "a": "Ja, wir arbeiten mit Wiederverkäufern, Online-Shops und Automatenbetreibern zusammen und bieten Mengenpreise für größere Bestellungen an."
+      },
+      {
+        "q": "Kann ich meine Repack-Bestellung individuell gestalten?",
+        "a": "Individuelle Repack-Optionen können für Großhandels- oder größere Bestellungen verfügbar sein, abhängig von Menge und Verfügbarkeit."
+      },
+      {
+        "q": "Bieten Sie Musterpacks zur Evaluierung an?",
+        "a": "Ja. Wir verstehen, wie wichtig es ist, die Produktqualität vor einer Großbestellung zu testen. Deshalb bieten wir berechtigten Händlern und Wiederverkäufern auf Anfrage Musterpacks an."
+      },
+      {
+        "q": "Wie lautet Ihre Rückgaberichtlinie?",
+        "a": "Kundenzufriedenheit ist uns wichtig. Sollte es ein Problem mit Ihrer Bestellung geben – etwa Beschädigungen oder ein falscher Artikel –, wenden Sie sich an unser Support-Team und wir werden es so schnell wie möglich in Ordnung bringen."
+      },
+      {
+        "q": "Sind die Pull-Raten fair?",
+        "a": "Ja, unsere Repacks basieren auf einer zufälligen Verteilung, um ein faires und ausgewogenes Öffnungserlebnis zu gewährleisten."
+      },
+      {
+        "q": "Enthalten die Repacks Vintage- oder hochwertige Karten?",
+        "a": "Ausgewählte Repacks können Vintage-, Premium- oder hochwertige Chase-Karten enthalten, die stets eindeutig in der Produktbeschreibung erwähnt werden."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "requestQuote": "Angebot anfordern",
+    "description": "Teilen Sie uns Ihre Anforderungen mit, und wir erstellen Ihnen innerhalb von 24 Stunden ein individuelles Angebot, eine Musteroption oder eine Großhandelsempfehlung.",
+    "form": {
+      "company": "Unternehmensname",
+      "contactName": "Ansprechpartner",
+      "email": "Geschäftliche E-Mail",
+      "quantity": "Geschätzte Menge",
+      "message": "Nachricht",
+      "submit": "Großhandelspreise anfragen"
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "Bereit, Premium Mystery Packs zu verkaufen?",
+      "description": "Fordern Sie noch heute Großhandelspreise an, bestellen Sie ein Muster oder erstellen Sie Ihr eigenes individuell gebrandetes Produkt.",
+      "wholesaleBtn": "Großhandelspreise anfragen",
+      "sampleBtn": "Musterpaket anfordern"
+    },
+    "description": "Spawn Drop erstellt Premium Mystery Repacks mit authentischen Karten, garantiertem Wert und zuverlässiger Versorgung für Händler in ganz Europa.",
+    "company": "UNTERNEHMEN",
+    "about": "ÜBER UNS",
+    "why": "WARUM SPAWNDROP",
+    "contactUs": "KONTAKT",
+    "privacy": "DATENSCHUTZRICHTLINIE",
+    "support": "SUPPORT",
+    "faqs": "Häufige Fragen",
+    "customerSupport": "KUNDENDIENST",
+    "resources": "RESSOURCEN",
+    "authentic": "100 % AUTHENTISCHE KARTEN",
+    "shipping": "EU- & UK-VERSAND",
+    "customBranding": "INDIVIDUELLES BRANDING VERFÜGBAR",
+    "copyright": "© Spawn Drop 2026 | Alle Rechte vorbehalten"
+  }
+}

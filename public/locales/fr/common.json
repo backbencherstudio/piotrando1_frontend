@@ -1,0 +1,368 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "shipping": "Livraison",
+    "faqs": "FAQ",
+    "contact": "Contact",
+    "getQuotes": "Demander un devis"
+  },
+  "hero": {
+    "title": "Distribution de Mystery Packs à l'échelle de l'UE",
+    "subtitle": "Mystery Packs Pokémon de nouvelle génération pour la vente au détail et les collectionneurs",
+    "description": "Des mystery packs à valeur équitable avec de vraies cartes Pokémon, des taux de tirage transparents et un approvisionnement fiable, prêts pour la vente au détail, le e-commerce et les collectionneurs.",
+    "wholesaleBtn": "Obtenir les tarifs de gros",
+    "sampleBtn": "Demander un pack d'échantillon"
+  },
+  "about": {
+    "title": "QUI SOMMES-NOUS CHEZ SPAWN DROP",
+    "description1": "Spawn Drop a été créé pour les collectionneurs qui privilégient la qualité à la quantité. Nous sélectionnons avec soin des cartes à collectionner en excellent état sur l'ensemble du marché, les inspectons individuellement, puis les intégrons dans des packs premium conçus pour offrir une valeur constante et une expérience d'ouverture raffinée.",
+    "description2": "Dans un univers souvent marqué par l'aléatoire et l'incohérence, nous misons sur la structure, l'équilibre et la confiance. Chaque pack est assemblé avec intention, alliant une valeur de base solide à l'excitation de tirages rares significatifs.",
+    "description3": "Nous ne faisons pas que revendre des cartes. Nous élaborons des produits qui reflètent ce que les collectionneurs recherchent véritablement. Que vous soyez détaillant, revendeur ou collectionneur passionné, Spawn Drop vous livre des produits conçus pour mériter votre confiance, encore et encore."
+  },
+  "mission": {
+    "title": "Notre Mission",
+    "description": "Combler le fossé entre une offre limitée et une demande croissante, en veillant à ce que les produits les plus précieux et les plus passionnants parviennent à ceux qui les apprécient vraiment.",
+    "futureTitle": "L'avenir des objets de collection",
+     "futuredescription":"Le marché mondial des JCC se développe rapidement, porté par une nouvelle génération de collectionneurs qui valorisent la rareté, l'identité et la valeur à long terme.",
+    "points": [
+      "Les objets de collection rares sont de plus en plus considérés comme des actifs alternatifs",
+      "L'inflation réduit le pouvoir d'achat des liquidités, les objets de collection gagnent en intérêt",
+      "Pokémon représente plus de 50 % du marché mondial des JCC",
+      "94 % des jeunes collectionneurs aisés investissent dans des objets de collection premium",
+      "L'argent perd de la valeur. Les objets de collection rares gagnent en attention."
+    ]
+  },
+
+"products": {
+  "mainTitle": "Nos produits",
+  "title": "NOS MYSTERY REPACKS",
+  "subtitle": "Trois niveaux conçus pour chaque type de collectionneur et de détaillant. Chaque pack contient 100 % de véritables cartes Pokémon TCG.",
+
+"starter": {
+  "name": "Pack Débutant",
+  "description": "Le Pack mystère d'entrée de gamme idéal pour les achats impulsifs, les points de vente et les nouveaux collectionneurs.",
+  "features": [
+    "Produit à forte rotation",
+    "Format prêt pour la vente au détail",
+    "Marges solides",
+    "Prix accessible",
+    "Parfait pour les cadeaux"
+  ],
+  "insidePacks": {
+    "title": "Contenu des packs",
+    "items": [
+      "7 cartes Communes / Peu Communes",
+      "2 cartes Brillantes",
+      "1 carte Bonus",
+      "La carte Bonus peut inclure : Brillante / V / EX / GX / Spéciale Rare"
+    ],
+    "specialNote": "Potentiel de tirage amélioré avec des chances accrues d'obtenir des cartes Full Art premium et d'autres cartes Pokémon de haute rareté."
+  },
+  "cardImage": "/images/pokemon-starter.png",
+  "cardBackImage": "/images/orange-back.png"
+},
+
+ "evolution": {
+  "name": "Pack Évolution",
+  "description": "Pack mystère équilibré pour les collectionneurs et revendeurs recherchant de meilleurs taux de tirage et une valeur perçue plus élevée.",
+  "features": [
+    "Idéal pour les clients réguliers",
+    "Fort attrait en rayon",
+    "Plus de chances d'obtenir des cartes rares",
+    "Optimisé pour le commerce de détail et le e-commerce"
+  ],
+  "insidePacks": {
+    "title": "Contenu des packs",
+    "items": [
+      "14 cartes Communes / Peu Communes",
+      "4 cartes Brillantes",
+      "2 cartes Bonus",
+      "La carte Bonus peut inclure : Brillante / V / EX / GX / Spéciale Rare"
+    ],
+    "specialNote": "Chance de découvrir des cartes Spéciales Rares premium, y compris des Full Art et autres cartes Pokémon rares."
+  },
+  "cardImage": "/images/pokemon13.png",
+  "cardBackImage": "/images/orange-back-2.png"
+},
+
+ "ultra": {
+  "name": "Pack Ultra",
+  "description": "Pack mystère haut de gamme conçu pour les passionnés et le segment premium du retail.",
+  "features": [
+    "Produit orienté collectionneur",
+    "Expérience d’unboxing premium",
+    "Meilleure valeur perçue",
+    "Conçu pour la revente haut de gamme"
+  ],
+  "insidePacks": {
+    "title": "Contenu des packs",
+    "items": [
+      "25 cartes Communes / Peu Communes",
+      "6 cartes Brillantes",
+      "4 cartes Bonus",
+      "La carte Bonus peut inclure : Brillante / V / EX / GX / Spéciale Rare"
+    ],
+    "specialNote": "Meilleures chances de cartes Full Art et Pokémon ultra rares. Expérience ultime pour collectionneurs."
+  },
+  "cardImage": "/images/pokemon-ultra.png",
+  "cardBackImage": "/images/orange-back-3.png"
+},
+
+  "requestQuote": "Demander un devis"
+},
+
+  "process": {
+    "title": "Comment fonctionne Spawn Drop",
+    "subtitle": "De l'approvisionnement en cartes authentiques à la livraison de mystery repacks prêts à la vente, nous gérons chaque étape pour votre entreprise.",
+    "steps": {
+      "sourcing": {
+        "title": "APPROVISIONNEMENT",
+        "description": "Nous acquérons des cartes authentiques auprès de partenaires de confiance, de revendeurs, de tournois et de fournisseurs mondiaux."
+      },
+      "verified": {
+        "title": "APPROVISIONNEMENT VÉRIFIÉ",
+        "description": "Chaque source est contrôlée. Nous ne travaillons qu'avec des partenaires fiables et éprouvés."
+      },
+      "quality": {
+        "title": "DOUBLE CONTRÔLE QUALITÉ",
+        "description": "Chaque carte est inspectée deux fois : avant l'acquisition et avant le conditionnement."
+      },
+      "assembly": {
+        "title": "ASSEMBLAGE DES PACKS",
+        "description": "Nous concevons et assemblons chaque pack en interne avec des ratios de cartes soigneusement équilibrés."
+      },
+      "shipping": {
+        "title": "LIVRAISON RAPIDE DANS L'UE",
+        "description": "Les commandes sont expédiées rapidement avec une livraison suivie dans toute l'Europe."
+      },
+      "experience": {
+        "title": "EXPÉRIENCE CLIENT",
+        "description": "La dernière étape : votre client ouvre le pack et découvre ce qui l'attend."
+      }
+    }
+  },
+  "b2b": {
+    "title": "PARFAIT POUR LA DISTRIBUTION B2B",
+    "subtitle": "Conçu pour les revendeurs et partenaires de distribution à la recherche de produits prêts à la vente.",
+    "features": [
+      "Produits d'achat impulsif à forte marge",
+      "Parfait pour les boutiques de cartes, les magasins de jeux et les détaillants hobby.",
+      "Emballage compact et optimisé",
+      "Emballage optimisé pour les distributeurs automatiques modernes.",
+      "Stock prêt à l'expédition",
+      "Produits prêts à expédier pour les entreprises e-commerce.",
+      "Approvisionnement et tarification évolutifs",
+      "Tarification en volume pour les partenaires distributeurs.",
+      "Une chasse palpitante aux cartes rares",
+      "Parfait pour les collectionneurs qui chassent les cartes de valeur.",
+      "Produit unique et accrocheur",
+      "Un produit unique et accrocheur pour les occasions spéciales.",
+      "Articles de récompense parfaits",
+      "Idéal comme récompenses, cadeaux publicitaires et prix.",
+      "Produit complémentaire facile à vendre",
+      "Un produit facile à vendre pour les boutiques de loisirs créatifs et de papeterie."
+    ]
+  },
+  "delivery": {
+    "title": "Livraison rapide et fiable dans toute l'Europe",
+    "subtitle": "Nous approvisionnons votre entreprise grâce à une expédition rapide, un emballage sécurisé et une disponibilité constante.",
+    "regions": {
+      "title": "Zones de livraison",
+      "description": "Nous livrons actuellement dans toute l'UE, au Royaume-Uni et dans certains marchés internationaux.",
+      "eu": "Toute l'UE + Royaume-Uni",
+      "uk": "Livraison au Royaume-Uni disponible",
+      "international": "Livraison internationale sur demande"
+    },
+    "times": {
+      "title": "Délais de livraison",
+      "description": "Les commandes sont traitées rapidement afin que vos produits arrivent prêts à la vente sans longs délais.",
+      "eu": "UE : 3 à 5 jours ouvrés",
+      "uk": "Royaume-Uni : 5 à 7 jours ouvrés",
+      "bulk": "Commandes en gros : 7 à 10 jours"
+    },
+    "moq": {
+      "title": "Quantité minimale de commande",
+      "description": "Des tailles de commande flexibles permettent de démarrer modestement ou de monter en puissance au fil de la croissance de votre activité.",
+      "starter": "Débutant : à partir de 25 packs",
+      "wholesale": "Gros : à partir de 50+",
+      "reserved": "Stock réservé disponible pour les partenaires à long terme"
+    },
+    "highlights": {
+      "authentic": "100 % de cartes authentiques",
+      "authenticDesc": "Toutes les cartes sont authentiques – garanti ou remboursé.",
+      "supply": "Approvisionnement régulier",
+      "supplyDesc": "Stock fiable provenant de plusieurs canaux d'approvisionnement",
+      "margins": "Marges solides",
+      "marginsDesc": "Tarifs de gros compétitifs pour une revente rentable",
+      "fastDelivery": "Livraison rapide",
+      "fastDeliveryDesc": "Livraison dans toute l'UE & au Royaume-Uni avec suivi de colis"
+    }
+  },
+  "branding": {
+    "title": "Personnalisation de marque et production clé en main",
+    "description": "Démarquez-vous avec votre propre expérience de mystery pack à votre marque. Nous gérons tout, du design à l'emballage final.",
+    "features": [
+      "Blister personnalisé avec votre logo",
+      "Conception complète de l'emballage (blister + boîte)",
+      "Approvisionnement en cartes (Pokémon et plus)",
+      "Contrôle qualité et assemblage",
+      "Livraison prête à la vente"
+    ]
+  },
+  "sources": {
+    "mainTitle":"Sources",
+    "title": "Approvisionnement fiable. Sources de confiance.",
+    "description": "Nous maintenons une chaîne d'approvisionnement régulière en travaillant exclusivement avec des partenaires de confiance sur le marché mondial des JCC.",
+    "points": [
+      {
+    "title": "Cartes provenant de vendeurs vérifiés, détaillants et événements",
+    "description": "Nous travaillons directement avec des magasins de détail et des entreprises de cartes pour acquérir des stocks excédentaires, des collections et des retours."
+  },
+  {
+    "title": "Uniquement des produits authentiques, sans exception",
+    "description": "Nous approvisionnons des cartes via des tournois Pokémon, des événements locaux et des communautés de collectionneurs."
+  },
+  {
+    "title": "Processus de contrôle qualité à double niveau",
+    "description": "Nous entretenons des relations à long terme avec des revendeurs indépendants fiables."
+  },
+  {
+    "title": "Approvisionnement continu pour garantir un stock stable",
+    "description": "Chaque produit est soigneusement examiné et préparé grâce à des processus internes de contrôle qualité."
+  }
+    ]
+  },
+  "testimonials": {
+    "title": "LA CONFIANCE DES DÉTAILLANTS ET COLLECTIONNEURS EN CROISSANCE",
+    "subtitle": "Des boutiques de cartes locales aux vendeurs en ligne, les entreprises choisissent Spawn Drop pour son stock fiable, ses cartes authentiques et son fort potentiel de revente.",
+    "quotes": [
+      {
+        "text": "J'ai reçu ce pack comme prix après un tournoi sans en attendre grand-chose, mais l'ouverture s'est révélée vraiment amusante. La carte bonus a rendu ça excitant, et j'en rachèterais sans hésiter.",
+        "author": "Collectionneur"
+      },
+      {
+        "text": "Format parfait pour les distributeurs automatiques. Compact, visuellement attrayant, et très performant en termes de rotation et d'achats répétés.",
+        "author": "Exploitant de distributeur"
+      },
+      {
+        "text": "J'apprécie vraiment le professionnalisme de l'emballage. Le produit a une apparence premium en rayon et se vend sans besoin d'explication.",
+        "author": "Détaillant"
+      },
+      {
+        "text": "Ces packs se vendent très rapidement dans notre boutique. Les marges sont solides, et les clients reviennent souvent après leur premier achat.",
+        "author": "Propriétaire de magasin"
+      },
+      {
+        "text": "Qualité très constante et approvisionnement fiable. C'est un produit facile à gérer qui convient parfaitement à la montée en puissance des ventes en ligne.",
+        "author": "Responsable e-commerce"
+      }
+    ]
+  },
+  "faq": {
+    "title": "QUESTIONS FRÉQUEMMENT POSÉES",
+    "subtitle": "Tout ce que vous devez savoir sur nos mystery repacks, notre processus de gros et notre livraison.",
+    "items": [
+      {
+        "q": "Que sont les mystery repacks Pokémon ?",
+        "a": "Les mystery repacks Pokémon sont des lots sélectionnés de cartes Pokémon authentiques contenant un mélange aléatoire de communes, holos, rares et potentielles cartes chase, conçus pour offrir une expérience d'ouverture palpitante."
+      },
+      {
+        "q": "Les cartes sont-elles authentiques ?",
+        "a": "Oui, toutes les cartes de nos mystery repacks sont 100 % authentiques, provenant de fournisseurs de confiance, de collections et de canaux vérifiés."
+      },
+      {
+        "q": "Que peut-on trouver dans un repack ?",
+        "a": "Chaque repack peut contenir un mélange de cartes communes, holos, rares, ultra rares, full arts, cartes vintage ou tirages bonus spéciaux selon le niveau du produit."
+      },
+      {
+        "q": "Les packs sont-ils aléatoires ?",
+        "a": "Oui, tous les mystery repacks sont assemblés et expédiés selon un processus aléatoire afin de garantir une expérience équitable et palpitante pour chaque client."
+      },
+      {
+        "q": "Puis-je obtenir des cartes de valeur ?",
+        "a": "Oui, certains repacks contiennent des cartes chase premium d'une valeur nettement supérieure, mais comme les produits sont aléatoires, aucun tirage spécifique ne peut être garanti."
+      },
+      {
+        "q": "Garantissez-vous une valeur minimale ?",
+        "a": "Nos mystery repacks sont conçus pour offrir un rapport qualité-prix équitable et une expérience d'ouverture agréable, mais la valeur de chaque pack peut varier en raison de l'aléatoire."
+      },
+      {
+        "q": "Dans quel état sont les cartes ?",
+        "a": "La plupart des cartes sont en état Near Mint à Lightly Played. Occasionnellement, des cartes vintage ou spéciales peuvent présenter de légères traces d'usure."
+      },
+      {
+        "q": "Livrez-vous à l'international ?",
+        "a": "Oui, nous livrons dans toute l'Europe et dans certains pays internationaux. Les options d'expédition sont disponibles lors du passage en caisse."
+      },
+      {
+        "q": "Quel est le délai d'expédition ?",
+        "a": "Les commandes sont généralement traitées dans un délai de 1 à 3 jours ouvrés. Les délais de livraison dépendent de la destination et du mode d'expédition."
+      },
+      {
+        "q": "Comment les cartes sont-elles protégées lors de l'expédition ?",
+        "a": "Toutes les commandes sont soigneusement emballées avec des matériaux de protection pour garantir que vos cartes arrivent en toute sécurité et en excellent état."
+      },
+      {
+        "q": "Proposez-vous des tarifs de gros ?",
+        "a": "Oui, nous travaillons avec des revendeurs, des boutiques en ligne et des exploitants de distributeurs automatiques, et proposons des tarifs dégressifs pour les commandes importantes."
+      },
+      {
+        "q": "Puis-je personnaliser ma commande de repacks ?",
+        "a": "Des options de repacks personnalisés peuvent être disponibles pour les commandes en gros ou les commandes importantes, selon les quantités et la disponibilité."
+      },
+      {
+        "q": "Proposez-vous des packs d'échantillons pour évaluation ?",
+        "a": "Oui. Nous comprenons l'importance de tester la qualité du produit avant de passer une commande en gros. C'est pourquoi nous proposons des packs d'échantillons aux détaillants et revendeurs éligibles sur demande."
+      },
+      {
+        "q": "Quelle est votre politique de retour ?",
+        "a": "La satisfaction de nos clients est notre priorité. En cas de problème avec votre commande – dommages ou article incorrect –, contactez notre équipe d'assistance et nous résoudrons le problème dans les meilleurs délais."
+      },
+      {
+        "q": "Les taux de tirage sont-ils équitables ?",
+        "a": "Oui, nos repacks sont construits avec une distribution aléatoire pour offrir une expérience d'ouverture équitable et équilibrée."
+      },
+      {
+        "q": "Incluez-vous des cartes vintage ou de grande valeur ?",
+        "a": "Certains repacks peuvent inclure des cartes vintage, premium ou chase de grande valeur, qui seront toujours clairement mentionnées dans la description du produit."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "requestQuote": "Demander un devis",
+    "description": "Dites-nous ce dont vous avez besoin et nous préparerons un devis personnalisé, une option d'échantillon ou une recommandation de gros dans les 24 heures.",
+    "form": {
+      "company": "Nom de l'entreprise",
+      "contactName": "Nom du contact",
+      "email": "Email professionnel",
+      "quantity": "Quantité estimée",
+      "message": "Message",
+      "submit": "Demander les tarifs de gros"
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "Prêt à commencer à vendre des mystery packs premium ?",
+      "description": "Obtenez des tarifs de gros, demandez un échantillon ou créez votre propre produit à votre marque dès aujourd'hui.",
+      "wholesaleBtn": "Obtenir les tarifs de gros",
+      "sampleBtn": "Demander un pack d'échantillon"
+    },
+    "description": "Spawn Drop crée des mystery repacks premium avec des cartes authentiques, une valeur garantie et un approvisionnement fiable pour les détaillants à travers l'Europe.",
+    "company": "ENTREPRISE",
+    "about": "À PROPOS",
+    "why": "POURQUOI SPAWNDROP",
+    "contactUs": "NOUS CONTACTER",
+    "privacy": "POLITIQUE DE CONFIDENTIALITÉ",
+    "support": "ASSISTANCE",
+    "faqs": "FAQ",
+    "customerSupport": "SERVICE CLIENT",
+    "resources": "RESSOURCES",
+    "authentic": "100 % CARTES AUTHENTIQUES",
+    "shipping": "LIVRAISON UE & ROYAUME-UNI",
+    "customBranding": "PERSONNALISATION DE MARQUE DISPONIBLE",
+    "copyright": "© Spawn Drop 2026 | Tous droits réservés"
+  }
+}
