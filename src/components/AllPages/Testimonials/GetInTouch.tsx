@@ -1,6 +1,7 @@
 "use client";
 
 import CountrySelect from "@/app/flag/page";
+import { useTranslation } from "@/components/hooks/useTranslation";
 import { Select } from "@/components/ui/select";
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
@@ -22,6 +23,7 @@ type FormInputs = {
 };
 
 export default function GetInTouch() {
+    const { t } = useTranslation();
     const { register, handleSubmit, setValue, formState: { errors } } = useForm<FormInputs>();
 
 
@@ -63,15 +65,15 @@ export default function GetInTouch() {
                                         height={24}
                                         className="object-contain"
                                     />
-                                    <p className=" text-[18px] font-medium leading-[140%] tracking-[-0.3px] ">Get in Touch
+                                    <p className=" text-[18px] font-medium leading-[140%] tracking-[-0.3px] ">{t.contact.title}
                                     </p>
                                 </div>
 
                             </div>
                             <div className=' justify-center md:justify-start items-center md:items-center  text-center md:text-start'>
-                                <p className="text-[#000] text-[clamp(2rem,2.5rem,4rem)] font-normal font-secondary leading-120% pt-6">Request a Quote</p>
+                                <p className="text-[#000] text-[clamp(2rem,2.5rem,4rem)] font-normal font-secondary leading-120% pt-6">{t.contact.requestQuote}</p>
                                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-lg">
-                                    Tell us what you need and we will prepare a custom quote, sample option, or wholesale recommendation within 24 hours.
+                                    {t.contact.description}
                                 </p>
                             </div>
                         </div>
@@ -101,23 +103,23 @@ export default function GetInTouch() {
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Company Name *</label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">{t.contact.form.company} *</label>
                                     <input {...register("companyName")} placeholder="Your Company Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Contact Name *</label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">{t.contact.form.contactName} *</label>
                                     <input {...register("contactName")} placeholder="Your Name" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Business Email *</label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">{t.contact.form.email} *</label>
                                     <input {...register("businessEmail")} placeholder="business@email.com" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">Estimated Quantity </label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px] text-[#393939]">{t.contact.form.quantity} </label>
                                     <input {...register("estimatedQuantity")} placeholder="e.g. 400+" className="w-full md:p-3 p-4 bg-gray-50 border border-gray-100 rounded-full focus:outline-orange-500 transition-all" />
                                 </div>
                                 {/* <div className="space-y-2">
@@ -147,7 +149,7 @@ export default function GetInTouch() {
                                 </select>
                             </div> */}
                                 <div className="space-y-2">
-                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">Message *</label>
+                                    <label className="md:text-sm lg:text-[16px] font-medium leading-[170%] tracking-[-0.3px]  text-[#393939]">{t.contact.form.message} *</label>
                                     <textarea {...register("message")} placeholder="Type your message here..." rows={4} className="w-full p-1 md:p-2 bg-gray-50 border h-30 border-gray-100 rounded-2xl focus:outline-orange-400 transition-all resize-none" />
                                 </div>
                             </div>
@@ -155,7 +157,7 @@ export default function GetInTouch() {
 
 
                             <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-2 xl:py-4 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
-                                Request Wholesale Pricing
+                                {t.contact.form.submit}
                             </button>
 
                             {/* <p className="text-[#888D91] text-center md:text-sm xl:text-[16px] italic font-normal leading-[170%] tracking-[-0.3px] pt-2">

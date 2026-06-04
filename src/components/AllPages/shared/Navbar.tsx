@@ -231,7 +231,7 @@ export default function Navbar() {
                         </Link>
                     ))}
 
-                    {/* <SwitchLanguage onSelect={() => setOpen(false)} /> */}
+                    <SwitchLanguage onSelect={() => setOpen(false)} />
                 </ul>
 
                 <div className="absolute bottom-10 w-full px-6 z-100">
@@ -256,247 +256,338 @@ export default function Navbar() {
 
 
 
-// "use client";
 
-// import CountrySelect from "@/app/flag/page";
-// import LineIcon from "@/components/icon/LineIcon";
-// import { SwitchLanguage } from "@/components/LanguegeProvider/SwitchLanguege/SwitchLanguege";
+
+
+// "use client";
 // import Image from "next/image";
 // import Link from "next/link";
-// import { usePathname } from "next/navigation";
+// import { usePathname, useRouter } from "next/navigation";
 // import { useEffect, useState } from "react";
-// import { CountryDropdown } from "react-country-region-selector";
-// import { IoArrowForwardOutline, IoMenu, IoClose } from "react-icons/io5";
-// import { MdOutlineShoppingBag } from "react-icons/md";
-// import PhoneInput from "react-phone-number-input";
-// import "react-phone-number-input/style.css";
+// import { IoArrowForwardOutline, IoClose } from "react-icons/io5";
+// import LineIcon from "@/components/icon/LineIcon";
+// import { Locale, useTranslation } from "@/components/hooks/useTranslation";
 
 // export default function Navbar() {
 //     const [open, setOpen] = useState(false);
-//     const [country, setCountry] = useState("");
-
-
 //     const [scrolled, setScrolled] = useState(false);
+//     const { t, locale, changeLanguage } = useTranslation();
 //     const pathname = usePathname();
-
-//     useEffect(() => {
-//         const handleScroll = () => {
-//             setScrolled(window.scrollY > 50);
-//         };
-
-//         window.addEventListener("scroll", handleScroll);
-
-//         return () => window.removeEventListener("scroll", handleScroll);
-//     }, []);
-
+//     const router = useRouter();
 //     const [activeHash, setActiveHash] = useState("");
-
-// useEffect(() => {
-//   const updateHash = () => {
-//     setActiveHash(window.location.hash);
-//   };
-
-//   updateHash();
-//   window.addEventListener("hashchange", updateHash);
-
-//   return () => window.removeEventListener("hashchange", updateHash);
-// }, []);
-
-// const getNavClass = (path: string) => {
-//   const isActive = pathname === path || activeHash === path.replace("/", "");
-
-//   if (isActive) return "text-[#FE6B02] font-semibold";
-
-//   return scrolled || !isHomePage
-//     ? "text-black hover:text-[#FE6B02]"
-//     : "text-white hover:text-[#FE6B02]";
-// };
+//     const [isLangOpen, setIsLangOpen] = useState(false);
+//     const [isMobileLangOpen, setIsMobileLangOpen] = useState(false);
 
 //     const isHomePage = pathname === "/";
 
-//     const navItems = [
-//         { name: "Home", path: "/" },
+//     useEffect(() => {
+//         const handleScroll = () => setScrolled(window.scrollY > 50);
+//         handleScroll();
+//         window.addEventListener("scroll", handleScroll);
+//         return () => window.removeEventListener("scroll", handleScroll);
+//     }, []);
 
-//         { name: "About us", path: "/aboutUs" },
-//         { name: "Products", path: "/products" },
-//         // { name: "Cards", path: "/cards" },
-//         // { name: "Shipping", path: "#" },
-//         // { name: "FAQ's", path: "/faq" },
-//         // { name: "Contact", path: "/getInTouch" },
+//     useEffect(() => {
+//         const updateHash = () => setActiveHash(window.location.hash);
+//         updateHash();
+//         window.addEventListener("hashchange", updateHash);
+//         return () => window.removeEventListener("hashchange", updateHash);
+//     }, []);
+
+
+//     const navItems = [
+//         { name: t.nav.home, path: "/" },
+//         { name: t.nav.about, path: "/#aboutUs" },
+//         { name: t.nav.products, path: "/products" },
+//         { name: t.nav.shipping, path: "/#shiping" },
+//         { name: t.nav.faqs, path: "/#faq" },
+//         { name: t.nav.contact, path: "/#contact" },
 //     ];
 
 //     const mobileNavItems = [
-//         { name: "Home", path: "/" },
-
-//         { name: "About us", path: "/aboutUs" },
-//         { name: "Products", path: "/products" },
-//         // { name: "Cards", path: "/cards" },
-//         // { name: "Shipping", path: "#" },
-//         // { name: "Contact", path: "/getInTouch" },
-
+//         { name: t.nav.home, path: "/" },
+//         { name: t.nav.about, path: "/#aboutUs" },
+//         { name: t.nav.products, path: "/products" },
+//         { name: t.nav.shipping, path: "/#shiping" },
+//         { name: t.nav.faqs, path: "/#faq" },
+//         { name: t.nav.contact, path: "/#contact" },
 //     ];
 
+//     const handleNavigation = (path: string, e?: React.MouseEvent) => {
+//         if (path === "/" && isHomePage) {
+//             e?.preventDefault();
+//             window.scrollTo({ top: 0, behavior: "smooth" });
+//             return;
+//         }
+
+//         if (path.includes("#")) {
+//             const sectionId = path.split("#")[1];
+//             e?.preventDefault();
+
+//             if (isHomePage) {
+//                 const section = document.getElementById(sectionId);
+//                 if (section) {
+//                     const navbarHeight = 85;
+//                     const offset = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
+//                     window.scrollTo({ top: offset, behavior: "smooth" });
+//                 }
+//             } else {
+//                 router.push(`/#${sectionId}`);
+//             }
+//         } else {
+//             if (pathname !== path) {
+//                 router.push(path);
+//                 setTimeout(() => window.scrollTo({ top: 0, behavior: "instant" }), 50);
+//             }
+//         }
+//     };
+
+//     const isActive = (path: string) => {
+//         if (pathname === path && !path.includes("#")) return true;
+//         if (path.includes("#") && isHomePage) {
+//             const hash = `#${path.split("#")[1]}`;
+//             return activeHash === hash;
+//         }
+//         return false;
+//     };
+
+//     const shouldBeDark = !isHomePage || scrolled;
+//     const textColor = shouldBeDark ? "text-black" : "text-white";
+//     const navBg = shouldBeDark ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent";
+
+//     const languages = [
+//         { code: 'en', name: 'English', flag: '/images/flag.png' },
+//         { code: 'de', name: 'Deutsch', flag: '/images/germany (1).png' },
+//         { code: 'fr', name: 'Français', flag: '/images/france.png' },
+//         { code: 'pl', name: 'Polski', flag: '/images/poland.png' },
+//     ];
+
+
+
 //     return (
-//         <div className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/80 backdrop-blur-md text-black" : "bg-transparent text-black"
-//             }`}>
-//             <div className="containers  text-white py-4 flex justify-between  items-center gap-6 lg:gap-10  ">
-
-
-//                 <Link href="/">
-//                     <div style={{ position: "relative", width: "160px", height: "44px" }}>
+//         <div className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${navBg}`}>
+//             <div className="containers py-4 flex justify-between items-center gap-6 lg:gap-10">
+//                 <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}>
+//                     <div className="relative w-[160px] h-[44px]">
 //                         <Image
-//                             src={scrolled || !isHomePage ? "/images/logocolor.png" : "/images/LOGO.png"}
+//                             src={shouldBeDark ? "/images/logocolor.png" : "/images/LOGO.png"}
 //                             alt="logo"
 //                             fill
 //                             sizes="(max-width: 768px) 160px, 160px"
 //                             style={{ objectFit: "contain" }}
+//                             priority
 //                         />
 //                     </div>
 //                 </Link>
 
-
-//                 <ul className="hidden lg:flex justify-between w-full   items-center ">
-//                     {navItems.map((item) => (
-//                         <Link href={item.path} key={item.name} className="flex justify-between text-xs xl:text-base ">
-//                             <li className={`cursor-pointer transition-colors duration-200 ${pathname === item.path
-//                                 ? "text-[#FE6B02]  border-[#FE6B02] "
-//                                 : scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
-//                                 }`}>
-//                                 {item.name}
-//                             </li>
-//                         </Link>
-//                     ))}
-
-//                     <a
-//   href="/#shiping"
-//   className={`flex justify-between text-xs xl:text-base -mt-2 ${
-//     scrolled || !isHomePage
-//       ? "text-black hover:text-[#FE6B02]"
-//       : "text-white hover:text-[#FE6B02]"
-//   }`}
-// >
-//   <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base">Shipping</p>
-// </a>
-
-//                     <a
-//   href="/#contact"
-//   className={`flex gap-3 cursor-pointer transition-colors duration-200 -mt-2 ${
-//     scrolled || !isHomePage
-//       ? "text-black hover:text-[#FE6B02]"
-//       : "text-white hover:text-[#FE6B02]"
-//   }`}
-// >
-//   <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base">Contact</p>
-// </a>
-// <a
-//   href="/#faq"
-//   className={`flex gap-3 cursor-pointer transition-colors duration-200 -mt-2 ${
-//     scrolled || !isHomePage
-//       ? "text-black hover:text-[#FE6B02]"
-//       : "text-white hover:text-[#FE6B02]"
-//   }`}
-// >
-//   <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base">Faq</p>
-// </a>
-//                     <div className={` flex   gap-3 cursor-pointer transition-colors duration-200  ${scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
-//                         }`}>
-//                         <Image src="/images/flag.png" alt="flag" width={30} height={20} className="py-3" /> <p className="lg:mt-3 xl:mt-2 text-xs xl:text-base"> (EN) </p>
+//                 <ul className="hidden lg:flex justify-between w-full items-center">
+//                     <div className="flex mx-auto gap-9">
+//                         {navItems?.map((item) => (
+//                             <Link
+//                                 href={item?.path}
+//                                 key={item?.name}
+//                                 scroll={false}
+//                                 onClick={(e) => handleNavigation(item?.path, e)}
+//                                 className="text-xs xl:text-base"
+//                             >
+//                                 <li className={`cursor-pointer pb-1 border-b-2 border-transparent transition-all duration-200 ${isActive(item.path)
+//                                     ? "text-[#FE6B02] border-[#FE6B02] font-semibold"
+//                                     : `${textColor} hover:text-[#FE6B02] hover:border-[#FE6B02]`
+//                                     }`}
+//                                 >
+//                                     {item.name}
+//                                 </li>
+//                             </Link>
+//                         ))}
 //                     </div>
 
-//                     {/* <div>
-//                         <SwitchLanguage />
-//                     </div> */}
+//                     <div className="flex gap-5 -mt-2 ml-4">
+//                         {/* Language Dropdown */}
+//                         <div className="relative mt-3.5 border rounded-lg border-gray-300">
+//                             <button
+//                                 onClick={() => setIsLangOpen(!isLangOpen)}
+//                                 className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all duration-200 ${textColor} hover:bg-gray-100 hover:text-black`}
+//                             >
+//                                 <Image
+//                                     src={languages.find(l => l.code === locale)?.flag || "/images/flag.png"}
+//                                     alt="flag"
+//                                     width={25}
+//                                     height={25}
+//                                 />
+//                                 <span className="text-sm font-medium">{languages.find(l => l.code === locale)?.name}</span>
+//                                 <svg className={`w-4 h-4 transition-transform ${isLangOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+//                                 </svg>
+//                             </button>
 
-//                     {/* <div>
-//                         <CountrySelect defaultValue="EG" />
-//                     </div> */}
-//                     {/* <MdOutlineShoppingBag
-//                         className={`text-2xl cursor-pointer transition-colors duration-200 ${scrolled || !isHomePage ? "text-black hover:text-[#FE6B02]" : "text-white hover:text-[#FE6B02]"
-//                             }`}
-//                     /> */}
-
-//                     <a href="/#contact" className="bg-[#FE6B02] flex items-center gap-2 py-2 pl-6 pr-2 rounded-3xl hover:bg-[#e05a00] transition-colors">
-//                         Get Quotes
-//                         <div className="rounded-full p-2 bg-white">
-//                             <IoArrowForwardOutline className="text-black" />
+//                             {isLangOpen && (
+//                                 <div className="absolute right-0 mt-2 w-44 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50">
+//                                     {languages.map((lang) => (
+//                                         <button
+//                                             key={lang.code}
+//                                             onClick={() => {
+//                                                 changeLanguage(lang.code as Locale);
+//                                                 setIsLangOpen(false);
+//                                             }}
+//                                             className={`w-full flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors ${locale === lang.code ? 'bg-orange-50 text-[#FE6B02]' : 'text-gray-700'
+//                                                 }`}
+//                                         >
+//                                             <Image
+//                                                 src={lang.flag}
+//                                                 alt={lang.name}
+//                                                 width={20}
+//                                                 height={20}
+//                                             />
+//                                             <span className="text-sm">{lang.name}</span>
+//                                             {locale === lang.code && (
+//                                                 <svg className="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+//                                                 </svg>
+//                                             )}
+//                                         </button>
+//                                     ))}
+//                                 </div>
+//                             )}
 //                         </div>
-//                     </a>
 
+//                         <Link
+//                             href="/#contact"
+//                             onClick={(e) => handleNavigation("/#contact", e)}
+//                             className="bg-[#FE6B02] flex items-center gap-2 py-2 pl-6 pr-2 rounded-3xl hover:bg-[#e05a00] transition-colors text-white mt-1"
+//                         >
+//                             {t.nav.getQuotes}
+//                             <div className="rounded-full p-2 bg-white ">
+//                                 <IoArrowForwardOutline className="text-black" />
+//                             </div>
+//                         </Link>
+//                     </div>
 //                 </ul>
 
-
-//                 <button
-//                     className="lg:hidden text-3xl bg-[#343434] rounded-full p-3 "
-//                     onClick={() => setOpen(true)}
-//                 >
+//                 <button className="lg:hidden text-3xl bg-[#343434] rounded-full p-3 text-white" onClick={() => setOpen(true)}>
 //                     <LineIcon />
 //                 </button>
 //             </div>
 
-//             {/* MOBILE DRAWER */}
-//             <div
-//                 className={`fixed top-0 left-0 w-full h-screen bg-[#F5F5F5] text-black z-50 transform transition-transform duration-300  ${open ? "translate-x-0" : "-translate-x-full"
-//                     }`
-//                 }
-//             >
-//                 {/* HEADER */}
-//                 <div className="flex justify-between items-center p-4 ">
+//             {/* Mobile Menu */}
+//             <div className={`fixed top-0 left-0 w-full h-screen overflow-y-auto bg-[#F5F5F5] text-black z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "-translate-x-full"}`}>
+//                 <div className="flex justify-between items-center p-4">
 //                     <Link href="/" onClick={() => setOpen(false)}>
-//                         <div style={{ position: "relative", width: "140px", height: "40px" }}>
-//                             <Image
-//                                 src="/images/logocolor.png"
-//                                 alt="logo"
-//                                 fill
-//                                 sizes="140px"
-//                                 style={{ objectFit: "contain" }}
-//                             />
+//                         <div className="relative w-[140px] h-[40px]">
+//                             <Image src="/images/logocolor.png" alt="logo" fill sizes="140px" style={{ objectFit: "contain" }} />
 //                         </div>
 //                     </Link>
-
-//                     <button onClick={() => setOpen(false)} className="text-2xl">
-//                         <IoClose />
-//                     </button>
+//                     <button onClick={() => setOpen(false)} className="text-3xl"><IoClose /></button>
 //                 </div>
 
-//                 {/* MENU ITEMS */}
-//                 <ul className="flex flex-col gap-6 px-6 mt-6 text-lg ">
+//                 <ul className="flex flex-col gap-3 md:gap-6 px-6 mt-6 text-lg ">
 //                     {mobileNavItems.map((item) => (
-//                         <Link href={item.path} key={item.name} onClick={() => setOpen(false)}>
-//                             <li className={`cursor-pointer transition-colors duration-200 ${pathname === item.path
-//                                 ? "text-[#FE6B02] font-semibold"
-//                                 : "hover:text-[#FE6B02]"
-//                                 }`}>
+//                         <Link
+//                             href={item.path}
+//                             key={item.name}
+//                             onClick={(e) => { setOpen(false); handleNavigation(item.path, e); }}
+//                         >
+//                             <li className={`cursor-pointer ${isActive(item.path) ? "text-[#FE6B02] font-semibold" : ""}`}>
 //                                 {item.name}
 //                             </li>
 //                         </Link>
 //                     ))}
 
-//                     <div className="flex gap-2">
-//                         <p className="mt-3"> Strona glowna (EN) </p>   <Image src="/images/flag.png" alt="flag" width={40} height={20} className="py-3" />
+//                     {/* Mobile Language Selector */}
+//                     {/* Mobile Language Selector */}
+//                     <div className=" pt-4 ">
+
+//                         <div className="relative">
+//                             <button
+//                                 onClick={() => setIsMobileLangOpen(!isMobileLangOpen)}
+//                                 className="w-full flex items-center justify-between px-4 py-3 bg-white border border-gray-300 rounded-lg"
+//                             >
+//                                 <div className="flex items-center gap-2">
+//                                     <Image
+//                                         src={
+//                                             languages.find((l) => l.code === locale)?.flag ||
+//                                             "/images/flag.png"
+//                                         }
+//                                         alt="flag"
+//                                         width={20}
+//                                         height={20}
+//                                     />
+//                                     <span>
+//                                         {languages.find((l) => l.code === locale)?.name}
+//                                     </span>
+//                                 </div>
+
+//                                 <svg
+//                                     className={`w-4 h-4 transition-transform ${isMobileLangOpen ? "rotate-180" : ""
+//                                         }`}
+//                                     fill="none"
+//                                     stroke="currentColor"
+//                                     viewBox="0 0 24 24"
+//                                 >
+//                                     <path
+//                                         strokeLinecap="round"
+//                                         strokeLinejoin="round"
+//                                         strokeWidth={2}
+//                                         d="M19 9l-7 7-7-7"
+//                                     />
+//                                 </svg>
+//                             </button>
+
+//                             {isMobileLangOpen && (
+//                                 <div className="absolute left-0 right-0 mt-2 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50">
+//                                     {languages.map((lang) => (
+//                                         <button
+//                                             key={lang.code}
+//                                             onClick={() => {
+//                                                 changeLanguage(lang.code as Locale);
+//                                                 setIsMobileLangOpen(false);
+//                                                 setOpen(false);
+//                                             }}
+//                                             className={`w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors ${locale === lang.code
+//                                                 ? "bg-orange-50 text-[#FE6B02]"
+//                                                 : "text-gray-700"
+//                                                 }`}
+//                                         >
+//                                             <Image
+//                                                 src={lang.flag}
+//                                                 alt={lang.name}
+//                                                 width={20}
+//                                                 height={20}
+//                                             />
+
+//                                             <span>{lang.name}</span>
+
+//                                             {locale === lang.code && (
+//                                                 <svg
+//                                                     className="w-4 h-4 ml-auto"
+//                                                     fill="none"
+//                                                     stroke="currentColor"
+//                                                     viewBox="0 0 24 24"
+//                                                 >
+//                                                     <path
+//                                                         strokeLinecap="round"
+//                                                         strokeLinejoin="round"
+//                                                         strokeWidth={2}
+//                                                         d="M5 13l4 4L19 7"
+//                                                     />
+//                                                 </svg>
+//                                             )}
+//                                         </button>
+//                                     ))}
+//                                 </div>
+//                             )}
+//                         </div>
 //                     </div>
-
-//                     {/* <div>
-//                         <CountrySelect defaultValue="EG" />
-//                     </div> */}
-//                     {/* <MdOutlineShoppingBag
-
-//                     /> */}
 //                 </ul>
 
-
-
-//                 {/* <div>
-//                         <CountrySelect defaultValue="EG" />
-//                     </div> */}
-
-//                 {/* BUTTON */}
 //                 <div className="absolute bottom-10 w-full px-6">
-//                     <button className="w-full bg-[#FE6B02] flex items-center justify-between py-3 pl-6 pr-2 rounded-3xl text-white hover:bg-[#e05a00] transition-colors">
-//                         Get Quotes
-//                         <div className="bg-white rounded-full p-2">
-//                             <IoArrowForwardOutline className="text-black" />
-//                         </div>
-//                     </button>
+//                     <Link
+//                         href="/#contact"
+//                         onClick={(e) => { setOpen(false); handleNavigation("/#contact", e); }}
+//                         className="w-full bg-[#FE6B02] flex items-center justify-between py-3 pl-6 pr-2 rounded-3xl text-white hover:bg-[#e05a00]"
+//                     >
+//                         {t.nav.getQuotes}
+//                         <div className="bg-white rounded-full p-2"><IoArrowForwardOutline className="text-black" /></div>
+//                     </Link>
 //                 </div>
 //             </div>
 //         </div>

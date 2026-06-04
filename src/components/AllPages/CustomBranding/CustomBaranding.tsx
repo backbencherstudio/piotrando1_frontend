@@ -1,4 +1,5 @@
 "use client"
+import { useTranslation } from '@/components/hooks/useTranslation'
 import CurrectIcon from '@/components/icon/CurrectIcon'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
@@ -6,6 +7,10 @@ import { IoCallOutline } from 'react-icons/io5'
 import { MdArrowOutward } from 'react-icons/md'
 
 export default function CustomBranding() {
+
+    const { t } = useTranslation();
+
+    const features = t.branding.features;
 
     // cleanup (important)
 
@@ -19,24 +24,27 @@ export default function CustomBranding() {
                     data-aos-anchor-placement="bottom-bottom" >
                     <div >
                         <div className='flex text-center justify-center md:justify-start items-center  mx-auto'>
-                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  text-center  md:text-start '>Custom Branding & Full-Service <br /> Production</p>
+                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  text-center  md:text-start '>{t.branding.title}</p>
 
                         </div>
 
 
                         <div className='flex flex-col gap-8 text-[#393939] mt-5'>
-                            <p className=' text-[#DBEAFE] text-[16px] font-normal leading-[120%] tracking-[-0.3px] flex justify-center items-center mx-auto text-center md:text-start'>Stand out with your own branded mystery pack experience. We handle everything from design to final packaging.
+                            <p className=' text-[#DBEAFE] text-[16px] font-normal leading-[120%] tracking-[-0.3px] flex justify-center items-center mx-auto text-center md:text-start'>{t.branding.description}
                             </p>
 
-                            <div className='  text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-[#FFF] space-y-2'>
-                                <div className='flex gap-2'> <div className='bg-[#3E2311] flex items-center p-2 rounded-full'><CurrectIcon /> </div> Custom blister packaging with your logo</div>
-                                <div className='flex gap-2'> <div className='bg-[#3E2311] flex items-center p-2 rounded-full'><CurrectIcon /> </div> Full packaging design (blister + box)
-                                </div>
-                                <div className='flex gap-2'> <div className='bg-[#3E2311] flex items-center p-2 rounded-full'><CurrectIcon /> </div> Card sourcing (Pokémon and more)
-                                </div>
-                                <div className='flex gap-2'> <div className='bg-[#3E2311] flex items-center p-2 rounded-full'><CurrectIcon /> </div> Quality control & assembly</div>
-                                <div className='flex gap-2'> <div className='bg-[#3E2311] flex items-center p-2 rounded-full'><CurrectIcon /> </div> Ready-to-sell delivery</div>
+                            <div className="text-[16px] font-normal leading-[170%] tracking-[-0.3px] text-[#FFF] space-y-2">
+                                {features.map((item, index) => (
+                                    <div key={index} className="flex gap-2">
+                                        <div className="bg-[#3E2311] flex items-center p-2 rounded-full">
+                                            <CurrectIcon />
+                                        </div>
 
+                                        <p className='mt-2'>
+                                            {item}
+                                        </p>
+                                    </div>
+                                ))}
                             </div>
 
                         </div>

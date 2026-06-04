@@ -70,7 +70,7 @@ export default function RootLayout({
       new google.translate.TranslateElement(
         {
           pageLanguage: "en",
-          includedLanguages: "en,es,fr,de,pl,ja",
+          includedLanguages: "en,es,fr,de,pl,",
           autoDisplay: false
         },
         "google_translate_element"
