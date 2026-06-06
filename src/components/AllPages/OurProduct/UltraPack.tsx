@@ -61,7 +61,7 @@ export default function UltraPack() {
                                 </div>
 
                                 <li className=" block md:hidden">
-                                    <p className="flex gap-2  flex gap-2 text-sm text-[#4A5565] sm:text-base mt-8">
+                                    <p className="flex gap-2  flex gap-2 text-sm text-[#4A5565] sm:text-base mt-4   ">
                                         <BsStars className="h-6 w-9" />
                                         {t.products?.ultra?.insidePacks?.specialNote}
                                     </p>
@@ -144,7 +144,7 @@ export default function UltraPack() {
                     </div>
                 </div>
 
-                <div className="block md:hidden">
+                <div className="block md:hidden -mt-1">
                     <Link
                         href="/#contact"
                         className=" flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px]"
