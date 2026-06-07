@@ -69,7 +69,7 @@ export default function OurProduct() {
 
                                 {/* TEXT */}
                                 <div>
-                                    <div className="max-w-[58%]  sm:max-w-[56%] mt-0 md:mt-1 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                    <div className="max-w-[58%]  sm:max-w-[56%] mt-0 md:-mt-5 space-y-3 text-sm text-[#4A5565] sm:text-base">
                                         <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                             <span className="h-2 w-2 rounded-full bg-[#FF8904]"></span>
                                             <p className=" text-[#101828] ">  {t.products?.starter?.insidePacks?.title}</p>

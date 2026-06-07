@@ -36,7 +36,7 @@ export default function UltraPack() {
                             {/* TEXT */}
                             <div>
                                 <div className="max-w-[58%] sm:max-w-[56%]">
-                                    <h2 className="flex items-center md:mt-4.5 mt-0 gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                                    <h2 className="flex items-center md:-mt-4 mt-0 gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                         <span className="h-2 w-2 rounded-full bg-[#FF5286]"></span>
                                         {t.products?.ultra?.insidePacks?.title}
                                     </h2>
@@ -71,7 +71,7 @@ export default function UltraPack() {
                             {/* IMAGE */}
                             <div
                                 onClick={() => setIsFlipped(!isFlipped)}
-                                className="group perspective absolute top-1/3 md:top-1/2 mt-8 md:-mt-3 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
+                                className="group perspective absolute top-1/3 md:top-1/2 mt-8 md:-mt-3.5 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                             >
                                 <div
                                     className={`relative 2xl:mt-6 h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : "group-hover:rotate-y-180"
