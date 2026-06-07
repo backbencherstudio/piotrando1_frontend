@@ -51,7 +51,7 @@ const CTASection = () => {
                 </Link>
 
                 {/* Secondary Button */}
-                <Link href="/products" className="px-8 py-4 border border-gray-300 rounded-full  text-[16px] font-medium leading-[115%] tracking-[-0.048px]  hover:bg-gray-50 transition-all text-[#181818] cursor-pointer">
+                <Link href="/products" className="px-8 py-4 border border-gray-300 rounded-full  w-[265px] text-[16px] font-medium leading-[115%] tracking-[-0.048px]  hover:bg-gray-50 transition-all text-[#181818] cursor-pointer">
                     {t.footer.cta.sampleBtn}
                 </Link>
             </div>

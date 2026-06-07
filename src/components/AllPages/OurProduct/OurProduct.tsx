@@ -69,7 +69,7 @@ export default function OurProduct() {
 
                                 {/* TEXT */}
                                 <div>
-                                    <div className="max-w-[58%]  sm:max-w-[56%] mt-4 md:mt-1 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                    <div className="max-w-[58%]  sm:max-w-[56%] mt-0 md:mt-1 space-y-3 text-sm text-[#4A5565] sm:text-base">
                                         <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                             <span className="h-2 w-2 rounded-full bg-[#FF8904]"></span>
                                             <p className=" text-[#101828] ">  {t.products?.starter?.insidePacks?.title}</p>
@@ -108,7 +108,7 @@ export default function OurProduct() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-12 md:-mt-3 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-10 md:-mt-3 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] -mt-4 [@media(min-width:470px)]:mt-5.5 md:mt-0 2xl:mt-6 rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] 
