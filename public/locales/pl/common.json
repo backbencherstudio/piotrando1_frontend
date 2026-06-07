@@ -25,7 +25,7 @@
     "title": "Nasza Misja",
     "description": "Wypełniać lukę między ograniczoną podażą a rosnącym popytem, dbając o to, by najbardziej wartościowe i ekscytujące produkty trafiały do osób, które naprawdę je doceniają.",
     "futureTitle": "Przyszłość kolekcjonerstwa",
-     "futuredescription":"The global TCG market is expanding rapidly, driven by a new generation of collectors who value rarity, identity, and long-term value.",
+     "futuredescription":"Globalny rynek TCG dynamicznie się rozwija, napędzany przez nowe pokolenie kolekcjonerów ceniących rzadkość, tożsamość i wartość długoterminową.",
     "points": [
       "Rzadkie przedmioty kolekcjonerskie są coraz częściej postrzegane jako alternatywne aktywa",
       "Inflacja zmniejsza siłę nabywczą gotówki, a kolekcjonerstwo zyskuje na znaczeniu",
@@ -90,7 +90,7 @@
 
  "ultra": {
   "name": "Ultra Pack",
-  "description": "Premium mystery pack stworzony dla entuzjastów i segmentu premium sprzedaży detalicznej.",
+  "description": "Wysokowartościowy mystery pack stworzony dla entuzjastów i premium segmentu handlu detalicznego.",
   "features": [
     "Produkt skierowany do kolekcjonerów",
     "Premium doświadczenie unboxingu",
@@ -105,13 +105,13 @@
       "4 karty Bonusowe",
       "Karta Bonusowa może zawierać: Foil / V / EX / GX / Special Rare"
     ],
-    "specialNote": "Najwyższa szansa na Full Art i ultra rzadkie karty Pokémon. Najlepsze doświadczenie kolekcjonerskie."
+    "specialNote": "Nasze najbardziej premium doświadczenie z najwyższymi szansami na karty Full Art i inne bardzo rzadkie karty Pokémon."
   },
   "cardImage": "/images/pokemon-ultra.png",
   "cardBackImage": "/images/orange-back-3.png"
 },
 
-  "requestQuote": "Poproś o wycenę"
+  "requestQuote": "Zapytaj o wycenę"
 },
 
 
