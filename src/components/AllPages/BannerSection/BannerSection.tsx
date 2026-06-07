@@ -21,7 +21,7 @@ export default function BannerSection() {
                     data-aos-delay="300"
                     className='flex justify-center items-center mt-10 md:mt-0'>
                     <div>
-                        <div className='flex justify-center md:justify-start'>
+                        <div className='flex justify-center  md:justify-start'>
                             <div className="flex items-center gap-2 border p-2 rounded-3xl">
                                 <Image
                                     src="/images/wid.png"

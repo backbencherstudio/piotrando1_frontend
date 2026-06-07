@@ -71,7 +71,7 @@ export default function GetInTouch() {
 
                             </div>
                             <div className=' justify-center md:justify-start items-center md:items-center  text-center md:text-start'>
-                                <p className="text-[#000] text-[clamp(2rem,2.5rem,4rem)] font-normal font-secondary leading-120% pt-6">{t.contact.requestQuote}</p>
+                                <p className="text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal font-secondary leading-120% pt-6">{t.contact.requestQuote}</p>
                                 <p className="text-[#393939] font-normal text-base leading-170% tracking-[0.03px] flex justify-center items-center lg:w-lg">
                                     {t.contact.description}
                                 </p>
@@ -156,7 +156,7 @@ export default function GetInTouch() {
 
 
 
-                            <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-2 xl:py-4 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg shadow-orange-200">
+                            <button type="submit" className="w-full bg-[#FF6900] text-white text-center text-[16px] font-medium leading-[170%] tracking-[-0.3px] py-2 md:py-2 lg:py-2 xl:py-4 rounded-full hover:bg-orange-600 cursor-pointer transition-all text-lg shadow-lg ">
                                 {t.contact.form.submit}
                             </button>
 

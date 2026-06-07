@@ -64,7 +64,7 @@ export default function DeliveryLogistics() {
     return (
         <div className="py-10 lg:py-20 containers" id="shiping">
             {/* Header */}
-            <div className="text-center mb-12" data-aos="zoom-out-down">
+            <div className="text-center mb-12" data-aos="zoom-in">
                 <div className="flex justify-center">
                     <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                         <Image
@@ -90,7 +90,9 @@ export default function DeliveryLogistics() {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6" data-aos="fade-up"
+                // data-aos-delay={index * 120}
+                data-aos-duration="800">
                 {deliveryData.map((item, index) => (
                     <div
                         key={index}
