@@ -55,7 +55,7 @@ function AccordionTrigger({
 
 
 
-        <div className=" group-aria-expanded/accordion-trigger:bg-[#FF6900]  bg-[#060606]  rounded-full py-1 px-2.5 text-white">
+        <div className=" group-aria-expanded/accordion-trigger:bg-[#FF6900]  bg-[#060606]  rounded-full py-1.5 md:py-1 px-2.5 text-white">
           <IoArrowDown className="pointer-events-none hidden shrink-0 inline transition text-white   group-aria-expanded/accordion-trigger:rotate-180 " />
         </div>
       </AccordionPrimitive.Trigger>
