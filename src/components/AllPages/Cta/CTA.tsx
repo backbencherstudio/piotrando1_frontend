@@ -36,7 +36,7 @@ const CTASection = () => {
             </h2>
 
             {/* Subtext */}
-            <p className="text-[#4A5565] md:w-2xl text-center text-[18px] font-normal leading-[28px] pb-10 md:pb-[64px]">
+            <p className="text-[#4A5565] md:w-2xl text-center text-[18px] mt-2 font-normal leading-[28px] pb-10 md:pb-[64px]">
                 {t.footer.cta.description}
             </p>
 
