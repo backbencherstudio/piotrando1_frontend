@@ -29,7 +29,7 @@ export default function CustomBranding() {
                         </div>
 
 
-                        <div className='flex flex-col gap-8 text-[#393939] mt-5'>
+                        <div className='flex flex-col gap-8 text-[#393939] mt-4 md:mt-6'>
                             <p className=' text-[#DBEAFE] text-[16px] font-normal leading-[120%] tracking-[-0.3px] flex justify-center items-center mx-auto text-center md:text-start'>{t.branding.description}
                             </p>
 

@@ -17,7 +17,7 @@ export default function UltraPack() {
             <div className="grid grid-cols-1 gap-9 md:gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">
 
                 {/* LEFT CARD */}
-                <div className="relative mx-auto w-full max-w-full" data-aos="zoom-out-down">
+                <div className="relative mx-auto w-full max-w-full" data-aos="zoom-in" data-aos-duration="1500">
 
 
                     {/* BG */}
@@ -30,7 +30,7 @@ export default function UltraPack() {
                     />
 
                     {/* CARD */}
-                    <div className="relative px-2 sm:px-4 md:px-6">
+                    <div className="relative px-2 sm:px-4 md:px-6 ">
                         <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
 
                             {/* TEXT */}
@@ -144,7 +144,7 @@ export default function UltraPack() {
                     </div>
                 </div>
 
-                <div className="block md:hidden -mt-1">
+                <div className="block md:hidden md:-mt-1 -mt-3">
                     <Link
                         href="/#contact"
                         className=" flex w-full items-center justify-center gap-2 rounded-2xl bg-black px-6 py-3 text-center text-white transition-all hover:scale-[1.02] sm:w-[230px]"

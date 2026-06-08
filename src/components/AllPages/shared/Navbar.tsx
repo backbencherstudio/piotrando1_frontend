@@ -381,7 +381,7 @@ export default function Navbar() {
 //                 </Link>
 
 //                 <ul className="hidden lg:flex justify-between w-full items-center">
-//                     <div className="flex mx-auto gap-9">
+//                     <div className="flex mx-auto lg:gap-6 text-nowrap xl:gap-9">
 //                         {navItems?.map((item) => (
 //                             <Link
 //                                 href={item?.path}
