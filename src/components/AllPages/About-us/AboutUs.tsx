@@ -32,15 +32,15 @@ export default function AboutUs() {
                                 </p>
                             </div>
                         </div> */}
-                        <h2 className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-6 md:leading-6 lg:leading-9 '>
+                        <h2 className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-2 md:mb-6 md:leading-6 lg:leading-9 '>
                             {t.about.title}
                         </h2>
 
-                        <p className="text-[#393939] mb-4 text-base">
+                        <p className="text-[#393939] mb-5 text-base">
                             {t.about.description1}
                         </p>
 
-                        <p className="text-[#393939] mb-4 text-base">
+                        <p className="text-[#393939] mb-5 text-base">
                             {t.about.description2}
                         </p>
                         <p className="text-[#393939]  text-base">

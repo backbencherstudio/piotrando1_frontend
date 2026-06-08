@@ -77,14 +77,14 @@ export default function Process() {
                     {steps.map((step, index) => (
                         <div
                             key={index}
-                            className="bg-[#171A21] rounded-2xl border border-transparent hover:border-orange-500 transition-all duration-300 overflow-hidden"
+                            className="bg-[#171A21] rounded-2xl border border-transparent hover:border-orange-500 transition-all duration-300 overflow-hidden "
                             data-aos="fade-up"
                             data-aos-duration="1500"
                         >
                             <div className="bg-[#171A21] rounded-2xl p-6">
 
                                 {/* STEP HEADER */}
-                                <div className="flex items-center gap-2 mb-4">
+                                <div className="flex items-center gap-2 mb-4 ">
 
                                     <div className="w-16 h-16 rounded-full bg-[#2E251E] flex items-center justify-center shadow-md">
                                         {icons[index]}
@@ -95,7 +95,7 @@ export default function Process() {
                                             Step {index + 1}
                                         </span>
 
-                                        <h3 className="text-xl lg:text-2xl font-normal text-white mb-3 leading-120% font-secondary">
+                                        <h3 className="text-xl lg:text-2xl font-normal text-white  leading-120% font-secondary">
                                             {step.title}
                                         </h3>
                                     </div>
@@ -103,12 +103,12 @@ export default function Process() {
                                 </div>
 
                                 {/* DESCRIPTION */}
-                                <p className="text-white font-normal text-base leading-relaxed">
+                                <p className="text-white font-normal text-base leading-relaxed ">
                                     {step.description}
                                 </p>
 
                                 {/* DECOR LINE (same as your old design) */}
-                                <div className="mt-4 h-1 w-12 rounded-full bg-gradient-to-r" />
+                                <div className=" w-12 rounded-full bg-gradient-to-r" />
 
                             </div>
                         </div>

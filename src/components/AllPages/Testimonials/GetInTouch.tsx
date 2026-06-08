@@ -55,7 +55,7 @@ export default function GetInTouch() {
                     data-aos-duration="1500">
 
                     <div className="flex flex-col ">
-                        <div className=" mb-12 ">
+                        <div className=" mb-6 md:mb-12 ">
                             <div className='flex justify-center md:justify-start'>
                                 <div className="flex gap-2 border py-2 px-4 rounded-full">
                                     <Image

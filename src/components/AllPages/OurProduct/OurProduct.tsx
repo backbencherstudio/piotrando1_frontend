@@ -38,18 +38,19 @@ export default function OurProduct() {
                     {t.products.title}
                 </h2>
 
-                <p className="mt-3 max-w-xl text-sm text-[#393939] lg:text-base">
+                <p className="mt-2 max-w-xl text-sm text-[#393939] lg:text-base">
                     {t.products.subtitle}
                 </p>
             </div>
 
             {/* GRID */}
             <div className=" ">
-                <div className="grid grid-cols-1 gap-8 md:gap-13 lg:grid-cols-2 lg:gap-[100px] ">
+                <div className="grid grid-cols-1 gap-6 md:gap-13 lg:grid-cols-2 lg:gap-[100px] ">
                     {/* LEFT CARD */}
                     <div
                         className="relative mx-auto w-full max-w-full"
-                        data-aos="zoom-out-up"
+                        data-aos="zoom-in"
+                        data-aos-duration="1500"
                     >
                         {/* BG */}
                         <Image

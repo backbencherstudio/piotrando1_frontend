@@ -64,7 +64,7 @@ export default function DeliveryLogistics() {
     return (
         <div className="py-10 lg:py-20 containers" id="shiping">
             {/* Header */}
-            <div className="text-center mb-12" data-aos="zoom-in">
+            <div className="text-center mb-5 md:mb-12" data-aos="zoom-in">
                 <div className="flex justify-center">
                     <div className="flex items-center gap-2 border py-2 px-4 rounded-full">
                         <Image

@@ -55,7 +55,7 @@ export default function Sourch() {
                 </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 pt-5 md:pt-10  lg:pt-20 gap-[52px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 pt-9 md:pt-10  lg:pt-16 gap-[52px]'>
 
                 <div data-aos="fade-right"
                     data-aos-duration="1500">

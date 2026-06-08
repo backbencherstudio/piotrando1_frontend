@@ -57,7 +57,7 @@ export default function OurMission() {
 
                         </div>
                         <div className='text-[#393939] text-[16px] font-normal leading-[170%] tracking-[-0.3px] mt-6 space-y-1.5 flex flex-col'>
-                            <div className='flex flex-col gap-3'>
+                            <div className='flex flex-col gap-0.5 md:gap-3'>
                                 {t.mission.points.map((point, index) => (
                                     <div key={index} className="flex gap-3">
                                         <div className="mt-1">
