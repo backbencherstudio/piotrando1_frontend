@@ -56,7 +56,7 @@ export default function AboutUs() {
                 <div className='' data-aos="fade-up-left"
                     data-aos-duration="1500"
                     data-aos-delay="300">
-                    <Image src="/images/whoWe.png" alt='image' height={501} width={545} className='z-10 h-[320px] lg:h-[421px] w-full rounded-xl' />
+                    <Image src="/images/whoWe.png" alt='image' height={501} width={545} className='z-10 h-[320px] lg:h-[361px] w-full rounded-xl object-center' />
 
                 </div>
             </div>
