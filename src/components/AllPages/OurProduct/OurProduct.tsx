@@ -45,7 +45,7 @@ export default function OurProduct() {
 
             {/* GRID */}
             <div className=" ">
-                <div className="grid grid-cols-1 gap-6 md:gap-13 lg:grid-cols-2 lg:gap-[100px] ">
+                <div className="grid grid-cols-1 gap-6 md:gap-13 lg:grid-cols-2 lg:gap-[35px] xl:gap-25 ">
                     {/* LEFT CARD */}
                     <div
                         className="relative mx-auto w-full max-w-full"
@@ -66,7 +66,7 @@ export default function OurProduct() {
                             className="relative px-2 sm:px-4 md:px-6 "
                             data-aos-duration="1500"
                         >
-                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
+                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
 
                                 {/* TEXT */}
                                 <div>
@@ -96,8 +96,8 @@ export default function OurProduct() {
 
 
                                     </div>
-                                    <div className="block md:hidden mt-6">
-                                        <p className="flex gap-2 text-sm text-[#4A5565] sm:text-base">
+                                    <div className="block md:hidden mt-10  sm:w-[350px] ">
+                                        <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:w-auto sm:text-base">
                                             <BsStars className="h-6 w-9" />
                                             {t.products?.starter?.insidePacks?.specialNote}
                                         </p>
@@ -109,7 +109,7 @@ export default function OurProduct() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-10 md:-mt-3 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-8 sm:mt-10 md:-mt-3 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] -mt-4 [@media(min-width:470px)]:mt-5.5 md:mt-0 2xl:mt-6 rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] 

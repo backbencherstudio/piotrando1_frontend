@@ -12,9 +12,9 @@ export default function UltraPack() {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
-        <div className="containers mt-3 md:mt-8  lg:pb-20 pb-8 md:pb-10 overflow-hidden">
+        <div className="containers mt-3 md:mt-4  lg:pb-20 pb-8 md:pb-10 overflow-hidden">
             {/* GRID */}
-            <div className="grid grid-cols-1 gap-9 md:gap-14 lg:grid-cols-2 lg:gap-[100px] items-center">
+            <div className="grid grid-cols-1 gap-9 md:gap-14 lg:grid-cols-2 lg:gap-[35px] xl:gap-25  items-center">
 
                 {/* LEFT CARD */}
                 <div className="relative mx-auto w-full max-w-full" data-aos="zoom-in" data-aos-duration="1500">
@@ -31,7 +31,7 @@ export default function UltraPack() {
 
                     {/* CARD */}
                     <div className="relative px-2 sm:px-4 md:px-6 ">
-                        <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8">
+                        <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
 
                             {/* TEXT */}
                             <div>
@@ -61,7 +61,7 @@ export default function UltraPack() {
                                 </div>
 
                                 <li className=" block md:hidden">
-                                    <p className="flex gap-2  flex gap-2 text-sm text-[#4A5565] sm:text-base mt-4   ">
+                                    <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px]  sm:text-base">
                                         <BsStars className="h-6 w-9" />
                                         {t.products?.ultra?.insidePacks?.specialNote}
                                     </p>

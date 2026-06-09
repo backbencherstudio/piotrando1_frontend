@@ -53,7 +53,7 @@ interface CardProps {
 
 function Card({ name, role, quote, avatar }: CardProps) {
     return (
-        <div className="bg-slate-50 p-5 rounded-xl border h-full lg:h-[250px]">
+        <div className="bg-slate-50 p-5 rounded-xl border  lg:h-[250px]">
             <div className="flex items-center gap-3 h-15 md:h-[100px]">
                 <Image
                     src={avatar}
