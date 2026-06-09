@@ -109,7 +109,7 @@ export default function OurProduct() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-10 sm:mt-10 md:-mt-3 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-10 sm:mt-10 md:-mt-1 xl:-mt-3.5 right-[2px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] -mt-4 [@media(min-width:470px)]:mt-5.5 md:mt-0 2xl:mt-6 rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] 
