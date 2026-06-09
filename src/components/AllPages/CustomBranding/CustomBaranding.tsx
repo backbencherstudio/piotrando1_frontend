@@ -60,7 +60,7 @@ export default function CustomBranding() {
 
 
                 >
-                    <Image src="/images/computer.jpg" alt='customBranding' height={1060} width={1380} className='h-full  w-full object-contain rounded-xl' />
+                    <Image src="/images/computer.jpg" alt='customBranding' height={1060} width={1380} className='h-full  w-full object-cover     rounded-xl' />
 
                     {/* content */}
 

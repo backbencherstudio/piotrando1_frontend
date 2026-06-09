@@ -16,7 +16,7 @@ export default function Evaluation() {
 
             {/* GRID */}
             <div className="">
-                <div className="grid w-full grid-cols-1 items-center gap-6 md:gap-14 lg:grid-cols-2 lg:gap-[100px]">
+                <div className="grid w-full grid-cols-1 items-center gap-6 md:gap-14 lg:grid-cols-2 lg:gap-[35px] xl:gap-25">
 
                     {/* RIGHT IMAGE (swapped) */}
                     <div className="relative order-2 w-full" data-aos="zoom-in" data-aos-duration="1500">
@@ -32,7 +32,7 @@ export default function Evaluation() {
 
                         {/* CARD */}
                         <div className="relative px-2 sm:px-4 md:px-6">
-                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 ">
+                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8 ">
 
                                 {/* TEXT */}
                                 <div>
@@ -65,8 +65,8 @@ export default function Evaluation() {
 
                                     </div>
 
-                                    <div className="mt-6">
-                                        <p className="flex gap-2 block md:hidden text-sm text-[#4A5565] sm:text-base ">
+                                    <div className="mt-6 block md:hidden ">
+                                        <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:text-base">
                                             <BsStars className="h-6 w-9" />
                                             {t.products?.evolution?.insidePacks?.specialNote}
                                         </p>
