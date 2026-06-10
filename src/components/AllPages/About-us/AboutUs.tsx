@@ -18,7 +18,7 @@ export default function AboutUs() {
                     data-aos-delay="300"
                     className=' '>
                     <div className='text-justify '>
-                        {/* <div className="flex mb-4 md:mb-6 flex items-center md:items-start justify-center md:justify-start">
+                        <div className="flex mb-4 md:mb-6 flex items-center md:items-start justify-center md:justify-start">
                             <div className="flex items-center md:items-start justify-center md:justify-start  gap-2 rounded-full border bg-white px-4 py-2">
                                 <Image
                                     src="/images/aboutusLogo.png"
@@ -31,16 +31,16 @@ export default function AboutUs() {
                                     About Us
                                 </p>
                             </div>
-                        </div> */}
+                        </div>
                         <h2 className='text-[#000] text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary items-center flex justify-center  md:text-start md:justify-start mb-2 md:mb-6 md:leading-6 lg:leading-9 '>
                             {t.about.title}
                         </h2>
 
-                        <p className="text-[#393939] mb-5 text-base">
+                        <p className="text-[#393939] mb-6 text-base">
                             {t.about.description1}
                         </p>
 
-                        <p className="text-[#393939] mb-5 text-base">
+                        <p className="text-[#393939] mb-6 text-base">
                             {t.about.description2}
                         </p>
                         <p className="text-[#393939]  text-base">
@@ -56,7 +56,7 @@ export default function AboutUs() {
                 <div className='' data-aos="fade-up-left"
                     data-aos-duration="1500"
                     data-aos-delay="300">
-                    <Image src="/images/whoWe.png" alt='image' height={501} width={545} className='z-10 h-[320px] lg:h-[361px] w-full rounded-xl object-center' />
+                    <Image src="/images/whoWe.png" alt='image' height={501} width={545} className='z-10 h-[320px] md:h-[400px] lg:h-[425px] w-full rounded-xl object-center' />
 
                 </div>
             </div>
