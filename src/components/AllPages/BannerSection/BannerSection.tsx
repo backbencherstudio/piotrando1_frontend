@@ -30,7 +30,7 @@ export default function BannerSection() {
                                     height={24}
                                     className="object-contain"
                                 />
-                                <p className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">{t.hero.title}</p>
+                                <p suppressHydrationWarning className="text-white font-[Inter] text-[16px] font-medium leading-[170%] tracking-[-0.3px]">{t.hero.title}</p>
                             </div>
                         </div>
                         <h2 className=" text-white text-[clamp(2.5rem,4vw,4rem)] text-center md:text-start font-normal leading-[100%] py-4 font-secondary">{t.hero.subtitle}</h2>
