@@ -22,9 +22,9 @@ export default function CustomBranding() {
 
                 <div data-aos="fade-down"
                     data-aos-anchor-placement="bottom-bottom" >
-                    <div >
+                    <div className=' '>
                         <div className='flex text-center justify-center md:justify-start items-center  mx-auto'>
-                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  text-center  md:text-start '>{t.branding.title}</p>
+                            <p className='text-white text-[clamp(2rem,3vw,3rem)] font-normal leading-120% font-secondary  text-center  md:text-start md:-mt-3 mt-0'>{t.branding.title}</p>
 
                         </div>
 
@@ -56,13 +56,19 @@ export default function CustomBranding() {
                 <div data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1500"
+                    className=' '
 
 
 
                 >
-                    <Image src="/images/computer.jpg" alt='customBranding' height={1060} width={1380} className='h-full  w-full object-cover     rounded-xl' />
-
-                    {/* content */}
+                    <div className="relative w-full h-full  xl:h-[470px]">
+                        <Image
+                            src="/images/computer.jpg"
+                            alt="customBranding"
+                            fill
+                            className="object-cover rounded-xl"
+                        />
+                    </div>
 
                 </div>
 
