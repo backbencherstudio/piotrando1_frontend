@@ -9,6 +9,7 @@ import { useTranslation } from "@/components/hooks/useTranslation";
 
 export default function Evaluation() {
 
+
     const { t } = useTranslation();
     const [isFlipped, setIsFlipped] = useState(false);
     return (
@@ -65,8 +66,8 @@ export default function Evaluation() {
 
                                     </div>
 
-                                    <div className="mt-6 block md:hidden ">
-                                        <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:text-base">
+                                    <div className="mt-7 block md:hidden ">
+                                        <p className="flex gap-2 text-sm text-[#4A5565] whitespace-pre-wrap min-[467px]:w-[300px] sm:text-base">
                                             <BsStars className="h-6 w-9" />
                                             {t.products?.evolution?.insidePacks?.specialNote}
                                         </p>
