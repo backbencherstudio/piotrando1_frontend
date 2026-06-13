@@ -46,7 +46,7 @@ export default function page() {
       <TestimonialsSection />
 
 
-      <FAQ />
+      {/* <FAQ /> */}
       {/* <GetInTouch /> */}
 
 
