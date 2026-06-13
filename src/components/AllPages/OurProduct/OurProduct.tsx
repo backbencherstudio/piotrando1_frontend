@@ -71,7 +71,7 @@ export default function OurProduct() {
                                 {/* TEXT */}
                                 <div>
                                     <div className="max-w-[58%]  sm:max-w-[56%] mt-0 md:-mt-5 space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                        <h2 className="flex mt-4 md:mt-0 items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                                        <h2 className="flex  items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                             <span className="h-2 w-2 rounded-full bg-[#FF8904]"></span>
                                             <p className=" text-[#101828] ">  {t.products?.starter?.insidePacks?.title}</p>
                                         </h2>
@@ -96,7 +96,7 @@ export default function OurProduct() {
 
 
                                     </div>
-                                    <div className="block md:hidden mt-10  sm:w-[350px] ">
+                                    <div className="block md:hidden mt-5  sm:w-[350px] ">
                                         <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:w-auto sm:text-base">
                                             <BsStars className="h-6 w-9" />
                                             {t.products?.starter?.insidePacks?.specialNote}

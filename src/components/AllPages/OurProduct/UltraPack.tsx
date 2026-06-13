@@ -36,7 +36,7 @@ export default function UltraPack() {
                             {/* TEXT */}
                             <div>
                                 <div className="max-w-[58%] sm:max-w-[56%]">
-                                    <h2 className="flex items-center md:-mt-5 mt-0 gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                                    <h2 className="flex items-center md:-mt-5 -mt-1 gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                         <span className="h-2 w-2 rounded-full bg-[#FF5286]"></span>
                                         {t.products?.ultra?.insidePacks?.title}
                                     </h2>
