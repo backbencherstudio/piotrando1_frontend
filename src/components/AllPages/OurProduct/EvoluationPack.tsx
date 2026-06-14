@@ -79,7 +79,7 @@ export default function Evaluation() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-8 md:mt-[7px] xl:-mt-0.5 sm:mt-12 right-[2px] sm:right-[25px] md:right-[20px] lg:right-[-46px] xl:right-[10px] 2xl:right-[14px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
+                                    className="group perspective absolute top-1/3 md:top-1/2 mt-8 md:mt-[7px] xl:-mt-0.5 sm:mt-12 -right-[5px] sm:right-[25px] md:right-[20px] lg:right-[-46px] xl:right-[10px] 2xl:right-[14px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] transition-transform duration-700 transform-style-preserve-3d rounded-xl ${isFlipped ? "rotate-y-180" : "group-hover:rotate-y-180"

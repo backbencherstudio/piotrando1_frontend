@@ -24,18 +24,18 @@ export default function page() {
       <BannerSection />
       {/* <Home /> */}
       <AboutUs />
-      {/* <OurMission /> */}
-      {/* <OurProduct /> */}
+      <OurMission />
+      <OurProduct />
       <div>
-        {/* <Evaluation />
-        <UltraPack /> */}
+        <Evaluation />
+        <UltraPack />
       </div>
       <Process />
       <B2BDistribution />
 
-      {/* <DeliveryLogistics /> */}
+      <DeliveryLogistics />
       <CustomBranding />
-      {/* <Sourch /> */}
+      <Sourch />
 
 
       {/* <MysteryNotice /> */}
@@ -46,8 +46,8 @@ export default function page() {
       <TestimonialsSection />
 
 
-      {/* <FAQ /> */}
-      {/* <GetInTouch /> */}
+      <FAQ />
+      <GetInTouch />
 
 
 
