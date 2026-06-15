@@ -6,6 +6,7 @@ import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
 
 export default function BannerSection() {
+
     const { t } = useTranslation();
     return (
         <div
