@@ -202,8 +202,7 @@ export default function MysteryPacks() {
                         EXPLORE OUR MYSTERY PACKS
                     </h2>
                     <p className="text-[#393939] mt-4 max-w-xl mx-auto">
-                        Authentic Pokémon repacks designed for collectors, retailers,
-                        and wholesale partners.
+                        {t.explore.subtitle}
                     </p>
                 </div>
 
