@@ -66,7 +66,7 @@ export default function OurProduct() {
                             className="relative px-2 sm:px-4 md:px-6 "
                             data-aos-duration="1500"
                         >
-                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
+                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-xl md:rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
 
                                 {/* TEXT */}
                                 <div>
