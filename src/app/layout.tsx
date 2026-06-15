@@ -79,22 +79,22 @@ export default function RootLayout({
   `}
         </Script> */}
 
-        <Script
+        {/* <Script
           src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
           strategy="afterInteractive"
-        />
+        /> */}
         <AosInit />
-        <LanguageProvider>
-          <Navbar />
+        {/* <LanguageProvider> */}
+        <Navbar />
 
-          {children}
+        {children}
 
-          <CTASection />
-          {/* <ScrollTopButton /> */}
-          <Footer />
-        </LanguageProvider>
+        <CTASection />
+        {/* <ScrollTopButton /> */}
+        <Footer />
+        {/* </LanguageProvider> */}
       </body>
-    </html>
+    </html >
   );
 }
 
