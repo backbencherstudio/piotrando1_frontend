@@ -62,15 +62,105 @@ export default function OurProduct() {
                         />
 
                         {/* CARD */}
-                        <div
+                        {/* CARD */}
+<div
+  className="relative px-2 sm:px-4 md:px-6"
+  data-aos-duration="1500"
+>
+  <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-start justify-start rounded-xl md:rounded-2xl bg-white px-4 pt-[47px] pb-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
+
+    {/* TEXT */}
+    <div>
+      <div className="max-w-[58%] sm:max-w-[56%] space-y-3 text-sm text-[#4A5565] sm:text-base">
+        <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+          <span className="h-2 w-2 rounded-full bg-[#FF8904]"></span>
+          <p className="text-[#101828]">
+            {t.products?.starter?.insidePacks?.title}
+          </p>
+        </h2>
+
+        <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
+          {t.products?.starter?.insidePacks?.items?.map(
+            (item: string, index: number) => (
+              <li
+                key={index}
+                className={`flex gap-2 ${
+                  index === 2
+                    ? "font-medium text-[#FF6900]"
+                    : ""
+                }`}
+              >
+                <CorrectIcon className="mt-1 shrink-0 text-green-500" />
+                <span>{item}</span>
+              </li>
+            )
+          )}
+
+          <li className="hidden md:block w-full mt-1">
+            <p className="flex gap-2">
+              <BsStars className="h-6 w-9" />
+              {t.products?.starter?.insidePacks?.specialNote}
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div className="block md:hidden mt-5 sm:w-[350px]">
+        <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:w-auto sm:text-base">
+          <BsStars className="h-6 w-9" />
+          {t.products?.starter?.insidePacks?.specialNote}
+        </p>
+      </div>
+    </div>
+
+    {/* IMAGE */}
+    <div
+      onClick={() => setIsFlipped(!isFlipped)}
+      className="group perspective absolute top-[47px] -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
+    >
+      <div
+        className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px]
+        ${
+          isFlipped
+            ? "rotate-y-180"
+            : "group-hover:rotate-y-180"
+        }`}
+      >
+        {/* FRONT */}
+        <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
+          <Image
+            src="/images/pokemon11.png"
+            alt="pokemon front"
+            width={220}
+            height={320}
+            className="h-full w-full object-contain"
+          />
+        </div>
+
+        {/* BACK */}
+        <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
+          <Image
+            src="/images/orange back 2.png"
+            alt="pokemon back"
+            width={220}
+            height={320}
+            className="h-full w-full object-contain"
+          />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+                        {/* <div
                             className="relative px-2 sm:px-4 md:px-6 "
                             data-aos-duration="1500"
                         >
                             <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-xl md:rounded-2xl bg-white px-4 py-8 shadow-lg  sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
 
-                                {/* TEXT */}
-                                <div>
-                                    <div className="max-w-[58%]  sm:max-w-[56%] mt-0 md:-mt-5 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                             
+                                <div className="">
+                                    <div className="max-w-[58%]   sm:max-w-[56%] mt-0 md:-mt-5 space-y-3 text-sm text-[#4A5565] sm:text-base">
                                         <h2 className="flex  items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
                                             <span className="h-2 w-2 rounded-full bg-[#FF8904]"></span>
                                             <p className=" text-[#101828] ">  {t.products?.starter?.insidePacks?.title}</p>
@@ -106,11 +196,10 @@ export default function OurProduct() {
 
 
 
-                                {/* IMAGE */}
-                                <div
-                                    onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute top-1/3 md:top-1/2 mt-10 sm:mt-10 md:-mt-1 xl:-mt-3.5 -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
-                                >
+             <div
+  onClick={() => setIsFlipped(!isFlipped)}
+  className="group perspective absolute top-[47px] -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
+>
                                     <div
                                         className={`relative h-[220px] w-[150px] -mt-4 [@media(min-width:470px)]:mt-5.5 md:mt-0 2xl:mt-6 rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] 
     ${isFlipped
@@ -118,7 +207,7 @@ export default function OurProduct() {
                                                 : "group-hover:rotate-y-180"
                                             }`}
                                     >
-                                        {/* FRONT */}
+                                       
                                         <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
                                             <Image
                                                 src="/images/pokemon11.png"
@@ -129,7 +218,7 @@ export default function OurProduct() {
                                             />
                                         </div>
 
-                                        {/* BACK */}
+                                    
                                         <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
                                             <Image
                                                 src="/images/orange back 2.png"
@@ -142,7 +231,7 @@ export default function OurProduct() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* RIGHT TEXT */}

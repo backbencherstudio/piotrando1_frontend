@@ -32,10 +32,10 @@ export default function Evaluation() {
                         />
 
                         {/* CARD */}
-                        <div className="relative px-2 sm:px-4 md:px-6">
+                        {/* <div className="relative px-2 sm:px-4 md:px-6">
                             <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-xl md:rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8 ">
 
-                                {/* TEXT */}
+                              
                                 <div>
                                     <div className="max-w-[58%] sm:max-w-[55%] mt-0 md:-mt-6 lg:mt- xl:-mt-5">
                                         <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
@@ -76,7 +76,6 @@ export default function Evaluation() {
 
 
 
-                                {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
                                     className="group perspective absolute top-1/3 md:top-1/2 mt-8 md:mt-[7px] xl:-mt-0.5 sm:mt-12 -right-[5px] sm:right-[25px] md:right-[20px] lg:right-[-46px] xl:right-[10px] 2xl:right-[14px] flex -translate-y-1/2 cursor-pointer items-center justify-center rounded-xl "
@@ -86,7 +85,6 @@ export default function Evaluation() {
                                             }`}
                                     >
 
-                                        {/* FRONT */}
                                         <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
                                             <Image
                                                 src="/images/pokemon13.png"
@@ -97,7 +95,6 @@ export default function Evaluation() {
                                             />
                                         </div>
 
-                                        {/* BACK */}
                                         <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
                                             <Image
                                                 src="/images/orange back 2.png"
@@ -112,7 +109,94 @@ export default function Evaluation() {
                                 </div>
 
                             </div>
-                        </div>
+                        </div> */}
+
+                        {/* CARD */}
+<div className="relative px-2 sm:px-4 md:px-6">
+    <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-start justify-start rounded-xl md:rounded-2xl bg-white px-4 pt-[47px] pb-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
+
+        {/* TEXT */}
+        <div>
+            <div className="max-w-[58%] sm:max-w-[55%]">
+                <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                    <span className="h-2 w-2 rounded-full bg-[#D5EB2A]"></span>
+                    <p className="text-[#101828]">
+                        {t.products.evolution.insidePacks.title}
+                    </p>
+                </h2>
+
+                <ul className="mt-4 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                    {t.products?.evolution?.insidePacks?.items?.map(
+                        (item: string, index: number) => (
+                            <li
+                                key={index}
+                                className={`flex gap-2 ${
+                                    index === 2
+                                        ? "font-medium text-[#FF6900]"
+                                        : ""
+                                }`}
+                            >
+                                <CorrectIcon className="mt-1 shrink-0 text-green-500" />
+                                <span>{item}</span>
+                            </li>
+                        )
+                    )}
+
+                    <li className="hidden md:block w-full mt-1">
+                        <p className="flex gap-2">
+                            <BsStars className="h-6 w-9" />
+                            {t.products?.evolution?.insidePacks?.specialNote}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="mt-7 block md:hidden">
+                <p className="flex gap-2 text-sm text-[#4A5565] whitespace-pre-wrap min-[467px]:w-[300px] sm:text-base">
+                    <BsStars className="h-6 w-9" />
+                    {t.products?.evolution?.insidePacks?.specialNote}
+                </p>
+            </div>
+        </div>
+
+        {/* IMAGE */}
+        <div
+            onClick={() => setIsFlipped(!isFlipped)}
+            className="group perspective absolute top-[47px] -right-[5px] sm:right-[25px] md:right-[20px] lg:right-[-46px] xl:right-[10px] 2xl:right-[14px] flex cursor-pointer items-center justify-center rounded-xl"
+        >
+            <div
+                className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] ${
+                    isFlipped
+                        ? "rotate-y-180"
+                        : "group-hover:rotate-y-180"
+                }`}
+            >
+                {/* FRONT */}
+                <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
+                    <Image
+                        src="/images/pokemon13.png"
+                        alt="front"
+                        width={220}
+                        height={320}
+                        className="h-full w-full object-contain"
+                    />
+                </div>
+
+                {/* BACK */}
+                <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
+                    <Image
+                        src="/images/orange back 2.png"
+                        alt="back"
+                        width={220}
+                        height={320}
+                        className="h-full w-full object-contain"
+                    />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
                     </div>
 
                     {/* LEFT TEXT (swapped) */}
