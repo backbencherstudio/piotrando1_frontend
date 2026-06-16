@@ -18,8 +18,8 @@ export default function BannerSection() {
             <div className='grid grid-cols-1 md:grid-cols-2 text-white containers  gap-8 '>
                 <div
                     data-aos="fade-right"
-                    data-aos-duration="1500"
-                    data-aos-delay="300"
+                    data-aos-duration="1000"
+                    data-aos-delay="0"
                     className='flex justify-center items-center mt-12 md:mt-0'>
                     <div>
                         <div className='flex justify-center  md:justify-start'>
@@ -48,16 +48,15 @@ export default function BannerSection() {
                 </div>
 
                 <div className='justify-center items-center flex mt-0 md:mt-10  lg:mt-20 2xl:mt-0 ' data-aos="fade-left"
-                    data-aos-duration="1500"
-                    data-aos-delay="300">
+                    data-aos-duration="800"
+                    data-aos-delay="0">
                     <Image
                         src="/images/banerPokemon.png"
-                        alt="imagebanner"
+                        alt="Pokemon Banner"
                         width={545}
                         height={521}
                         priority
-                        unoptimized
-                        className="z-10 object-contain h-auto w-full max-w-[545px]"
+                        sizes="(max-width: 768px) 100vw, 545px"
                     />
 
                 </div>
