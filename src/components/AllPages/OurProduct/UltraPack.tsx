@@ -32,88 +32,86 @@ export default function UltraPack() {
                     {/* CARD */}
 
                     <div className="relative px-2 sm:px-4 md:px-6">
-    <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-start justify-start rounded-xl md:rounded-2xl bg-white px-4 pt-[47px] pb-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
+                        <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-start justify-start rounded-xl md:rounded-2xl bg-white px-4 pt-[40px] md:pt-[67px] pb-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
 
-        {/* TEXT */}
-        <div>
-            <div className="max-w-[58%] sm:max-w-[56%]">
-                <h2 className="flex items-center gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                    <span className="h-2 w-2 rounded-full bg-[#FF5286]"></span>
-                    {t.products?.ultra?.insidePacks?.title}
-                </h2>
+                            {/* TEXT */}
+                            <div>
+                                <div className="max-w-[58%] sm:max-w-[56%]">
+                                    <h2 className="flex  gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
+                                        <span className="h-2 w-2 mt-3 rounded-full bg-[#FF5286]"></span>
+                                        {t.products?.ultra?.insidePacks?.title}
+                                    </h2>
 
-                <ul className="mt-5 space-y-3 text-sm text-[#4A5565] sm:text-base">
-                    {t.products?.ultra?.insidePacks?.items?.map(
-                        (item: string, index: number) => (
-                            <li
-                                key={index}
-                                className={`flex gap-2 ${
-                                    index === 2
-                                        ? "font-medium text-[#FF6900]"
-                                        : ""
-                                }`}
+                                    <ul className="mt-5 space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                        {t.products?.ultra?.insidePacks?.items?.map(
+                                            (item: string, index: number) => (
+                                                <li
+                                                    key={index}
+                                                    className={`flex gap-2 ${index === 2
+                                                        ? "font-medium text-[#FF6900]"
+                                                        : ""
+                                                        }`}
+                                                >
+                                                    <CorrectIcon className="mt-1 shrink-0 text-green-500" />
+                                                    <span>{item}</span>
+                                                </li>
+                                            )
+                                        )}
+
+                                        <li className="hidden md:block w-full mt-1">
+                                            <p className="flex gap-2">
+                                                <BsStars className="h-6 w-9" />
+                                                {t.products?.ultra?.insidePacks?.specialNote}
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div className="block md:hidden mt-7">
+                                    <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:text-base">
+                                        <BsStars className="h-6 w-9" />
+                                        {t.products?.ultra?.insidePacks?.specialNote}
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* IMAGE */}
+                            <div
+                                onClick={() => setIsFlipped(!isFlipped)}
+                                className="group perspective absolute mt-2  -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
                             >
-                                <CorrectIcon className="mt-1 shrink-0 text-green-500" />
-                                <span>{item}</span>
-                            </li>
-                        )
-                    )}
+                                <div
+                                    className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] ${isFlipped
+                                        ? "rotate-y-180"
+                                        : "group-hover:rotate-y-180"
+                                        }`}
+                                >
+                                    {/* FRONT */}
+                                    <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
+                                        <Image
+                                            src="/images/pokemon121.png"
+                                            alt="front"
+                                            width={220}
+                                            height={320}
+                                            className="h-full w-full object-contain"
+                                        />
+                                    </div>
 
-                    <li className="hidden md:block w-full mt-1">
-                        <p className="flex gap-2">
-                            <BsStars className="h-6 w-9" />
-                            {t.products?.ultra?.insidePacks?.specialNote}
-                        </p>
-                    </li>
-                </ul>
-            </div>
+                                    {/* BACK */}
+                                    <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
+                                        <Image
+                                            src="/images/orange back 2.png"
+                                            alt="back"
+                                            width={220}
+                                            height={320}
+                                            className="h-full w-full object-contain"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
 
-            <div className="block md:hidden mt-7">
-                <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:text-base">
-                    <BsStars className="h-6 w-9" />
-                    {t.products?.ultra?.insidePacks?.specialNote}
-                </p>
-            </div>
-        </div>
-
-        {/* IMAGE */}
-        <div
-            onClick={() => setIsFlipped(!isFlipped)}
-            className="group perspective absolute top-[47px] -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
-        >
-            <div
-                className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] ${
-                    isFlipped
-                        ? "rotate-y-180"
-                        : "group-hover:rotate-y-180"
-                }`}
-            >
-                {/* FRONT */}
-                <div className="absolute inset-0 overflow-hidden rounded-xl backface-hidden">
-                    <Image
-                        src="/images/pokemon121.png"
-                        alt="front"
-                        width={220}
-                        height={320}
-                        className="h-full w-full object-contain"
-                    />
-                </div>
-
-                {/* BACK */}
-                <div className="absolute inset-0 rotate-y-180 overflow-hidden rounded-xl backface-hidden">
-                    <Image
-                        src="/images/orange back 2.png"
-                        alt="back"
-                        width={220}
-                        height={320}
-                        className="h-full w-full object-contain"
-                    />
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
+                        </div>
+                    </div>
                     {/* <div className="relative px-2 sm:px-4 md:px-6 ">
                         <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-center justify-start rounded-xl md:rounded-2xl bg-white px-4 py-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
 
