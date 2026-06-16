@@ -67,7 +67,7 @@ export default function UltraPack() {
                                     </ul>
                                 </div>
 
-                                <div className="block md:hidden mt-7">
+                                <div className="block md:hidden mt-5">
                                     <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:text-base">
                                         <BsStars className="h-6 w-9" />
                                         {t.products?.ultra?.insidePacks?.specialNote}

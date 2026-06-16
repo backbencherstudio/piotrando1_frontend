@@ -150,7 +150,7 @@ export default function Evaluation() {
                                         </ul>
                                     </div>
 
-                                    <div className="mt-7 block md:hidden">
+                                    <div className="mt-5 block md:hidden">
                                         <p className="flex gap-2 text-sm text-[#4A5565] whitespace-pre-wrap min-[467px]:w-[300px] sm:text-base">
                                             <BsStars className="h-6 w-9" />
                                             {t.products?.evolution?.insidePacks?.specialNote}

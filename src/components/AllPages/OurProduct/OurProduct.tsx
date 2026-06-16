@@ -104,7 +104,7 @@ export default function OurProduct() {
                                         </ul>
                                     </div>
 
-                                    <div className="block md:hidden mt-7` sm:w-[350px]">
+                                    <div className="block md:hidden mt-5 sm:w-[350px]">
                                         <p className="flex gap-2 text-sm text-[#4A5565] min-[467px]:w-[250px] sm:w-auto sm:text-base">
                                             <BsStars className="h-6 w-9" />
                                             {t.products?.starter?.insidePacks?.specialNote}
