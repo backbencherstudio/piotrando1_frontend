@@ -41,7 +41,7 @@
   "subtitle": "Trois niveaux conçus pour chaque type de collectionneur et de détaillant. Chaque pack contient 100 % de véritables cartes Pokémon TCG.",
 
 "starter": {
-  "name": "Pack Débutant",
+  "name": "Starter Pack",
   "description": "Le Pack mystère d'entrée de gamme idéal pour les achats impulsifs, les points de vente et les nouveaux collectionneurs.",
   "features": [
     "Produit à forte rotation",
@@ -54,7 +54,7 @@
     "title": "Contenu des packs",
     "items": [
       "7 cartes Communes / Peu Communes",
-      "2 cartes Brillantes",
+      "2 cartes Holographiques",
       "1 carte Bonus",
       "La carte Bonus peut inclure : Brillante / V / EX / GX / Spéciale Rare"
     ],
@@ -77,7 +77,7 @@
     "title": "Contenu des packs",
     "items": [
       "14 cartes Communes / Peu Communes",
-      "4 cartes Brillantes",
+      "4 cartes Holographiques",
       "2 cartes Bonus",
       "La carte Bonus peut inclure : Brillante / V / EX / GX / Spéciale Rare"
     ],
@@ -100,7 +100,7 @@
     "title": "Contenu des packs",
     "items": [
       "25 cartes Communes / Peu Communes",
-      "6 cartes Brillantes",
+      "6 cartes Holographiques",
       "4 cartes Bonus",
       "La carte Bonus peut inclure : Brillante / V / EX / GX / Spéciale Rare"
     ],
@@ -371,6 +371,7 @@
   },
 
   "explore": {
+    "header":"DÉCOUVREZ NOS MYSTERY PACKS",
   "mainTitle": "Nos Produits",
   "title": "DÉCOUVREZ NOS MYSTERY PACKS",
   "subtitle": "Des repacks Pokémon authentiques conçus pour les collectionneurs, les revendeurs et les partenaires grossistes.",

@@ -11,11 +11,11 @@ export default function BannerSection() {
     return (
         <div
             style={{ backgroundImage: "url('/images/banner3.png')" }}
-            className="relative bg-cover bg-center bg-no-repeat lg:h-screen opacity- min-h-[600px] flex items-center justify-center  py-16 md:py-20 lg:py-0"
+            className="relative bg-cover bg-center bg-no-repeat lg:h-screen opacity- min-h-[600px]  flex items-center justify-center  py-16 md:py-20 lg:py-0 bg-fixed"
         >
             {/* Dark Overlay dar*/}
             <div className="absolute inset-0  bg-black/45"></div>
-            <div className='grid grid-cols-1 md:grid-cols-2 text-white containers  gap-8 '>
+            <div className='relative z-10 grid grid-cols-1 md:grid-cols-2 text-white containers  gap-8 '>
                 <div
                     data-aos="fade-right"
                     data-aos-duration="1000"

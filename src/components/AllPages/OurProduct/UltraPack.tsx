@@ -78,7 +78,7 @@ export default function UltraPack() {
                             {/* IMAGE */}
                             <div
                                 onClick={() => setIsFlipped(!isFlipped)}
-                                className="group perspective absolute mt-2  -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
+                                className="group perspective absolute mt-1.5  -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[10px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
                             >
                                 <div
                                     className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] ${isFlipped
@@ -197,7 +197,7 @@ export default function UltraPack() {
                             {t.products.ultra.name}
                         </p>
 
-                        <div className="mt-4 md:mt-0 flex flex-col gap-6 text-[#393939] ">
+                        <div className="mt-4  flex flex-col gap-6 text-[#393939] ">
                             <p className="text-base lg:text-lg text-center md:text-start">
                                 {t.products.ultra.description}
                             </p>

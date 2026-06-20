@@ -18,7 +18,7 @@
   "about": {
     "title": "WER WIR BEI SPAWN DROP SIND",
     "description1": "Spawn Drop wurde für Sammler entwickelt, die Qualität über Quantität stellen. Wir beschaffen sorgfältig hochwertige Sammelkarten aus dem gesamten Markt, prüfen jede einzelne und verarbeiten sie zu Premium-Packs, die beständigen Wert und ein erstklassiges Öffnungserlebnis bieten.",
-    "description2": "In einem Bereich, der oft von Zufall und Unbeständigkeit geprägt ist, setzen wir auf Struktur, Balance und Vertrauen. Jedes Pack wird mit Bedacht zusammengestellt und vereint soliden Grundwert mit der Spannung bedeutsamer Seltenzüge.",
+    "description2": "In einem Bereich, der oft von Zufall und Unbeständigkeit geprägt ist, setzen wir auf Struktur, Balance und Vertrauen. Jedes Pack wird mit Bedacht zusammengestellt und vereint soliden Grundwert mit der Spannung wertvoller seltener Pulls.",
     "description3": "Wir verkaufen nicht einfach nur Karten weiter. Wir kuratieren Produkte, die widerspiegeln, was Sammler wirklich wollen. Ob Einzelhändler, Wiederverkäufer oder leidenschaftlicher Sammler – Spawn Drop liefert Produkte, die Ihr Vertrauen immer wieder verdienen."
   },
   "mission": {
@@ -41,7 +41,7 @@
 
   "starter": {
     "name": "Starter Pack",
-    "description": "Das Perfektes Einstiegs-Mystery-Pack für Impulskäufe, Einzelhandel und neue Sammler.",
+    "description": "Das perfekte Einstiegs-Mystery-Pack für Impulskäufe, Einzelhandel und neue Sammler.",
     "features": [
       "Schnelldreher-Produkt",
       "Einzelhandelsgerechtes Format",
@@ -207,7 +207,7 @@
       "Vollständiges Verpackungsdesign (Blister + Box)",
       "Kartenbeschaffung (Pokémon und mehr)",
       "Qualitätskontrolle & Zusammenstellung",
-      "Versandfertige Lieferung"
+      "Lieferbereit"
     ]
   },
   "sources": {
@@ -369,6 +369,7 @@
     "copyright": "© Spawn Drop 2026 | Alle Rechte vorbehalten"
   },
   "explore": {
+    "header":"ENTDECKE UNSERE MYSTERY PACKS",
   "mainTitle": "Unsere Produkte",
   "title": "ENTDECKE UNSERE MYSTERY PACKS",
   "subtitle": "Authentische Pokémon-Repacks für Sammler, Einzelhändler und Großhandelspartner.",

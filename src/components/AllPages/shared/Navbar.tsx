@@ -481,9 +481,64 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </ul>
+                <div className="block lg:hidden md:ml-90">
+                    <div className="flex gap-5 -mt-2 ml-4 ">
+                        {/* Language Dropdown */}
+                        <div className="relative mt-4 ">
+                            <button
+                                onClick={() => setIsLangOpen(!isLangOpen)}
+                                className={`flex items-center gap-2 px-3 py-1.5 border rounded-lg border-gray-300   transition-all duration-200 ${textColor} hover:bg-gray-100 hover:text-black`}
+                            >
+                                <Image
+                                    src={languages.find(l => l.code === locale)?.flag || "/images/flag.png"}
+                                    alt="flag"
+                                    width={25}
+                                    height={20}
+                                />
+                                <span className="text-sm font-medium">{languages.find(l => l.code === locale)?.code}</span>
+                                <svg className={`w-4 h-4 transition-transform ${isLangOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
 
 
-                <button className="lg:hidden text-3xl bg-[#343434] rounded-full p-3 text-white" onClick={() => setOpen(true)}>
+                            {isLangOpen && (
+                                <div className="absolute right-0 mt-2 w-44 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50 p">
+                                    {languages.map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            onClick={() => {
+                                                changeLanguage(lang.code as Locale);
+                                                setIsLangOpen(false);
+                                            }}
+                                            className={`w-full flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors ${locale === lang.code ? 'bg-orange-50 text-[#FE6B02]' : 'text-gray-700'
+                                                }`}
+                                        >
+                                            <Image
+                                                src={lang.flag}
+                                                alt={lang.name}
+                                                width={20}
+                                                height={20}
+                                            />
+                                            <span className="text-sm">{lang.name}</span>
+                                            {locale === lang.code && (
+                                                <svg className="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                            )}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <button className="lg:hidden text-3xl bg-[#343434] rounded-full p-3 mt-2 text-white" onClick={() => setOpen(true)}>
                     <LineIcon />
                 </button>
             </div>
@@ -520,7 +575,7 @@ export default function Navbar() {
                     <div className=" pt-4 ">
 
 
-                        <div className="relative">
+                        {/* <div className="relative">
                             <button
                                 onClick={() => setIsMobileLangOpen(!isMobileLangOpen)}
                                 className="w-full flex items-center justify-between px-4  py-1.5 bg-white border border-gray-300 rounded-lg"
@@ -603,7 +658,7 @@ export default function Navbar() {
                                     ))}
                                 </div>
                             )}
-                        </div>
+                        </div> */}
                     </div>
                 </ul>
 

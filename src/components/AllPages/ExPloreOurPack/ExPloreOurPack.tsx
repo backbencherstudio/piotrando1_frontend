@@ -199,7 +199,7 @@ export default function MysteryPacks() {
                 {/* Heading */}
                 <div className="text-center mb-10">
                     <h2 className="title font-secondary tracking-tight">
-                        EXPLORE OUR MYSTERY PACKS
+                        {t.explore.header}
                     </h2>
                     <p className="text-[#393939] mt-4 max-w-xl mx-auto">
                         {t.explore.subtitle}
