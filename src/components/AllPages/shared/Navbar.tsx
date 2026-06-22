@@ -481,8 +481,8 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </ul>
-                <div className="block lg:hidden md:ml-90">
-                    <div className="flex gap-5 -mt-2 ml-4 ">
+                <div className="block lg:hidden md:ml-90 ">
+                    <div className="flex gap-5 -mt-2 ml-4 max-[360px]:-ml-4">
                         {/* Language Dropdown */}
                         <div className="relative mt-4 ">
                             <button
@@ -538,7 +538,7 @@ export default function Navbar() {
                 </div>
 
 
-                <button className="lg:hidden text-3xl bg-[#343434] rounded-full p-3 mt-2 text-white" onClick={() => setOpen(true)}>
+                <button className="lg:hidden text-3xl bg-[#343434] rounded-full p-3 mt-2 text-white max-[350px]:-ml-3" onClick={() => setOpen(true)}>
                     <LineIcon />
                 </button>
             </div>

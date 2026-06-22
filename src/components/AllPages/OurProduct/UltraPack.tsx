@@ -7,8 +7,10 @@ import CorrectIcon from "@/components/icon/CorrectIcon";
 import { BsStars } from "react-icons/bs";
 import { useTranslation } from "@/components/hooks/useTranslation";
 
+
 export default function UltraPack() {
     const { t } = useTranslation();
+    const { locale } = useTranslation();
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
@@ -36,10 +38,16 @@ export default function UltraPack() {
 
                             {/* TEXT */}
                             <div>
-                                <div className="max-w-[58%] sm:max-w-[56%] max-[363px]:w-[140px] max-[330px]:max-w-[100px] space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                    <h2 className="flex  gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                                        <span className="h-2 w-2 mt-2 md:mt-3 rounded-full bg-[#FF5286]"></span>
-                                        {t.products?.ultra?.insidePacks?.title}
+                                <div className="max-w-[58%] sm:max-w-[56%] max-[363px]:w-[132px] max-[330px]:max-w-[120px] space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                    <h2 className="flex gap-2 font-semibold max-[350px]:text-[15px] text-lg sm:text-2xl md:text-3xl">
+                                        <span className="block h-2 w-2 mt-2 md:mt-3 rounded-full  max-[330px]:hidden bg-[#FF5286]"></span>
+
+
+                                        <p
+
+                                        >
+                                            {t.products?.ultra?.insidePacks?.title}
+                                        </p>
                                     </h2>
 
                                     <ul className="mt-5 space-y-3 text-sm text-[#4A5565] sm:text-base">

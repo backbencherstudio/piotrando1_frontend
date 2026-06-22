@@ -9,7 +9,7 @@ import { useTranslation } from "@/components/hooks/useTranslation";
 
 export default function Evaluation() {
 
-
+    const { locale } = useTranslation();
     const { t } = useTranslation();
     const [isFlipped, setIsFlipped] = useState(false);
     return (
@@ -117,11 +117,12 @@ export default function Evaluation() {
 
                                 {/* TEXT */}
                                 <div>
-                                    <div className="max-w-[58%] sm:max-w-[56%] max-[363px]:w-[140px] max-[340px]:max-w-[120px] space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                        <h2 className="flex  gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                                            <span className="h-2 w-2 mt-2 md:mt-3 rounded-full bg-[#D5EB2A]"></span>
-                                            <p className="text-[#101828]">
-                                                {t.products.evolution.insidePacks.title}
+                                    <div className="max-w-[58%] sm:max-w-[56%] max-[363px]:w-[132px] max-[330px]:max-w-[120px] space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                        <h2 className="flex gap-2 font-semibold max-[350px]:text-[15px] text-lg sm:text-2xl md:text-3xl">
+                                            <span className="block h-2 w-2 mt-2 md:mt-3 rounded-full  max-[330px]:hidden bg-[#D5EB2A]"></span>
+
+                                            <p>
+                                                {t.products?.evolution?.insidePacks?.title}
                                             </p>
                                         </h2>
 
