@@ -67,13 +67,13 @@ export default function OurProduct() {
                             className="relative px-2 sm:px-4 md:px-6"
                             data-aos-duration="1500"
                         >
-                            <div className="relative z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-start justify-start rounded-xl md:rounded-2xl bg-white px-4 pt-[40px] md:pt-[67px] pb-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
+                            <div className="relative  z-10 mt-2 md:mt-6 flex min-h-[400px] w-full items-start justify-start rounded-xl md:rounded-2xl bg-white px-4 pt-[40px] md:pt-[67px] pb-8 shadow-lg sm:min-h-[470px] sm:px-6 md:min-h-[500px] md:px-8 lg:px-4 xl:px-8">
 
                                 {/* TEXT */}
                                 <div>
                                     <div className="max-w-[58%] sm:max-w-[56%] max-[363px]:w-[132px] max-[330px]:max-w-[120px] space-y-3 text-sm text-[#4A5565] sm:text-base">
-                                        <h2 className="flex gap-2 font-semibold max-[350px]:text-[15px] text-lg sm:text-2xl md:text-3xl">
-                                            <span className="block h-2 w-2 mt-2 md:mt-3 rounded-full  max-[330px]:hidden bg-[#FF8904]"></span>
+                                        <h2 className="flex gap-1 sm:gap-2 font-semibold max-[366px]:text-[15px] text-lg sm:text-2xl md:text-3xl">
+                                            <span className="block rounded-full  h-2 w-2 max-[350px]:h-1.5 max-[350px]:w-1.5 mt-2 md:mt-3 bg-[#FF8904]"></span>
                                             <p
 
                                             >
