@@ -71,9 +71,9 @@ export default function OurProduct() {
 
                                 {/* TEXT */}
                                 <div>
-                                    <div className="max-w-[58%] sm:max-w-[56%] space-y-3 text-sm text-[#4A5565] sm:text-base">
+                                    <div className="max-w-[58%] sm:max-w-[56%] max-[363px]:w-[140px] max-[332px]:max-w-[120px] space-y-3 text-sm text-[#4A5565] sm:text-base">
                                         <h2 className="flex  gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                                            <span className="h-2 w-2 mt-3 rounded-full bg-[#FF8904]"></span>
+                                            <span className="h-2 w-2 mt-2 md:mt-3 rounded-full bg-[#FF8904]"></span>
                                             <p className="text-[#101828] ">
                                                 {t.products?.starter?.insidePacks?.title}
                                             </p>
@@ -90,7 +90,7 @@ export default function OurProduct() {
                                                             }`}
                                                     >
                                                         <CorrectIcon className="mt-1 shrink-0 text-green-500" />
-                                                        <span>{item}</span>
+                                                        <span className="leading-5.5">{item}</span>
                                                     </li>
                                                 )
                                             )}

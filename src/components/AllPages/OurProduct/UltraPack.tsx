@@ -36,9 +36,9 @@ export default function UltraPack() {
 
                             {/* TEXT */}
                             <div>
-                                <div className="max-w-[58%] sm:max-w-[56%]">
+                                <div className="max-w-[58%] sm:max-w-[56%] max-[363px]:w-[140px] max-[330px]:max-w-[100px] space-y-3 text-sm text-[#4A5565] sm:text-base">
                                     <h2 className="flex  gap-2 text-lg font-semibold sm:text-2xl md:text-3xl">
-                                        <span className="h-2 w-2 mt-3 rounded-full bg-[#FF5286]"></span>
+                                        <span className="h-2 w-2 mt-2 md:mt-3 rounded-full bg-[#FF5286]"></span>
                                         {t.products?.ultra?.insidePacks?.title}
                                     </h2>
 
@@ -53,7 +53,7 @@ export default function UltraPack() {
                                                         }`}
                                                 >
                                                     <CorrectIcon className="mt-1 shrink-0 text-green-500" />
-                                                    <span>{item}</span>
+                                                    <span className="leading-5.5">{item}</span>
                                                 </li>
                                             )
                                         )}
