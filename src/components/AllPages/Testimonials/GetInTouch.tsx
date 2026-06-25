@@ -33,26 +33,26 @@ export default function GetInTouch() {
     }, [setValue]);
 
     const onSubmit: SubmitHandler<FormInputs> = async (data) => {
-        try {
-            await emailjs.send(
-                "sdafsd",
-                "sdfasd",
-                {
-                    company_name: data.companyName,
-                    contact_name: data.contactName,
-                    business_email: data.businessEmail,
-                    estimated_quantity: data.estimatedQuantity,
-                    message: data.message,
-                },
-                "asdfasdf"
-            );
+        // try {
+        //     await emailjs.send(
+        //         "sdafsd",
+        //         "sdfasd",
+        //         {
+        //             company_name: data.companyName,
+        //             contact_name: data.contactName,
+        //             business_email: data.businessEmail,
+        //             estimated_quantity: data.estimatedQuantity,
+        //             message: data.message,
+        //         },
+        //         "asdfasdf"
+        //     );
 
-            alert("Message sent successfully!");
+        //     alert("Message sent successfully!");
 
-        } catch (error) {
-            console.error(error);
-            alert("Failed to send message");
-        }
+        // } catch (error) {
+        //     console.error(error);
+        //     alert("Failed to send message");
+        // }
     };
 
 
