@@ -11,6 +11,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { CgMail } from "react-icons/cg";
 import { CiLocationOn } from "react-icons/ci";
 import { GoMail } from "react-icons/go";
+import emailjs from "@emailjs/browser";
 
 type FormInputs = {
     companyName: string;
@@ -31,8 +32,27 @@ export default function GetInTouch() {
         setValue("country", "Bangladesh");
     }, [setValue]);
 
-    const onSubmit: SubmitHandler<FormInputs> = (data) => {
-        console.log("Form Data:", data);
+    const onSubmit: SubmitHandler<FormInputs> = async (data) => {
+        try {
+            await emailjs.send(
+                "sdafsd",
+                "sdfasd",
+                {
+                    company_name: data.companyName,
+                    contact_name: data.contactName,
+                    business_email: data.businessEmail,
+                    estimated_quantity: data.estimatedQuantity,
+                    message: data.message,
+                },
+                "asdfasdf"
+            );
+
+            alert("Message sent successfully!");
+
+        } catch (error) {
+            console.error(error);
+            alert("Failed to send message");
+        }
     };
 
 

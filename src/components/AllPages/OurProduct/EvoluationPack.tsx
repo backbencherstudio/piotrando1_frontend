@@ -162,7 +162,7 @@ export default function Evaluation() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute mt-1.5  -right-[5px] sm:right-[25px] md:right-[20px] lg:right-[-46px] xl:right-[10px] 2xl:right-[14px] flex cursor-pointer items-center justify-center rounded-xl"
+                                    className="group perspective absolute mt-1.5  -right-[5px] sm:right-[25px] md:right-[20px] lg:right-[-46px] xl:right-[1px] 2xl:right-[14px] flex cursor-pointer items-center justify-center rounded-xl"
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] ${isFlipped
