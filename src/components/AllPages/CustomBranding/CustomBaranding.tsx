@@ -61,12 +61,12 @@ export default function CustomBranding() {
 
 
                 >
-                    <div className="relative w-full h-full  xl:h-[470px]">
+                    <div className="relative w-full h-[250px] md:h-[350px] xl:h-[470px]">
                         <Image
                             src="/images/computer.jpg"
                             alt="customBranding"
                             fill
-                            className="object-cover rounded-xl"
+                            className="object-center rounded-xl"
                         />
                     </div>
 
