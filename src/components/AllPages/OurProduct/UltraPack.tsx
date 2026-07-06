@@ -16,10 +16,10 @@ export default function UltraPack() {
     return (
         <div className="containers mt-3 md:mt-4  lg:pb-20 pb-8 md:pb-10 overflow-hidden">
             {/* GRID */}
-            <div className="grid grid-cols-1 gap-9 md:gap-14 lg:grid-cols-2 lg:gap-[35px] xl:gap-25  items-center">
+            <div className="grid grid-cols-1 gap-9 md:gap-14 lg:grid-cols-5 xl:grid-cols-6 lg:gap-[35px] xl:gap-25  items-center">
 
                 {/* LEFT CARD */}
-                <div className="relative mx-auto w-full max-w-full" data-aos="zoom-in" data-aos-duration="1500">
+                <div className="relative mx-auto w-full lg:col-span-3 max-w-full" data-aos="zoom-in" data-aos-duration="1500">
 
 
                     {/* BG */}
@@ -86,7 +86,7 @@ export default function UltraPack() {
                             {/* IMAGE */}
                             <div
                                 onClick={() => setIsFlipped(!isFlipped)}
-                                className="group perspective absolute mt-1.5  -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[1px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
+                                className="group perspective absolute mt-1.5  -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[px] xl:right-[1px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
                             >
                                 <div
                                     className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px] ${isFlipped
@@ -195,7 +195,7 @@ export default function UltraPack() {
                 </div>
 
                 {/* RIGHT TEXT */}
-                <div className="order-[-1] lg:order-none flex flex-col justify-start lg:justify-center  lg:px-0"
+                <div className="order-[-1] lg:order-none flex lg:col-span-2 flex-col justify-start lg:justify-center  lg:px-0"
                     data-aos="zoom-out-up"
                 >
 
