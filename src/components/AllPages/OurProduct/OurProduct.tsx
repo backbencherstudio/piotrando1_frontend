@@ -45,10 +45,10 @@ export default function OurProduct() {
 
             {/* GRID */}
             <div className=" ">
-                <div className="grid grid-cols-1 gap-6 md:gap-13  lg:grid-cols-2 lg:gap-[35px] xl:gap-25 ">
+                <div className="grid grid-cols-1 gap-6 md:gap-13  lg:grid-cols-5 xl:grid-cols-6 lg:gap-[35px] xl:gap-25 ">
                     {/* LEFT CARD */}
                     <div
-                        className="relative mx-auto w-full max-w-full"
+                        className="relative mx-auto w-full max-w-full lg:col-span-3"
                         data-aos="zoom-in"
                         data-aos-duration="1500"
                     >
@@ -117,7 +117,7 @@ export default function OurProduct() {
                                 {/* IMAGE */}
                                 <div
                                     onClick={() => setIsFlipped(!isFlipped)}
-                                    className="group perspective absolute mt-1.5  -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[-45px] xl:right-[1px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
+                                    className="group perspective absolute mt-1.5  -right-[5px] sm:right-[30px] md:right-[20px] lg:right-[px] xl:right-[1px] 2xl:right-[15px] flex cursor-pointer items-center justify-center rounded-xl"
                                 >
                                     <div
                                         className={`relative h-[220px] w-[150px] rounded-xl transition-transform duration-700 transform-style-preserve-3d sm:h-[280px] sm:w-[190px] md:h-[320px] md:w-[220px]
@@ -236,7 +236,7 @@ export default function OurProduct() {
 
                     {/* RIGHT TEXT */}
                     <div
-                        className="order-[-1] lg:order-none flex flex-col justify-start lg:justify-center -mt-3 md:mt-0  lg:px-0"
+                        className="order-[-1] lg:order-none lg:col-span-2 flex flex-col justify-start lg:justify-center -mt-3 md:mt-0  lg:px-0"
                         data-aos="zoom-out-down"
                         data-aos-duration="1500"
                     >

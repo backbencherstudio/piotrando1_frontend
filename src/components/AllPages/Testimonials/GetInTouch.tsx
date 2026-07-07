@@ -11,7 +11,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { CgMail } from "react-icons/cg";
 import { CiLocationOn } from "react-icons/ci";
 import { GoMail } from "react-icons/go";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 type FormInputs = {
     companyName: string;
